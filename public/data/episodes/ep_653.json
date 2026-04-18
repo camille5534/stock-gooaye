@@ -1,0 +1,108 @@
+{
+  "episode": 653,
+  "date": "2026-04-18",
+  "title": "EP653 | 市場分析與生活洞察",
+  "youtube_url": "https://www.youtube.com/watch?v=",
+  "summary": "本集聚焦多頭行情的把握與產業鏈深度解析。台積電 EPS 今年約 90 幾元、明年看 130-140 元，目標價 2800 元不誇張。聯發科與 Google 合作兩顆 AI 晶片（Zebra Fish/H-Fish），未來 3-4 年 AI 收入有望貢獻一半以上 EPS。被動元件出現結構性缺貨漲價潮，應關注國巨法說。操作上強調機會成本思考，資金應配置於動能最強的族群。",
+  "sentiment": {
+    "score": 8,
+    "label": "偏多",
+    "bull_pct": 80,
+    "bear_pct": 20
+  },
+  "keywords": ["台積電", "聯發科", "AI", "Google", "Marvell", "被動元件", "多頭", "藍海市場", "機會成本", "半導體"],
+  "stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「台積電 2800 應該都不是一個太誇張的數字，甚至你放在 AI 的 P/E 裡邊來說都還不是一個很貴的數字。」今年 EPS 約 90 幾元，明年看 130-140 元，給 20 倍 P/E 目標 2800。",
+      "timestamp": "00:15:30",
+      "tags": ["AI", "半導體", "目標價", "長期"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「資金正從擔憂手機銷量的故事轉向 AI 領域。與 Google 合作兩顆晶片（Zebra Fish/H-Fish），預計投產量數百萬顆，未來 3-4 年 AI 收入有望貢獻一半以上 EPS，AI 佈局深度目前優於高通。」",
+      "timestamp": "00:28:45",
+      "tags": ["AI", "Google合作", "晶片設計", "轉型"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "MRVL",
+      "name": "Marvell",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「Google 引入 Marvell 作為晶片設計夥伴，TIIA（TPU推論）與記憶體處理兩個案子，AI 是藍海市場，不要覺得有一個新玩家加入，其他人就得去死。」",
+      "timestamp": "00:42:10",
+      "tags": ["AI", "Google", "藍海市場"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "2327",
+      "name": "國巨",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「被動元件出現結構性缺貨，MLCC、電感、鋁電容皆緊缺。應持續關注國巨法說展望，若國際被動元件巨頭持續創高，可視為趨勢確立。」",
+      "timestamp": "00:55:20",
+      "tags": ["被動元件", "MLCC", "漲價", "AI需求"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "AVGO",
+      "name": "Broadcom",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「目前主要持股之一，網通/半導體設計核心部位，AI 供應鏈受益者。」",
+      "timestamp": "01:05:00",
+      "tags": ["AI", "半導體", "持股"],
+      "price": null,
+      "change_pct": null
+    }
+  ],
+  "qa": [
+    {
+      "id": "653_1",
+      "question": "台積電現在還值得買嗎？目標價怎麼看？",
+      "answer": "「今年 EPS 約 90 幾元，明年有望達到 130 至 140 元。若給予 20 倍本益比，目標價看至 2800 元並非誇張，且在 AI 產業中此本益比不算昂貴。業內交易者更在意上漲空間而非絕對價格。」",
+      "timestamp": "00:15:30",
+      "tags": ["台積電", "目標價", "本益比", "AI"]
+    },
+    {
+      "id": "653_2",
+      "question": "聯發科跟 Google 合作的晶片，規模有多大？",
+      "answer": "「預計投產量達數百萬顆，高標甚至可達五、六百萬顆。未來 3-4 年內，AI 相關收入有望貢獻聯發科一半以上的 EPS。在 AI 佈局深度上，聯發科目前展現出的優勢高於高通。」",
+      "timestamp": "00:28:45",
+      "tags": ["聯發科", "Google", "AI晶片", "規模"]
+    },
+    {
+      "id": "653_3",
+      "question": "Marvell 加入 Google 供應鏈，會不會影響 Broadcom 或聯發科？",
+      "answer": "「AI 是一個藍海市場，不要覺得有一個新玩家加入，其他人就得去死。Marvell 的模式較接近 Google 與聯發科的協作模式，而非 Broadcom 的全包模式，各自有不同分工。」",
+      "timestamp": "00:42:10",
+      "tags": ["Marvell", "Broadcom", "聯發科", "藍海市場"]
+    },
+    {
+      "id": "653_4",
+      "question": "現在手上有漲得比較慢的股票，要怎麼處理？",
+      "answer": "「若手中標的漲速太慢，即便形態未走壞，也應考慮減碼轉向更強勢的族群。這是機會成本思考，資金應配置在動能最強的地方，不要讓資金躺在表現停滯的部位。」",
+      "timestamp": "01:10:30",
+      "tags": ["機會成本", "換股", "操作邏輯"]
+    },
+    {
+      "id": "653_5",
+      "question": "多頭行情中要不要賣 Covered Call？",
+      "answer": "「在多頭行情且標的有噴發潛力時，不建議為了賺取微薄權利金而賣出 Call 合約，以免錯失股價大漲波段，股票被 Call 走就得不償失了。」",
+      "timestamp": "01:18:00",
+      "tags": ["Covered Call", "選擇權", "操作策略", "多頭"]
+    }
+  ]
+}

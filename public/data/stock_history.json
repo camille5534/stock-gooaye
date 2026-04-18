@@ -1,11 +1,11 @@
 {
   "rankings": [
-    { "code": "2330", "name": "台積電", "count": 42 },
+    { "code": "2330", "name": "台積電", "count": 44 },
+    { "code": "2454", "name": "聯發科", "count": 21 },
     { "code": "0050", "name": "元大台灣50", "count": 28 },
-    { "code": "2454", "name": "聯發科", "count": 18 },
+    { "code": "MRVL", "name": "Marvell", "count": 16 },
     { "code": "2317", "name": "鴻海", "count": 14 },
-    { "code": "00679B", "name": "元大美債20年", "count": 11 },
-    { "code": "00670L", "name": "元大S&P正2", "count": 9 }
+    { "code": "AVGO", "name": "Broadcom", "count": 12 }
   ],
   "sentiment_history": [
     { "ep": 643, "date": "2026-03-18", "score": 7, "vix": 22.1 },
@@ -13,6 +13,7 @@
     { "ep": 645, "date": "2026-04-01", "score": 5, "vix": 28.3 },
     { "ep": 646, "date": "2026-04-04", "score": 5, "vix": 31.7 },
     { "ep": 647, "date": "2026-04-08", "score": 4, "vix": 38.6 },
-    { "ep": 648, "date": "2026-04-15", "score": 6, "vix": 37.2 }
+    { "ep": 648, "date": "2026-04-15", "score": 6, "vix": 37.2 },
+    { "ep": 653, "date": "2026-04-18", "score": 8, "vix": 17.45 }
   ]
 }
