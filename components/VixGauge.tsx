@@ -2,64 +2,90 @@
 
 import { VixData } from '@/lib/types'
 
-interface Props {
-  vix: VixData
-}
+interface Props { vix: VixData }
 
-function getZoneColor(value: number) {
-  if (value < 20) return { bg: 'bg-green-500', text: 'text-green-400', label: '貪婪', bar: '#22c55e' }
-  if (value < 30) return { bg: 'bg-yellow-500', text: 'text-yellow-400', label: '中性', bar: '#eab308' }
-  if (value < 40) return { bg: 'bg-orange-500', text: 'text-orange-400', label: '恐慌', bar: '#f97316' }
-  return { bg: 'bg-red-500', text: 'text-red-400', label: '極度恐慌', bar: '#ef4444' }
+type Zone = { label: string; color: string; glow: string; bg: string }
+
+function getZone(v: number): Zone {
+  if (v < 20) return { label: '貪婪', color: '#22C55E', glow: 'glow-green',  bg: 'rgba(34,197,94,0.08)' }
+  if (v < 30) return { label: '中性', color: '#EAB308', glow: '',             bg: 'rgba(234,179,8,0.08)' }
+  if (v < 40) return { label: '恐慌', color: '#F97316', glow: 'glow-orange', bg: 'rgba(249,115,22,0.08)' }
+  return       { label: '極度恐慌', color: '#EF4444', glow: 'glow-red',    bg: 'rgba(239,68,68,0.08)' }
 }
 
 export default function VixGauge({ vix }: Props) {
-  const zone = getZoneColor(vix.current)
-  const pct = Math.min((vix.current / 60) * 100, 100)
+  const zone   = getZone(vix.current)
+  const needle = Math.min((vix.current / 60) * 100, 100)
+
+  const updatedAt = new Date(vix.updated_at).toLocaleString('zh-TW', {
+    month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit',
+  })
 
   return (
-    <div className="bg-gray-900 border border-gray-700 rounded-lg p-4">
-      <div className="flex items-center justify-between mb-3">
-        <span className="text-gray-400 text-sm font-medium tracking-wider uppercase">VIX 恐慌指數</span>
-        <span className={`text-xs px-2 py-0.5 rounded-full border ${zone.text} border-current`}>
+    <div
+      className="rounded-lg border p-4 flex flex-col gap-3"
+      style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
+    >
+      {/* Header */}
+      <div className="flex items-center justify-between">
+        <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: 'var(--fg-muted)' }}>
+          VIX 恐慌指數
+        </span>
+        <span
+          className="text-xs px-2 py-0.5 rounded font-medium"
+          style={{ color: zone.color, background: zone.bg, border: `1px solid ${zone.color}44` }}
+        >
           {zone.label}
         </span>
       </div>
 
-      <div className="flex items-end gap-2 mb-3">
-        <span className={`text-4xl font-bold tabular-nums ${zone.text}`}>
+      {/* Main number */}
+      <div className="flex items-baseline gap-2">
+        <span
+          className={`font-mono font-bold tabular-nums leading-none ${zone.glow}`}
+          style={{ fontSize: '2.75rem', color: zone.color }}
+        >
           {vix.current.toFixed(1)}
         </span>
+        <span className="text-xs" style={{ color: 'var(--fg-muted)' }}>/ 60</span>
       </div>
 
-      {/* 進度條 */}
-      <div className="relative h-3 bg-gray-700 rounded-full overflow-hidden mb-2">
+      {/* Gradient progress bar */}
+      <div className="relative">
+        {/* Track (full gradient) */}
+        <div className="vix-bar-track w-full opacity-25" />
+        {/* Filled portion */}
         <div
-          className="absolute left-0 top-0 h-full rounded-full transition-all duration-500"
-          style={{ width: `${pct}%`, backgroundColor: zone.bar }}
+          className="vix-bar-track absolute top-0 left-0"
+          style={{ width: `${needle}%` }}
         />
-        {/* 20/30/40 刻度線 */}
+        {/* Needle */}
+        <div
+          className="absolute top-1/2 -translate-y-1/2 w-0.5 h-4 rounded-full"
+          style={{ left: `${needle}%`, background: zone.color, transform: 'translate(-50%, -50%)' }}
+        />
+        {/* Tick marks */}
         {[20, 30, 40].map(v => (
           <div
             key={v}
-            className="absolute top-0 h-full w-px bg-gray-500 opacity-60"
-            style={{ left: `${(v / 60) * 100}%` }}
+            className="absolute top-0 bottom-0 w-px opacity-40"
+            style={{ left: `${(v / 60) * 100}%`, background: 'var(--border)' }}
           />
         ))}
       </div>
 
-      <div className="flex justify-between text-xs text-gray-500">
-        <span>0 貪婪</span>
+      {/* Scale labels */}
+      <div className="flex justify-between text-xs" style={{ color: 'var(--fg-dim)' }}>
+        <span>0</span>
         <span>20</span>
         <span>30</span>
         <span>40</span>
-        <span>60 恐慌</span>
+        <span>60</span>
       </div>
 
-      <div className="mt-3 pt-3 border-t border-gray-700">
-        <span className="text-gray-500 text-xs">
-          更新：{new Date(vix.updated_at).toLocaleString('zh-TW', { month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
-        </span>
+      {/* Footer */}
+      <div className="pt-1 border-t text-xs" style={{ borderColor: 'var(--border-dim)', color: 'var(--fg-dim)' }}>
+        更新 {updatedAt}
       </div>
     </div>
   )

@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
+/* ── Design Tokens: Financial Dashboard Dark Terminal ── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg:           #020617;
+  --bg-card:      #0E1223;
+  --bg-elevated:  #0F172A;
+  --border:       #334155;
+  --border-dim:   #1E293B;
+  --fg:           #F8FAFC;
+  --fg-muted:     #94A3B8;
+  --fg-dim:       #4B5563;
+
+  --green:        #22C55E;
+  --red:          #EF4444;
+  --orange:       #F97316;
+  --cyan:         #22D3EE;
+  --yellow:       #EAB308;
+  --blue:         #3B82F6;
+
+  --glow-green:   rgba(34,197,94,0.15);
+  --glow-orange:  rgba(249,115,22,0.15);
+  --glow-cyan:    rgba(34,211,238,0.12);
+  --glow-red:     rgba(239,68,68,0.15);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base ── */
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ── Live Pulse ── */
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
 }
+.live-dot {
+  animation: live-pulse 2s ease-in-out infinite;
+}
+
+/* ── VIX gradient bar ── */
+.vix-bar-track {
+  background: linear-gradient(to right, #22C55E 0%, #EAB308 33%, #F97316 60%, #EF4444 100%);
+  border-radius: 4px;
+  height: 6px;
+}
+
+/* ── Subtle card glow on hover ── */
+.card-hover {
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.card-hover:hover {
+  border-color: #334155;
+  box-shadow: 0 0 0 1px rgba(51,65,85,0.5);
+}
+
+/* ── Number glow ── */
+.glow-orange { text-shadow: 0 0 12px var(--glow-orange); }
+.glow-green  { text-shadow: 0 0 12px var(--glow-green); }
+.glow-red    { text-shadow: 0 0 12px var(--glow-red); }
+.glow-cyan   { text-shadow: 0 0 12px var(--glow-cyan); }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-dim); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border); }

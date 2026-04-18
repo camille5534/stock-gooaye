@@ -11,60 +11,77 @@ import path from 'path'
 
 async function getData() {
   const dataDir = path.join(process.cwd(), 'public', 'data')
-
-  // 找最新一集（檔名排序最大的）
-  const epDir = path.join(dataDir, 'episodes')
-  const files = (await fs.readdir(epDir)).filter(f => f.endsWith('.json')).sort().reverse()
-  const latestFile = files[0]
+  const epDir   = path.join(dataDir, 'episodes')
+  const files   = (await fs.readdir(epDir)).filter(f => f.endsWith('.json')).sort().reverse()
 
   const [epRaw, vixRaw, histRaw] = await Promise.all([
-    fs.readFile(path.join(epDir, latestFile), 'utf-8'),
+    fs.readFile(path.join(epDir, files[0]), 'utf-8'),
     fs.readFile(path.join(dataDir, 'vix.json'), 'utf-8'),
     fs.readFile(path.join(dataDir, 'stock_history.json'), 'utf-8'),
   ])
 
-  const episode: Episode = JSON.parse(epRaw)
-  const vix: VixData = JSON.parse(vixRaw)
-  const history: StockHistory = JSON.parse(histRaw)
-  return { episode, vix, history }
+  return {
+    episode: JSON.parse(epRaw) as Episode,
+    vix:     JSON.parse(vixRaw) as VixData,
+    history: JSON.parse(histRaw) as StockHistory,
+  }
 }
 
 export default async function Home() {
   const { episode, vix, history } = await getData()
 
-  const vixVsSentiment = (() => {
+  // VIX vs 情緒反差警示
+  const alert = (() => {
     if (vix.current > 30 && episode.sentiment.bull_pct >= 55)
-      return { msg: '⚠ VIX 恐慌但股癌偏多，注意反差訊號', color: 'text-orange-400' }
+      return { msg: '⚠  VIX 恐慌但股癌偏多 — 注意反差訊號，謹慎評估風險', color: '#F97316', bg: 'rgba(249,115,22,0.06)' }
     if (vix.current < 20 && episode.sentiment.bear_pct >= 55)
-      return { msg: '⚠ 市場貪婪但股癌偏空，留意風險', color: 'text-orange-400' }
-    return { msg: '多空訊號一致', color: 'text-gray-400' }
+      return { msg: '⚠  市場貪婪但股癌偏空 — 留意高點風險', color: '#EF4444', bg: 'rgba(239,68,68,0.06)' }
+    if (vix.current > 40)
+      return { msg: '⚠  VIX 極度恐慌區間 — 歷史上通常為布局機會，但需確認非系統性危機', color: '#EF4444', bg: 'rgba(239,68,68,0.06)' }
+    return null
   })()
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white">
-      <header className="border-b border-gray-800 px-4 py-3">
+    <div className="min-h-screen" style={{ background: 'var(--bg)' }}>
+
+      {/* ── Header ── */}
+      <header
+        className="sticky top-0 z-10 border-b px-4 py-2.5"
+        style={{ background: 'rgba(2,6,23,0.92)', borderColor: 'var(--border)', backdropFilter: 'blur(8px)' }}
+      >
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="text-lg font-bold tracking-tight">▐ 股癌雷達 ▌</span>
-            <span className="text-gray-500 text-sm">{episode.title}</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1.5 text-xs text-green-400">
-              <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
-              LIVE
+            <span className="font-mono font-bold text-base tracking-tight" style={{ color: 'var(--fg)' }}>
+              ▐ 股癌雷達 ▌
             </span>
-            <span className="text-gray-500 text-xs">{episode.date}</span>
+            <span className="text-xs px-2 py-0.5 rounded border font-mono" style={{ color: 'var(--fg-muted)', borderColor: 'var(--border-dim)' }}>
+              {episode.title}
+            </span>
+          </div>
+
+          <div className="flex items-center gap-4">
+            {/* LIVE indicator */}
+            <span className="flex items-center gap-1.5 text-xs font-mono">
+              <span className="live-dot w-1.5 h-1.5 rounded-full" style={{ background: '#22C55E' }} />
+              <span style={{ color: '#22C55E' }}>LIVE</span>
+            </span>
+            <span className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>
+              {episode.date}
+            </span>
             <Link
               href="/qa"
-              className="text-xs px-3 py-1 rounded border border-gray-700 text-gray-300 hover:bg-gray-800 transition-colors"
+              className="text-xs px-3 py-1.5 rounded border font-mono transition-colors duration-150 cursor-pointer"
+              style={{ color: '#22D3EE', borderColor: 'rgba(34,211,238,0.3)', background: 'rgba(34,211,238,0.05)' }}
             >
-              Q&amp;A 精華
+              Q&amp;A 精華庫
             </Link>
           </div>
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 py-6 space-y-6">
+      <main className="max-w-6xl mx-auto px-4 py-5 flex flex-col gap-4">
+
+        {/* ── Row 1: VIX + 情緒 + 關鍵字 ── */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <VixGauge vix={vix} />
           <SentimentBar
@@ -76,27 +93,54 @@ export default async function Home() {
           <KeywordCloud keywords={episode.keywords} />
         </div>
 
-        <div className="text-center">
-          <span className={`text-sm ${vixVsSentiment.color}`}>{vixVsSentiment.msg}</span>
-        </div>
+        {/* ── Alert banner ── */}
+        {alert && (
+          <div
+            className="rounded-lg border px-4 py-2.5 text-sm font-mono"
+            style={{ color: alert.color, background: alert.bg, borderColor: `${alert.color}44` }}
+          >
+            {alert.msg}
+          </div>
+        )}
 
+        {/* ── Row 2: 股票列表 + 排行 ── */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="md:col-span-2">
-            <h2 className="text-gray-400 text-sm font-medium tracking-wider uppercase mb-3">本集提到標的</h2>
+          <div className="md:col-span-2 flex flex-col gap-2">
+            <h2 className="text-xs font-semibold tracking-widest uppercase px-1" style={{ color: 'var(--fg-muted)' }}>
+              本集提到標的
+            </h2>
             <StockTable stocks={episode.stocks} />
           </div>
-          <div>
-            <h2 className="text-gray-400 text-sm font-medium tracking-wider uppercase mb-3">歷史排行</h2>
+          <div className="flex flex-col gap-2">
+            <h2 className="text-xs font-semibold tracking-widest uppercase px-1" style={{ color: 'var(--fg-muted)' }}>
+              歷史提及排行
+            </h2>
             <StockRanking rankings={history.rankings} />
           </div>
         </div>
 
-        <div className="bg-gray-900 border border-gray-700 rounded-lg p-4">
-          <h2 className="text-gray-400 text-sm font-medium tracking-wider uppercase mb-2">本集摘要</h2>
-          <p className="text-gray-300 text-sm leading-relaxed">{episode.summary}</p>
+        {/* ── Row 3: 本集摘要 ── */}
+        <div
+          className="rounded-lg border p-4"
+          style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
+        >
+          <h2 className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: 'var(--fg-muted)' }}>
+            本集摘要
+          </h2>
+          <p className="text-sm leading-relaxed" style={{ color: 'var(--fg-muted)' }}>
+            {episode.summary}
+          </p>
         </div>
 
+        {/* ── Row 4: 歷史趨勢圖 ── */}
         <HistoryChart history={history} />
+
+        {/* ── Footer ── */}
+        <div className="text-center py-4">
+          <p className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>
+            資料來源：NotebookLM + Yahoo Finance · 僅供參考，不構成投資建議
+          </p>
+        </div>
       </main>
     </div>
   )
