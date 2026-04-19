@@ -166,7 +166,7 @@ export default async function Home() {
           </div>
 
           {/* ── 指標欄 (2 col) ── */}
-          <div className="col-span-6 md:col-span-2 flex flex-col gap-3">
+          <div className="col-span-12 sm:col-span-6 md:col-span-2 flex flex-col gap-3">
 
             {/* VIX */}
             <div
@@ -226,7 +226,7 @@ export default async function Home() {
           </div>
 
           {/* ── 歷史趨勢圖 (6 col) ── */}
-          <div className="col-span-6 md:col-span-6">
+          <div className="col-span-12 md:col-span-6">
             <HistoryChart history={history} />
           </div>
         </div>
