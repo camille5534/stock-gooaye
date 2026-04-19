@@ -82,11 +82,11 @@ export default function StockTable({ stocks }: Props) {
               <span
                 className="col-span-2 text-right font-mono text-xs"
                 style={{
-                  color: stock.change_pct === undefined ? 'var(--fg-dim)'
+                  color: stock.change_pct == null ? 'var(--fg-dim)'
                        : stock.change_pct >= 0 ? '#22C55E' : '#EF4444',
                 }}
               >
-                {stock.change_pct === undefined ? '—'
+                {stock.change_pct == null ? '—'
                  : `${stock.change_pct >= 0 ? '+' : ''}${stock.change_pct.toFixed(1)}%`}
               </span>
             </button>
