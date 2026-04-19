@@ -71,9 +71,11 @@ export interface VixData {
 export interface StockHistory {
   rankings: { code: string; name: string; count: number }[]
   sentiment_history: {
-    ep: number
+    episode: number
     date: string
     score: number
-    vix: number
+    label: string
+    bull_pct: number
+    bear_pct: number
   }[]
 }
