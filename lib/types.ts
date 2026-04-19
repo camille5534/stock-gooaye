@@ -77,5 +77,6 @@ export interface StockHistory {
     label: string
     bull_pct: number
     bear_pct: number
+    vix?: number
   }[]
 }
