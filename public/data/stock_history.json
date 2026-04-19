@@ -1,19 +1,384 @@
 {
   "rankings": [
-    { "code": "2330", "name": "台積電", "count": 44 },
-    { "code": "2454", "name": "聯發科", "count": 21 },
-    { "code": "0050", "name": "元大台灣50", "count": 28 },
-    { "code": "MRVL", "name": "Marvell", "count": 16 },
-    { "code": "2317", "name": "鴻海", "count": 14 },
-    { "code": "AVGO", "name": "Broadcom", "count": 12 }
+    {
+      "code": "2330",
+      "name": "台積電",
+      "count": 4,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 2
+    },
+    {
+      "code": "2327",
+      "name": "國巨（被動元件族群）",
+      "count": 3,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 0
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0
+    },
+    {
+      "code": "00670L",
+      "name": "元大S&P正2",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0
+    },
+    {
+      "code": "CPU供應鏈",
+      "name": "CPU 供應鏈（AWS Graviton / RISC-V）",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0
+    },
+    {
+      "code": "光通訊SMT",
+      "name": "光通訊 SMT 代工（LED/網通廠）",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0
+    },
+    {
+      "code": "SaaS軟體股",
+      "name": "SaaS / 軟體應用股",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1
+    },
+    {
+      "code": "MRVL",
+      "name": "Marvell",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1
+    },
+    {
+      "code": "AI算力",
+      "name": "AI Token 與算力報價",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1
+    },
+    {
+      "code": "INTC",
+      "name": "Intel（CPU 缺貨族群）",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0
+    },
+    {
+      "code": "AMD",
+      "name": "AMD（CPU 缺貨族群）",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0
+    }
   ],
   "sentiment_history": [
-    { "ep": 643, "date": "2026-03-18", "score": 7, "vix": 22.1 },
-    { "ep": 644, "date": "2026-03-25", "score": 7, "vix": 24.5 },
-    { "ep": 645, "date": "2026-04-01", "score": 5, "vix": 28.3 },
-    { "ep": 646, "date": "2026-04-04", "score": 5, "vix": 31.7 },
-    { "ep": 647, "date": "2026-04-08", "score": 4, "vix": 38.6 },
-    { "ep": 648, "date": "2026-04-15", "score": 6, "vix": 37.2 },
-    { "ep": 653, "date": "2026-04-18", "score": 8, "vix": 17.45 }
-  ]
+    {
+      "episode": 647,
+      "date": "2026-04-08",
+      "score": 4,
+      "label": "中立",
+      "bull_pct": 45,
+      "bear_pct": 55
+    },
+    {
+      "episode": 648,
+      "date": "2026-04-15",
+      "score": 6,
+      "label": "偏多",
+      "bull_pct": 60,
+      "bear_pct": 40
+    },
+    {
+      "episode": 652,
+      "date": "2026-04-11",
+      "score": 7,
+      "label": "偏多",
+      "bull_pct": 72,
+      "bear_pct": 28
+    },
+    {
+      "episode": 653,
+      "date": "2026-04-15",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20
+    },
+    {
+      "episode": 654,
+      "date": "2026-04-18",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 78,
+      "bear_pct": 22
+    }
+  ],
+  "sector_mentions": {
+    "台積電供應鏈": [
+      {
+        "episode": 647,
+        "date": "2026-04-08",
+        "stance": "中立",
+        "intensity": 1,
+        "stocks": [
+          "2330",
+          "2317"
+        ],
+        "quote": "財報季保守等待，觀察訂單方向"
+      },
+      {
+        "episode": 648,
+        "date": "2026-04-15",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "2330"
+        ],
+        "quote": "AI 資本支出持續，台積電是核心受惠"
+      },
+      {
+        "episode": 653,
+        "date": "2026-04-15",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "2330"
+        ],
+        "quote": "看到 2800 不是太誇張，Google CapEx 遠超台積電能 fulfill 的四成"
+      },
+      {
+        "episode": 654,
+        "date": "2026-04-18",
+        "stance": "中立",
+        "intensity": 1,
+        "stocks": [
+          "2330",
+          "漢唐"
+        ],
+        "quote": "CapEx 給到上限未上修，廠務股便宜但動能弱"
+      }
+    ],
+    "AI算力/Token": [
+      {
+        "episode": 648,
+        "date": "2026-04-15",
+        "stance": "正面",
+        "intensity": 1,
+        "stocks": [
+          "NVDA",
+          "AVGO"
+        ],
+        "quote": "半導體 AI 需求持續，分批布局"
+      },
+      {
+        "episode": 653,
+        "date": "2026-04-15",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "NVDA",
+          "2454"
+        ],
+        "quote": "Token 長期一定越來越便宜，短期卡在無塵室產能"
+      },
+      {
+        "episode": 654,
+        "date": "2026-04-18",
+        "stance": "觀察",
+        "intensity": 2,
+        "stocks": [
+          "NVDA",
+          "MSFT"
+        ],
+        "quote": "論述轉向 result-based，燒 token 沒產品的公司遲早被 call out"
+      }
+    ],
+    "記憶體": [
+      {
+        "episode": 648,
+        "date": "2026-04-15",
+        "stance": "中立",
+        "intensity": 1,
+        "stocks": [
+          "MU"
+        ],
+        "quote": "殖利率影響估值，保持觀察"
+      },
+      {
+        "episode": 654,
+        "date": "2026-04-18",
+        "stance": "中立",
+        "intensity": 1,
+        "stocks": [
+          "MU",
+          "3008"
+        ],
+        "quote": "資金已充分反應，可能橫盤，等更大 catalyst"
+      }
+    ],
+    "CPU/處理器": [
+      {
+        "episode": 652,
+        "date": "2026-04-11",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "INTC",
+          "AMD",
+          "ARM",
+          "NVDA"
+        ],
+        "quote": "AWS Graviton CPU 供不應求，NVIDIA 入股 Sifive 佈局 RISC-V，Agentic AI 時代 CPU 扮演調度「教練」角色"
+      }
+    ],
+    "被動元件": [
+      {
+        "episode": 652,
+        "date": "2026-04-11",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "2327"
+        ],
+        "quote": "TCAP/SPCAP 嚴重缺貨，MLCC 接近緊繃，重演 2017 年漲價邏輯，國巨法說會是關鍵催化劑"
+      },
+      {
+        "episode": 653,
+        "date": "2026-04-15",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "2327"
+        ],
+        "quote": "太陽誘電漲價觸發族群，國巨法說是下一個催化劑"
+      },
+      {
+        "episode": 654,
+        "date": "2026-04-18",
+        "stance": "正面",
+        "intensity": 3,
+        "stocks": [
+          "2327",
+          "VSH",
+          "VPG",
+          "TDK",
+          "Murata"
+        ],
+        "quote": "電阻也發漲價信，全球族群齊噴，稼動率跳滿就是缺貨劇本"
+      }
+    ],
+    "光通訊/CPO": [
+      {
+        "episode": 652,
+        "date": "2026-04-11",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "4721",
+          "6187"
+        ],
+        "quote": "需求極大出現外援現象，美系大客戶委託台灣 SMT 打件廠（含 LED 廠）代工，新供應鏈機會形成"
+      },
+      {
+        "episode": 653,
+        "date": "2026-04-15",
+        "stance": "觀察",
+        "intensity": 1,
+        "stocks": [
+          "4721",
+          "6187"
+        ],
+        "quote": "光通訊持續強勢，等回檔再來聊細節"
+      },
+      {
+        "episode": 654,
+        "date": "2026-04-18",
+        "stance": "觀察",
+        "intensity": 1,
+        "stocks": [
+          "4721",
+          "6187"
+        ],
+        "quote": "漲太多不願意聊，等回檔再來討論細節"
+      }
+    ],
+    "AI SaaS/軟體應用": [
+      {
+        "episode": 652,
+        "date": "2026-04-11",
+        "stance": "中立",
+        "intensity": 0,
+        "stocks": [],
+        "quote": "市場資金集中硬體族群，軟體股短期受 FUD 情緒壓制，算力瓶頸解除前維持觀望"
+      }
+    ],
+    "低軌衛星/啟碁": [
+      {
+        "episode": 653,
+        "date": "2026-04-15",
+        "stance": "中立",
+        "intensity": 1,
+        "stocks": [
+          "6285"
+        ],
+        "quote": "營收看起來恐怖，換算 EPS 就收斂回來了"
+      }
+    ],
+    "CPU缺貨族群": [
+      {
+        "episode": 654,
+        "date": "2026-04-18",
+        "stance": "正面",
+        "intensity": 3,
+        "stocks": [
+          "INTC",
+          "AMD",
+          "ARM"
+        ],
+        "quote": "CPU 可能比記憶體更缺，買不到不是貴，Agentic AI 推升需求"
+      }
+    ]
+  }
 }
