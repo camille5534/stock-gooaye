@@ -166,8 +166,16 @@ export default function QASearch({ allQA }: Props) {
                     </button>
                   ))}
                 </div>
-                <span className="text-xs font-mono shrink-0 ml-2" style={{ color: 'var(--fg-dim)' }}>
-                  EP{qa.episode} · {qa.timestamp}
+                <span
+                  className="text-xs font-mono shrink-0 ml-2 px-2 py-0.5 rounded"
+                  style={{
+                    color: '#22D3EE',
+                    background: 'rgba(34,211,238,0.08)',
+                    border: '1px solid rgba(34,211,238,0.25)',
+                  }}
+                  title={qa.date}
+                >
+                  EP{qa.episode}
                 </span>
               </div>
             </div>
