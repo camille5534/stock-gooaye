@@ -1,0 +1,121 @@
+{
+  "台積電供應鏈": [
+    {
+      "ep": 647,
+      "date": "2026-04-08",
+      "stance": "中立",
+      "intensity": 1,
+      "quote": "財報季保守等待，觀察訂單方向"
+    },
+    {
+      "ep": 648,
+      "date": "2026-04-15",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "AI 資本支出持續，台積電是核心受惠"
+    },
+    {
+      "ep": 653,
+      "date": "2026-04-15",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "看到 2800 不是太誇張，Google CapEx 遠超台積電能 fulfill 的四成"
+    },
+    {
+      "ep": 654,
+      "date": "2026-04-18",
+      "stance": "中立",
+      "intensity": 1,
+      "quote": "CapEx 給到上限未上修，廠務股便宜但動能弱"
+    }
+  ],
+  "AI算力/Token": [
+    {
+      "ep": 648,
+      "date": "2026-04-15",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "半導體 AI 需求持續，分批布局"
+    },
+    {
+      "ep": 653,
+      "date": "2026-04-15",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "Token 長期一定越來越便宜，短期卡在無塵室產能"
+    },
+    {
+      "ep": 654,
+      "date": "2026-04-18",
+      "stance": "觀察",
+      "intensity": 2,
+      "quote": "論述轉向 result-based，燒 token 沒產品的公司遲早被 call out"
+    }
+  ],
+  "記憶體": [
+    {
+      "ep": 648,
+      "date": "2026-04-15",
+      "stance": "中立",
+      "intensity": 1,
+      "quote": "殖利率影響估值，保持觀察"
+    },
+    {
+      "ep": 654,
+      "date": "2026-04-18",
+      "stance": "中立",
+      "intensity": 1,
+      "quote": "資金已充分反應，可能橫盤，等更大 catalyst"
+    }
+  ],
+  "被動元件": [
+    {
+      "ep": 653,
+      "date": "2026-04-15",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "太陽誘電漲價觸發族群，國巨法說是下一個催化劑"
+    },
+    {
+      "ep": 654,
+      "date": "2026-04-18",
+      "stance": "正面",
+      "intensity": 3,
+      "quote": "電阻也發漲價信，全球族群齊噴，稼動率跳滿就是缺貨劇本"
+    }
+  ],
+  "光通訊/CPO": [
+    {
+      "ep": 653,
+      "date": "2026-04-15",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "光通訊持續強勢，等回檔再來聊細節"
+    },
+    {
+      "ep": 654,
+      "date": "2026-04-18",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "漲太多不願意聊，等回檔再來討論細節"
+    }
+  ],
+  "低軌衛星/啟碁": [
+    {
+      "ep": 653,
+      "date": "2026-04-15",
+      "stance": "中立",
+      "intensity": 1,
+      "quote": "營收看起來恐怖，換算 EPS 就收斂回來了"
+    }
+  ],
+  "CPU缺貨族群": [
+    {
+      "ep": 654,
+      "date": "2026-04-18",
+      "stance": "正面",
+      "intensity": 3,
+      "quote": "CPU 可能比記憶體更缺，買不到不是貴，Agentic AI 推升需求"
+    }
+  ]
+}

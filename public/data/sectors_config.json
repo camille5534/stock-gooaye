@@ -1,0 +1,19 @@
+{
+  "core": [
+    "台積電供應鏈",
+    "被動元件",
+    "光通訊/CPO",
+    "記憶體",
+    "AI算力/Token"
+  ],
+  "active_threshold": 4,
+  "archive_threshold": 10,
+  "sector_stocks": {
+    "台積電供應鏈": ["2330", "漢唐", "廠務股"],
+    "被動元件":     ["2327", "VSH", "VPG", "TDK", "Murata"],
+    "光通訊/CPO":   ["4721", "6187", "CPO測試設備"],
+    "記憶體":       ["3008", "LRCX", "MU"],
+    "AI算力/Token": ["NVDA", "AMD", "AVGO", "2330"],
+    "CPU缺貨族群":  ["INTC", "AMD", "ARM"]
+  }
+}

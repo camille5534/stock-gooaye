@@ -1,3 +1,28 @@
+export interface SectorMention {
+  name: string
+  stance: '正面' | '負面' | '中立' | '觀察'
+  intensity: 1 | 2 | 3
+  stocks: string[]
+  quote: string
+}
+
+export interface SectorConfig {
+  core: string[]
+  active_threshold: number
+  archive_threshold: number
+  sector_stocks: Record<string, string[]>
+}
+
+export interface SectorHistory {
+  [sectorName: string]: {
+    ep: number
+    date: string
+    stance: '正面' | '負面' | '中立' | '觀察'
+    intensity: 1 | 2 | 3
+    quote?: string
+  }[]
+}
+
 export interface Stock {
   code: string
   name: string
@@ -33,6 +58,7 @@ export interface Episode {
   keywords: string[]
   stocks: Stock[]
   qa: QAItem[]
+  sectors: SectorMention[]
 }
 
 export interface VixData {

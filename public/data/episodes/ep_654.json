@@ -1,0 +1,134 @@
+{
+  "episode": 654,
+  "date": "2026-04-18",
+  "title": "EP654 | 🌵",
+  "youtube_url": "https://www.youtube.com/watch?v=5fsHnTWdcjY",
+  "summary": "市場持續強勢，台積電 CapEx 給到上限但未上修，廠務股仍處便宜區。被動元件全線漲價（連電阻都發漲價信），全球族群齊噴。CPU 缺貨潛力可能比記憶體更大，Agentic AI 推升 General Purpose CPU 需求。AI Token 討論轉向：從「用多少 token」轉為「產出什麼 result」，Uber 用光 Azure 額度是警示還是利多？光通訊/CPO 持續強，但漲太多暫不評論。",
+  "sentiment": {
+    "score": 8,
+    "label": "偏多",
+    "bull_pct": 78,
+    "bear_pct": 22
+  },
+  "keywords": ["被動元件", "CPU缺貨", "台積電", "CapEx", "Blackwell", "Token", "光通訊", "記憶體", "廠務股", "Agentic AI"],
+  "stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "中立",
+      "stance_score": 0,
+      "quote": "CapEx guidance 給到上限但沒有上修，廠務股反而在這時候表態。台積電仍是台股形狀，訂單沒問題就會到對應位置。",
+      "timestamp": "00:10:41",
+      "tags": ["CapEx", "廠務股", "台股指數"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "2327",
+      "name": "國巨（被動元件族群）",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "法說會打保守牌，但全球同業（VISHAY、VPG、EATON、TDK）都在噴。電阻也收到漲價信，稼動率一旦跳到滿載就是缺貨漲價劇本。「不管是可能 ABF 載板、材料、玻璃基板，以及被動元件，都是記憶體資金可能會去的地方。」",
+      "timestamp": "00:12:35",
+      "tags": ["被動元件", "MLCC", "電阻漲價", "稼動率"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "INTC",
+      "name": "Intel（CPU 缺貨族群）",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "CPU 缺貨可能比記憶體更恐怖，記憶體是貴但買得到，CPU 有可能買不到。Intel 跟 AMD 漲幅目前 20% 以下，若真屌缺數字還能更高。Agentic AI 需要大量 CPU，供應鏈再次被甩動。",
+      "timestamp": "00:17:18",
+      "tags": ["CPU", "缺貨", "Agentic AI", "算力"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "AMD",
+      "name": "AMD（CPU 缺貨族群）",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "同 Intel，CPU 缺貨潛力大，漲幅 20% 以下尚有空間。",
+      "timestamp": "00:17:18",
+      "tags": ["CPU", "缺貨", "Agentic AI"],
+      "price": null,
+      "change_pct": null
+    }
+  ],
+  "qa": [
+    {
+      "id": "654-1",
+      "question": "有七八千萬資產，適當配置是否可以退休？建議如何配置？",
+      "answer": "每次講多少資產可退休都是 by case，關鍵是你的消費多少。假設一億資產丟大盤 5% 報酬，一年有 500 萬可花用。如果每年花 200 多萬直接退，花 400 多萬也可以退（資產還在增值）。「達到預計數字的七到八成左右，其實就可以開始思考退休。」退而不休，可以兼差做好玩的事。",
+      "timestamp": "40:02",
+      "tags": ["退休規劃", "資產配置", "財務自由"]
+    },
+    {
+      "id": "654-2",
+      "question": "未來 AI Token 會越來越便宜，還是因為 AI 壟斷而變得超級貴？",
+      "answer": "論述正在從「你用多少 token」轉向「你產出什麼 result」。Uber 用光 Azure 額度聽起來很屌，但關鍵是財務數字怎樣？「你有沒有因為消耗大量 token 產出對應價值？」燒很多 token 沒有產品的公司，遲早被市場 call out。對硬體股來講是買爆，但對軟體應用股要看 result-based vs case-based。",
+      "timestamp": "21:23",
+      "tags": ["AI應用", "Token", "軟體股", "result-based"]
+    },
+    {
+      "id": "654-3",
+      "question": "CPO 良率不穩定時非常依賴測試設備，如何布局 CPO 測試設備商？",
+      "answer": "「之後要等到光通訊整個掉下來，再來聊光通訊的一些數字。可是它就是都不會掉下來。」趁前次回檔布局了華興、萬潤等光通訊相關。CPO 相關元件的數字有蠻多有趣 insight，之後有空再來聊細節。",
+      "timestamp": "45:29",
+      "tags": ["光通訊", "CPO", "測試設備", "布局時機"]
+    },
+    {
+      "id": "654-4",
+      "question": "什麼才叫做成功？有錢算成功嗎？",
+      "answer": "「現在我一定不會去用錢衡量一個人。」成功是對自己的一種交代，每個時間點不太一樣。現在比的是誰把老婆照顧好、孩子有沒有去不一樣的地方體驗。「年紀到了之後會去比誰比較健康，誰還能在六十幾歲上健身房。」人生有很多彈性，不要相信別人講的成功定義。",
+      "timestamp": "31:28",
+      "tags": ["人生觀", "成功定義", "健康"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "被動元件",
+      "stance": "正面",
+      "intensity": 3,
+      "stocks": ["2327", "VSH", "VPG", "TDK", "Murata"],
+      "quote": "電阻也發漲價信，全球族群齊噴，稼動率跳滿就是缺貨劇本"
+    },
+    {
+      "name": "CPU缺貨族群",
+      "stance": "正面",
+      "intensity": 3,
+      "stocks": ["INTC", "AMD", "ARM"],
+      "quote": "CPU 可能比記憶體更缺，買不到不是貴，Agentic AI 推升需求"
+    },
+    {
+      "name": "台積電供應鏈",
+      "stance": "中立",
+      "intensity": 1,
+      "stocks": ["2330", "漢唐"],
+      "quote": "CapEx 給到上限未上修，廠務股便宜但動能弱"
+    },
+    {
+      "name": "光通訊/CPO",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": ["4721", "6187"],
+      "quote": "漲太多不願意聊，等回檔再來討論細節"
+    },
+    {
+      "name": "記憶體",
+      "stance": "中立",
+      "intensity": 1,
+      "stocks": ["MU", "3008"],
+      "quote": "資金已充分反應，可能橫盤，等更大 catalyst"
+    },
+    {
+      "name": "AI算力/Token",
+      "stance": "觀察",
+      "intensity": 2,
+      "stocks": ["NVDA", "MSFT"],
+      "quote": "論述轉向 result-based，燒 token 沒產品的公司遲早被 call out"
+    }
+  ]
+}

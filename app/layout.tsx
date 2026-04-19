@@ -24,9 +24,18 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="zh-TW"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
+      {/* 防止 SSR hydration 閃爍：在 CSS 載入前就套用 data-theme */}
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

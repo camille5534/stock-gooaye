@@ -3,7 +3,7 @@ import StockTable from '@/components/StockTable'
 import StockRanking from '@/components/StockRanking'
 import HistoryChart from '@/components/HistoryChart'
 import EpisodeCard from '@/components/EpisodeCard'
-import Link from 'next/link'
+import AppHeader from '@/components/AppHeader'
 import { promises as fs } from 'fs'
 import path from 'path'
 
@@ -70,34 +70,7 @@ export default async function Home() {
     <div className="min-h-screen" style={{ background: 'var(--bg)' }}>
 
       {/* ── Header ── */}
-      <header
-        className="sticky top-0 z-10 border-b px-4 py-2.5"
-        style={{ background: 'rgba(2,6,23,0.92)', borderColor: 'var(--border)', backdropFilter: 'blur(8px)' }}
-      >
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <span className="font-mono font-bold text-base tracking-tight" style={{ color: 'var(--fg)' }}>
-              ▐ 股癌雷達 ▌
-            </span>
-            <span className="flex items-center gap-1.5 text-xs font-mono">
-              <span className="live-dot w-1.5 h-1.5 rounded-full" style={{ background: '#22C55E' }} />
-              <span style={{ color: '#22C55E' }}>LIVE</span>
-            </span>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="text-xs font-mono hidden sm:block" style={{ color: 'var(--fg-dim)' }}>
-              更新 {episode.date}
-            </span>
-            <Link
-              href="/qa"
-              className="text-xs px-3 py-1.5 rounded border font-mono transition-colors duration-150 cursor-pointer"
-              style={{ color: '#22D3EE', borderColor: 'rgba(34,211,238,0.3)', background: 'rgba(34,211,238,0.05)' }}
-            >
-              Q&amp;A 精華庫
-            </Link>
-          </div>
-        </div>
-      </header>
+      <AppHeader date={episode.date} />
 
       <main className="max-w-7xl mx-auto px-4 py-5 flex flex-col gap-4">
 

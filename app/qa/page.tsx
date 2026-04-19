@@ -1,6 +1,6 @@
 import { Episode } from '@/lib/types'
 import QASearch from '@/components/QASearch'
-import Link from 'next/link'
+import AppHeader from '@/components/AppHeader'
 import { promises as fs } from 'fs'
 import path from 'path'
 
@@ -23,33 +23,15 @@ export default async function QAPage() {
 
   return (
     <div className="min-h-screen" style={{ background: 'var(--bg)' }}>
-      {/* Header */}
-      <header
-        className="sticky top-0 z-10 border-b px-4 py-2.5"
-        style={{ background: 'rgba(2,6,23,0.92)', borderColor: 'var(--border)', backdropFilter: 'blur(8px)' }}
-      >
-        <div className="max-w-3xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/"
-              className="text-xs font-mono transition-colors duration-100 cursor-pointer"
-              style={{ color: 'var(--fg-muted)' }}
-            >
-              ← 返回看板
-            </Link>
-            <span style={{ color: 'var(--border)' }}>│</span>
-            <span className="font-mono font-bold text-sm" style={{ color: 'var(--fg)' }}>
-              ▐ Q&amp;A 精華庫 ▌
-            </span>
-          </div>
-          <span className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>
+      <AppHeader
+        rightSlot={
+          <span className="text-xs font-mono" style={{ color: 'var(--fg-muted)' }}>
             累計 {allQA.length} 則
           </span>
-        </div>
-      </header>
+        }
+      />
 
       <main className="max-w-3xl mx-auto px-4 py-5">
-        {/* Sub header */}
         <div
           className="rounded-lg border px-4 py-3 mb-4 flex items-center gap-3"
           style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
