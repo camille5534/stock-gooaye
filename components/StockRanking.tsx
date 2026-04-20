@@ -8,7 +8,7 @@ export default function StockRanking({ rankings }: Props) {
 
   return (
     <div
-      className="rounded-lg border p-4 flex flex-col gap-3 h-full"
+      className="rounded-lg border p-4 flex flex-col gap-3"
       style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
     >
       <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: 'var(--fg-muted)' }}>
