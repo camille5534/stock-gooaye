@@ -131,12 +131,13 @@
     {
       "code": "MRVL",
       "name": "Marvell",
-      "count": 2,
-      "positive": 0,
+      "count": 3,
+      "positive": 1,
       "negative": 0,
       "neutral": 2,
       "episodes": [
         651,
+        652,
         653
       ]
     },
