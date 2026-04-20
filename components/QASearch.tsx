@@ -11,13 +11,20 @@ interface QAWithEp extends QAItem {
 interface Props { allQA: QAWithEp[] }
 
 export default function QASearch({ allQA }: Props) {
-  const [query, setQuery]       = useState('')
+  const [query, setQuery]         = useState('')
   const [activeTag, setActiveTag] = useState<string | null>(null)
+  const [activeEp, setActiveEp]   = useState<number | null>(null)
 
   const allTags = useMemo(() => {
     const set = new Set<string>()
     allQA.forEach(qa => qa.tags.forEach(t => set.add(t)))
     return Array.from(set)
+  }, [allQA])
+
+  const allEps = useMemo(() => {
+    const set = new Set<number>()
+    allQA.forEach(qa => set.add(qa.episode))
+    return Array.from(set).sort((a, b) => b - a)
   }, [allQA])
 
   const filtered = useMemo(() =>
@@ -26,9 +33,9 @@ export default function QASearch({ allQA }: Props) {
       const matchQ = !q || qa.question.toLowerCase().includes(q) ||
                          qa.answer.toLowerCase().includes(q) ||
                          qa.tags.some(t => t.toLowerCase().includes(q))
-      return matchQ && (!activeTag || qa.tags.includes(activeTag))
+      return matchQ && (!activeTag || qa.tags.includes(activeTag)) && (!activeEp || qa.episode === activeEp)
     }),
-    [allQA, query, activeTag]
+    [allQA, query, activeTag, activeEp]
   )
 
   return (
@@ -66,8 +73,39 @@ export default function QASearch({ allQA }: Props) {
         )}
       </div>
 
+      {/* EP filter chips */}
+      <div className="flex gap-1.5 flex-wrap items-center">
+        <span className="text-xs font-mono shrink-0" style={{ color: 'var(--fg-dim)' }}>集數</span>
+        <button
+          onClick={() => setActiveEp(null)}
+          className="text-xs px-2.5 py-0.5 rounded-full border transition-colors duration-100 cursor-pointer font-mono"
+          style={{
+            background: !activeEp ? 'rgba(168,85,247,0.10)' : 'transparent',
+            borderColor: !activeEp ? '#A855F7' : 'var(--border)',
+            color: !activeEp ? '#A855F7' : 'var(--fg-dim)',
+          }}
+        >
+          全部
+        </button>
+        {allEps.map(ep => (
+          <button
+            key={ep}
+            onClick={() => setActiveEp(activeEp === ep ? null : ep)}
+            className="text-xs px-2.5 py-0.5 rounded-full border transition-colors duration-100 cursor-pointer font-mono"
+            style={{
+              background: activeEp === ep ? 'rgba(168,85,247,0.10)' : 'transparent',
+              borderColor: activeEp === ep ? '#A855F7' : 'var(--border)',
+              color: activeEp === ep ? '#A855F7' : 'var(--fg-dim)',
+            }}
+          >
+            EP{ep}
+          </button>
+        ))}
+      </div>
+
       {/* Tag chips */}
-      <div className="flex gap-2 flex-wrap">
+      <div className="flex gap-2 flex-wrap items-center">
+        <span className="text-xs font-mono shrink-0" style={{ color: 'var(--fg-dim)' }}>標籤</span>
         <button
           onClick={() => setActiveTag(null)}
           className="text-xs px-3 py-1 rounded-full border transition-colors duration-100 cursor-pointer"
@@ -77,7 +115,7 @@ export default function QASearch({ allQA }: Props) {
             color: !activeTag ? '#22D3EE' : 'var(--fg-muted)',
           }}
         >
-          全部 ({allQA.length})
+          全部
         </button>
         {allTags.map(tag => (
           <button
@@ -98,6 +136,8 @@ export default function QASearch({ allQA }: Props) {
       {/* Count */}
       <p className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>
         {filtered.length} / {allQA.length} 則
+        {activeEp && <span style={{ color: '#A855F7' }}> · EP{activeEp}</span>}
+        {activeTag && <span style={{ color: '#22D3EE' }}> · #{activeTag}</span>}
         {query && <span style={{ color: '#22D3EE' }}> · 「{query}」</span>}
       </p>
 
