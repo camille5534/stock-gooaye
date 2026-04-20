@@ -1,0 +1,166 @@
+{
+  "episode": 649,
+  "date": "2026-04-01",
+  "title": "EP649 | 💌",
+  "youtube_url": "https://www.youtube.com/watch?v=PpgaPfnZuHI",
+  "summary": "市場劇烈波動後進入反彈觀察期。台股強勢回測均線後再彈，美股暫視為死貓跳，需觀察季線壓力。核心焦點是 NVIDIA 戰略投資 Marvell（約 20 億美元），解讀為老黃透過 NVLink Fusion 聯盟抗衡 Broadcom，強化 AI 生態系。主委強調波動放大時應降低槓桿，以部位管理取代賭博式操作。",
+  "sentiment": {
+    "score": 6,
+    "label": "偏多",
+    "bull_pct": 60,
+    "bear_pct": 40,
+    "vix": null
+  },
+  "keywords": ["NVIDIA", "Marvell", "NVLink Fusion", "Broadcom", "台美股位階", "死貓跳", "槓桿管理", "玻璃基板", "部位管理", "油價"],
+  "stocks": [
+    {
+      "code": "NVDA",
+      "name": "NVIDIA",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「老黃手上真的是滿手現金... 錢多，他到處找地方放... 儘量的去買一些東西是跟自己的本業是相關的。」",
+      "timestamp": "00:20:00",
+      "tags": ["投資策略", "現金流", "NVLink Fusion", "Marvell"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "MRVL",
+      "name": "Marvell",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「我知他在 Google 進去幾顆晶片，然後外加其實我覺得我對他未來在交換機這邊的發展也是覺得還蠻樂觀看待的。」",
+      "timestamp": "00:18:00",
+      "tags": ["AI晶片", "Google", "交換機", "NVLink Fusion"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "AVGO",
+      "name": "Broadcom",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「他主要的目標呢是要去打大隻的，就是要去針對 Broadcom 這樣。」",
+      "timestamp": "00:25:00",
+      "tags": ["ASIC", "數據中心", "競爭", "觀察"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "ALAB",
+      "name": "Astera Labs",
+      "stance": "中立",
+      "stance_score": 0,
+      "quote": "「現在就是每個人都會跑去打 Astera Labs... 他們算是有點像說現在是落難中... 但實際上他們並不是打在同一個賽道上面。」",
+      "timestamp": "00:30:00",
+      "tags": ["高速傳輸", "中立", "賽道差異"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「這有點類似說台積電回 300 我就買，要不是掉回 300 的機率是極低哦。」",
+      "timestamp": "00:42:00",
+      "tags": ["台股", "均線", "期望值", "觀察"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「MVEL 的話像拉進去 NV Fusion 其實前面也有拉一些夥伴的啦，像是 Alchip 然後像是 MTK 也在裡面。」",
+      "timestamp": "00:24:00",
+      "tags": ["NVIDIA生態", "NVLink Fusion", "AI晶片"],
+      "price": null,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "649-life-1",
+      "title": "打針減肥的神奇胃口",
+      "content": "主委分享打瘦身針後，雖然食量縮減且體重下滑，但胃口反而變大，對食物充滿期待，感覺像國中上完體育課後吃便當那樣美味。",
+      "timestamp": "00:03:00",
+      "tags": ["瘦身針", "GLP-1", "食慾", "健康"]
+    },
+    {
+      "id": "649-life-2",
+      "title": "網球新手的挫折與熱情",
+      "content": "近期迷上網球，發現這是一門腳步（Footwork）重於揮拍的運動。自嘲是「三分鐘熱度」且「不想排隊」的人，為了打球甚至考慮添購與納達爾或費德勒同款裝備。",
+      "timestamp": "00:05:00",
+      "tags": ["網球", "運動", "三分鐘熱度"]
+    },
+    {
+      "id": "649-life-3",
+      "title": "打破「準時上班」的自我束縛",
+      "content": "透過教練邀約晨間打球，意識到自己身為老闆卻仍受「朝九晚五」思維束縛。開始學習時間彈性化，體悟到「健康沒顧好對生活影響更大」。",
+      "timestamp": "00:07:00",
+      "tags": ["時間自由", "健康", "老闆思維"]
+    },
+    {
+      "id": "649-life-4",
+      "title": "父愛的感性轉變",
+      "content": "認同隨著年紀增長與社會歷練，同理心會變強。看演唱會或弱勢團體時容易眼眶泛紅，認為這是中年人開始想當志工或捐款的情感驅使。",
+      "timestamp": "00:48:00",
+      "tags": ["同理心", "中年", "家庭", "感性"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "649-1",
+      "question": "NVIDIA 與 Marvell 結盟是否衝擊 Astera Labs？",
+      "answer": "兩者賽道不盡相同。Marvell 專注於與 NVIDIA 生態系深度整合（如機架內記憶體一致性），而 Astera Labs 主攻 CSP 的混合資料中心。市場目前有「落難就人人喊打」的傾向，但長期來看，AI 餅夠大，兩者可共存。",
+      "timestamp": "00:32:00",
+      "tags": ["NVDA", "MRVL", "ALAB", "AI生態系"]
+    },
+    {
+      "id": "649-2",
+      "question": "對周杰倫新歌的看法？",
+      "answer": "坦言「自己老了」。周杰倫早期的專輯承載了太多靈魂與回憶，新歌雖然優秀，但無法取代舊作在心中引發的情感共鳴。這不是創作者的問題，而是聽眾年紀增長的必然。",
+      "timestamp": "00:35:00",
+      "tags": ["音樂", "周杰倫", "老了", "閒聊"]
+    },
+    {
+      "id": "649-3",
+      "question": "給小孩送遊戲王鑑定卡（PSA）當禮物合適嗎？",
+      "answer": "很多時候是家長一廂情願。小孩要的東西其實很簡單，可能更喜歡便宜的公仔。但家長仍可適度引導，分享自己認為「酷」的東西。他兒子在百張卡片中精準挑中入坑的「化妝五娘」PSA 10分卡。",
+      "timestamp": "00:45:00",
+      "tags": ["育兒", "遊戲王", "PSA", "家庭"]
+    },
+    {
+      "id": "649-4",
+      "question": "市場恐慌時想一鍵清倉怎麼辦？",
+      "answer": "感覺最不舒服的時候往往是好買點。建議記錄交易動機，因為感覺會騙人。不要試圖在單一點位決生死，部位應隨盤勢動態調整，維持彈性才是長久之計。",
+      "timestamp": "00:40:00",
+      "tags": ["恐慌", "清倉", "心理素質", "部位管理"]
+    },
+    {
+      "id": "649-5",
+      "question": "關於 6208（台股 ETF）的長期配置適合嗎？",
+      "answer": "贊同為小孩配置指數型部位。這看似「什麼都不做」，但其實背後是做出了「不亂投標股、不亂買奇怪課程」的重要決定，績效突破 100% 是正確選擇的回報。",
+      "timestamp": "00:38:00",
+      "tags": ["ETF", "指數投資", "長期持有", "台股"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "AI算力/Token",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["NVDA", "MRVL"],
+      "quote": "NVIDIA 投資 Marvell 20億美元，NVLink Fusion 生態抗衡 Broadcom，AI 是藍海各路標的可共存"
+    },
+    {
+      "name": "台積電供應鏈",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": ["2330"],
+      "quote": "台股極強，回測均線後再彈；美股暫視為死貓跳，季線壓力是關鍵"
+    }
+  ]
+}

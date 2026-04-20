@@ -1,0 +1,177 @@
+{
+  "episode": 650,
+  "date": "2026-04-04",
+  "title": "EP650 | 🦄",
+  "youtube_url": "https://www.youtube.com/watch?v=IL_5Qvka5sU",
+  "summary": "Agentic AI 時代來臨，CPU 需求從傳統 10% 佔比飆升至 40-50%，Intel CFO 直言錯估需求且產能絕對受限。ARM 伺服器市佔率從 5% 突破 25%，嘉澤（CPU socket）受惠。中東局勢引發鋁電容漲價預期，石化股亦有潛在受惠邏輯。主委強調投資核心：應對重於預判，格局決定獲利。",
+  "sentiment": {
+    "score": 7,
+    "label": "偏多",
+    "bull_pct": 65,
+    "bear_pct": 35,
+    "vix": null
+  },
+  "keywords": ["Agentic AI", "CPU缺貨", "ARM", "Intel", "嘉澤", "被動元件", "原物料", "中東", "鋁電容", "多空不對稱"],
+  "stocks": [
+    {
+      "code": "ARM",
+      "name": "ARM",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「伺服器市佔率從 2018 年低於 5% 到現在跑到了 20~25%，在 Hyperscaler 佔比更高。」",
+      "timestamp": "00:17:45",
+      "tags": ["CPU", "伺服器", "市佔率", "Agentic AI"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "INTC",
+      "name": "Intel",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「CFO 講說 misjudge the pace of demand... 產能是 absolutely constraint（屌缺）。」",
+      "timestamp": "00:16:15",
+      "tags": ["CPU", "缺貨", "Agentic AI", "需求錯估"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "AMD",
+      "name": "AMD",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「X86 方面，AMD 蠻快地吃掉 Intel 市佔... 但 CPU AI 趨勢下兩邊都可能持續增長。」",
+      "timestamp": "00:16:45",
+      "tags": ["CPU", "x86", "市佔", "Agentic AI"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "NVDA",
+      "name": "NVIDIA",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「本身有 Grace CPU，看來也有獲得客戶採用... 可視為 CPU 相關類股。」",
+      "timestamp": "00:17:15",
+      "tags": ["CPU", "Grace", "算力", "觀察"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "3533",
+      "name": "嘉澤",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「跟 CPU socket 是高度相關的標的... 都算是相對強勢。」",
+      "timestamp": "00:13:00",
+      "tags": ["CPU socket", "強勢", "台股"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "8069",
+      "name": "元太",
+      "stance": "中立",
+      "stance_score": 0,
+      "quote": "「我並沒在市場上看到任何與電子紙相關的催化或題材... 你買進理由是什麼？」",
+      "timestamp": "00:31:45",
+      "tags": ["電子紙", "中立", "題材缺乏"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「最近蠻多人在看... 光通或 Mvel 後段，大家一起來看。」",
+      "timestamp": "00:36:45",
+      "tags": ["光通訊", "觀察", "後段"],
+      "price": null,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "650-life-1",
+      "title": "瘦身針（GLP-1）進度",
+      "content": "主委進入第二針療程，食慾縮減約 30%，但並未產生噁心感，反而對食物充滿如國中生打完球後的「新鮮好奇感」。",
+      "timestamp": "00:03:30",
+      "tags": ["瘦身", "GLP-1", "健康"]
+    },
+    {
+      "id": "650-life-2",
+      "title": "披薩追蹤器（Pizza Tracker）",
+      "content": "五角大廈附近的披薩店流量增加，通常代表美軍內部正在熬夜開會，暗示可能有重大軍事行動。",
+      "timestamp": "00:07:00",
+      "tags": ["地緣政治", "情報", "趣聞"]
+    },
+    {
+      "id": "650-life-3",
+      "title": "蚊子收割成就感",
+      "content": "使用電擊式補蚊燈，螢幕顯示擊殺 18 隻蚊子，能平復夜盤被割韭菜的心情，達到「收割補償」。",
+      "timestamp": "00:01:15",
+      "tags": ["生活", "幽默", "夜盤"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "650-1",
+      "question": "如何應對難聽的綽號或霸凌？",
+      "answer": "反抗或告狀通常會讓對方弄得更兇。最好的方式是「沒反應、不屌他」，完全不與該人當朋友，聲音自然會消失。",
+      "timestamp": "00:26:45",
+      "tags": ["人際關係", "霸凌", "心理素質"]
+    },
+    {
+      "id": "650-2",
+      "question": "如何幫小孩戒尿布？",
+      "answer": "家長要接受孩子會尿濕床單，減少生活阻力（如鋪保潔墊、收起地毯）。家長的煩躁情緒會影響小孩，放寬心用平常心面對即可。",
+      "timestamp": "00:27:30",
+      "tags": ["育兒", "戒尿布", "生活分享"]
+    },
+    {
+      "id": "650-3",
+      "question": "追求物質（橘色涮涮鍋等夢想）值得嗎？",
+      "answer": "大學時覺得遙不可及，實際吃過後發現物質只是部分。與過往的自己交代後，最終會發現簡單的 Uber Eat 也能帶來充實感。快樂之賊就是羨慕與嫉妒他人。",
+      "timestamp": "00:30:15",
+      "tags": ["消費觀", "幸福感", "物質"]
+    },
+    {
+      "id": "650-4",
+      "question": "股票腰斬 60% 該停損嗎？",
+      "answer": "「沒人知道你買進的理由。」若是價值投資，變便宜應該買更多；若是動能投資，不應等跌 60% 才處理。需釐清自己是哪種買進邏輯，答案自然出來。",
+      "timestamp": "00:32:30",
+      "tags": ["停損", "價值投資", "動能投資", "投資心法"]
+    },
+    {
+      "id": "650-5",
+      "question": "工作與老闆相處不順，但為了貸款必須忍耐？",
+      "answer": "釐清優先順序。工作是為了換錢達成交屋目標，老闆是「擊敗人」也沒關係，只要不影響心理健康，忍到貸款下來就是解放。",
+      "timestamp": "00:34:00",
+      "tags": ["職場", "心理素質", "目標管理"]
+    },
+    {
+      "id": "650-6",
+      "question": "做多抱不住，做空反而能忍受每天被割？",
+      "answer": "做空的期望值遠低於做多。最大獲利為 100%（歸零），但做多的獲利空間是無限大。「多空不對稱性」告訴你答案，應改掉抱不住獲利單的心性而非堅持做空。",
+      "timestamp": "00:37:30",
+      "tags": ["做空", "做多", "期望值", "投資心法"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "CPU缺貨族群",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["ARM", "INTC", "AMD", "NVDA", "3533"],
+      "quote": "Agentic AI 帶動 CPU 佔比從 10% 升至 40-50%，Intel CFO 承認錯估需求且產能受限"
+    },
+    {
+      "name": "被動元件",
+      "stance": "正面",
+      "intensity": 1,
+      "stocks": [],
+      "quote": "中東局勢引發鋁電容漲價預期，鋁箔供應鏈受影響"
+    }
+  ]
+}
