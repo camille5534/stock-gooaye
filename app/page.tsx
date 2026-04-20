@@ -170,7 +170,7 @@ export default async function Home() {
 
             {/* VIX */}
             <div
-              className="rounded-xl border p-3 flex flex-col gap-1 flex-1"
+              className="rounded-xl border p-3 flex flex-col gap-1"
               style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
             >
               <span className="text-xs font-mono tracking-widest uppercase" style={{ color: 'var(--fg-dim)' }}>
@@ -192,7 +192,7 @@ export default async function Home() {
 
             {/* 情緒分 */}
             <div
-              className="rounded-xl border p-3 flex flex-col gap-1 flex-1"
+              className="rounded-xl border p-3 flex flex-col gap-1"
               style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
             >
               <span className="text-xs font-mono tracking-widest uppercase" style={{ color: 'var(--fg-dim)' }}>
@@ -209,7 +209,7 @@ export default async function Home() {
 
             {/* 快速統計 */}
             <div
-              className="rounded-xl border p-3 flex flex-col gap-2"
+              className="rounded-xl border p-3 flex flex-col gap-2 flex-1 justify-between"
               style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
             >
               {[
@@ -243,14 +243,8 @@ export default async function Home() {
         </div>
 
         {/* ══ Row 3：歷史排行 ══ */}
-        <div className="flex flex-col gap-2" style={{ maxWidth: '360px' }}>
-          <h2
-            className="text-xs font-semibold tracking-widest uppercase px-1"
-            style={{ color: 'var(--fg-muted)' }}
-          >
-            歷史提及排行
-          </h2>
-          <StockRanking rankings={history.rankings} />
+        <div className="flex flex-col gap-2">
+          <StockRanking rankings={history.rankings} episodes={episodes} />
         </div>
 
         {/* ══ Row 3：歷史集數卡片 ══ */}
