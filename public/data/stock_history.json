@@ -4,9 +4,9 @@
       "code": "2330",
       "name": "台積電",
       "count": 4,
-      "positive": 2,
+      "positive": 3,
       "negative": 0,
-      "neutral": 2,
+      "neutral": 1,
       "episodes": [
         647,
         648,
@@ -164,11 +164,11 @@
     },
     {
       "code": "INTC",
-      "name": "Intel（CPU 缺貨族群）",
+      "name": "Intel",
       "count": 2,
-      "positive": 2,
+      "positive": 1,
       "negative": 0,
-      "neutral": 0,
+      "neutral": 1,
       "episodes": [
         651,
         654
@@ -176,11 +176,11 @@
     },
     {
       "code": "AMD",
-      "name": "AMD（CPU 缺貨族群）",
+      "name": "AMD",
       "count": 1,
-      "positive": 1,
+      "positive": 0,
       "negative": 0,
-      "neutral": 0,
+      "neutral": 1,
       "episodes": [
         654
       ]
@@ -205,6 +205,39 @@
       "neutral": 1,
       "episodes": [
         651
+      ]
+    },
+    {
+      "code": "2404",
+      "name": "漢唐",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        654
+      ]
+    },
+    {
+      "code": "UBER",
+      "name": "Uber",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        654
+      ]
+    },
+    {
+      "code": "6187",
+      "name": "萬潤",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        654
       ]
     }
   ],

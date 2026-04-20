@@ -165,63 +165,60 @@ export default async function Home() {
             </div>
           </div>
 
-          {/* ── 指標欄 (2 col) ── */}
-          <div className="col-span-12 sm:col-span-6 md:col-span-2 flex flex-col gap-3">
-
-            {/* VIX */}
+          {/* ── 指標欄 (2 col)：單一卡片，h-full 撐滿行高 ── */}
+          <div className="col-span-12 sm:col-span-6 md:col-span-2">
             <div
-              className="rounded-xl border p-3 flex flex-col gap-1"
+              className="h-full rounded-xl border p-3 flex flex-col justify-between gap-0"
               style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
             >
-              <span className="text-xs font-mono tracking-widest uppercase" style={{ color: 'var(--fg-dim)' }}>
-                VIX
-              </span>
-              <span className="font-mono font-bold text-2xl" style={{ color: vcfg.color }}>
-                {vix.current.toFixed(2)}
-              </span>
-              <span
-                className="text-xs px-1.5 py-0.5 rounded font-mono w-fit"
-                style={{ color: vcfg.color, background: `${vcfg.color}18`, border: `1px solid ${vcfg.color}44` }}
-              >
-                {vcfg.label}
-              </span>
-              <p className="text-xs mt-1 font-mono" style={{ color: 'var(--fg-dim)' }}>
-                恐慌指數
-              </p>
-            </div>
+              {/* VIX */}
+              <div className="flex flex-col gap-1">
+                <span className="text-xs font-mono tracking-widest uppercase" style={{ color: 'var(--fg-dim)' }}>
+                  VIX
+                </span>
+                <span className="font-mono font-bold text-2xl" style={{ color: vcfg.color }}>
+                  {vix.current.toFixed(2)}
+                </span>
+                <span
+                  className="text-xs px-1.5 py-0.5 rounded font-mono w-fit"
+                  style={{ color: vcfg.color, background: `${vcfg.color}18`, border: `1px solid ${vcfg.color}44` }}
+                >
+                  {vcfg.label}
+                </span>
+                <p className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>恐慌指數</p>
+              </div>
 
-            {/* 情緒分 */}
-            <div
-              className="rounded-xl border p-3 flex flex-col gap-1"
-              style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
-            >
-              <span className="text-xs font-mono tracking-widest uppercase" style={{ color: 'var(--fg-dim)' }}>
-                情緒
-              </span>
-              <span className="font-mono font-bold text-2xl glow-cyan" style={{ color: '#22D3EE' }}>
-                {episode.sentiment.score}
-                <span className="text-sm font-normal" style={{ color: 'var(--fg-dim)' }}>/10</span>
-              </span>
-              <p className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>
-                {episodes.length} 集追蹤
-              </p>
-            </div>
+              {/* 分隔線 */}
+              <div style={{ height: '1px', background: 'var(--border-dim)', margin: '12px 0' }} />
 
-            {/* 快速統計 */}
-            <div
-              className="rounded-xl border p-3 flex flex-col gap-2 flex-1 justify-between"
-              style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
-            >
-              {[
-                { label: '標的', value: totalStocks },
-                { label: 'Q&A', value: totalQA },
-                { label: '集數', value: episodes.length },
-              ].map(({ label, value }) => (
-                <div key={label} className="flex items-center justify-between">
-                  <span className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>{label}</span>
-                  <span className="font-mono font-bold text-sm" style={{ color: 'var(--fg)' }}>{value}</span>
-                </div>
-              ))}
+              {/* 情緒 */}
+              <div className="flex flex-col gap-1">
+                <span className="text-xs font-mono tracking-widest uppercase" style={{ color: 'var(--fg-dim)' }}>
+                  情緒
+                </span>
+                <span className="font-mono font-bold text-2xl glow-cyan" style={{ color: '#22D3EE' }}>
+                  {episode.sentiment.score}
+                  <span className="text-sm font-normal" style={{ color: 'var(--fg-dim)' }}>/10</span>
+                </span>
+                <p className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>{episodes.length} 集追蹤</p>
+              </div>
+
+              {/* 分隔線 */}
+              <div style={{ height: '1px', background: 'var(--border-dim)', margin: '12px 0' }} />
+
+              {/* 快速統計 */}
+              <div className="flex flex-col gap-2">
+                {[
+                  { label: '標的', value: totalStocks },
+                  { label: 'Q&A', value: totalQA },
+                  { label: '集數', value: episodes.length },
+                ].map(({ label, value }) => (
+                  <div key={label} className="flex items-center justify-between">
+                    <span className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>{label}</span>
+                    <span className="font-mono font-bold text-sm" style={{ color: 'var(--fg)' }}>{value}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
