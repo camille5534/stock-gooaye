@@ -108,11 +108,12 @@
     {
       "code": "TSLA",
       "name": "Tesla",
-      "count": 1,
+      "count": 2,
       "positive": 0,
       "negative": 1,
-      "neutral": 0,
+      "neutral": 1,
       "episodes": [
+        651,
         652
       ]
     },
@@ -130,11 +131,12 @@
     {
       "code": "MRVL",
       "name": "Marvell",
-      "count": 1,
+      "count": 2,
       "positive": 0,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 2,
       "episodes": [
+        651,
         653
       ]
     },
@@ -163,11 +165,12 @@
     {
       "code": "INTC",
       "name": "Intel（CPU 缺貨族群）",
-      "count": 1,
-      "positive": 1,
+      "count": 2,
+      "positive": 2,
       "negative": 0,
       "neutral": 0,
       "episodes": [
+        651,
         654
       ]
     },
@@ -180,6 +183,28 @@
       "neutral": 0,
       "episodes": [
         654
+      ]
+    },
+    {
+      "code": "AAPL",
+      "name": "Apple",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        651
+      ]
+    },
+    {
+      "code": "6217",
+      "name": "中探針",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        651
       ]
     }
   ],
@@ -201,6 +226,15 @@
       "bull_pct": 60,
       "bear_pct": 40,
       "vix": 24.5
+    },
+    {
+      "episode": 651,
+      "date": "2026-04-08",
+      "score": 7,
+      "label": "偏多",
+      "bull_pct": 65,
+      "bear_pct": 35,
+      "vix": null
     },
     {
       "episode": 652,
@@ -312,6 +346,14 @@
     ],
     "記憶體": [
       {
+        "episode": 651,
+        "date": "2026-04-08",
+        "stance": "觀察",
+        "intensity": 1,
+        "stocks": [],
+        "quote": "Apple 吸收記憶體漲價不轉嫁，中國手機廠受創，缺料持續"
+      },
+      {
         "episode": 648,
         "date": "2026-03-28",
         "stance": "中立",
@@ -350,6 +392,14 @@
     ],
     "被動元件": [
       {
+        "episode": 651,
+        "date": "2026-04-08",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [],
+        "quote": "記憶體、鉭電容、鋁電容仍維持缺貨緊俏狀態"
+      },
+      {
         "episode": 652,
         "date": "2026-04-11",
         "stance": "正面",
@@ -385,6 +435,14 @@
       }
     ],
     "光通訊/CPO": [
+      {
+        "episode": 651,
+        "date": "2026-04-08",
+        "stance": "觀察",
+        "intensity": 1,
+        "stocks": [],
+        "quote": "關注上游、CPU 相關設備、以及七系列 AI 測試設備"
+      },
       {
         "episode": 652,
         "date": "2026-04-11",
@@ -442,6 +500,14 @@
       }
     ],
     "CPU缺貨族群": [
+      {
+        "episode": 651,
+        "date": "2026-04-08",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": ["INTC"],
+        "quote": "Agentic AI 帶動 CPU 明確缺口，Intel 代工合作算是利多"
+      },
       {
         "episode": 654,
         "date": "2026-04-18",

@@ -1,0 +1,156 @@
+{
+  "episode": 651,
+  "date": "2026-04-08",
+  "title": "EP651 | One for all",
+  "youtube_url": "https://www.youtube.com/watch?v=tzaaCt32yic",
+  "summary": "One for All — 本集從林哲瑄引退儀式開場，帶出「被人需要的感動」。台股確認多頭格局，美股呈強力死貓跳，攻防季線是關鍵。產業聚焦三大主題：Apple 趁記憶體漲價「趁你病要你命」擴大市佔；Agentic AI 帶動 CPU 供給缺口（Intel 利多）；被動元件（鉭電容、鋁電容）持續缺貨緊俏。心法強調槓桿只能建立在獲利部位，波動放大時要主動降槓桿保命，不要整天想空手錯過起漲。",
+  "sentiment": {
+    "score": 7,
+    "label": "偏多",
+    "bull_pct": 65,
+    "bear_pct": 35
+  },
+  "keywords": [
+    "Intel",
+    "Apple",
+    "CPU缺貨",
+    "被動元件",
+    "Agentic AI",
+    "槓桿",
+    "死貓跳",
+    "林哲瑄",
+    "光通訊",
+    "記憶體"
+  ],
+  "stocks": [
+    {
+      "code": "INTC",
+      "name": "Intel",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「對於 Intel...我認為算是一個利多...會有一個高毛利的某種授權或是顧問的費用會進來。」",
+      "timestamp": "00:15:30",
+      "tags": ["CPU", "代工", "利多", "授權費"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "TSLA",
+      "name": "Tesla",
+      "stance": "中立",
+      "stance_score": 0,
+      "quote": "「對於 T（Tesla）這邊的話，它算是一個中性的事件...因為他要拿出大量的錢去搞這個金源生產製造。」",
+      "timestamp": "00:15:40",
+      "tags": ["代工", "中性", "資本支出"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "AAPL",
+      "name": "Apple",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「它做了一個蠻屌的策略，就是趁你病要你命...即便記憶體實質升級了，可是他並沒有去漲價。」",
+      "timestamp": "00:18:30",
+      "tags": ["手機", "市佔", "記憶體", "策略"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "6217",
+      "name": "中探針",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「他們在推這個東西就是 NVIDIA 的下一個結構叫 Blackwell...這些 connector 上面會有很多的針。」",
+      "timestamp": "00:36:00",
+      "tags": ["Blackwell", "NVIDIA", "連接器", "Pogo Pin"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "MRVL",
+      "name": "Marvell",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「我那時候就很坦白跟大家講說...買這個故事，但後面大家會看到的是反正就是 ASIC。」",
+      "timestamp": "00:38:30",
+      "tags": ["ASIC", "AI", "故事股", "觀察"],
+      "price": null,
+      "change_pct": null
+    }
+  ],
+  "qa": [
+    {
+      "id": "651-1",
+      "question": "要專精一個項目還是多方涉略？",
+      "answer": "主委自認是「三分鐘熱度」，但人生體驗證明學的東西都不會浪費，各項雜學會在某天突然結合成為解題新法。",
+      "timestamp": "00:24:30",
+      "tags": ["人生觀", "學習", "閒聊"]
+    },
+    {
+      "id": "651-2",
+      "question": "如何判斷開槓桿的時機？",
+      "answer": "絕大多數狀況是配合大盤與個股表現。最核心框架是「獲利時才加碼（灌溉）」，並在波動大時降低槓桿以保命。",
+      "timestamp": "00:33:00",
+      "tags": ["槓桿", "風險管理", "投資心法"]
+    },
+    {
+      "id": "651-3",
+      "question": "如何知道股票正在炒什麼故事？",
+      "answer": "舉「中探針」為例，有人炒 Pogo Pin，有人炒 Blackwell 連接器，這叫「一項上漲各自表述」。重點在有故事能吸引他人「抬轎」，而非追求故事的絕對精準。",
+      "timestamp": "00:35:30",
+      "tags": ["選股", "題材", "故事股", "中探針"]
+    },
+    {
+      "id": "651-4",
+      "question": "如何看待育兒減工時的社會爭議？",
+      "answer": "建議遠離社群軟體。社群上講話越兇、越嗆的人，通常內心越破碎。現實世界的人通常更具同理心，大家應互相體貼而非分化。",
+      "timestamp": "00:44:00",
+      "tags": ["育兒", "社群媒體", "生活分享"]
+    },
+    {
+      "id": "651-5",
+      "question": "想家怎麼辦（在國外工作）？",
+      "answer": "主委本身也是會想家的人，以前大學每週回苗栗。有小孩後比較難回去。建議在國外工作的聽眾爭取返台假等福利來緩解情緒。",
+      "timestamp": "00:41:00",
+      "tags": ["在外工作", "生活分享", "家庭"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "CPU缺貨",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["INTC"],
+      "quote": "Agentic AI 帶動 CPU 明確缺口，Intel 代工合作算是利多"
+    },
+    {
+      "name": "被動元件",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": [],
+      "quote": "記憶體、鉭電容、鋁電容仍維持缺貨緊俏狀態"
+    },
+    {
+      "name": "光通訊/CPO",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": [],
+      "quote": "關注上游、CPU 相關設備、以及七系列 AI 測試設備"
+    },
+    {
+      "name": "記憶體",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": [],
+      "quote": "Apple 吸收記憶體漲價不轉嫁，中國手機廠受創，缺料持續"
+    },
+    {
+      "name": "AI算力/Token",
+      "stance": "中立",
+      "intensity": 1,
+      "stocks": ["MRVL"],
+      "quote": "CSP 自研 CPU（Google Axion、AWS Graviton、MS Cobalt），Agentic AI 推升需求"
+    }
+  ]
+}
