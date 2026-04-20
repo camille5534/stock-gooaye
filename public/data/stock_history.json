@@ -3,13 +3,12 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 5,
-      "positive": 3,
+      "count": 4,
+      "positive": 2,
       "negative": 0,
       "neutral": 2,
       "episodes": [
         647,
-        648,
         649,
         653,
         654
@@ -31,19 +30,18 @@
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 3,
+      "count": 2,
       "positive": 1,
       "negative": 0,
-      "neutral": 2,
+      "neutral": 1,
       "episodes": [
-        648,
         649,
         653
       ]
     },
     {
-      "code": "2317",
-      "name": "鴻海",
+      "code": "NET",
+      "name": "Cloudflare",
       "count": 1,
       "positive": 1,
       "negative": 0,
@@ -53,25 +51,15 @@
       ]
     },
     {
-      "code": "00670L",
-      "name": "元大S&P正2",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        648
-      ]
-    },
-    {
-      "code": "0050",
-      "name": "元大台灣50",
-      "count": 1,
-      "positive": 1,
+      "code": "PLTR",
+      "name": "Palantir",
+      "count": 2,
+      "positive": 2,
       "negative": 0,
       "neutral": 0,
       "episodes": [
-        648
+        647,
+        652
       ]
     },
     {
@@ -110,11 +98,12 @@
     {
       "code": "TSLA",
       "name": "Tesla",
-      "count": 2,
+      "count": 3,
       "positive": 0,
-      "negative": 1,
+      "negative": 2,
       "neutral": 1,
       "episodes": [
+        647,
         651,
         652
       ]
@@ -122,11 +111,12 @@
     {
       "code": "NVDA",
       "name": "NVIDIA",
-      "count": 3,
+      "count": 4,
       "positive": 1,
       "negative": 0,
-      "neutral": 2,
+      "neutral": 3,
       "episodes": [
+        648,
         649,
         650,
         652
@@ -135,11 +125,12 @@
     {
       "code": "MRVL",
       "name": "Marvell",
-      "count": 4,
-      "positive": 2,
+      "count": 5,
+      "positive": 3,
       "negative": 0,
       "neutral": 2,
       "episodes": [
+        648,
         649,
         651,
         652,
@@ -172,11 +163,12 @@
     {
       "code": "INTC",
       "name": "Intel",
-      "count": 3,
+      "count": 4,
       "positive": 2,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 2,
       "episodes": [
+        648,
         650,
         651,
         654
@@ -197,11 +189,12 @@
     {
       "code": "AAPL",
       "name": "Apple",
-      "count": 1,
-      "positive": 1,
+      "count": 2,
+      "positive": 2,
       "negative": 0,
       "neutral": 0,
       "episodes": [
+        648,
         651
       ]
     },
@@ -308,7 +301,7 @@
   "sentiment_history": [
     {
       "episode": 647,
-      "date": "2026-04-08",
+      "date": "2026-03-25",
       "score": 4,
       "label": "中立",
       "bull_pct": 45,
@@ -382,33 +375,20 @@
   "sector_mentions": {
     "台積電供應鏈": [
       {
+        "episode": 647,
+        "date": "2026-03-25",
+        "stance": "觀察",
+        "intensity": 1,
+        "stocks": ["2330"],
+        "quote": "馬斯克 Terafab 夢想帶動廠務設備需求，台積電定價權仍強"
+      },
+      {
         "episode": 649,
         "date": "2026-04-01",
         "stance": "觀察",
         "intensity": 1,
         "stocks": ["2330"],
         "quote": "台股極強回測均線後再彈，美股暫視為死貓跳，季線壓力是關鍵"
-      },
-      {
-        "episode": 647,
-        "date": "2026-04-08",
-        "stance": "中立",
-        "intensity": 1,
-        "stocks": [
-          "2330",
-          "2317"
-        ],
-        "quote": "財報季保守等待，觀察訂單方向"
-      },
-      {
-        "episode": 648,
-        "date": "2026-03-28",
-        "stance": "正面",
-        "intensity": 2,
-        "stocks": [
-          "2330"
-        ],
-        "quote": "AI 資本支出持續，台積電是核心受惠"
       },
       {
         "episode": 653,
@@ -433,6 +413,14 @@
       }
     ],
     "AI算力/Token": [
+      {
+        "episode": 648,
+        "date": "2026-03-28",
+        "stance": "正面",
+        "intensity": 1,
+        "stocks": ["AAPL", "MRVL"],
+        "quote": "Apple 廉價 CFI 模式受益 AI，Marvell 技術線型強勢，傑文斯悖論支撐記憶體長期需求"
+      },
       {
         "episode": 649,
         "date": "2026-04-01",
@@ -575,6 +563,14 @@
     ],
     "光通訊/CPO": [
       {
+        "episode": 647,
+        "date": "2026-03-25",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": ["光通訊"],
+        "quote": "台美股同步走強，部分標的進處置後仍漲至近千元，為近期主要配置方向"
+      },
+      {
         "episode": 651,
         "date": "2026-04-08",
         "stance": "觀察",
@@ -617,6 +613,14 @@
       }
     ],
     "AI SaaS/軟體應用": [
+      {
+        "episode": 647,
+        "date": "2026-03-25",
+        "stance": "正面",
+        "intensity": 1,
+        "stocks": ["NET", "PLTR"],
+        "quote": "Cloudflare 是 AI Agent 收費站，Palantir 政府標案護城河穩固"
+      },
       {
         "episode": 652,
         "date": "2026-04-11",

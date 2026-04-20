@@ -1,82 +1,162 @@
 {
   "episode": 647,
-  "date": "2026-04-08",
-  "title": "EP647 | 春天來了",
-  "youtube_url": "https://www.youtube.com/watch?v=example647",
-  "summary": "本集討論美股財報季前的市場情緒，以及台灣電子股的整體走勢。謝孟恭提到現在市場偏保守，建議保留現金等待機會。",
+  "date": "2026-03-25",
+  "title": "EP647 | 🍬",
+  "youtube_url": "https://www.youtube.com/watch?v=hag1of5TGSk",
+  "summary": "AI 去偽存真：AI 不是末日預言，而是漸進式生產力工具提升。生成式影片（Sora）因成本、版權問題商業化有限。馬斯克 Terafab 計畫對 Tesla 股東是財務風險，對廠務設備供應鏈是利多。光通訊（CPO）台美股同步走強。Cloudflare 是 AI Agent 最實質受惠股，Palantir 在 To B 應用已建立護城河。",
   "sentiment": {
     "score": 4,
     "label": "中立",
     "bull_pct": 45,
-    "bear_pct": 55
+    "bear_pct": 55,
+    "vix": 31.7
   },
-  "keywords": [
-    "財報季",
-    "美股",
-    "現金",
-    "台股",
-    "保守",
-    "等待"
-  ],
+  "keywords": ["Terafab", "Cloudflare", "Palantir", "光通訊", "生成式影片", "Sora", "AI應用", "廠務設備", "區間盤", "CPU推論"],
   "stocks": [
     {
       "code": "2330",
       "name": "台積電",
       "stance": "觀察",
       "stance_score": 0,
-      "quote": "「等財報出來再說，現在先觀察」",
-      "timestamp": "00:35:00",
-      "tags": [
-        "財報",
-        "觀察"
-      ]
+      "quote": "「馬斯克 AI5、AI6 也想在台積這邊做什麼東西過不去，價格，他想要更便宜的價格。」",
+      "timestamp": "00:35:45",
+      "tags": ["Terafab", "定價權", "馬斯克", "觀察"],
+      "price": null,
+      "change_pct": null
     },
     {
-      "code": "2317",
-      "name": "鴻海",
+      "code": "TSLA",
+      "name": "Tesla",
+      "stance": "負面",
+      "stance_score": -1,
+      "quote": "「身為特斯拉股東，我覺得這是很恐怖的事...你要投入大量的錢，短期內看不到任何收益。」",
+      "timestamp": "00:43:45",
+      "tags": ["Terafab", "財務風險", "晶圓廠", "股東"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "NET",
+      "name": "Cloudflare",
       "stance": "正面",
       "stance_score": 1,
-      "quote": "「鴻海的 AI 伺服器業務值得期待，估值還算合理」",
-      "timestamp": "00:48:20",
-      "tags": [
-        "AI",
-        "伺服器"
-      ]
+      "quote": "「它就是 AI Agent 我覺得最實質的受惠股之一...它已經在各處都架好收費站了。」",
+      "timestamp": "00:54:30",
+      "tags": ["AI Agent", "資安", "收費站", "護城河"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "PLTR",
+      "name": "Palantir",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「Palantir 在 To B 的應用已經做得非常好，拿到很多政府的標案。」",
+      "timestamp": "00:55:00",
+      "tags": ["AI應用", "政府標案", "To B", "估值高"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "光通訊",
+      "name": "光通訊類股",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「光通訊在近期表現是極佳的，有些標的進處置後漲到快 1000 塊去。」即使進入 20 分鐘處置盤，主委仍傾向續抱而非因流動性賣出。",
+      "timestamp": "01:06:15",
+      "tags": ["光通訊", "CPO", "處置股", "強勢"],
+      "price": null,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "647-life-1",
+      "title": "聖人模式",
+      "content": "主委認為男性在「尻完」後會進入 10-20 分鐘的聖人模式，看淡世間鬥爭（如川普喊崩盤），但這不影響達成人生目標。",
+      "timestamp": "00:52:45",
+      "tags": ["生活", "心理", "放鬆"]
+    },
+    {
+      "id": "647-life-2",
+      "title": "網球新愛好",
+      "content": "近期減少打泰拳，改找教練學習打網球，致力於嘗試多種運動以維持身體狀態。",
+      "timestamp": "00:53:30",
+      "tags": ["網球", "運動", "健康"]
+    },
+    {
+      "id": "647-life-3",
+      "title": "柏林夜生活",
+      "content": "主委分享去柏林看演唱會時，被告知柏林最有名的是放蕩的夜店（如賣肉大會、FK），但他自認是乖寶寶，不敢輕易嘗試。",
+      "timestamp": "00:57:30",
+      "tags": ["柏林", "旅遊", "夜生活", "演唱會"]
+    },
+    {
+      "id": "647-life-4",
+      "title": "育兒觀點",
+      "content": "雖然尊重多元性別，但主委觀察自己的兒子目前非常明顯是「He/Him」，並表示人生最想看見的是孩子建立快樂充實的家庭。",
+      "timestamp": "00:58:30",
+      "tags": ["育兒", "家庭", "多元性別"]
     }
   ],
   "qa": [
     {
-      "id": "647_1",
-      "question": "現在要不要減碼台股？",
-      "answer": "「我個人不減碼，但如果你睡不著覺就減一點，投資要讓你晚上睡得著才是對的。」",
-      "timestamp": "00:22:10",
-      "tags": [
-        "台股",
-        "減碼",
-        "心態"
-      ]
+      "id": "647-1",
+      "question": "AI Agent 最值得布局的標的是什麼？",
+      "answer": "推薦 Cloudflare（NET）與 Palantir（PLTR）。雖然 P Ratio 高到算不出來，但 Cloudflare 在 AI 代理程式爬取資料的資安/網路關口已架好收費站，Palantir 在政府標案的地位穩固，兩者在 AI 應用端具領先地位。",
+      "timestamp": "00:54:15",
+      "tags": ["AI Agent", "Cloudflare", "Palantir", "布局"]
     },
     {
-      "id": "647_2",
-      "question": "鴻海的目標價多少？",
-      "answer": "「我不給目標價，這不是我做的事。我只說產業趨勢方向，進場點和目標價要你自己判斷。」",
-      "timestamp": "00:50:00",
-      "tags": [
-        "鴻海",
-        "目標價"
-      ]
+      "id": "647-2",
+      "question": "面對好友離世如何調適？",
+      "answer": "主委感性表示自己尚未面臨摯友中離，但能想像其困難。他認為當父母走掉時，就是自己要直面死亡的時候，那時才真正感受到生命的有限。",
+      "timestamp": "01:00:15",
+      "tags": ["生死", "朋友", "家庭", "感性"]
+    },
+    {
+      "id": "647-3",
+      "question": "如何判斷加碼進場的時機點？",
+      "answer": "若感覺買入後不漲反跌，可能是買在盤整區而非趨勢區。建議看 MA20/60 均線是否往右上方，或直接找「純粹的小孩」（不帶主觀）看線圖走勢。加碼絕大多數應發生在「右側」（趨勢確認向上）。",
+      "timestamp": "01:02:15",
+      "tags": ["均線", "右側交易", "加碼邏輯"]
+    },
+    {
+      "id": "647-4",
+      "question": "進入處置股該如何應對？",
+      "answer": "處置股流動性低，波動大。若在處置前已佈局，不建議因處置而賣出；若處置中出現超跌，反而是撿便宜的機會。光通訊的標的即便進處置，主委仍傾向續抱。",
+      "timestamp": "01:07:00",
+      "tags": ["處置股", "流動性", "光通訊", "操作邏輯"]
+    },
+    {
+      "id": "647-5",
+      "question": "馬斯克 Terafab 對台積電有威脅嗎？",
+      "answer": "晶圓製造具備極高門檻，即便是技術轉移，從建廠到良率穩定需耗時多年，短期內難以顛覆台積電。自建廠對 Tesla 股東是財務負擔，但對廠務、配水配電、設備供應商則是利多，可以此角度找投資機會。",
+      "timestamp": "00:44:45",
+      "tags": ["Terafab", "台積電", "廠務設備", "Tesla"]
     }
   ],
   "sectors": [
     {
-      "name": "台積電供應鏈",
-      "stance": "中立",
+      "name": "光通訊/CPO",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["光通訊"],
+      "quote": "台美股同步走強，部分標的進處置後仍漲至近千元，為近期主要配置方向"
+    },
+    {
+      "name": "AI SaaS/軟體應用",
+      "stance": "正面",
       "intensity": 1,
-      "stocks": [
-        "2330",
-        "2317"
-      ],
-      "quote": "財報季保守等待，觀察訂單方向"
+      "stocks": ["NET", "PLTR"],
+      "quote": "Cloudflare 是 AI Agent 收費站，Palantir 政府標案護城河穩固"
+    },
+    {
+      "name": "台積電供應鏈",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": ["2330"],
+      "quote": "馬斯克 Terafab 夢想帶動廠務設備需求，但台積電定價權仍強"
     }
   ]
 }
