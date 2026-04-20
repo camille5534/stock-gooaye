@@ -73,8 +73,8 @@
       ]
     },
     {
-      "code": "CPU供應鏈",
-      "name": "CPU 供應鏈（AWS Graviton / RISC-V）",
+      "code": "光通訊",
+      "name": "光通訊類股",
       "count": 1,
       "positive": 1,
       "negative": 0,
@@ -84,8 +84,19 @@
       ]
     },
     {
-      "code": "光通訊SMT",
-      "name": "光通訊 SMT 代工（LED/網通廠）",
+      "code": "SiFive",
+      "name": "SiFive（RISC-V）",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        652
+      ]
+    },
+    {
+      "code": "AWS",
+      "name": "AWS Graviton（CPU供應鏈）",
       "count": 1,
       "positive": 1,
       "negative": 0,
@@ -95,8 +106,19 @@
       ]
     },
     {
-      "code": "SaaS軟體股",
-      "name": "SaaS / 軟體應用股",
+      "code": "TSLA",
+      "name": "Tesla",
+      "count": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "episodes": [
+        652
+      ]
+    },
+    {
+      "code": "NVDA",
+      "name": "NVIDIA",
       "count": 1,
       "positive": 0,
       "negative": 0,
@@ -185,8 +207,8 @@
       "date": "2026-04-11",
       "score": 7,
       "label": "偏多",
-      "bull_pct": 72,
-      "bear_pct": 28,
+      "bull_pct": 70,
+      "bear_pct": 30,
       "vix": 45.3
     },
     {
@@ -223,7 +245,7 @@
       },
       {
         "episode": 648,
-        "date": "2026-04-15",
+        "date": "2026-03-28",
         "stance": "正面",
         "intensity": 2,
         "stocks": [
@@ -256,7 +278,7 @@
     "AI算力/Token": [
       {
         "episode": 648,
-        "date": "2026-04-15",
+        "date": "2026-03-28",
         "stance": "正面",
         "intensity": 1,
         "stocks": [
@@ -291,7 +313,7 @@
     "記憶體": [
       {
         "episode": 648,
-        "date": "2026-04-15",
+        "date": "2026-03-28",
         "stance": "中立",
         "intensity": 1,
         "stocks": [
@@ -318,12 +340,12 @@
         "stance": "正面",
         "intensity": 2,
         "stocks": [
+          "AWS",
+          "SiFive",
           "INTC",
-          "AMD",
-          "ARM",
-          "NVDA"
+          "AMD"
         ],
-        "quote": "AWS Graviton CPU 供不應求，NVIDIA 入股 Sifive 佈局 RISC-V，Agentic AI 時代 CPU 扮演調度「教練」角色"
+        "quote": "AWS Graviton 算力被客戶要求全包，RISC-V 架構 NVIDIA 入股 SiFive，Agentic AI 時代 CPU 需求大增"
       }
     ],
     "被動元件": [
@@ -335,7 +357,7 @@
         "stocks": [
           "2327"
         ],
-        "quote": "TCAP/SPCAP 嚴重缺貨，MLCC 接近緊繃，重演 2017 年漲價邏輯，國巨法說會是關鍵催化劑"
+        "quote": "TCAP/SPCAP 嚴重缺貨，MLCC 高階緊繃，重演記憶體發作前邏輯，國巨法說會是關鍵催化劑"
       },
       {
         "episode": 653,
@@ -372,7 +394,7 @@
           "4721",
           "6187"
         ],
-        "quote": "需求極大出現外援現象，美系大客戶委託台灣 SMT 打件廠（含 LED 廠）代工，新供應鏈機會形成"
+        "quote": "持續創新高，美系大客戶自帶設備租借 SMT/LED 打件廠產線，供應鏈新模式形成"
       },
       {
         "episode": 653,
@@ -402,9 +424,9 @@
         "episode": 652,
         "date": "2026-04-11",
         "stance": "中立",
-        "intensity": 0,
+        "intensity": 1,
         "stocks": [],
-        "quote": "市場資金集中硬體族群，軟體股短期受 FUD 情緒壓制，算力瓶頸解除前維持觀望"
+        "quote": "受 Anthropic Mythos 延遲發布等 AI Doomstay 情緒影響，資金暫離，待算力瓶頸解除後再觀察"
       }
     ],
     "低軌衛星/啟碁": [

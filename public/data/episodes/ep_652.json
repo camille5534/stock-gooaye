@@ -3,91 +3,89 @@
   "date": "2026-04-11",
   "title": "EP652 | 🐸",
   "youtube_url": "https://www.youtube.com/watch?v=NCAgqfGtqts",
-  "summary": "AI 浪潮下硬體需求演進：市場目光從 GPU 擴散至 CPU 與被動元件。AWS Graviton CPU 出現供不應求，NVIDIA 入股 Sifive 佈局 RISC-V，光通訊產能外溢帶動 SMT 打件廠受惠。被動元件缺貨重演 2017 年邏輯：TCAP/SPCAP 嚴重缺貨，MLCC 接近緊繃，國巨法說會是關鍵指標。台股強勁多頭，美股回歸上升軌道。金句：「任何一個股票的最高目標價或市值，都是死於新高。」",
+  "summary": "AI 算力戰場從 GPU 擴散至 CPU 與 ASIC。AWS Graviton CPU 已被客戶要求全包、NVIDIA 入股 SiFive 佈局 RISC-V，被動元件缺貨重演 2017 年邏輯（TCAP/SPCAP 嚴重缺貨、MLCC 高階緊繃），國巨法說會是關鍵催化劑。光通訊供應鏈出現新模式：美系大客戶自帶設備租借 SMT 產線。金句：「選擇比努力重要，任何股價的天價都是從創下新高開始的。」",
   "sentiment": {
     "score": 7,
     "label": "偏多",
-    "bull_pct": 72,
-    "bear_pct": 28
+    "bull_pct": 70,
+    "bear_pct": 30
   },
   "keywords": [
-    "CPU崛起",
+    "CPU缺貨",
     "Agentic AI",
     "被動元件",
-    "光通訊",
-    "AWS Graviton",
     "RISC-V",
+    "光通訊SMT",
     "國巨",
-    "SMT打件",
+    "AWS Graviton",
     "選擇比努力",
-    "死於新高"
+    "新高不畏高",
+    "流動性管理"
   ],
   "stocks": [
+    {
+      "code": "光通訊",
+      "name": "光通訊類股",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「光通又再次創新高...已是非常有在資金調動下持續攻新高。」由於需求過大，美系巨頭直接自帶設備，租借現有 SMT 或 LED 打件廠產線進行生產。屬於「生水區」，短期爆發力強但需注意驗證階段風險。",
+      "timestamp": "00:11:30",
+      "tags": ["光通訊", "CPO", "SMT", "新高"],
+      "price": null,
+      "change_pct": null
+    },
     {
       "code": "2327",
       "name": "國巨（被動元件族群）",
       "stance": "正面",
       "stance_score": 1,
-      "quote": "電容（TCAP、SPCAP）已出現嚴重缺貨，MLCC 則接近緊繃，主因在於 AI 伺服器對高品質被動元件的大量需求，重演 2017 年由手機與電動車驅動的漲價邏輯。國巨即將召開的法說會被視為關鍵指標，預期內容將偏向正面，特別是關於漲價與 Lead Time（交期）拉長的趨勢。",
-      "timestamp": "00:28:00",
-      "tags": [
-        "被動元件",
-        "MLCC",
-        "TCAP",
-        "漲價",
-        "法說會"
-      ],
+      "quote": "「下週三法說會內容應該是全面性正面...下個 Q 也是要持續漲價。」TCAP（鉭電容）與 SPCAP（聚合物鋁電容）嚴重缺貨，MLCC 高階應用緊繃，旗下 Kemet 已持續針對特定品項調漲。處於類似記憶體發作前夕的階段。",
+      "timestamp": "00:17:30",
+      "tags": ["被動元件", "MLCC", "TCAP", "漲價", "法說會"],
       "price": null,
       "change_pct": null
     },
     {
-      "code": "CPU供應鏈",
-      "name": "CPU 供應鏈（AWS Graviton / RISC-V）",
+      "code": "SiFive",
+      "name": "SiFive（RISC-V）",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「NVIDIA 去入股了...RISC-V 架構有可能重新被市場關注。」（白話：RISC-V 是一種開放式 CPU 指令集架構，可比喻為 CPU 界的 Android，任何廠商都可基於此設計自己的晶片）",
+      "timestamp": "00:12:00",
+      "tags": ["RISC-V", "CPU", "NVIDIA", "架構"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "AWS",
+      "name": "AWS Graviton（CPU供應鏈）",
       "stance": "正面",
       "stance_score": 1,
-      "quote": "Amazon (AWS) 的 Graviton CPU 出現供不應求的情況，甚至有客戶欲全包產能被拒，顯示 CPU 缺貨趨勢正在形成。除了通用的 Intel 與 AMD，市場開始關注 RISC-V 架構（如 NVIDIA 入股 Sifive）以及客製化晶片（ASIC）。伺服器端 CPU 的強勁需求可能排擠消費型電子的產能，未來可能為消費端市場創造意料之外的機會。",
-      "timestamp": "00:20:00",
-      "tags": [
-        "CPU",
-        "Agentic AI",
-        "RISC-V",
-        "Sifive",
-        "AWS"
-      ],
+      "quote": "「AWS 是 CSP 裡的 Powerplay...CPU 這邊也是非常缺乏的。」AWS 客製化 CPU Graviton 算力已被客戶要求全包，迫使其他客戶轉向通用型 CPU（Intel、AMD）。（白話：CSP = 雲端服務供應商，如 AWS、Google Cloud、Azure）",
+      "timestamp": "00:13:00",
+      "tags": ["CPU", "AWS", "Graviton", "雲端", "缺貨"],
       "price": null,
       "change_pct": null
     },
     {
-      "code": "光通訊SMT",
-      "name": "光通訊 SMT 代工（LED/網通廠）",
-      "stance": "正面",
-      "stance_score": 1,
-      "quote": "由於光通訊組件需求極大，出現了「找外援」的現象。許多原本與光通訊無關的廠商（如 LED 打件廠），因擁有閒置的 SMT 產線，被美系大客戶選中進行委託生產，形成台股供應鏈中的新趨勢。須注意驗證階段的風險。",
-      "timestamp": "00:35:00",
-      "tags": [
-        "光通訊",
-        "SMT",
-        "代工",
-        "LED廠",
-        "供應鏈"
-      ],
+      "code": "TSLA",
+      "name": "Tesla",
+      "stance": "負面",
+      "stance_score": -1,
+      "quote": "「現行不好就是左上右下...要搞 xAI/Compute 有機會變成前坑。」線型呈現左上右下，短期不具攻擊性。xAI 的算力佈局是否能成功仍有疑慮。",
+      "timestamp": "00:22:30",
+      "tags": ["Tesla", "線型", "xAI", "負面"],
       "price": null,
       "change_pct": null
     },
     {
-      "code": "SaaS軟體股",
-      "name": "SaaS / 軟體應用股",
+      "code": "NVDA",
+      "name": "NVIDIA",
       "stance": "中立",
       "stance_score": 0,
-      "quote": "市場資金目前集中在硬體族群，導致 SaaS 等軟體應用股短期內受到 FUD（恐懼、不確定、懷疑）情緒影響而走勢疲軟。算力瓶頸使 AI 模型高峰時段變笨，反映出硬體供應失衡，軟體股需等硬體週期消化後才有機會。",
-      "timestamp": "00:42:00",
-      "tags": [
-        "SaaS",
-        "AI應用",
-        "軟體股",
-        "FUD",
-        "算力"
-      ],
+      "quote": "「它沒有過新高，可能我暫時都沒有那（進攻感）。」RISC-V 入股 SiFive 動作代表 NVIDIA 在佈局更廣泛的算力生態，但股價未突破新高前觀望。",
+      "timestamp": "00:23:00",
+      "tags": ["NVIDIA", "新高", "觀察", "SiFive"],
       "price": null,
       "change_pct": null
     }
@@ -95,74 +93,38 @@
   "qa": [
     {
       "id": "652-1",
-      "question": "AI 時代 GPU 不是主角嗎？CPU 為什麼突然變重要？",
-      "answer": "在 Agentic AI 時代，CPU 扮演著類似「教練」的角色，負責調度 GPU 的算力。AWS Graviton CPU 出現供不應求，連客戶想全包產能都被拒。除了 Intel、AMD，NVIDIA 入股 Sifive 佈局 RISC-V 架構，整個市場開始從 GPU 擴散到 CPU 與客製化晶片（ASIC）。",
-      "timestamp": "00:20:00",
-      "tags": [
-        "CPU",
-        "Agentic AI",
-        "GPU",
-        "RISC-V"
-      ]
+      "question": "如何判斷一檔股票的線型好不好？",
+      "answer": "打開光通訊類股，全部長在「右上角」的就叫現行好。反之，Tesla 那種「左上右下」的就叫現行不好。但關鍵仍是背後是否有基本面底子，好線型要有基本面故事支撐，否則只是短暫突破。",
+      "timestamp": "00:22:00",
+      "tags": ["技術面", "線型判斷", "選股"]
     },
     {
       "id": "652-2",
-      "question": "被動元件這波缺貨跟之前的邏輯一樣嗎？怎麼判斷真假？",
-      "answer": "這波重演 2017 年邏輯：AI 伺服器需求帶動 TCAP、SPCAP 嚴重缺貨，MLCC 接近緊繃。判斷方式就是等國巨法說會，「預期內容將偏向正面，特別是關於漲價與 Lead Time 拉長的趨勢。」法說會釋出後就是最佳確認訊號。",
-      "timestamp": "00:28:00",
-      "tags": [
-        "被動元件",
-        "MLCC",
-        "法說會",
-        "供需"
-      ]
+      "question": "遇到崩跌要怎麼處理？有沒有明確的停損原則？",
+      "answer": "台股偏向「動能交易」，跌破均線就砍。雖然可能賣在半山腰或錯失後續漲幅，但這能避免像 2022 年那樣慘賠 30-50% 的心理壓力。持有部位過大時（成為最大分點），必須在量大時提前出貨，避免崩跌時被卡住。",
+      "timestamp": "00:26:30",
+      "tags": ["停損", "動能交易", "流動性管理"]
     },
     {
       "id": "652-3",
-      "question": "光通訊族群還能追嗎？有沒有其他方式參與？",
-      "answer": "光通訊組件需求極大，出現「找外援」現象，美系大客戶直接找台灣有閒置 SMT 產線的廠商（如 LED 打件廠）委託生產。「選擇比努力重要。」與其在弱勢標的苦守，不如尋找這類因產能外溢而受惠的廠商。不過要注意驗證階段的風險，初期不是每家都能成功量產。",
-      "timestamp": "00:35:00",
-      "tags": [
-        "光通訊",
-        "SMT",
-        "族群輪動",
-        "選股"
-      ]
+      "question": "如何與傳統且容易走心的父母相處？",
+      "answer": "保持「安全距離」。想念時主動聯繫，不舒服時直接離開現場。不要試圖兩全其美，最優先要顧好的是你自己的「最小家庭」（配偶與小孩）。",
+      "timestamp": "00:25:00",
+      "tags": ["家庭", "邊界感", "生活分享"]
     },
     {
       "id": "652-4",
-      "question": "一個標的股價已經在高點，還能買嗎？",
-      "answer": "「任何一個股票的最高目標價或市值，都是死於新高。」強勢股往往在創新高後持續推進，不應畏懼追高。但對於中小型標的，若出現「拉起後又被放量灌破」的情況，應果斷調節，避免因籌碼過度集中產生的流動性風險。",
-      "timestamp": "00:15:00",
-      "tags": [
-        "追高",
-        "新高",
-        "技術面",
-        "中小型股"
-      ]
+      "question": "CPU 族群值得關注嗎？跟 GPU 比起來哪個更有機會？",
+      "answer": "在 Agentic AI 時代 CPU 扮演「教練」調度角色，需求大幅提升。AWS Graviton 已被搶購一空，連 Intel、AMD 等通用 CPU 都受惠。加上 RISC-V 架構（NVIDIA 入股 SiFive）的崛起，CPU 族群是目前從光通訊溢出的下一個資金方向。",
+      "timestamp": "00:12:00",
+      "tags": ["CPU", "Agentic AI", "族群輪動", "RISC-V"]
     },
     {
       "id": "652-5",
-      "question": "一直戒菸失敗，有什麼新方法？",
-      "answer": "「去抽菸這個行為，把抽菸拉掉，就是去深呼吸。一兩分鐘的深呼吸真的會改變很多事情。」吸菸的爽感很大程度源於「走出室外、獨處、深呼吸」的生理需求，抽菸行為只是這些需求的載體。嘗試在原本想抽菸的時機點（飯後、會議後），以室外深呼吸兩分鐘替代。",
-      "timestamp": "00:07:00",
-      "tags": [
-        "戒菸",
-        "生活分享",
-        "習慣改變"
-      ]
-    },
-    {
-      "id": "652-6",
-      "question": "現在年輕人不想加班、準時下班，這樣對嗎？",
-      "answer": "「在生產力逐漸廉價的 AI 時代，不對工作過度執著、追求準時下班與自我生活品質，是更前衛且正確的態度。」2000 年後出生的年輕人更少依賴社交飲酒，也不接受傳統的賣命換股份或畫大餅方式。這不是懶，而是對 AI 時代的正確應對。",
-      "timestamp": "00:50:00",
-      "tags": [
-        "世代差異",
-        "工作態度",
-        "AI時代",
-        "生活分享"
-      ]
+      "question": "被動元件這波缺貨跟記憶體當時的邏輯一樣嗎？",
+      "answer": "「處於類似 2023 或 2024 年記憶體發作前夕的階段。」TCAP、SPCAP 已嚴重缺貨，MLCC 高階應用緊繃，國巨旗下 Kemet 持續調漲。下週三國巨法說會預期全面正面，是確認漲價趨勢的關鍵節點。",
+      "timestamp": "00:17:00",
+      "tags": ["被動元件", "缺貨", "國巨", "法說會"]
     }
   ],
   "sectors": [
@@ -170,39 +132,29 @@
       "name": "CPU/處理器",
       "stance": "正面",
       "intensity": 2,
-      "stocks": [
-        "INTC",
-        "AMD",
-        "ARM",
-        "NVDA"
-      ],
-      "quote": "AWS Graviton CPU 供不應求，NVIDIA 入股 Sifive 佈局 RISC-V，Agentic AI 時代 CPU 扮演調度「教練」角色"
+      "stocks": ["AWS", "SiFive", "INTC", "AMD"],
+      "quote": "AWS Graviton 算力被客戶要求全包，RISC-V 架構 NVIDIA 入股 SiFive，Agentic AI 時代 CPU 需求大增"
     },
     {
       "name": "被動元件",
       "stance": "正面",
       "intensity": 2,
-      "stocks": [
-        "2327"
-      ],
-      "quote": "TCAP/SPCAP 嚴重缺貨，MLCC 接近緊繃，重演 2017 年漲價邏輯，國巨法說會是關鍵催化劑"
+      "stocks": ["2327"],
+      "quote": "TCAP/SPCAP 嚴重缺貨，MLCC 高階緊繃，重演記憶體發作前邏輯，國巨法說會是關鍵催化劑"
     },
     {
       "name": "光通訊/CPO",
       "stance": "正面",
       "intensity": 2,
-      "stocks": [
-        "4721",
-        "6187"
-      ],
-      "quote": "需求極大出現外援現象，美系大客戶委託台灣 SMT 打件廠（含 LED 廠）代工，新供應鏈機會形成"
+      "stocks": ["4721", "6187"],
+      "quote": "持續創新高，美系大客戶自帶設備租借 SMT/LED 打件廠產線，供應鏈新模式形成"
     },
     {
       "name": "AI SaaS/軟體應用",
       "stance": "中立",
-      "intensity": 0,
+      "intensity": 1,
       "stocks": [],
-      "quote": "市場資金集中硬體族群，軟體股短期受 FUD 情緒壓制，算力瓶頸解除前維持觀望"
+      "quote": "受 Anthropic Mythos 延遲發布等 AI Doomstay 情緒影響，資金暫離，待算力瓶頸解除後再觀察"
     }
   ]
 }
