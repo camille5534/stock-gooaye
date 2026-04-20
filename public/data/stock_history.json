@@ -6,7 +6,13 @@
       "count": 4,
       "positive": 2,
       "negative": 0,
-      "neutral": 2
+      "neutral": 2,
+      "episodes": [
+        647,
+        648,
+        653,
+        654
+      ]
     },
     {
       "code": "2327",
@@ -14,7 +20,12 @@
       "count": 3,
       "positive": 3,
       "negative": 0,
-      "neutral": 0
+      "neutral": 0,
+      "episodes": [
+        652,
+        653,
+        654
+      ]
     },
     {
       "code": "2454",
@@ -22,7 +33,11 @@
       "count": 2,
       "positive": 1,
       "negative": 0,
-      "neutral": 1
+      "neutral": 1,
+      "episodes": [
+        648,
+        653
+      ]
     },
     {
       "code": "2317",
@@ -30,7 +45,10 @@
       "count": 1,
       "positive": 1,
       "negative": 0,
-      "neutral": 0
+      "neutral": 0,
+      "episodes": [
+        647
+      ]
     },
     {
       "code": "00670L",
@@ -38,7 +56,10 @@
       "count": 1,
       "positive": 0,
       "negative": 0,
-      "neutral": 1
+      "neutral": 1,
+      "episodes": [
+        648
+      ]
     },
     {
       "code": "0050",
@@ -46,7 +67,10 @@
       "count": 1,
       "positive": 1,
       "negative": 0,
-      "neutral": 0
+      "neutral": 0,
+      "episodes": [
+        648
+      ]
     },
     {
       "code": "CPU供應鏈",
@@ -54,7 +78,10 @@
       "count": 1,
       "positive": 1,
       "negative": 0,
-      "neutral": 0
+      "neutral": 0,
+      "episodes": [
+        652
+      ]
     },
     {
       "code": "光通訊SMT",
@@ -62,7 +89,10 @@
       "count": 1,
       "positive": 1,
       "negative": 0,
-      "neutral": 0
+      "neutral": 0,
+      "episodes": [
+        652
+      ]
     },
     {
       "code": "SaaS軟體股",
@@ -70,7 +100,10 @@
       "count": 1,
       "positive": 0,
       "negative": 0,
-      "neutral": 1
+      "neutral": 1,
+      "episodes": [
+        652
+      ]
     },
     {
       "code": "MRVL",
@@ -78,7 +111,10 @@
       "count": 1,
       "positive": 0,
       "negative": 0,
-      "neutral": 1
+      "neutral": 1,
+      "episodes": [
+        653
+      ]
     },
     {
       "code": "AI算力",
@@ -86,7 +122,10 @@
       "count": 1,
       "positive": 0,
       "negative": 0,
-      "neutral": 1
+      "neutral": 1,
+      "episodes": [
+        653
+      ]
     },
     {
       "code": "6285",
@@ -94,7 +133,10 @@
       "count": 1,
       "positive": 0,
       "negative": 0,
-      "neutral": 1
+      "neutral": 1,
+      "episodes": [
+        653
+      ]
     },
     {
       "code": "INTC",
@@ -102,7 +144,10 @@
       "count": 1,
       "positive": 1,
       "negative": 0,
-      "neutral": 0
+      "neutral": 0,
+      "episodes": [
+        654
+      ]
     },
     {
       "code": "AMD",
@@ -110,7 +155,10 @@
       "count": 1,
       "positive": 1,
       "negative": 0,
-      "neutral": 0
+      "neutral": 0,
+      "episodes": [
+        654
+      ]
     }
   ],
   "sentiment_history": [

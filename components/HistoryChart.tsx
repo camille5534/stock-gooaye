@@ -8,6 +8,17 @@ import { StockHistory } from '@/lib/types'
 
 interface Props { history: StockHistory }
 
+// Custom X-axis tick (EP號 + 日期兩行)
+const CustomTick = ({ x, y, payload }: { x?: number; y?: number; payload?: { value: string } }) => {
+  const [ep, date] = (payload?.value ?? '').split('|')
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text x={0} y={0} dy={12} textAnchor="middle" fill="#4B5563" fontSize={11} fontFamily="var(--font-geist-mono)">{ep}</text>
+      <text x={0} y={0} dy={24} textAnchor="middle" fill="#6B7280" fontSize={10} fontFamily="var(--font-geist-mono)">{date}</text>
+    </g>
+  )
+}
+
 // Custom tooltip
 const CustomTooltip = ({ active, payload, label }: {
   active?: boolean
@@ -37,7 +48,7 @@ const CustomTooltip = ({ active, payload, label }: {
 
 export default function HistoryChart({ history }: Props) {
   const data = history.sentiment_history.map(d => ({
-    ep:   `EP${d.episode}`,
+    ep:   `EP${d.episode}|${d.date.slice(5).replace('-', '/')}`,
     vix:  d.vix ?? null,
     情緒: d.score * 4,
     score: d.score,
@@ -73,9 +84,10 @@ export default function HistoryChart({ history }: Props) {
           <CartesianGrid strokeDasharray="3 3" stroke="#1E293B" vertical={false} />
           <XAxis
             dataKey="ep"
-            tick={{ fill: '#4B5563', fontSize: 11, fontFamily: 'var(--font-geist-mono)' }}
+            tick={<CustomTick />}
             axisLine={false}
             tickLine={false}
+            height={36}
           />
           <YAxis
             tick={{ fill: '#4B5563', fontSize: 11, fontFamily: 'var(--font-geist-mono)' }}

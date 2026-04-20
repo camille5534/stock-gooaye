@@ -1,6 +1,6 @@
 'use client'
 
-interface Rank { code: string; name: string; count: number }
+interface Rank { code: string; name: string; count: number; episodes: number[] }
 interface Props { rankings: Rank[] }
 
 export default function StockRanking({ rankings }: Props) {
@@ -52,6 +52,17 @@ export default function StockRanking({ rankings }: Props) {
                     }}
                   />
                 </div>
+              </div>
+              <div className="flex gap-1 flex-wrap pl-6">
+                {r.episodes.map(ep => (
+                  <span
+                    key={ep}
+                    className="font-mono px-1 rounded"
+                    style={{ fontSize: '10px', color: 'var(--fg-dim)', background: 'var(--border-dim)' }}
+                  >
+                    EP{ep}
+                  </span>
+                ))}
               </div>
             </div>
           )

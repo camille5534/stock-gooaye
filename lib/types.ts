@@ -69,7 +69,7 @@ export interface VixData {
 }
 
 export interface StockHistory {
-  rankings: { code: string; name: string; count: number }[]
+  rankings: { code: string; name: string; count: number; episodes: number[] }[]
   sentiment_history: {
     episode: number
     date: string

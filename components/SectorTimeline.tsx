@@ -100,16 +100,21 @@ function DesktopRow({
           {name}
         </span>
         {lastEntry?.quote && (
-          <span
-            className="font-mono leading-tight"
-            style={{
-              color: 'var(--fg-muted)', fontSize: '11px',
-              display: '-webkit-box', WebkitLineClamp: 2,
-              WebkitBoxOrient: 'vertical', overflow: 'hidden',
-            }}
-          >
-            {lastEntry.quote}
-          </span>
+          <div className="flex items-start gap-1">
+            <span className="font-mono shrink-0" style={{ color: 'var(--accent)', fontSize: '10px', paddingTop: '1px' }}>
+              EP{lastEntry.ep}
+            </span>
+            <span
+              className="font-mono leading-tight"
+              style={{
+                color: 'var(--fg-muted)', fontSize: '11px',
+                display: '-webkit-box', WebkitLineClamp: 2,
+                WebkitBoxOrient: 'vertical', overflow: 'hidden',
+              }}
+            >
+              {lastEntry.quote}
+            </span>
+          </div>
         )}
       </div>
 
@@ -248,9 +253,14 @@ function MobileRow({
       {expanded && (
         <div className="accordion-content px-3 pb-4">
           {lastEntry?.quote && (
-            <p className="font-mono text-xs mb-3 leading-relaxed" style={{ color: 'var(--fg-muted)' }}>
-              {lastEntry.quote}
-            </p>
+            <div className="flex items-start gap-1 mb-3">
+              <span className="font-mono shrink-0 text-xs" style={{ color: 'var(--accent)' }}>
+                EP{lastEntry.ep}
+              </span>
+              <p className="font-mono text-xs leading-relaxed" style={{ color: 'var(--fg-muted)' }}>
+                {lastEntry.quote}
+              </p>
+            </div>
           )}
           <div className="overflow-x-auto">
             <div className="flex gap-1" style={{ minWidth: 'max-content' }}>
