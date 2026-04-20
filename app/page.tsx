@@ -243,16 +243,14 @@ export default async function Home() {
         </div>
 
         {/* ══ Row 3：歷史排行 ══ */}
-        <div className="grid grid-cols-12 gap-4">
-          <div className="col-span-12 md:col-span-5 flex flex-col gap-2">
-            <h2
-              className="text-xs font-semibold tracking-widest uppercase px-1"
-              style={{ color: 'var(--fg-muted)' }}
-            >
-              歷史提及排行
-            </h2>
-            <StockRanking rankings={history.rankings} />
-          </div>
+        <div className="flex flex-col gap-2" style={{ maxWidth: '360px' }}>
+          <h2
+            className="text-xs font-semibold tracking-widest uppercase px-1"
+            style={{ color: 'var(--fg-muted)' }}
+          >
+            歷史提及排行
+          </h2>
+          <StockRanking rankings={history.rankings} />
         </div>
 
         {/* ══ Row 3：歷史集數卡片 ══ */}
