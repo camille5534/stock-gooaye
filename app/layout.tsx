@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "股癌雷達 | 投資分析看板",
+  title: "🦆請用川普的聲音：",
   description: "股癌謝孟恭 Podcast 分析看板，整合 VIX 恐慌指數、本集股票評論與歷史 Q&A",
+  icons: {
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦆</text></svg>",
+  },
 };
 
 export default function RootLayout({
