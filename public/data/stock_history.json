@@ -296,9 +296,62 @@
       "episodes": [
         650
       ]
+    },
+    {
+      "code": "MU",
+      "name": "美光（Micron）",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        646
+      ]
+    },
+    {
+      "code": "BE",
+      "name": "Bloom Energy",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        646
+      ]
+    },
+    {
+      "code": "4958",
+      "name": "臻鼎-KY",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        646
+      ]
+    },
+    {
+      "code": "6451",
+      "name": "訊芯-KY",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        646
+      ]
     }
   ],
   "sentiment_history": [
+    {
+      "episode": 646,
+      "date": "2026-03-21",
+      "score": 6,
+      "label": "偏多",
+      "bull_pct": 55,
+      "bear_pct": 45,
+      "vix": null
+    },
     {
       "episode": 647,
       "date": "2026-03-25",
@@ -379,7 +432,9 @@
         "date": "2026-03-25",
         "stance": "觀察",
         "intensity": 1,
-        "stocks": ["2330"],
+        "stocks": [
+          "2330"
+        ],
         "quote": "馬斯克 Terafab 夢想帶動廠務設備需求，台積電定價權仍強"
       },
       {
@@ -387,7 +442,9 @@
         "date": "2026-04-01",
         "stance": "觀察",
         "intensity": 1,
-        "stocks": ["2330"],
+        "stocks": [
+          "2330"
+        ],
         "quote": "台股極強回測均線後再彈，美股暫視為死貓跳，季線壓力是關鍵"
       },
       {
@@ -418,7 +475,10 @@
         "date": "2026-03-28",
         "stance": "正面",
         "intensity": 1,
-        "stocks": ["AAPL", "MRVL"],
+        "stocks": [
+          "AAPL",
+          "MRVL"
+        ],
         "quote": "Apple 廉價 CFI 模式受益 AI，Marvell 技術線型強勢，傑文斯悖論支撐記憶體長期需求"
       },
       {
@@ -426,7 +486,10 @@
         "date": "2026-04-01",
         "stance": "正面",
         "intensity": 2,
-        "stocks": ["NVDA", "MRVL"],
+        "stocks": [
+          "NVDA",
+          "MRVL"
+        ],
         "quote": "NVIDIA 投資 Marvell 20億美元，NVLink Fusion 生態抗衡 Broadcom，AI 是藍海各路標的可共存"
       },
       {
@@ -464,6 +527,12 @@
       }
     ],
     "記憶體": [
+      {
+        "ep": 646,
+        "stance": "觀察",
+        "intensity": 1,
+        "quote": "NAND 優於 DRAM，AI 廢圖廢片推升存儲需求，但美光財報低於市場預期"
+      },
       {
         "episode": 651,
         "date": "2026-04-08",
@@ -510,6 +579,12 @@
       }
     ],
     "被動元件": [
+      {
+        "ep": 646,
+        "stance": "觀察",
+        "intensity": 1,
+        "quote": "需區分需求驅動與成本轉嫁，高階 MLCC 與 TLVR 電感較具確定性"
+      },
       {
         "episode": 650,
         "date": "2026-04-04",
@@ -563,11 +638,19 @@
     ],
     "光通訊/CPO": [
       {
+        "ep": 646,
+        "stance": "正面",
+        "intensity": 2,
+        "quote": "AI 2.0 核心族群，Networking 組網需求持續上修，進入國民制服股位階"
+      },
+      {
         "episode": 647,
         "date": "2026-03-25",
         "stance": "正面",
         "intensity": 2,
-        "stocks": ["光通訊"],
+        "stocks": [
+          "光通訊"
+        ],
         "quote": "台美股同步走強，部分標的進處置後仍漲至近千元，為近期主要配置方向"
       },
       {
@@ -618,7 +701,10 @@
         "date": "2026-03-25",
         "stance": "正面",
         "intensity": 1,
-        "stocks": ["NET", "PLTR"],
+        "stocks": [
+          "NET",
+          "PLTR"
+        ],
         "quote": "Cloudflare 是 AI Agent 收費站，Palantir 政府標案護城河穩固"
       },
       {
@@ -648,7 +734,13 @@
         "date": "2026-04-04",
         "stance": "正面",
         "intensity": 2,
-        "stocks": ["ARM", "INTC", "AMD", "NVDA", "3533"],
+        "stocks": [
+          "ARM",
+          "INTC",
+          "AMD",
+          "NVDA",
+          "3533"
+        ],
         "quote": "Agentic AI 帶動 CPU 佔比從 10% 升至 40-50%，Intel CFO 承認錯估需求且產能受限"
       },
       {
@@ -656,7 +748,9 @@
         "date": "2026-04-08",
         "stance": "正面",
         "intensity": 2,
-        "stocks": ["INTC"],
+        "stocks": [
+          "INTC"
+        ],
         "quote": "Agentic AI 帶動 CPU 明確缺口，Intel 代工合作算是利多"
       },
       {
@@ -670,6 +764,14 @@
           "ARM"
         ],
         "quote": "CPU 可能比記憶體更缺，買不到不是貴，Agentic AI 推升需求"
+      }
+    ],
+    "電力/SMR": [
+      {
+        "ep": 646,
+        "stance": "觀察",
+        "intensity": 1,
+        "quote": "Data Center 缺電問題討論 On-site 現地發電，SMR 實際規模遠大於想像"
       }
     ]
   }
