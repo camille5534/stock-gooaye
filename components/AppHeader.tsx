@@ -31,7 +31,7 @@ export default function AppHeader({ date, rightSlot }: Props) {
       <div className="max-w-5xl mx-auto flex items-center justify-between px-4 pt-2.5 pb-1.5">
         <div className="flex items-center gap-3">
           <span className="font-mono font-bold text-sm" style={{ color: 'var(--fg)' }}>
-            ▐ 生日快樂 ▌
+            ▐ MAKE MY WISHES GREAT AGAIN ▌
           </span>
           <span className="flex items-center gap-1.5 text-xs font-mono">
             <span className="live-dot w-1.5 h-1.5 rounded-full" style={{ background: 'var(--stance-pos)' }} />
