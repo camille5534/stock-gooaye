@@ -79,100 +79,142 @@ function DesktopRow({
   layer: 'core' | 'active' | 'watching' | 'archived'
   isEven: boolean
 }) {
+  const [hoveredEp, setHoveredEp] = useState<number | null>(null)
+
   const entries   = history[name] ?? []
   const lastEntry = entries.length ? entries[entries.length - 1] : null
   const gapEps    = lastEntry ? latestEp - lastEntry.ep : null
   const sc        = lastEntry ? (stanceCfg[lastEntry.stance as StanceKey] ?? stanceCfg['中立']) : null
 
+  const hoveredSector = hoveredEp
+    ? episodes.find(e => e.episode === hoveredEp)?.sectors?.find(s => s.name === name)
+    : null
+  const hoveredMc = hoveredSector
+    ? (stanceCfg[hoveredSector.stance as StanceKey] ?? stanceCfg['中立'])
+    : null
+
   return (
     <div
-      className="sector-row hidden md:flex items-stretch"
+      className="sector-row hidden md:flex flex-col"
       style={{
         borderLeft: `3px solid var(${layerBorderVar[layer]})`,
         background: isEven ? 'var(--bg-card)' : 'var(--bg-elevated)',
         borderBottom: '1px solid var(--border-dim)',
-        minHeight: '68px',
       }}
     >
-      {/* 族群名 + quote */}
-      <div className="flex flex-col justify-center gap-1 px-3 py-3 shrink-0" style={{ width: '220px' }}>
-        <span className="font-mono font-bold" style={{ color: 'var(--fg)', fontSize: '14px' }}>
-          {name}
-        </span>
-        {lastEntry?.quote && (
-          <div className="flex items-start gap-1">
-            <span className="font-mono shrink-0" style={{ color: 'var(--accent)', fontSize: '10px', paddingTop: '1px' }}>
-              EP{lastEntry.ep}
-            </span>
-            <span
-              className="font-mono leading-tight"
-              style={{
-                color: 'var(--fg-muted)', fontSize: '11px',
-                display: '-webkit-box', WebkitLineClamp: 2,
-                WebkitBoxOrient: 'vertical', overflow: 'hidden',
-              }}
-            >
-              {lastEntry.quote}
-            </span>
-          </div>
-        )}
-      </div>
+      {/* 主列 */}
+      <div className="flex items-stretch" style={{ minHeight: '68px' }}>
+        {/* 族群名 + quote */}
+        <div className="flex flex-col justify-center gap-1 px-3 py-3 shrink-0" style={{ width: '220px' }}>
+          <span className="font-mono font-bold" style={{ color: 'var(--fg)', fontSize: '14px' }}>
+            {name}
+          </span>
+          {lastEntry?.quote && (
+            <div className="flex items-start gap-1">
+              <span className="font-mono shrink-0" style={{ color: 'var(--accent)', fontSize: '10px', paddingTop: '1px' }}>
+                EP{lastEntry.ep}
+              </span>
+              <span
+                className="font-mono leading-tight"
+                style={{
+                  color: 'var(--fg-muted)', fontSize: '11px',
+                  display: '-webkit-box', WebkitLineClamp: 2,
+                  WebkitBoxOrient: 'vertical', overflow: 'hidden',
+                }}
+              >
+                {lastEntry.quote}
+              </span>
+            </div>
+          )}
+        </div>
 
-      {/* 近況 */}
-      <div
-        className="flex flex-col justify-center items-start gap-1.5 px-3 py-3 shrink-0"
-        style={{ width: '130px', borderLeft: '1px solid var(--border-dim)' }}
-      >
-        {sc ? (
-          <>
-            <span
-              className="font-mono font-bold px-2.5 py-0.5 rounded"
+        {/* 近況 */}
+        <div
+          className="flex flex-col justify-center items-start gap-1.5 px-3 py-3 shrink-0"
+          style={{ width: '130px', borderLeft: '1px solid var(--border-dim)' }}
+        >
+          {sc ? (
+            <>
+              <span
+                className="font-mono font-bold px-2.5 py-0.5 rounded"
+                style={{
+                  color: `var(${sc.colorVar})`,
+                  background: `var(${sc.bgVar})`,
+                  fontSize: '13px',
+                }}
+              >
+                {sc.icon} {lastEntry!.stance}
+              </span>
+              <div className="flex items-center gap-2">
+                {intensityBar(lastEntry!.intensity, sc.colorVar)}
+                {gapEps !== null && gapEps > 0 && (
+                  <span style={{ color: 'var(--fg-muted)', fontSize: '10px', fontFamily: 'monospace' }}>
+                    {gapEps}集前
+                  </span>
+                )}
+              </div>
+            </>
+          ) : (
+            <span style={{ color: 'var(--fg-dim)', fontSize: '12px' }}>─</span>
+          )}
+        </div>
+
+        {/* 時間軸 */}
+        {episodes.map(ep => {
+          const m  = ep.sectors?.find(s => s.name === name)
+          const mc = m ? (stanceCfg[m.stance as StanceKey] ?? stanceCfg['中立']) : null
+          const isHovered = hoveredEp === ep.episode
+          return (
+            <div
+              key={ep.episode}
+              className="flex flex-col items-center justify-center shrink-0 cursor-default transition-colors duration-100"
               style={{
-                color: `var(${sc.colorVar})`,
-                background: `var(${sc.bgVar})`,
-                fontSize: '13px',
+                width: '66px',
+                borderLeft: '1px solid var(--border-dim)',
+                gap: '4px',
+                background: isHovered && mc ? `var(${mc.bgVar})` : 'transparent',
               }}
+              onMouseEnter={() => m && setHoveredEp(ep.episode)}
+              onMouseLeave={() => setHoveredEp(null)}
             >
-              {sc.icon} {lastEntry!.stance}
-            </span>
-            <div className="flex items-center gap-2">
-              {intensityBar(lastEntry!.intensity, sc.colorVar)}
-              {gapEps !== null && gapEps > 0 && (
-                <span style={{ color: 'var(--fg-muted)', fontSize: '10px', fontFamily: 'monospace' }}>
-                  {gapEps}集前
-                </span>
+              {mc ? (
+                <>
+                  <span style={{ color: `var(${mc.colorVar})`, fontSize: '22px', fontFamily: 'monospace', fontWeight: 700 }}>
+                    {mc.icon}
+                  </span>
+                  {intensityBar(m!.intensity, mc.colorVar)}
+                </>
+              ) : (
+                <span style={{ color: 'var(--border-dim)', fontSize: '14px' }}>·</span>
               )}
             </div>
-          </>
-        ) : (
-          <span style={{ color: 'var(--fg-dim)', fontSize: '12px' }}>─</span>
-        )}
+          )
+        })}
       </div>
 
-      {/* 時間軸 */}
-      {episodes.map(ep => {
-        const m  = ep.sectors?.find(s => s.name === name)
-        const mc = m ? (stanceCfg[m.stance as StanceKey] ?? stanceCfg['中立']) : null
-        return (
-          <div
-            key={ep.episode}
-            className="flex flex-col items-center justify-center shrink-0"
-            style={{ width: '66px', borderLeft: '1px solid var(--border-dim)', gap: '4px' }}
-            title={m?.quote}
+      {/* Hover 說明列 */}
+      {hoveredEp && hoveredSector && hoveredMc && (
+        <div
+          className="flex items-start gap-2 px-3 py-2"
+          style={{
+            borderTop: `1px solid var(${hoveredMc.colorVar})`,
+            background: `var(${hoveredMc.bgVar})`,
+          }}
+        >
+          <span
+            className="font-mono font-bold shrink-0 text-xs px-1.5 py-0.5 rounded"
+            style={{ color: `var(${hoveredMc.colorVar})`, background: `var(${hoveredMc.bgVar})`, border: `1px solid var(${hoveredMc.colorVar})`, opacity: 0.9 }}
           >
-            {mc ? (
-              <>
-                <span style={{ color: `var(${mc.colorVar})`, fontSize: '22px', fontFamily: 'monospace', fontWeight: 700 }}>
-                  {mc.icon}
-                </span>
-                {intensityBar(m!.intensity, mc.colorVar)}
-              </>
-            ) : (
-              <span style={{ color: 'var(--border-dim)', fontSize: '14px' }}>·</span>
-            )}
-          </div>
-        )
-      })}
+            EP{hoveredEp} {hoveredMc.icon} {hoveredSector.stance}
+          </span>
+          <span
+            className="font-mono text-xs leading-relaxed"
+            style={{ color: 'var(--fg-muted)' }}
+          >
+            {hoveredSector.quote ?? '本集未留下說明文字'}
+          </span>
+        </div>
+      )}
     </div>
   )
 }
@@ -192,10 +234,19 @@ function MobileRow({
   expanded: boolean
   onToggle: () => void
 }) {
+  const [selectedEp, setSelectedEp] = useState<number | null>(null)
+
   const entries   = history[name] ?? []
   const lastEntry = entries.length ? entries[entries.length - 1] : null
   const gapEps    = lastEntry ? latestEp - lastEntry.ep : null
   const sc        = lastEntry ? (stanceCfg[lastEntry.stance as StanceKey] ?? stanceCfg['中立']) : null
+
+  const selectedSector = selectedEp
+    ? episodes.find(e => e.episode === selectedEp)?.sectors?.find(s => s.name === name)
+    : null
+  const selectedMc = selectedSector
+    ? (stanceCfg[selectedSector.stance as StanceKey] ?? stanceCfg['中立'])
+    : null
 
   return (
     <div
@@ -267,19 +318,22 @@ function MobileRow({
               {episodes.map(ep => {
                 const m  = ep.sectors?.find(s => s.name === name)
                 const mc = m ? (stanceCfg[m.stance as StanceKey] ?? stanceCfg['中立']) : null
+                const isSel = selectedEp === ep.episode
                 return (
-                  <div
+                  <button
                     key={ep.episode}
-                    className="flex flex-col items-center rounded"
+                    onClick={() => m && setSelectedEp(isSel ? null : ep.episode)}
+                    className="flex flex-col items-center rounded transition-colors duration-100"
                     style={{
                       width: '52px',
                       padding: '6px 4px',
-                      background: 'var(--bg-elevated)',
-                      border: '1px solid var(--border-dim)',
+                      background: isSel && mc ? `var(${mc.bgVar})` : 'var(--bg-elevated)',
+                      border: `1px solid ${isSel && mc ? `var(${mc.colorVar})` : 'var(--border-dim)'}`,
                       gap: '3px',
+                      cursor: m ? 'pointer' : 'default',
                     }}
                   >
-                    <span className="font-mono font-bold" style={{ color: 'var(--fg-dim)', fontSize: '10px' }}>
+                    <span className="font-mono font-bold" style={{ color: isSel && mc ? `var(${mc.colorVar})` : 'var(--fg-dim)', fontSize: '10px' }}>
                       EP{ep.episode}
                     </span>
                     {mc ? (
@@ -292,11 +346,30 @@ function MobileRow({
                     ) : (
                       <span style={{ color: 'var(--border)', fontSize: '16px' }}>○</span>
                     )}
-                  </div>
+                  </button>
                 )
               })}
             </div>
           </div>
+
+          {/* 點選 EP 後顯示說明 */}
+          {selectedEp && selectedSector && selectedMc && (
+            <div
+              className="mt-2 rounded-lg px-3 py-2 flex items-start gap-2"
+              style={{ background: `var(${selectedMc.bgVar})`, border: `1px solid var(${selectedMc.colorVar})` }}
+            >
+              <span
+                className="font-mono font-bold shrink-0 text-xs"
+                style={{ color: `var(${selectedMc.colorVar})` }}
+              >
+                EP{selectedEp} {selectedMc.icon} {selectedSector.stance}
+              </span>
+              <span className="font-mono text-xs leading-relaxed" style={{ color: 'var(--fg-muted)' }}>
+                {selectedSector.quote ?? '本集未留下說明文字'}
+              </span>
+            </div>
+          )}
+
           {gapEps !== null && gapEps > 0 && (
             <p className="font-mono text-xs mt-2" style={{ color: 'var(--fg-dim)' }}>
               距上次提及：{gapEps} 集
