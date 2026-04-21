@@ -14,6 +14,9 @@ export default function QASearch({ allQA }: Props) {
   const [query, setQuery]         = useState('')
   const [activeTag, setActiveTag] = useState<string | null>(null)
   const [activeEp, setActiveEp]   = useState<number | null>(null)
+  const [showAllTags, setShowAllTags] = useState(false)
+
+  const TAG_LIMIT = 12
 
   const allTags = useMemo(() => {
     const set = new Set<string>()
@@ -104,33 +107,61 @@ export default function QASearch({ allQA }: Props) {
       </div>
 
       {/* Tag chips */}
-      <div className="flex gap-2 flex-wrap items-center">
-        <span className="text-xs font-mono shrink-0" style={{ color: 'var(--fg-dim)' }}>標籤</span>
-        <button
-          onClick={() => setActiveTag(null)}
-          className="text-xs px-3 py-1 rounded-full border transition-colors duration-100 cursor-pointer"
-          style={{
-            background: !activeTag ? 'rgba(34,211,238,0.08)' : 'transparent',
-            borderColor: !activeTag ? '#22D3EE' : 'var(--border)',
-            color: !activeTag ? '#22D3EE' : 'var(--fg-muted)',
-          }}
-        >
-          全部
-        </button>
-        {allTags.map(tag => (
+      <div className="flex flex-col gap-1.5">
+        <div className="flex gap-2 flex-wrap items-center">
+          <span className="text-xs font-mono shrink-0" style={{ color: 'var(--fg-dim)' }}>標籤</span>
           <button
-            key={tag}
-            onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+            onClick={() => setActiveTag(null)}
             className="text-xs px-3 py-1 rounded-full border transition-colors duration-100 cursor-pointer"
             style={{
-              background: activeTag === tag ? 'rgba(34,211,238,0.08)' : 'transparent',
-              borderColor: activeTag === tag ? '#22D3EE' : 'var(--border)',
-              color: activeTag === tag ? '#22D3EE' : 'var(--fg-muted)',
+              background: !activeTag ? 'rgba(34,211,238,0.08)' : 'transparent',
+              borderColor: !activeTag ? '#22D3EE' : 'var(--border)',
+              color: !activeTag ? '#22D3EE' : 'var(--fg-muted)',
             }}
           >
-            #{tag}
+            全部
           </button>
-        ))}
+          {(showAllTags ? allTags : allTags.slice(0, TAG_LIMIT)).map(tag => (
+            <button
+              key={tag}
+              onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+              className="text-xs px-3 py-1 rounded-full border transition-colors duration-100 cursor-pointer"
+              style={{
+                background: activeTag === tag ? 'rgba(34,211,238,0.08)' : 'transparent',
+                borderColor: activeTag === tag ? '#22D3EE' : 'var(--border)',
+                color: activeTag === tag ? '#22D3EE' : 'var(--fg-muted)',
+              }}
+            >
+              #{tag}
+            </button>
+          ))}
+          {/* 選中的 tag 若在收起區，單獨顯示 */}
+          {!showAllTags && activeTag && !allTags.slice(0, TAG_LIMIT).includes(activeTag) && (
+            <button
+              onClick={() => setActiveTag(null)}
+              className="text-xs px-3 py-1 rounded-full border transition-colors duration-100 cursor-pointer"
+              style={{
+                background: 'rgba(34,211,238,0.08)',
+                borderColor: '#22D3EE',
+                color: '#22D3EE',
+              }}
+            >
+              #{activeTag}
+            </button>
+          )}
+          {/* 展開／收起按鈕 */}
+          {allTags.length > TAG_LIMIT && (
+            <button
+              onClick={() => setShowAllTags(v => !v)}
+              className="text-xs px-2.5 py-1 rounded-full border transition-colors duration-100 cursor-pointer font-mono"
+              style={{ borderColor: 'var(--border-dim)', color: 'var(--fg-dim)', borderStyle: 'dashed' }}
+              onMouseEnter={e => (e.currentTarget.style.color = 'var(--fg)')}
+              onMouseLeave={e => (e.currentTarget.style.color = 'var(--fg-dim)')}
+            >
+              {showAllTags ? '收起 ↑' : `+${allTags.length - TAG_LIMIT} 更多 ↓`}
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Count */}
