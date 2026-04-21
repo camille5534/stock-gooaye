@@ -88,6 +88,8 @@ export default function HistoryChart({ history }: Props) {
             axisLine={false}
             tickLine={false}
             height={36}
+            minTickGap={50}
+            padding={{ left: 15, right: 15 }}
           />
           <YAxis
             tick={{ fill: '#4B5563', fontSize: 11, fontFamily: 'var(--font-geist-mono)' }}
