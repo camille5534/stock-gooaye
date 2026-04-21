@@ -96,8 +96,8 @@ export default function StockTable({ stocks }: Props) {
               <div
                 className="px-4 py-3"
                 style={{
-                  background: 'rgba(30,41,59,0.95)',
-                  borderTop: '1px solid rgba(255,255,255,0.07)',
+                  background: 'var(--bg-card)',
+                  borderTop: '1px solid var(--border-dim)',
                   borderBottom: isLast ? 'none' : '1px solid var(--border-dim)',
                   borderLeft: `3px solid ${cfg.color}`,
                 }}
