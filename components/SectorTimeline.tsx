@@ -444,7 +444,7 @@ export default function SectorTimeline({ episodes, config, history }: Props) {
     setExpandedSector(prev => (prev === name ? null : name))
 
   const sorted   = [...episodes].sort((a, b) => a.episode - b.episode)
-  const recent   = sorted.slice(-8)
+  const recent   = sorted.slice(-12)
   const latestEp = recent[recent.length - 1]?.episode ?? 0
 
   const allSectors = Array.from(new Set([...config.core, ...Object.keys(history)]))
