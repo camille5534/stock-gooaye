@@ -54,6 +54,13 @@
   ],
   "記憶體": [
     {
+      "ep": 646,
+      "date": "2026-03-21",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "NAND 優於 DRAM，AI 廢圖廢片推升存儲需求，但美光財報低於市場預期"
+    },
+    {
       "ep": 648,
       "date": "2026-04-15",
       "stance": "中立",
@@ -66,9 +73,23 @@
       "stance": "中立",
       "intensity": 1,
       "quote": "資金已充分反應，可能橫盤，等更大 catalyst"
+    },
+    {
+      "ep": 655,
+      "date": "2026-04-22",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "台股記憶體族群相對較弱，美、韓、日股表現較強"
     }
   ],
   "被動元件": [
+    {
+      "ep": 646,
+      "date": "2026-03-21",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "需區分需求驅動與成本轉嫁，高階 MLCC 與 TLVR 電感較具確定性"
+    },
     {
       "ep": 653,
       "date": "2026-04-15",
@@ -82,9 +103,23 @@
       "stance": "正面",
       "intensity": 3,
       "quote": "電阻也發漲價信，全球族群齊噴，稼動率跳滿就是缺貨劇本"
+    },
+    {
+      "ep": 655,
+      "date": "2026-04-22",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "日本、韓國三星電機、美國 VSE 走勢強勁，台股被動元件在歷史新高但節奏相對慢"
     }
   ],
   "光通訊/CPO": [
+    {
+      "ep": 646,
+      "date": "2026-03-21",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "AI 2.0 核心族群，Networking 組網需求持續上修，進入國民制服股位階"
+    },
     {
       "ep": 653,
       "date": "2026-04-15",
@@ -116,6 +151,24 @@
       "stance": "正面",
       "intensity": 3,
       "quote": "CPU 可能比記憶體更缺，買不到不是貴，Agentic AI 推升需求"
+    }
+  ],
+  "電力/SMR": [
+    {
+      "ep": 646,
+      "date": "2026-03-21",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "Data Center 缺電問題討論 On-site 現地發電，SMR 實際規模遠大於想像"
+    }
+  ],
+  "ASIC/客製化晶片": [
+    {
+      "ep": 655,
+      "date": "2026-04-22",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "Google HF 供應鏈三強格局確立，AVGO/MRVL/MTK 三家都吃不完，MTK 兩根漲停印證題材"
     }
   ]
 }
