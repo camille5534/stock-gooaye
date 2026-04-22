@@ -97,15 +97,14 @@ function DesktopRow({
     <div
       className="sector-row hidden md:flex flex-col"
       style={{
-        borderLeft: `3px solid var(${layerBorderVar[layer]})`,
         background: isEven ? 'var(--bg-card)' : 'var(--bg-elevated)',
         borderBottom: '1px solid var(--border-dim)',
       }}
     >
       {/* 主列 */}
       <div className="flex items-stretch" style={{ minHeight: '68px' }}>
-        {/* 族群名 + quote */}
-        <div className="flex flex-col justify-center gap-1 px-3 py-3 shrink-0" style={{ width: '220px' }}>
+        {/* 族群名 + quote - sticky */}
+        <div className="flex flex-col justify-center gap-1 px-3 py-3 shrink-0" style={{ width: '220px', position: 'sticky', left: 0, zIndex: 10, background: isEven ? 'var(--bg-card)' : 'var(--bg-elevated)', borderLeft: `3px solid var(${layerBorderVar[layer]})` }}>
           <span className="font-mono font-bold" style={{ color: 'var(--fg)', fontSize: '14px' }}>
             {name}
           </span>
@@ -128,10 +127,10 @@ function DesktopRow({
           )}
         </div>
 
-        {/* 近況 */}
+        {/* 近況 - sticky */}
         <div
           className="flex flex-col justify-center items-start gap-1.5 px-3 py-3 shrink-0"
-          style={{ width: '130px', borderLeft: '1px solid var(--border-dim)' }}
+          style={{ width: '130px', borderLeft: '1px solid var(--border-dim)', position: 'sticky', left: '220px', zIndex: 10, background: isEven ? 'var(--bg-card)' : 'var(--bg-elevated)' }}
         >
           {sc ? (
             <>
@@ -460,6 +459,12 @@ export default function SectorTimeline({ episodes, config, history }: Props) {
     <div className="flex flex-col gap-4">
 
       {/* 桌機：完整表格 */}
+      <div className="relative">
+      {/* 右側漸層遮罩：暗示還有內容可橫向捲動 */}
+      <div
+        className="hidden md:block absolute inset-y-0 right-0 w-16 pointer-events-none rounded-r-lg z-30"
+        style={{ background: 'linear-gradient(to right, transparent, var(--bg))' }}
+      />
       <div
         className="rounded-lg border overflow-x-auto"
         style={{ borderColor: 'var(--border)' }}
@@ -469,10 +474,10 @@ export default function SectorTimeline({ episodes, config, history }: Props) {
           className="hidden md:flex items-stretch"
           style={{ background: 'var(--bg-elevated)', borderBottom: `2px solid var(--border)` }}
         >
-          <div className="flex items-center px-3 py-2 shrink-0 font-mono text-xs" style={{ width: '220px', color: 'var(--fg-muted)' }}>
+          <div className="flex items-center px-3 py-2 shrink-0 font-mono text-xs" style={{ width: '220px', color: 'var(--fg-muted)', position: 'sticky', left: 0, zIndex: 20, background: 'var(--bg-elevated)' }}>
             族群
           </div>
-          <div className="flex items-center px-3 py-2 shrink-0 font-mono text-xs" style={{ width: '130px', borderLeft: '1px solid var(--border)', color: 'var(--fg-muted)' }}>
+          <div className="flex items-center px-3 py-2 shrink-0 font-mono text-xs" style={{ width: '130px', borderLeft: '1px solid var(--border)', color: 'var(--fg-muted)', position: 'sticky', left: '220px', zIndex: 20, background: 'var(--bg-elevated)' }}>
             近況
           </div>
           {recent.map(ep => (
@@ -513,6 +518,7 @@ export default function SectorTimeline({ episodes, config, history }: Props) {
           sectors={watching} indexOffset={core.length + active.length} {...sharedSectionProps}
         />
       </div>
+      </div>{/* end relative wrapper */}
 
       {/* 圖例 */}
       <div
