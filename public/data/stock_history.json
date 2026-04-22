@@ -482,17 +482,6 @@
         "quote": "Apple 廉價 CFI 模式受益 AI，Marvell 技術線型強勢，傑文斯悖論支撐記憶體長期需求"
       },
       {
-        "episode": 649,
-        "date": "2026-04-01",
-        "stance": "正面",
-        "intensity": 2,
-        "stocks": [
-          "NVDA",
-          "MRVL"
-        ],
-        "quote": "NVIDIA 投資 Marvell 20億美元，NVLink Fusion 生態抗衡 Broadcom，AI 是藍海各路標的可共存"
-      },
-      {
         "episode": 648,
         "date": "2026-03-28",
         "stance": "正面",
@@ -502,6 +491,17 @@
           "AVGO"
         ],
         "quote": "半導體 AI 需求持續，分批布局"
+      },
+      {
+        "episode": 649,
+        "date": "2026-04-01",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "NVDA",
+          "MRVL"
+        ],
+        "quote": "NVIDIA 投資 Marvell 20億美元，NVLink Fusion 生態抗衡 Broadcom，AI 是藍海各路標的可共存"
       },
       {
         "episode": 653,
@@ -528,18 +528,14 @@
     ],
     "記憶體": [
       {
-        "ep": 646,
+        "episode": 646,
+        "date": "2026-03-21",
         "stance": "觀察",
         "intensity": 1,
+        "stocks": [
+          "MU"
+        ],
         "quote": "NAND 優於 DRAM，AI 廢圖廢片推升存儲需求，但美光財報低於市場預期"
-      },
-      {
-        "episode": 651,
-        "date": "2026-04-08",
-        "stance": "觀察",
-        "intensity": 1,
-        "stocks": [],
-        "quote": "Apple 吸收記憶體漲價不轉嫁，中國手機廠受創，缺料持續"
       },
       {
         "episode": 648,
@@ -550,6 +546,14 @@
           "MU"
         ],
         "quote": "殖利率影響估值，保持觀察"
+      },
+      {
+        "episode": 651,
+        "date": "2026-04-08",
+        "stance": "觀察",
+        "intensity": 1,
+        "stocks": [],
+        "quote": "Apple 吸收記憶體漲價不轉嫁，中國手機廠受創，缺料持續"
       },
       {
         "episode": 654,
@@ -580,9 +584,11 @@
     ],
     "被動元件": [
       {
-        "ep": 646,
+        "episode": 646,
+        "date": "2026-03-21",
         "stance": "觀察",
         "intensity": 1,
+        "stocks": [],
         "quote": "需區分需求驅動與成本轉嫁，高階 MLCC 與 TLVR 電感較具確定性"
       },
       {
@@ -638,9 +644,14 @@
     ],
     "光通訊/CPO": [
       {
-        "ep": 646,
+        "episode": 646,
+        "date": "2026-03-21",
         "stance": "正面",
         "intensity": 2,
+        "stocks": [
+          "6451",
+          "4958"
+        ],
         "quote": "AI 2.0 核心族群，Networking 組網需求持續上修，進入國民制服股位階"
       },
       {
@@ -768,9 +779,13 @@
     ],
     "電力/SMR": [
       {
-        "ep": 646,
+        "episode": 646,
+        "date": "2026-03-21",
         "stance": "觀察",
         "intensity": 1,
+        "stocks": [
+          "BE"
+        ],
         "quote": "Data Center 缺電問題討論 On-site 現地發電，SMR 實際規模遠大於想像"
       }
     ]
