@@ -1,6 +1,22 @@
 {
   "rankings": [
     {
+      "code": "MRVL",
+      "name": "Marvell",
+      "count": 6,
+      "positive": 4,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        648,
+        649,
+        651,
+        652,
+        653,
+        655
+      ]
+    },
+    {
       "code": "2330",
       "name": "台積電",
       "count": 4,
@@ -11,6 +27,34 @@
         647,
         649,
         653,
+        654
+      ]
+    },
+    {
+      "code": "NVDA",
+      "name": "NVIDIA",
+      "count": 4,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 3,
+      "episodes": [
+        648,
+        649,
+        650,
+        652
+      ]
+    },
+    {
+      "code": "INTC",
+      "name": "Intel",
+      "count": 4,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        648,
+        650,
+        651,
         654
       ]
     },
@@ -30,24 +74,27 @@
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 2,
-      "positive": 1,
+      "count": 3,
+      "positive": 2,
       "negative": 0,
       "neutral": 1,
       "episodes": [
         649,
-        653
+        653,
+        655
       ]
     },
     {
-      "code": "NET",
-      "name": "Cloudflare",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
+      "code": "TSLA",
+      "name": "Tesla",
+      "count": 3,
+      "positive": 0,
+      "negative": 2,
+      "neutral": 1,
       "episodes": [
-        647
+        647,
+        651,
+        652
       ]
     },
     {
@@ -60,6 +107,65 @@
       "episodes": [
         647,
         652
+      ]
+    },
+    {
+      "code": "6285",
+      "name": "啟碁",
+      "count": 2,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        650,
+        653
+      ]
+    },
+    {
+      "code": "AMD",
+      "name": "AMD",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        650,
+        654
+      ]
+    },
+    {
+      "code": "AAPL",
+      "name": "Apple",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        648,
+        651
+      ]
+    },
+    {
+      "code": "AVGO",
+      "name": "Broadcom",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        649,
+        655
+      ]
+    },
+    {
+      "code": "NET",
+      "name": "Cloudflare",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        647
       ]
     },
     {
@@ -96,48 +202,6 @@
       ]
     },
     {
-      "code": "TSLA",
-      "name": "Tesla",
-      "count": 3,
-      "positive": 0,
-      "negative": 2,
-      "neutral": 1,
-      "episodes": [
-        647,
-        651,
-        652
-      ]
-    },
-    {
-      "code": "NVDA",
-      "name": "NVIDIA",
-      "count": 4,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 3,
-      "episodes": [
-        648,
-        649,
-        650,
-        652
-      ]
-    },
-    {
-      "code": "MRVL",
-      "name": "Marvell",
-      "count": 5,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 2,
-      "episodes": [
-        648,
-        649,
-        651,
-        652,
-        653
-      ]
-    },
-    {
       "code": "AI算力",
       "name": "AI Token 與算力報價",
       "count": 1,
@@ -146,56 +210,6 @@
       "neutral": 1,
       "episodes": [
         653
-      ]
-    },
-    {
-      "code": "6285",
-      "name": "啟碁",
-      "count": 2,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 2,
-      "episodes": [
-        650,
-        653
-      ]
-    },
-    {
-      "code": "INTC",
-      "name": "Intel",
-      "count": 4,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 2,
-      "episodes": [
-        648,
-        650,
-        651,
-        654
-      ]
-    },
-    {
-      "code": "AMD",
-      "name": "AMD",
-      "count": 2,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        650,
-        654
-      ]
-    },
-    {
-      "code": "AAPL",
-      "name": "Apple",
-      "count": 2,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        648,
-        651
       ]
     },
     {
@@ -240,17 +254,6 @@
       "neutral": 0,
       "episodes": [
         654
-      ]
-    },
-    {
-      "code": "AVGO",
-      "name": "Broadcom",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        649
       ]
     },
     {
@@ -340,6 +343,39 @@
       "episodes": [
         646
       ]
+    },
+    {
+      "code": "AOI",
+      "name": "Applied Optoelectronics",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        655
+      ]
+    },
+    {
+      "code": "4919",
+      "name": "新唐科技",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        655
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電（UMC）",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        655
+      ]
     }
   ],
   "sentiment_history": [
@@ -423,6 +459,15 @@
       "bull_pct": 78,
       "bear_pct": 22,
       "vix": 17.48
+    },
+    {
+      "episode": 655,
+      "date": "2026-04-22",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 75,
+      "bear_pct": 25,
+      "vix": 19.15
     }
   ],
   "sector_mentions": {
@@ -565,6 +610,14 @@
           "3008"
         ],
         "quote": "資金已充分反應，可能橫盤，等更大 catalyst"
+      },
+      {
+        "episode": 655,
+        "date": "2026-04-22",
+        "stance": "觀察",
+        "intensity": 1,
+        "stocks": [],
+        "quote": "台股記憶體族群相對較弱，美、韓、日股表現較強"
       }
     ],
     "CPU/處理器": [
@@ -640,6 +693,14 @@
           "Murata"
         ],
         "quote": "電阻也發漲價信，全球族群齊噴，稼動率跳滿就是缺貨劇本"
+      },
+      {
+        "episode": 655,
+        "date": "2026-04-22",
+        "stance": "觀察",
+        "intensity": 1,
+        "stocks": [],
+        "quote": "日本、韓國三星電機、美國 VSE 走勢強勁，台股被動元件在歷史新高但節奏相對慢"
       }
     ],
     "光通訊/CPO": [
@@ -787,6 +848,20 @@
           "BE"
         ],
         "quote": "Data Center 缺電問題討論 On-site 現地發電，SMR 實際規模遠大於想像"
+      }
+    ],
+    "ASIC/客製化晶片": [
+      {
+        "episode": 655,
+        "date": "2026-04-22",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "2454",
+          "MRVL",
+          "AVGO"
+        ],
+        "quote": "Google HF 供應鏈三強格局確立，AVGO/MRVL/MTK 三家都吃不完，MTK 兩根漲停印證題材"
       }
     ]
   }
