@@ -461,7 +461,7 @@ export default function SectorTimeline({ episodes, config, history }: Props) {
 
       {/* 桌機：完整表格 */}
       <div
-        className="rounded-lg border overflow-hidden"
+        className="rounded-lg border overflow-x-auto"
         style={{ borderColor: 'var(--border)' }}
       >
         {/* 桌機表頭 */}
