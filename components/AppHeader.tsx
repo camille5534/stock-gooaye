@@ -7,7 +7,8 @@ import ThemeSwitcher from './ThemeSwitcher'
 const tabs = [
   { href: '/',        label: '看板',    bgVar: '--tab-home-bg',   fgVar: '--tab-home-fg'   },
   { href: '/sectors', label: '族群雷達', bgVar: '--tab-sector-bg', fgVar: '--tab-sector-fg' },
-  { href: '/qa',      label: 'Q&A 精華', bgVar: '--tab-qa-bg',    fgVar: '--tab-qa-fg'     },
+  { href: '/qa',      label: 'Q&A 精華',  bgVar: '--tab-qa-bg',    fgVar: '--tab-qa-fg'     },
+  { href: '/picks',   label: '成績單',    bgVar: '--tab-picks-bg', fgVar: '--tab-picks-fg'  },
 ]
 
 interface Props {
