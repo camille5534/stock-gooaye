@@ -284,7 +284,7 @@ export default function PicksTrend({ data }: Props) {
             ACTIVE
           </span>
           <span className="font-mono text-xs" style={{ color: 'var(--fg-dim)' }}>
-            最近 7 天內提及 · {active.length} 支
+            最新 5 集內提及 · {active.length} 支
           </span>
         </div>
 

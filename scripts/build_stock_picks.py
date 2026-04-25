@@ -24,34 +24,45 @@ def to_ticker(code: str) -> str:
     return code + ".TW" if code.isdigit() else code
 
 
-def fetch_daily_series(ticker: str, start_date: str) -> list[dict]:
-    """從 start_date 到今天的每日收盤序列"""
-    try:
-        d_start = datetime.date.fromisoformat(start_date)
-        ts1 = int(datetime.datetime(d_start.year, d_start.month, d_start.day).timestamp())
-        ts2 = int(datetime.datetime(TODAY.year, TODAY.month, TODAY.day, 23, 59, 59).timestamp())
+def fetch_daily_series_raw(ticker: str, ts1: int, ts2: int) -> list[dict]:
+    url = (
+        f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
+        f"?interval=1d&period1={ts1}&period2={ts2}"
+    )
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        data = json.loads(resp.read())
+    result = data["chart"]["result"][0]
+    timestamps = result["timestamp"]
+    closes = result["indicators"]["quote"][0]["close"]
+    series = []
+    for ts, close in zip(timestamps, closes):
+        if close is not None:
+            day = datetime.datetime.utcfromtimestamp(ts).date()
+            series.append({"date": str(day), "close": round(close, 2)})
+    return series
 
-        url = (
-            f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
-            f"?interval=1d&period1={ts1}&period2={ts2}"
-        )
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            data = json.loads(resp.read())
 
-        result = data["chart"]["result"][0]
-        timestamps = result["timestamp"]
-        closes = result["indicators"]["quote"][0]["close"]
+def fetch_daily_series(ticker: str, start_date: str) -> tuple[str, list[dict]]:
+    """從 start_date 到今天的每日收盤。台股先試 .TW，失敗再試 .TWO（上櫃股）。
+    回傳 (實際使用的 ticker, 序列)"""
+    d_start = datetime.date.fromisoformat(start_date)
+    ts1 = int(datetime.datetime(d_start.year, d_start.month, d_start.day).timestamp())
+    ts2 = int(datetime.datetime(TODAY.year, TODAY.month, TODAY.day, 23, 59, 59).timestamp())
 
-        series = []
-        for ts, close in zip(timestamps, closes):
-            if close is not None:
-                day = datetime.datetime.utcfromtimestamp(ts).date()
-                series.append({"date": str(day), "close": round(close, 2)})
-        return series
-    except Exception as e:
-        print(f"    [warn] {ticker} 日線失敗: {e}", flush=True)
-        return []
+    tickers_to_try = [ticker]
+    if ticker.endswith(".TW"):
+        tickers_to_try.append(ticker[:-3] + ".TWO")  # 上櫃 fallback
+
+    for t in tickers_to_try:
+        try:
+            series = fetch_daily_series_raw(t, ts1, ts2)
+            if series:
+                return t, series
+        except Exception as e:
+            print(f"    [warn] {t} 失敗: {e}", flush=True)
+
+    return ticker, []
 
 
 def find_closest_price(prices: list[dict], target_date: str) -> float | None:
@@ -119,7 +130,8 @@ def build():
         last_date = mentions[-1]["date"]
 
         print(f"  {code} ({s['ticker']}) 從 {first_date} ...", flush=True)
-        prices = fetch_daily_series(s["ticker"], first_date)
+        actual_ticker, prices = fetch_daily_series(s["ticker"], first_date)
+        s["ticker"] = actual_ticker  # 更新為實際有效的 ticker（可能是 .TWO）
         time.sleep(0.4)
 
         # 找每個 mention 當天（或最近交易日）的收盤

@@ -372,7 +372,7 @@
     {
       "code": "6187",
       "name": "萬潤",
-      "ticker": "6187.TW",
+      "ticker": "6187.TWO",
       "mentions": [
         {
           "episode": 654,
@@ -380,14 +380,35 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「CPU（應指 CPO）相關的這些測試設備...我手上我蠻喜歡就華自貿跟萬論（萬潤）。」",
-          "ep_price": null
+          "ep_price": 1225.0
         }
       ],
-      "prices": [],
+      "prices": [
+        {
+          "date": "2026-04-20",
+          "close": 1225.0
+        },
+        {
+          "date": "2026-04-21",
+          "close": 1330.0
+        },
+        {
+          "date": "2026-04-22",
+          "close": 1390.0
+        },
+        {
+          "date": "2026-04-23",
+          "close": 1255.0
+        },
+        {
+          "date": "2026-04-24",
+          "close": 1170.0
+        }
+      ],
       "last_mention_date": "2026-04-18",
-      "last_ep_price": null,
-      "current_price": null,
-      "current_pct": null
+      "last_ep_price": 1225.0,
+      "current_price": 1170.0,
+      "current_pct": -4.49
     },
     {
       "code": "TSLA",
