@@ -2,8 +2,8 @@ name: Update Picks
 
 on:
   schedule:
-    # 每個工作日 UTC 00:00（台灣時間 08:00）
-    - cron: '0 0 * * 1-5'
+    # 每個工作日 UTC 07:00（台灣時間 15:00，台股收盤後）
+    - cron: '0 7 * * 1-5'
   workflow_dispatch:  # 可手動在 GitHub 網頁上觸發
 
 permissions:
