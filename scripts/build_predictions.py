@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
 build_predictions.py
-讀取 public/data/episodes/*.json，查 Yahoo Finance 次日收盤，
+讀取 public/data/episodes/*.json，查 Yahoo Finance 三個時間點收盤，
 產生 public/data/predictions.json。
+時間點：D+1（次日）、D+7（一週後）、D+14（兩週後）
 """
 
 import json
@@ -10,7 +11,6 @@ import time
 import datetime
 import pathlib
 import urllib.request
-import urllib.error
 
 ROOT = pathlib.Path(__file__).parent.parent
 EPISODES_DIR = ROOT / "public" / "data" / "episodes"
@@ -26,15 +26,18 @@ def to_ticker(code: str) -> str:
 
 
 def fetch_close(ticker: str, date_str: str) -> tuple[float | None, str | None]:
-    """回傳 (收盤價, 實際日期)，找不到回傳 (None, None)"""
+    """回傳 (收盤價, 實際交易日)，查不到回傳 (None, None)"""
     try:
         d = datetime.date.fromisoformat(date_str)
     except ValueError:
         return None, None
 
-    # 往前抓 5 天，確保能抓到當日或最近交易日
+    # 未來日期直接跳過（還沒發生）
+    if d > datetime.date.today():
+        return None, None
+
     ts1 = int(datetime.datetime(d.year, d.month, d.day).timestamp())
-    ts2 = int((datetime.datetime(d.year, d.month, d.day) + datetime.timedelta(days=5)).timestamp())
+    ts2 = int((datetime.datetime(d.year, d.month, d.day) + datetime.timedelta(days=6)).timestamp())
 
     url = (
         f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
@@ -47,7 +50,6 @@ def fetch_close(ticker: str, date_str: str) -> tuple[float | None, str | None]:
         result = data["chart"]["result"][0]
         timestamps = result["timestamp"]
         closes = result["indicators"]["quote"][0]["close"]
-        # 找 >= date_str 的第一筆
         for ts, close in zip(timestamps, closes):
             day = datetime.datetime.utcfromtimestamp(ts).date()
             if str(day) >= date_str and close is not None:
@@ -57,9 +59,10 @@ def fetch_close(ticker: str, date_str: str) -> tuple[float | None, str | None]:
     return None, None
 
 
-def next_trading_date(date_str: str) -> str:
-    d = datetime.date.fromisoformat(date_str) + datetime.timedelta(days=1)
-    return str(d)
+def pct(base: float | None, target: float | None) -> float | None:
+    if base and target:
+        return round((target - base) / base * 100, 2)
+    return None
 
 
 def build():
@@ -85,29 +88,36 @@ def build():
             quote = stock.get("quote", "")
             name = stock.get("name", code)
 
-            print(f"  EP{ep_num} {code} ({ticker}) {stance} ...", flush=True)
+            print(f"  EP{ep_num} {code} ...", flush=True)
 
             ep_price, ep_date_actual = fetch_close(ticker, ep_date)
             time.sleep(0.3)
 
             if ep_date_actual:
-                next_date = next_trading_date(ep_date_actual)
-                next_price, next_day = fetch_close(ticker, next_date)
-                time.sleep(0.3)
-            else:
-                next_price, next_day = None, None
+                d1_target = str(datetime.date.fromisoformat(ep_date_actual) + datetime.timedelta(days=1))
+                d7_target = str(datetime.date.fromisoformat(ep_date_actual) + datetime.timedelta(days=7))
+                d14_target = str(datetime.date.fromisoformat(ep_date_actual) + datetime.timedelta(days=14))
 
-            if ep_price and next_price:
-                ret = round((next_price - ep_price) / ep_price * 100, 2)
-                if stance_score > 0:
-                    correct = ret > 0
-                else:
-                    correct = ret < 0
-                status = "hit" if correct else "miss"
-            elif ep_price is None and next_price is None:
-                ret, correct, status = None, None, "no_data"
+                d1_price, d1_date = fetch_close(ticker, d1_target); time.sleep(0.3)
+                d7_price, d7_date = fetch_close(ticker, d7_target); time.sleep(0.3)
+                d14_price, d14_date = fetch_close(ticker, d14_target); time.sleep(0.3)
             else:
-                ret, correct, status = None, None, "pending"
+                d1_price = d1_date = None
+                d7_price = d7_date = None
+                d14_price = d14_date = None
+
+            d1_pct = pct(ep_price, d1_price)
+            d7_pct = pct(ep_price, d7_price)
+            d14_pct = pct(ep_price, d14_price)
+
+            # 勝率判斷以 D+1 為準
+            if ep_price and d1_price:
+                correct = (d1_pct > 0) if stance_score > 0 else (d1_pct < 0)
+                status = "hit" if correct else "miss"
+            elif ep_price is None:
+                correct, status = None, "no_data"
+            else:
+                correct, status = None, "pending"
 
             picks.append({
                 "episode": ep_num,
@@ -120,14 +130,19 @@ def build():
                 "ticker": ticker,
                 "ep_date_actual": ep_date_actual,
                 "ep_price": ep_price,
-                "next_day": next_day,
-                "next_price": next_price,
-                "return_pct": ret,
+                "d1_date": d1_date,
+                "d1_price": d1_price,
+                "d1_pct": d1_pct,
+                "d7_date": d7_date,
+                "d7_price": d7_price,
+                "d7_pct": d7_pct,
+                "d14_date": d14_date,
+                "d14_price": d14_price,
+                "d14_pct": d14_pct,
                 "correct": correct,
                 "status": status,
             })
 
-    # 統計
     valid = [p for p in picks if p["status"] in ("hit", "miss")]
     hits = [p for p in valid if p["status"] == "hit"]
     misses = [p for p in valid if p["status"] == "miss"]
