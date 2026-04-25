@@ -69,7 +69,7 @@ function EpPill({ mention }: { mention: Mention }) {
         <div
           className="absolute z-50 rounded-lg border p-3 font-mono text-xs leading-relaxed"
           style={{
-            bottom: 'calc(100% + 6px)',
+            top: 'calc(100% + 6px)',
             left: 0,
             minWidth: '220px',
             maxWidth: '320px',
@@ -204,7 +204,7 @@ function StockCard({ stock }: { stock: StockEntry }) {
 
   return (
     <div
-      className="rounded-xl border overflow-hidden"
+      className="rounded-xl border"
       style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
     >
       {/* Header */}
