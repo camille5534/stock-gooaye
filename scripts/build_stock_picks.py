@@ -3,7 +3,7 @@
 build_stock_picks.py
 以「股票」為群組，抓從第一次被提到到今天的完整日線，
 產生 public/data/stock_picks.json。
-Active = 最近 7 天內有提到；History = 超過 7 天。
+Active = 最新 5 集內有提到；History = 最新 5 集都沒提到。
 """
 
 import json
@@ -17,7 +17,6 @@ EPISODES_DIR = ROOT / "public" / "data" / "episodes"
 OUT_FILE = ROOT / "public" / "data" / "stock_picks.json"
 
 SKIP_STANCES = {"觀察", "中立", "neutral", "observe"}
-ACTIVE_DAYS = 7
 TODAY = datetime.date.today()
 
 
@@ -55,8 +54,24 @@ def fetch_daily_series(ticker: str, start_date: str) -> list[dict]:
         return []
 
 
+def find_closest_price(prices: list[dict], target_date: str) -> float | None:
+    """找目標日期當天或之後最近一個交易日的收盤"""
+    for p in prices:
+        if p["date"] >= target_date:
+            return p["close"]
+    return None
+
+
 def build():
     ep_files = sorted(EPISODES_DIR.glob("ep_*.json"))
+
+    # 取得所有集數號碼，找出最新 5 集
+    all_ep_nums = []
+    for ep_file in ep_files:
+        with open(ep_file, encoding="utf-8") as f:
+            ep = json.load(f)
+        all_ep_nums.append(ep["episode"])
+    recent_5 = set(sorted(all_ep_nums)[-5:])
 
     # 收集所有提及（以 code 為 key）
     stocks: dict[str, dict] = {}
@@ -107,14 +122,16 @@ def build():
         prices = fetch_daily_series(s["ticker"], first_date)
         time.sleep(0.4)
 
-        # 找每個 mention 當天的收盤
-        price_map = {p["date"]: p["close"] for p in prices}
+        # 找每個 mention 當天（或最近交易日）的收盤
         for m in mentions:
-            m["ep_price"] = price_map.get(m["date"])
+            m["ep_price"] = find_closest_price(prices, m["date"])
 
-        # 最新價 & 相對最後一次提及的漲跌
+        # 最新價
         current_price = prices[-1]["close"] if prices else None
+
+        # 基準：最後一次提及的收盤（用 closest 確保不為 None）
         last_ep_price = mentions[-1].get("ep_price")
+
         current_pct = (
             round((current_price - last_ep_price) / last_ep_price * 100, 2)
             if current_price and last_ep_price else None
@@ -130,18 +147,19 @@ def build():
             "current_pct": current_pct,
         }
 
-        days_since = (TODAY - datetime.date.fromisoformat(last_date)).days
-        if days_since <= ACTIVE_DAYS:
+        # Active = 最新 5 集內有提到
+        is_active = any(m["episode"] in recent_5 for m in mentions)
+        if is_active:
             active.append(entry)
         else:
             history.append(entry)
 
-    # Active 照最後提及日期由新到舊；History 同
     active.sort(key=lambda x: x["last_mention_date"], reverse=True)
     history.sort(key=lambda x: x["last_mention_date"], reverse=True)
 
     output = {
         "generated_at": str(TODAY),
+        "recent_episodes": sorted(recent_5),
         "active": active,
         "history": history,
     }
@@ -149,7 +167,7 @@ def build():
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    print(f"\n完成：Active {len(active)} 支，History {len(history)} 支")
+    print(f"\n完成：Active {len(active)} 支 (最新5集: EP{min(recent_5)}-EP{max(recent_5)})，History {len(history)} 支")
 
 
 if __name__ == "__main__":

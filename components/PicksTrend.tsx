@@ -35,8 +35,13 @@ interface Props {
   }
 }
 
+// 立場顏色（主委意見方向，綠/紅）
 const stanceColor = (score: number) =>
   score > 0 ? 'var(--stance-pos)' : score < 0 ? 'var(--stance-neg)' : 'var(--fg-dim)'
+
+// 漲跌顏色（價格變動，藍/橙，避免與台股紅綠混淆）
+const priceColor = (v: number | null) =>
+  v === null ? 'var(--fg-dim)' : v > 0 ? 'var(--cyan)' : v < 0 ? 'var(--orange)' : 'var(--fg-muted)'
 
 const fmtDate = (d: string) => d.slice(5).replace('-', '/')
 
@@ -112,6 +117,11 @@ function ChartTooltip({ active, payload, mentions }: any) {
       <div style={{ color: 'var(--fg-dim)' }} className="mb-1">{d.date}</div>
       <div className="font-bold" style={{ color: 'var(--fg)', fontSize: '14px' }}>
         {d.close}
+        {d.base && d.close !== d.base && (
+          <span className="ml-1 text-xs font-normal" style={{ color: priceColor(d.close > d.base ? 1 : -1) }}>
+            {d.close > d.base ? '▲' : '▼'}
+          </span>
+        )}
       </div>
       {mention && (
         <div
@@ -154,9 +164,12 @@ function SparklineChart({ stock }: { stock: StockEntry }) {
   const maxP = Math.max(...prices.map(p => p.close))
   const pad = (maxP - minP) * 0.15
 
-  // Determine line color by last mention stance
-  const lastMention = mentions[mentions.length - 1]
-  const lineColor = stanceColor(lastMention.stance_score)
+  // 折線顏色用價格漲跌（藍=漲，橙=跌），不用立場顏色
+  const firstClose = prices[0]?.close
+  const lastClose = prices[prices.length - 1]?.close
+  const lineColor = firstClose && lastClose
+    ? (lastClose >= firstClose ? 'var(--cyan)' : 'var(--orange)')
+    : 'var(--fg-dim)'
 
   return (
     <ResponsiveContainer width="100%" height={90}>
@@ -196,11 +209,7 @@ function SparklineChart({ stock }: { stock: StockEntry }) {
 }
 
 function StockCard({ stock }: { stock: StockEntry }) {
-  const pctColor =
-    stock.current_pct === null ? 'var(--fg-dim)' :
-    stock.current_pct > 0 ? 'var(--stance-pos)' :
-    stock.current_pct < 0 ? 'var(--stance-neg)' :
-    'var(--fg-muted)'
+  const pctColor = priceColor(stock.current_pct)
 
   return (
     <div
@@ -271,7 +280,7 @@ export default function PicksTrend({ data }: Props) {
       {/* Active */}
       <div>
         <div className="flex items-center gap-2 mb-3">
-          <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: 'var(--stance-pos-bg)', color: 'var(--stance-pos)' }}>
+          <span className="font-mono text-xs font-bold px-2 py-0.5 rounded-full" style={{ background: 'var(--accent-glow)', color: 'var(--accent)' }}>
             ACTIVE
           </span>
           <span className="font-mono text-xs" style={{ color: 'var(--fg-dim)' }}>
