@@ -1,0 +1,187 @@
+{
+  "episode": 656,
+  "date": "2026-04-25",
+  "title": "EP656 | 🍇",
+  "youtube_url": "https://www.youtube.com/watch?v=-SBOKVzL6S0",
+  "summary": "本集深入分析台股資金流向，特別是政策放寬投信持股上限後，資金向台積電等大市值權值股集中的「解封印」效應，預估將釋放逾10萬張潛在買盤。同時探討 CPU 產業鏈長期趨勢與聯發科在 Google TPU 訓練端的佈局，並警告中小型股面臨的垃圾盤擠壓風險。",
+  "sentiment": {
+    "score": 9,
+    "label": "偏多",
+    "bull_pct": 90,
+    "bear_pct": 10,
+    "vix": 18.71
+  },
+  "keywords": [
+    "台積電封印解除",
+    "投信持股上限",
+    "資金輪動",
+    "聯發科MTK",
+    "CPU產業",
+    "Google TPU",
+    "垃圾盤效應",
+    "Mounjaro",
+    "硬體配置",
+    "指數投資"
+  ],
+  "stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「最近狂尻台積電狂買...這等於是解開了台積電的一個封印」",
+      "timestamp": "00:15:00",
+      "tags": ["權值股", "政策利多", "ETF持股上限", "資金"],
+      "price": 2185.0,
+      "change_pct": null
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「非常感謝 MTK 的存在，非常感恩...它在禮拜五又一個漲停了」",
+      "timestamp": "00:22:00",
+      "tags": ["TPU", "Training", "Google", "IC設計"],
+      "price": 2435.0,
+      "change_pct": null
+    },
+    {
+      "code": "INTC",
+      "name": "Intel",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「長期我們還是相信說這個 CPU 的趨勢目前看得出來說它有機會只是一個剛啟動」",
+      "timestamp": "00:28:00",
+      "tags": ["CPU", "AI PC", "半導體趨勢"],
+      "price": 82.54,
+      "change_pct": null
+    },
+    {
+      "code": "MRVL",
+      "name": "Marvell",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「MVEL 可能上去打了第三次才成功打贏...邏輯都跟這次的那個邏輯都是蠻類似的」",
+      "timestamp": "00:30:00",
+      "tags": ["技術面", "AI", "突破", "ASIC"],
+      "price": 164.31,
+      "change_pct": null
+    },
+    {
+      "code": "AVGO",
+      "name": "Broadcom",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「training 是 mediatek...那到底 training 跟 inference 它的佔比是多少」",
+      "timestamp": "00:25:00",
+      "tags": ["TPU", "ASIC", "Google", "Inference"],
+      "price": 422.76,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "656-life-1",
+      "title": "Mounjaro 減肥針實測",
+      "content": "從 Ozempic 轉換至 Mounjaro（猛交龍），使用 5mg 筆針轉 30 刻度取得 2.5mg 劑量。初期食慾抑制感較 Ozempic 弱，主要副作用是口渴，建議維持補水量。",
+      "timestamp": "00:05:00",
+      "tags": ["健康", "減肥藥", "Mounjaro"]
+    },
+    {
+      "id": "656-life-2",
+      "title": "螢幕支架是勝率最高的交易",
+      "content": "強調交易環境的人體工學配置（如 Ergotron 螢幕支架）是長期交易者勝率最高的投資。硬體沒配置好，脖子肩膀長期受損，影響工作效率與投資決策品質。",
+      "timestamp": "00:10:00",
+      "tags": ["工作環境", "健康", "人體工學"]
+    },
+    {
+      "id": "656-life-3",
+      "title": "紅酒鑑賞的金錢戰術",
+      "content": "分享在好市多（Costco）尋找高 CP 值頂級酒款（如拉飛）的技巧。主張「金錢戰術」：透過大量嘗試頂級品，快速建立辨識度，此邏輯也適用於產業研究與知識累積。",
+      "timestamp": "00:35:00",
+      "tags": ["紅酒", "生活投資", "知識累積"]
+    },
+    {
+      "id": "656-life-4",
+      "title": "陪兒子看 Bluey",
+      "content": "分享陪兒子看澳洲動畫《Bluey》的角色扮演體驗。認為不應過早將孩子拉入理性科學世界，保留魔幻感與想像力對成長很重要。",
+      "timestamp": "00:54:00",
+      "tags": ["親子", "教育", "動畫"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "656-1",
+      "question": "如何看待不適任法官的問題？",
+      "answer": "不適任的法官對受害家屬講垃圾話，這種沒同理心的廢物應被汰除；雖然死刑不能解決所有問題，但司法專業不應成為名粹或法盲的遮羞布。",
+      "timestamp": "00:41:15",
+      "tags": ["生活", "社會", "法律"]
+    },
+    {
+      "id": "656-2",
+      "question": "這次 Post Malone 高雄演唱會有去嗎？創投案子進展如何？",
+      "answer": "這次高雄 Post Malone 演唱會不會去，上次音響爆掉體驗極差；創投案子如 Evergreen Fund 或遊戲《紅眼路比》會持續推進，但與股票短期波動性質不同。",
+      "timestamp": "00:46:20",
+      "tags": ["生活", "音樂", "創投"]
+    },
+    {
+      "id": "656-3",
+      "question": "投資有賺有賠，別人說你看錯了怎麼辦？",
+      "answer": "投資本就有賺有賠，整體是賺的就好；節目上表現秋是為了單口秀效果，其實我已很刻意謙遜，對待無腦酸民或不合理要求只能選擇讓他們快滾。",
+      "timestamp": "00:49:50",
+      "tags": ["心態", "選股"]
+    },
+    {
+      "id": "656-4",
+      "question": "有小孩後還會陪孩子玩嗎？",
+      "answer": "會陪小孩玩 Bluey 的角色扮演遊戲，讓孩子活在有耶誕老人或魔幻感的想像世界挺好的，因為成人終究會學會理性與科學。",
+      "timestamp": "00:54:10",
+      "tags": ["生活", "親子"]
+    },
+    {
+      "id": "656-5",
+      "question": "如何做到「股品好」？操作時身體手抖怎麼辦？",
+      "answer": "股品好確實績效會好，我不喜歡找朋友進場後又自砸盤；操作要「做就對了」，且在身體體感最不舒服（抖）時買進大盤，回頭看通常很甜。",
+      "timestamp": "00:56:45",
+      "tags": ["心態", "風控", "選股", "台股"]
+    },
+    {
+      "id": "656-6",
+      "question": "打詐政策讓捐款轉帳變得非常困難怎麼辦？",
+      "answer": "現在打詐制度導致銀行帳號極難用，捐款常被鎖；建議以後可改送禮券（類現金）給需要的人，避開銀行的麻煩審查，大家共體時艱。",
+      "timestamp": "01:00:30",
+      "tags": ["生活", "社會"]
+    },
+    {
+      "id": "656-7",
+      "question": "結婚有小孩後如何維持與老婆的感情？",
+      "answer": "有小孩後兩人世界確實減少，需要刻意經營（如一起逛好市多）；老婆生小孩付出的代價巨大，結了婚就是「寄人籬下」，講話要客氣並多體諒。",
+      "timestamp": "01:06:15",
+      "tags": ["生活", "感情"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "台積電/權值股",
+      "stance": "正面",
+      "intensity": 3,
+      "stocks": ["2330", "2454"],
+      "quote": "投信持股上限從10%調升至25%，解開台積電封印，預估10萬張以上被動買盤進場"
+    },
+    {
+      "name": "CPU缺貨族群",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["INTC"],
+      "quote": "AI PC 與 Edge AI 需求帶動 CPU 長期趨勢剛啟動，但須防 1:1 CPU/GPU 比例說法過熱"
+    },
+    {
+      "name": "ASIC/客製化晶片",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["AVGO", "MRVL", "2454"],
+      "quote": "Google TPU 8T/8i 分工確立：聯發科 Training、Broadcom Inference，兩者佔比趨近 1:1"
+    }
+  ]
+}
