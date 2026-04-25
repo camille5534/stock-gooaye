@@ -6,6 +6,9 @@ on:
     - cron: '0 0 * * 1-5'
   workflow_dispatch:  # 可手動在 GitHub 網頁上觸發
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
