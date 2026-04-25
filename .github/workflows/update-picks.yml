@@ -2,8 +2,8 @@ name: Update Picks
 
 on:
   schedule:
-    # 每個工作日 UTC 07:00（台灣時間 15:00，台股收盤後）
-    - cron: '0 7 * * 1-5'
+    # 週一至週六 UTC 07:30（台灣時間 15:30，台股收盤後）
+    - cron: '30 7 * * 1-6'
   workflow_dispatch:  # 可手動在 GitHub 網頁上觸發
 
 permissions:
@@ -31,4 +31,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "auto: update picks data [skip ci]"
-          file_pattern: public/data/predictions.json public/data/stock_picks.json
+          file_pattern: public/data/predictions.json public/data/stock_picks.json public/data/stock_history.json

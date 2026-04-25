@@ -6,6 +6,15 @@ import { QAItem } from '@/lib/types'
 interface QAWithEp extends QAItem {
   episode: number
   date: string
+  youtube_url: string
+}
+
+function toYoutubeLink(url: string, timestamp: string): string {
+  if (!url || !timestamp) return url
+  const [h, m, s] = timestamp.split(':').map(Number)
+  const secs = (h || 0) * 3600 + (m || 0) * 60 + (s || 0)
+  const sep = url.includes('?') ? '&' : '?'
+  return `${url}${sep}t=${secs}`
 }
 
 interface Props { allQA: QAWithEp[] }
@@ -222,7 +231,7 @@ export default function QASearch({ allQA }: Props) {
               </div>
 
               {/* Footer */}
-              <div className="px-4 py-2 flex items-center justify-between">
+              <div className="px-4 py-2 flex items-center justify-between gap-2">
                 <div className="flex gap-1.5 flex-wrap">
                   {qa.tags.map(tag => (
                     <button
@@ -237,17 +246,32 @@ export default function QASearch({ allQA }: Props) {
                     </button>
                   ))}
                 </div>
-                <span
-                  className="text-xs font-mono shrink-0 ml-2 px-2 py-0.5 rounded"
-                  style={{
-                    color: '#22D3EE',
-                    background: 'rgba(34,211,238,0.08)',
-                    border: '1px solid rgba(34,211,238,0.25)',
-                  }}
-                  title={qa.date}
-                >
-                  EP{qa.episode}
-                </span>
+                <div className="flex items-center gap-2 shrink-0">
+                  {qa.youtube_url && qa.timestamp && (
+                    <a
+                      href={toYoutubeLink(qa.youtube_url, qa.timestamp)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-mono px-2 py-0.5 rounded transition-colors duration-100"
+                      style={{ color: 'var(--fg-dim)', background: 'var(--border-dim)' }}
+                      onMouseEnter={e => (e.currentTarget.style.color = 'var(--fg)')}
+                      onMouseLeave={e => (e.currentTarget.style.color = 'var(--fg-dim)')}
+                    >
+                      ▶ {qa.timestamp}
+                    </a>
+                  )}
+                  <span
+                    className="text-xs font-mono px-2 py-0.5 rounded"
+                    style={{
+                      color: '#22D3EE',
+                      background: 'rgba(34,211,238,0.08)',
+                      border: '1px solid rgba(34,211,238,0.25)',
+                    }}
+                    title={qa.date}
+                  >
+                    EP{qa.episode}
+                  </span>
+                </div>
               </div>
             </div>
           ))
