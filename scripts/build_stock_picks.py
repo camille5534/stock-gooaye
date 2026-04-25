@@ -77,17 +77,15 @@ STOCK_HISTORY_FILE = ROOT / "public" / "data" / "stock_history.json"
 
 
 def rebuild_rankings(ep_files: list) -> list[dict]:
-    """掃描所有 ep_*.json，只計入 stance_score != 0 的提及，重建 rankings。"""
+    """掃描所有 ep_*.json，計入所有立場（含觀察），重建 rankings。"""
     counts: dict[str, dict] = {}
     for ep_file in ep_files:
         with open(ep_file, encoding="utf-8") as f:
             ep = json.load(f)
         ep_num = ep["episode"]
         for stock in ep.get("stocks", []):
-            stance_score = stock.get("stance_score", 0)
-            if stance_score == 0:
-                continue
             code = stock["code"]
+            stance_score = stock.get("stance_score", 0)
             if code not in counts:
                 counts[code] = {
                     "code": code,
@@ -125,8 +123,8 @@ def build():
         all_ep_nums.append(ep["episode"])
     recent_5 = set(sorted(all_ep_nums)[-5:])
 
-    # 收集所有提及（以 code 為 key，只含有立場的）
-    stocks: dict[str, dict] = {}
+    # 第一輪：收集所有提及（含觀察/中立），以 code 為 key
+    all_stocks: dict[str, dict] = {}
 
     for ep_file in ep_files:
         with open(ep_file, encoding="utf-8") as f:
@@ -136,30 +134,32 @@ def build():
         ep_date = ep["date"]
 
         for stock in ep.get("stocks", []):
+            code = stock["code"]
             stance = stock.get("stance", "")
             stance_score = stock.get("stance_score", 0)
-            if stance in SKIP_STANCES or stance_score == 0:
-                continue
 
-            code = stock["code"]
-            ticker = to_ticker(code)
-            name = stock.get("name", code)
-
-            if code not in stocks:
-                stocks[code] = {
+            if code not in all_stocks:
+                all_stocks[code] = {
                     "code": code,
-                    "name": name,
-                    "ticker": ticker,
+                    "name": stock.get("name", code),
+                    "ticker": to_ticker(code),
                     "mentions": [],
                 }
 
-            stocks[code]["mentions"].append({
+            all_stocks[code]["mentions"].append({
                 "episode": ep_num,
                 "date": ep_date,
                 "stance": stance,
                 "stance_score": stance_score,
                 "quote": stock.get("quote", ""),
             })
+
+    # 第二輪：只保留曾有正面/負面立場的股票（純觀察不進成績單）
+    stocks = {
+        code: data
+        for code, data in all_stocks.items()
+        if any(m["stance_score"] != 0 for m in data["mentions"])
+    }
 
     # 對每支股票抓日線 + 計算統計
     active = []
@@ -182,8 +182,11 @@ def build():
         # 最新價
         current_price = prices[-1]["close"] if prices else None
 
-        # 基準：最後一次提及的收盤（用 closest 確保不為 None）
-        last_ep_price = mentions[-1].get("ep_price")
+        # 基準：最後一次有立場（正/負）提及的收盤，觀察不算基準
+        last_stance_mention = next(
+            (m for m in reversed(mentions) if m["stance_score"] != 0), None
+        )
+        last_ep_price = last_stance_mention.get("ep_price") if last_stance_mention else None
 
         current_pct = (
             round((current_price - last_ep_price) / last_ep_price * 100, 2)

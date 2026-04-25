@@ -9,6 +9,151 @@
   ],
   "active": [
     {
+      "code": "2330",
+      "name": "台積電",
+      "ticker": "2330.TW",
+      "mentions": [
+        {
+          "episode": 647,
+          "date": "2026-03-25",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「馬斯克 AI5、AI6 也想在台積這邊做什麼東西過不去，價格，他想要更便宜的價格。」",
+          "ep_price": 1845.0
+        },
+        {
+          "episode": 649,
+          "date": "2026-04-01",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「這有點類似說台積電回 300 我就買，要不是掉回 300 的機率是極低哦。」",
+          "ep_price": 1855.0
+        },
+        {
+          "episode": 653,
+          "date": "2026-04-15",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「我們不太怕高，只在意上漲還有多少。」以明年 EPS 給 20 倍本益比，「看到 2800 應該都不是一個太誇張的數字。」長線上修資本支出機率也很高，Google 開出的 Forecast 產能遠超台積電目前能 fulfill 的四成。",
+          "ep_price": 2080.0
+        },
+        {
+          "episode": 654,
+          "date": "2026-04-18",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「台股就是台積電的形狀...只要他訂單沒有掉，基本上就會到那個位置。」",
+          "ep_price": 2025.0
+        },
+        {
+          "episode": 655,
+          "date": "2026-04-22",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「我自己本身也是台積電長期的股東啊」",
+          "ep_price": 2050.0
+        },
+        {
+          "episode": 656,
+          "date": "2026-04-25",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「最近狂尻台積電狂買...這等於是解開了台積電的一個封印」",
+          "ep_price": null
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-03-25",
+          "close": 1845.0
+        },
+        {
+          "date": "2026-03-26",
+          "close": 1840.0
+        },
+        {
+          "date": "2026-03-27",
+          "close": 1820.0
+        },
+        {
+          "date": "2026-03-30",
+          "close": 1780.0
+        },
+        {
+          "date": "2026-03-31",
+          "close": 1760.0
+        },
+        {
+          "date": "2026-04-01",
+          "close": 1855.0
+        },
+        {
+          "date": "2026-04-02",
+          "close": 1810.0
+        },
+        {
+          "date": "2026-04-07",
+          "close": 1860.0
+        },
+        {
+          "date": "2026-04-08",
+          "close": 1950.0
+        },
+        {
+          "date": "2026-04-09",
+          "close": 1955.0
+        },
+        {
+          "date": "2026-04-10",
+          "close": 2000.0
+        },
+        {
+          "date": "2026-04-13",
+          "close": 1990.0
+        },
+        {
+          "date": "2026-04-14",
+          "close": 2055.0
+        },
+        {
+          "date": "2026-04-15",
+          "close": 2080.0
+        },
+        {
+          "date": "2026-04-16",
+          "close": 2085.0
+        },
+        {
+          "date": "2026-04-17",
+          "close": 2030.0
+        },
+        {
+          "date": "2026-04-20",
+          "close": 2025.0
+        },
+        {
+          "date": "2026-04-21",
+          "close": 2050.0
+        },
+        {
+          "date": "2026-04-22",
+          "close": 2050.0
+        },
+        {
+          "date": "2026-04-23",
+          "close": 2080.0
+        },
+        {
+          "date": "2026-04-24",
+          "close": 2185.0
+        }
+      ],
+      "last_mention_date": "2026-04-25",
+      "last_ep_price": null,
+      "current_price": 2185.0,
+      "current_pct": null
+    },
+    {
       "code": "MRVL",
       "name": "Marvell",
       "ticker": "MRVL",
@@ -30,12 +175,28 @@
           "ep_price": 106.71
         },
         {
+          "episode": 651,
+          "date": "2026-04-08",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「我那時候就很坦白跟大家講說...買這個故事，但後面大家會看到的是反正就是 ASIC。」",
+          "ep_price": 114.45
+        },
+        {
           "episode": 652,
           "date": "2026-04-11",
           "stance": "正面",
           "stance_score": 1,
           "quote": "「把錢丟到像是有 CPU 或是 MVEL...光通又再次創新高。」資金回補，股價表現強勁，被列為當前強勢標的。",
           "ep_price": 131.3
+        },
+        {
+          "episode": 653,
+          "date": "2026-04-15",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "Google 引入 Marvell 做兩顆晶片（T-I Inference Chip + Memory Processing 相關），模式類似 MTK 而非博通全包。「AI 是一個藍海市場，不要覺得有新 Player 加入，其他人就得去死。」但這兩顆要貢獻實質數字還太遠，如果短期股價沒繼續往上走，很快就會從主要持股調出去。",
+          "ep_price": 134.6
         },
         {
           "episode": 655,
@@ -147,6 +308,14 @@
       "ticker": "INTC",
       "mentions": [
         {
+          "episode": 648,
+          "date": "2026-03-28",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「在玻璃方面走的比較前面的應該就是 Intel 了。」",
+          "ep_price": 41.19
+        },
+        {
           "episode": 650,
           "date": "2026-04-04",
           "stance": "正面",
@@ -163,6 +332,14 @@
           "ep_price": 58.95
         },
         {
+          "episode": 654,
+          "date": "2026-04-18",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「CPU 的缺貨其實是可能會比記憶體更恐怖的...目前在市場上就大家沒有去估算到的東西。」",
+          "ep_price": 65.7
+        },
+        {
           "episode": 656,
           "date": "2026-04-25",
           "stance": "正面",
@@ -172,6 +349,26 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 43.13
+        },
+        {
+          "date": "2026-03-30",
+          "close": 41.19
+        },
+        {
+          "date": "2026-03-31",
+          "close": 44.13
+        },
+        {
+          "date": "2026-04-01",
+          "close": 48.03
+        },
+        {
+          "date": "2026-04-02",
+          "close": 50.38
+        },
         {
           "date": "2026-04-06",
           "close": 50.78
@@ -239,80 +436,112 @@
       "current_pct": null
     },
     {
-      "code": "2330",
-      "name": "台積電",
-      "ticker": "2330.TW",
+      "code": "AVGO",
+      "name": "Broadcom",
+      "ticker": "AVGO",
       "mentions": [
         {
-          "episode": 653,
-          "date": "2026-04-15",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「我們不太怕高，只在意上漲還有多少。」以明年 EPS 給 20 倍本益比，「看到 2800 應該都不是一個太誇張的數字。」長線上修資本支出機率也很高，Google 開出的 Forecast 產能遠超台積電目前能 fulfill 的四成。",
-          "ep_price": 2080.0
-        },
-        {
-          "episode": 654,
-          "date": "2026-04-18",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「台股就是台積電的形狀...只要他訂單沒有掉，基本上就會到那個位置。」",
-          "ep_price": 2025.0
+          "episode": 649,
+          "date": "2026-04-01",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「他主要的目標呢是要去打大隻的，就是要去針對 Broadcom 這樣。」",
+          "ep_price": 313.49
         },
         {
           "episode": 655,
           "date": "2026-04-22",
           "stance": "正面",
           "stance_score": 1,
-          "quote": "「我自己本身也是台積電長期的股東啊」",
-          "ep_price": 2050.0
+          "quote": "「不會影響到我們對於可能像是阿狗（AVGO）...的一個評價，我覺得這應該是沒有關係的，因為市場裡面的餅太大」",
+          "ep_price": 422.65
         },
         {
           "episode": 656,
           "date": "2026-04-25",
           "stance": "正面",
           "stance_score": 1,
-          "quote": "「最近狂尻台積電狂買...這等於是解開了台積電的一個封印」",
+          "quote": "「training 是 mediatek...那到底 training 跟 inference 它的佔比是多少」",
           "ep_price": null
         }
       ],
       "prices": [
         {
+          "date": "2026-03-31",
+          "close": 309.51
+        },
+        {
+          "date": "2026-04-01",
+          "close": 313.49
+        },
+        {
+          "date": "2026-04-02",
+          "close": 314.55
+        },
+        {
+          "date": "2026-04-06",
+          "close": 314.43
+        },
+        {
+          "date": "2026-04-07",
+          "close": 333.97
+        },
+        {
+          "date": "2026-04-08",
+          "close": 350.63
+        },
+        {
+          "date": "2026-04-09",
+          "close": 354.91
+        },
+        {
+          "date": "2026-04-10",
+          "close": 371.55
+        },
+        {
+          "date": "2026-04-13",
+          "close": 379.75
+        },
+        {
+          "date": "2026-04-14",
+          "close": 380.78
+        },
+        {
           "date": "2026-04-15",
-          "close": 2080.0
+          "close": 396.72
         },
         {
           "date": "2026-04-16",
-          "close": 2085.0
+          "close": 398.47
         },
         {
           "date": "2026-04-17",
-          "close": 2030.0
+          "close": 406.54
         },
         {
           "date": "2026-04-20",
-          "close": 2025.0
+          "close": 399.63
         },
         {
           "date": "2026-04-21",
-          "close": 2050.0
+          "close": 402.17
         },
         {
           "date": "2026-04-22",
-          "close": 2050.0
+          "close": 422.65
         },
         {
           "date": "2026-04-23",
-          "close": 2080.0
+          "close": 419.94
         },
         {
           "date": "2026-04-24",
-          "close": 2185.0
+          "close": 422.76
         }
       ],
       "last_mention_date": "2026-04-25",
       "last_ep_price": null,
-      "current_price": 2185.0,
+      "current_price": 422.76,
       "current_pct": null
     },
     {
@@ -321,12 +550,28 @@
       "ticker": "2454.TW",
       "mentions": [
         {
+          "episode": 649,
+          "date": "2026-04-01",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「MVEL 的話像拉進去 NV Fusion 其實前面也有拉一些夥伴的啦，像是 Alchip 然後像是 MTK 也在裡面。」",
+          "ep_price": 1465.0
+        },
+        {
           "episode": 653,
           "date": "2026-04-15",
           "stance": "正面",
           "stance_score": 1,
           "quote": "取得 Google TPU V8（Zebra Fish）與 V9（Hammerhead Fish）合作案，潛在投片量數百萬顆，若這代沒出包「有機會在三到四年內貢獻超過發哥一半以上的 EPS 都會是來自於 AI，這超屌的！」純度比高通高，或許觸動 rerate 大行情。",
           "ep_price": 1790.0
+        },
+        {
+          "episode": 655,
+          "date": "2026-04-22",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「表現可能會高度綁定跳它（Google）的量綠的狀態...如果 Intel 出報（包）的話，那可能就會影響到 MTK 的一個成（效）」",
+          "ep_price": 2295.0
         },
         {
           "episode": 656,
@@ -338,6 +583,38 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-04-01",
+          "close": 1465.0
+        },
+        {
+          "date": "2026-04-02",
+          "close": 1465.0
+        },
+        {
+          "date": "2026-04-07",
+          "close": 1470.0
+        },
+        {
+          "date": "2026-04-08",
+          "close": 1580.0
+        },
+        {
+          "date": "2026-04-09",
+          "close": 1575.0
+        },
+        {
+          "date": "2026-04-10",
+          "close": 1575.0
+        },
+        {
+          "date": "2026-04-13",
+          "close": 1620.0
+        },
+        {
+          "date": "2026-04-14",
+          "close": 1720.0
+        },
         {
           "date": "2026-04-15",
           "close": 1790.0
@@ -374,51 +651,6 @@
       "last_mention_date": "2026-04-25",
       "last_ep_price": null,
       "current_price": 2435.0,
-      "current_pct": null
-    },
-    {
-      "code": "AVGO",
-      "name": "Broadcom",
-      "ticker": "AVGO",
-      "mentions": [
-        {
-          "episode": 655,
-          "date": "2026-04-22",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「不會影響到我們對於可能像是阿狗（AVGO）...的一個評價，我覺得這應該是沒有關係的，因為市場裡面的餅太大」",
-          "ep_price": 422.65
-        },
-        {
-          "episode": 656,
-          "date": "2026-04-25",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「training 是 mediatek...那到底 training 跟 inference 它的佔比是多少」",
-          "ep_price": null
-        }
-      ],
-      "prices": [
-        {
-          "date": "2026-04-21",
-          "close": 402.17
-        },
-        {
-          "date": "2026-04-22",
-          "close": 422.65
-        },
-        {
-          "date": "2026-04-23",
-          "close": 419.94
-        },
-        {
-          "date": "2026-04-24",
-          "close": 422.76
-        }
-      ],
-      "last_mention_date": "2026-04-25",
-      "last_ep_price": null,
-      "current_price": 422.76,
       "current_pct": null
     },
     {
@@ -473,6 +705,95 @@
       "last_ep_price": null,
       "current_price": null,
       "current_pct": null
+    },
+    {
+      "code": "AMD",
+      "name": "AMD",
+      "ticker": "AMD",
+      "mentions": [
+        {
+          "episode": 650,
+          "date": "2026-04-04",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「X86 方面，AMD 蠻快地吃掉 Intel 市佔... 但 CPU AI 趨勢下兩邊都可能持續增長。」",
+          "ep_price": 220.18
+        },
+        {
+          "episode": 654,
+          "date": "2026-04-18",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「CPU 的缺貨其實是可能會比記憶體更恐怖的...目前在市場上就大家沒有去估算到的東西。」",
+          "ep_price": 274.95
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-04-06",
+          "close": 220.18
+        },
+        {
+          "date": "2026-04-07",
+          "close": 221.53
+        },
+        {
+          "date": "2026-04-08",
+          "close": 231.82
+        },
+        {
+          "date": "2026-04-09",
+          "close": 236.64
+        },
+        {
+          "date": "2026-04-10",
+          "close": 245.04
+        },
+        {
+          "date": "2026-04-13",
+          "close": 246.83
+        },
+        {
+          "date": "2026-04-14",
+          "close": 255.07
+        },
+        {
+          "date": "2026-04-15",
+          "close": 258.12
+        },
+        {
+          "date": "2026-04-16",
+          "close": 278.26
+        },
+        {
+          "date": "2026-04-17",
+          "close": 278.39
+        },
+        {
+          "date": "2026-04-20",
+          "close": 274.95
+        },
+        {
+          "date": "2026-04-21",
+          "close": 284.49
+        },
+        {
+          "date": "2026-04-22",
+          "close": 303.46
+        },
+        {
+          "date": "2026-04-23",
+          "close": 305.33
+        },
+        {
+          "date": "2026-04-24",
+          "close": 347.81
+        }
+      ],
+      "last_mention_date": "2026-04-18",
+      "last_ep_price": 220.18,
+      "current_price": 347.81,
+      "current_pct": 57.97
     },
     {
       "code": "2327",
@@ -606,6 +927,14 @@
           "ep_price": 385.95
         },
         {
+          "episode": 651,
+          "date": "2026-04-08",
+          "stance": "中立",
+          "stance_score": 0,
+          "quote": "「對於 T（Tesla）這邊的話，它算是一個中性的事件...因為他要拿出大量的錢去搞這個金源生產製造。」",
+          "ep_price": 343.25
+        },
+        {
           "episode": 652,
           "date": "2026-04-11",
           "stance": "負面",
@@ -714,6 +1043,127 @@
       "current_pct": 6.78
     },
     {
+      "code": "PLTR",
+      "name": "Palantir",
+      "ticker": "PLTR",
+      "mentions": [
+        {
+          "episode": 647,
+          "date": "2026-03-25",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「Palantir 在 To B 的應用已經做得非常好，拿到很多政府的標案。」",
+          "ep_price": 154.96
+        },
+        {
+          "episode": 652,
+          "date": "2026-04-11",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「這波他們釋出新產品，然後再一次把這些東西（軟體股）就再倒回去。」軟體股受 AI 雜音影響修正，需觀察後續催化劑。",
+          "ep_price": 132.37
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 154.78
+        },
+        {
+          "date": "2026-03-25",
+          "close": 154.96
+        },
+        {
+          "date": "2026-03-26",
+          "close": 147.56
+        },
+        {
+          "date": "2026-03-27",
+          "close": 143.06
+        },
+        {
+          "date": "2026-03-30",
+          "close": 137.55
+        },
+        {
+          "date": "2026-03-31",
+          "close": 146.28
+        },
+        {
+          "date": "2026-04-01",
+          "close": 146.49
+        },
+        {
+          "date": "2026-04-02",
+          "close": 148.46
+        },
+        {
+          "date": "2026-04-06",
+          "close": 147.93
+        },
+        {
+          "date": "2026-04-07",
+          "close": 150.07
+        },
+        {
+          "date": "2026-04-08",
+          "close": 140.76
+        },
+        {
+          "date": "2026-04-09",
+          "close": 130.49
+        },
+        {
+          "date": "2026-04-10",
+          "close": 128.06
+        },
+        {
+          "date": "2026-04-13",
+          "close": 132.37
+        },
+        {
+          "date": "2026-04-14",
+          "close": 135.7
+        },
+        {
+          "date": "2026-04-15",
+          "close": 142.15
+        },
+        {
+          "date": "2026-04-16",
+          "close": 142.76
+        },
+        {
+          "date": "2026-04-17",
+          "close": 146.39
+        },
+        {
+          "date": "2026-04-20",
+          "close": 145.89
+        },
+        {
+          "date": "2026-04-21",
+          "close": 145.97
+        },
+        {
+          "date": "2026-04-22",
+          "close": 152.62
+        },
+        {
+          "date": "2026-04-23",
+          "close": 141.57
+        },
+        {
+          "date": "2026-04-24",
+          "close": 143.09
+        }
+      ],
+      "last_mention_date": "2026-04-11",
+      "last_ep_price": 154.96,
+      "current_price": 143.09,
+      "current_pct": -7.66
+    },
+    {
       "code": "光通訊",
       "name": "光通訊類股",
       "ticker": "光通訊",
@@ -740,6 +1190,131 @@
       "last_ep_price": null,
       "current_price": null,
       "current_pct": null
+    },
+    {
+      "code": "NVDA",
+      "name": "NVIDIA",
+      "ticker": "NVDA",
+      "mentions": [
+        {
+          "episode": 648,
+          "date": "2026-03-28",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「都已經是在也在破底啊，都在持續往下。」若未來採用玻璃基板，將是該技術正式放量的關鍵信號。",
+          "ep_price": 165.17
+        },
+        {
+          "episode": 649,
+          "date": "2026-04-01",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「老黃手上真的是滿手現金... 錢多，他到處找地方放... 儘量的去買一些東西是跟自己的本業是相關的。」",
+          "ep_price": 175.75
+        },
+        {
+          "episode": 650,
+          "date": "2026-04-04",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「本身有 Grace CPU，看來也有獲得客戶採用... 可視為 CPU 相關類股。」",
+          "ep_price": 177.64
+        },
+        {
+          "episode": 652,
+          "date": "2026-04-11",
+          "stance": "中立",
+          "stance_score": 0,
+          "quote": "「它沒有過新高，可能我暫時都沒有那（進攻感）。」RISC-V 入股 SiFive 動作代表 NVIDIA 在佈局更廣泛的算力生態，但股價未突破新高前觀望。",
+          "ep_price": 189.31
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 167.52
+        },
+        {
+          "date": "2026-03-30",
+          "close": 165.17
+        },
+        {
+          "date": "2026-03-31",
+          "close": 174.4
+        },
+        {
+          "date": "2026-04-01",
+          "close": 175.75
+        },
+        {
+          "date": "2026-04-02",
+          "close": 177.39
+        },
+        {
+          "date": "2026-04-06",
+          "close": 177.64
+        },
+        {
+          "date": "2026-04-07",
+          "close": 178.1
+        },
+        {
+          "date": "2026-04-08",
+          "close": 182.08
+        },
+        {
+          "date": "2026-04-09",
+          "close": 183.91
+        },
+        {
+          "date": "2026-04-10",
+          "close": 188.63
+        },
+        {
+          "date": "2026-04-13",
+          "close": 189.31
+        },
+        {
+          "date": "2026-04-14",
+          "close": 196.51
+        },
+        {
+          "date": "2026-04-15",
+          "close": 198.87
+        },
+        {
+          "date": "2026-04-16",
+          "close": 198.35
+        },
+        {
+          "date": "2026-04-17",
+          "close": 201.68
+        },
+        {
+          "date": "2026-04-20",
+          "close": 202.06
+        },
+        {
+          "date": "2026-04-21",
+          "close": 199.88
+        },
+        {
+          "date": "2026-04-22",
+          "close": 202.5
+        },
+        {
+          "date": "2026-04-23",
+          "close": 199.64
+        },
+        {
+          "date": "2026-04-24",
+          "close": 208.27
+        }
+      ],
+      "last_mention_date": "2026-04-11",
+      "last_ep_price": 175.75,
+      "current_price": 208.27,
+      "current_pct": 18.5
     },
     {
       "code": "AWS",
@@ -954,87 +1529,6 @@
       "current_pct": 57.83
     },
     {
-      "code": "AMD",
-      "name": "AMD",
-      "ticker": "AMD",
-      "mentions": [
-        {
-          "episode": 650,
-          "date": "2026-04-04",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「X86 方面，AMD 蠻快地吃掉 Intel 市佔... 但 CPU AI 趨勢下兩邊都可能持續增長。」",
-          "ep_price": 220.18
-        }
-      ],
-      "prices": [
-        {
-          "date": "2026-04-06",
-          "close": 220.18
-        },
-        {
-          "date": "2026-04-07",
-          "close": 221.53
-        },
-        {
-          "date": "2026-04-08",
-          "close": 231.82
-        },
-        {
-          "date": "2026-04-09",
-          "close": 236.64
-        },
-        {
-          "date": "2026-04-10",
-          "close": 245.04
-        },
-        {
-          "date": "2026-04-13",
-          "close": 246.83
-        },
-        {
-          "date": "2026-04-14",
-          "close": 255.07
-        },
-        {
-          "date": "2026-04-15",
-          "close": 258.12
-        },
-        {
-          "date": "2026-04-16",
-          "close": 278.26
-        },
-        {
-          "date": "2026-04-17",
-          "close": 278.39
-        },
-        {
-          "date": "2026-04-20",
-          "close": 274.95
-        },
-        {
-          "date": "2026-04-21",
-          "close": 284.49
-        },
-        {
-          "date": "2026-04-22",
-          "close": 303.46
-        },
-        {
-          "date": "2026-04-23",
-          "close": 305.33
-        },
-        {
-          "date": "2026-04-24",
-          "close": 347.81
-        }
-      ],
-      "last_mention_date": "2026-04-04",
-      "last_ep_price": 220.18,
-      "current_price": 347.81,
-      "current_pct": 57.97
-    },
-    {
       "code": "3533",
       "name": "嘉澤",
       "ticker": "3533.TW",
@@ -1110,99 +1604,6 @@
       "last_ep_price": 2030.0,
       "current_price": 2520.0,
       "current_pct": 24.14
-    },
-    {
-      "code": "NVDA",
-      "name": "NVIDIA",
-      "ticker": "NVDA",
-      "mentions": [
-        {
-          "episode": 649,
-          "date": "2026-04-01",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「老黃手上真的是滿手現金... 錢多，他到處找地方放... 儘量的去買一些東西是跟自己的本業是相關的。」",
-          "ep_price": 175.75
-        }
-      ],
-      "prices": [
-        {
-          "date": "2026-03-31",
-          "close": 174.4
-        },
-        {
-          "date": "2026-04-01",
-          "close": 175.75
-        },
-        {
-          "date": "2026-04-02",
-          "close": 177.39
-        },
-        {
-          "date": "2026-04-06",
-          "close": 177.64
-        },
-        {
-          "date": "2026-04-07",
-          "close": 178.1
-        },
-        {
-          "date": "2026-04-08",
-          "close": 182.08
-        },
-        {
-          "date": "2026-04-09",
-          "close": 183.91
-        },
-        {
-          "date": "2026-04-10",
-          "close": 188.63
-        },
-        {
-          "date": "2026-04-13",
-          "close": 189.31
-        },
-        {
-          "date": "2026-04-14",
-          "close": 196.51
-        },
-        {
-          "date": "2026-04-15",
-          "close": 198.87
-        },
-        {
-          "date": "2026-04-16",
-          "close": 198.35
-        },
-        {
-          "date": "2026-04-17",
-          "close": 201.68
-        },
-        {
-          "date": "2026-04-20",
-          "close": 202.06
-        },
-        {
-          "date": "2026-04-21",
-          "close": 199.88
-        },
-        {
-          "date": "2026-04-22",
-          "close": 202.5
-        },
-        {
-          "date": "2026-04-23",
-          "close": 199.64
-        },
-        {
-          "date": "2026-04-24",
-          "close": 208.27
-        }
-      ],
-      "last_mention_date": "2026-04-01",
-      "last_ep_price": 175.75,
-      "current_price": 208.27,
-      "current_pct": 18.5
     },
     {
       "code": "NET",
@@ -1316,119 +1717,6 @@
       "last_ep_price": 218.0,
       "current_price": 207.07,
       "current_pct": -5.01
-    },
-    {
-      "code": "PLTR",
-      "name": "Palantir",
-      "ticker": "PLTR",
-      "mentions": [
-        {
-          "episode": 647,
-          "date": "2026-03-25",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「Palantir 在 To B 的應用已經做得非常好，拿到很多政府的標案。」",
-          "ep_price": 154.96
-        }
-      ],
-      "prices": [
-        {
-          "date": "2026-03-24",
-          "close": 154.78
-        },
-        {
-          "date": "2026-03-25",
-          "close": 154.96
-        },
-        {
-          "date": "2026-03-26",
-          "close": 147.56
-        },
-        {
-          "date": "2026-03-27",
-          "close": 143.06
-        },
-        {
-          "date": "2026-03-30",
-          "close": 137.55
-        },
-        {
-          "date": "2026-03-31",
-          "close": 146.28
-        },
-        {
-          "date": "2026-04-01",
-          "close": 146.49
-        },
-        {
-          "date": "2026-04-02",
-          "close": 148.46
-        },
-        {
-          "date": "2026-04-06",
-          "close": 147.93
-        },
-        {
-          "date": "2026-04-07",
-          "close": 150.07
-        },
-        {
-          "date": "2026-04-08",
-          "close": 140.76
-        },
-        {
-          "date": "2026-04-09",
-          "close": 130.49
-        },
-        {
-          "date": "2026-04-10",
-          "close": 128.06
-        },
-        {
-          "date": "2026-04-13",
-          "close": 132.37
-        },
-        {
-          "date": "2026-04-14",
-          "close": 135.7
-        },
-        {
-          "date": "2026-04-15",
-          "close": 142.15
-        },
-        {
-          "date": "2026-04-16",
-          "close": 142.76
-        },
-        {
-          "date": "2026-04-17",
-          "close": 146.39
-        },
-        {
-          "date": "2026-04-20",
-          "close": 145.89
-        },
-        {
-          "date": "2026-04-21",
-          "close": 145.97
-        },
-        {
-          "date": "2026-04-22",
-          "close": 152.62
-        },
-        {
-          "date": "2026-04-23",
-          "close": 141.57
-        },
-        {
-          "date": "2026-04-24",
-          "close": 143.09
-        }
-      ],
-      "last_mention_date": "2026-03-25",
-      "last_ep_price": 154.96,
-      "current_price": 143.09,
-      "current_pct": -7.66
     }
   ]
 }

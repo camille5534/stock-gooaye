@@ -273,7 +273,7 @@ export default function PicksTrend({ data }: Props) {
           主委選股趨勢
         </h1>
         <p className="font-mono text-xs mt-1" style={{ color: 'var(--fg-dim)' }}>
-          每股從第一次被提及到今天的走勢。EP 圓點 = 主委提及當天，hover 看原文。虛線 = 最後一次提及收盤。
+          每股從第一次被提及到今天的走勢。EP 圓點 = 主委提及當天，hover 看原文。
         </p>
       </div>
 
@@ -322,7 +322,7 @@ export default function PicksTrend({ data }: Props) {
       </div>
 
       <p className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>
-        * 漲跌幅以最後一次提及播出日收盤為基準。觀察/中立立場不列入。
+        * 漲跌幅以最後一次正面/負面提及收盤為基準。○ 為觀察提及，不計入漲跌基準。
       </p>
     </div>
   )
