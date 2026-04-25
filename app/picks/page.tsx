@@ -17,9 +17,10 @@ export default async function PicksPage() {
     <div className="min-h-screen" style={{ background: 'var(--bg)' }}>
       <AppHeader
         rightSlot={
-          <span className="text-xs font-mono" style={{ color: 'var(--fg-muted)' }}>
-            更新：{data.generated_at}
-          </span>
+          <div className="flex flex-col items-end font-mono text-xs" style={{ color: 'var(--fg-muted)' }}>
+            <span>更新：{data.generated_at}</span>
+            <span style={{ color: 'var(--fg-dim)' }}>每日 15:00 自動更新</span>
+          </div>
         }
       />
       <main className="max-w-5xl mx-auto px-4 py-5">
