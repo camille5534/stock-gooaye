@@ -73,6 +73,47 @@ def find_closest_price(prices: list[dict], target_date: str) -> float | None:
     return None
 
 
+STOCK_HISTORY_FILE = ROOT / "public" / "data" / "stock_history.json"
+
+
+def rebuild_rankings(ep_files: list) -> list[dict]:
+    """掃描所有 ep_*.json，只計入 stance_score != 0 的提及，重建 rankings。"""
+    counts: dict[str, dict] = {}
+    for ep_file in ep_files:
+        with open(ep_file, encoding="utf-8") as f:
+            ep = json.load(f)
+        ep_num = ep["episode"]
+        for stock in ep.get("stocks", []):
+            stance_score = stock.get("stance_score", 0)
+            if stance_score == 0:
+                continue
+            code = stock["code"]
+            if code not in counts:
+                counts[code] = {
+                    "code": code,
+                    "name": stock.get("name", code),
+                    "count": 0,
+                    "positive": 0,
+                    "negative": 0,
+                    "neutral": 0,
+                    "episodes": [],
+                }
+            counts[code]["count"] += 1
+            if stance_score > 0:
+                counts[code]["positive"] += 1
+            elif stance_score < 0:
+                counts[code]["negative"] += 1
+            else:
+                counts[code]["neutral"] += 1
+            if ep_num not in counts[code]["episodes"]:
+                counts[code]["episodes"].append(ep_num)
+
+    rankings = sorted(counts.values(), key=lambda x: x["count"], reverse=True)
+    for r in rankings:
+        r["episodes"] = sorted(r["episodes"])
+    return rankings
+
+
 def build():
     ep_files = sorted(EPISODES_DIR.glob("ep_*.json"))
 
@@ -84,7 +125,7 @@ def build():
         all_ep_nums.append(ep["episode"])
     recent_5 = set(sorted(all_ep_nums)[-5:])
 
-    # 收集所有提及（以 code 為 key）
+    # 收集所有提及（以 code 為 key，只含有立場的）
     stocks: dict[str, dict] = {}
 
     for ep_file in ep_files:
@@ -179,7 +220,16 @@ def build():
     with open(OUT_FILE, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
+    # 重建 stock_history.json 的 rankings（只計入有立場的提及）
+    new_rankings = rebuild_rankings(ep_files)
+    with open(STOCK_HISTORY_FILE, encoding="utf-8") as f:
+        stock_history = json.load(f)
+    stock_history["rankings"] = new_rankings
+    with open(STOCK_HISTORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(stock_history, f, ensure_ascii=False, indent=2)
+
     print(f"\n完成：Active {len(active)} 支 (最新5集: EP{min(recent_5)}-EP{max(recent_5)})，History {len(history)} 支")
+    print(f"Rankings 重建完成：{len(new_rankings)} 支股票")
 
 
 if __name__ == "__main__":

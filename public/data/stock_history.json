@@ -3,16 +3,14 @@
     {
       "code": "MRVL",
       "name": "Marvell",
-      "count": 7,
+      "count": 5,
       "positive": 5,
       "negative": 0,
-      "neutral": 2,
+      "neutral": 0,
       "episodes": [
         648,
         649,
-        651,
         652,
-        653,
         655,
         656
       ]
@@ -20,13 +18,11 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 6,
+      "count": 4,
       "positive": 4,
       "negative": 0,
-      "neutral": 2,
+      "neutral": 0,
       "episodes": [
-        647,
-        649,
         653,
         654,
         655,
@@ -34,31 +30,15 @@
       ]
     },
     {
-      "code": "NVDA",
-      "name": "NVIDIA",
-      "count": 4,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 3,
-      "episodes": [
-        648,
-        649,
-        650,
-        652
-      ]
-    },
-    {
       "code": "INTC",
       "name": "Intel",
-      "count": 5,
+      "count": 3,
       "positive": 3,
       "negative": 0,
-      "neutral": 2,
+      "neutral": 0,
       "episodes": [
-        648,
         650,
         651,
-        654,
         656
       ]
     },
@@ -76,38 +56,11 @@
       ]
     },
     {
-      "code": "2454",
-      "name": "聯發科",
-      "count": 4,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        649,
-        653,
-        655,
-        656
-      ]
-    },
-    {
       "code": "TSLA",
       "name": "Tesla",
-      "count": 3,
+      "count": 2,
       "positive": 0,
       "negative": 2,
-      "neutral": 1,
-      "episodes": [
-        647,
-        651,
-        652
-      ]
-    },
-    {
-      "code": "PLTR",
-      "name": "Palantir",
-      "count": 2,
-      "positive": 2,
-      "negative": 0,
       "neutral": 0,
       "episodes": [
         647,
@@ -115,27 +68,15 @@
       ]
     },
     {
-      "code": "6285",
-      "name": "啟碁",
+      "code": "光通訊",
+      "name": "光通訊類股",
       "count": 2,
-      "positive": 0,
+      "positive": 2,
       "negative": 0,
-      "neutral": 2,
+      "neutral": 0,
       "episodes": [
-        650,
-        653
-      ]
-    },
-    {
-      "code": "AMD",
-      "name": "AMD",
-      "count": 2,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        650,
-        654
+        647,
+        652
       ]
     },
     {
@@ -151,14 +92,25 @@
       ]
     },
     {
-      "code": "AVGO",
-      "name": "Broadcom",
-      "count": 3,
+      "code": "2454",
+      "name": "聯發科",
+      "count": 2,
       "positive": 2,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 0,
       "episodes": [
-        649,
+        653,
+        656
+      ]
+    },
+    {
+      "code": "AVGO",
+      "name": "Broadcom",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
         655,
         656
       ]
@@ -175,100 +127,23 @@
       ]
     },
     {
-      "code": "光通訊",
-      "name": "光通訊類股",
+      "code": "PLTR",
+      "name": "Palantir",
       "count": 1,
       "positive": 1,
       "negative": 0,
       "neutral": 0,
       "episodes": [
-        652
+        647
       ]
     },
     {
-      "code": "SiFive",
-      "name": "SiFive（RISC-V）",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        652
-      ]
-    },
-    {
-      "code": "AWS",
-      "name": "AWS Graviton（CPU供應鏈）",
+      "code": "NVDA",
+      "name": "NVIDIA",
       "count": 1,
       "positive": 1,
       "negative": 0,
       "neutral": 0,
-      "episodes": [
-        652
-      ]
-    },
-    {
-      "code": "AI算力",
-      "name": "AI Token 與算力報價",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        653
-      ]
-    },
-    {
-      "code": "6217",
-      "name": "中探針",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        651
-      ]
-    },
-    {
-      "code": "2404",
-      "name": "漢唐",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        654
-      ]
-    },
-    {
-      "code": "UBER",
-      "name": "Uber",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        654
-      ]
-    },
-    {
-      "code": "6187",
-      "name": "萬潤",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        654
-      ]
-    },
-    {
-      "code": "ALAB",
-      "name": "Astera Labs",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
       "episodes": [
         649
       ]
@@ -276,6 +151,17 @@
     {
       "code": "ARM",
       "name": "ARM",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        650
+      ]
+    },
+    {
+      "code": "AMD",
+      "name": "AMD",
       "count": 1,
       "positive": 1,
       "negative": 0,
@@ -296,74 +182,30 @@
       ]
     },
     {
-      "code": "8069",
-      "name": "元太",
+      "code": "AWS",
+      "name": "AWS Graviton（CPU供應鏈）",
       "count": 1,
-      "positive": 0,
+      "positive": 1,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 0,
       "episodes": [
-        650
+        652
       ]
     },
     {
-      "code": "MU",
-      "name": "美光（Micron）",
+      "code": "6187",
+      "name": "萬潤",
       "count": 1,
-      "positive": 0,
+      "positive": 1,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 0,
       "episodes": [
-        646
-      ]
-    },
-    {
-      "code": "BE",
-      "name": "Bloom Energy",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        646
-      ]
-    },
-    {
-      "code": "4958",
-      "name": "臻鼎-KY",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        646
-      ]
-    },
-    {
-      "code": "6451",
-      "name": "訊芯-KY",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        646
-      ]
-    },
-    {
-      "code": "4919",
-      "name": "新唐科技",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        655
+        654
       ]
     },
     {
       "code": "2303",
-      "name": "聯電（UMC）",
+      "name": "聯電",
       "count": 1,
       "positive": 1,
       "negative": 0,
