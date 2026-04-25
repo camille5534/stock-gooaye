@@ -203,12 +203,18 @@ export default function PicksBoard({ data }: Props) {
                   >
                     {stanceIcon(p.stance_score)} {p.stance}
                   </span>
-                  <span className="text-right text-xs" style={{ color: 'var(--fg-muted)' }}>
-                    {p.ep_price ?? '─'}
-                  </span>
-                  <span className="text-right text-xs" style={{ color: 'var(--fg-muted)' }}>
-                    {p.next_price ?? '─'}
-                  </span>
+                  <div className="text-right">
+                    <div className="text-xs" style={{ color: 'var(--fg-muted)' }}>{p.ep_price ?? '─'}</div>
+                    <div style={{ fontSize: '10px', color: 'var(--fg-dim)' }}>
+                      {p.ep_date_actual ? p.ep_date_actual.slice(5).replace('-', '/') : ''}
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <div className="text-xs" style={{ color: 'var(--fg-muted)' }}>{p.next_price ?? '─'}</div>
+                    <div style={{ fontSize: '10px', color: 'var(--fg-dim)' }}>
+                      {p.next_day ? p.next_day.slice(5).replace('-', '/') : ''}
+                    </div>
+                  </div>
                   <span className="text-right text-xs font-bold" style={{ color: retColor }}>
                     {p.return_pct !== null ? `${p.return_pct > 0 ? '+' : ''}${p.return_pct}%` : '─'}
                   </span>
