@@ -6,16 +6,8 @@ import { QAItem } from '@/lib/types'
 interface QAWithEp extends QAItem {
   episode: number
   date: string
-  youtube_url: string
 }
 
-function toYoutubeLink(url: string, timestamp: string): string {
-  if (!url || !timestamp) return url
-  const [h, m, s] = timestamp.split(':').map(Number)
-  const secs = (h || 0) * 3600 + (m || 0) * 60 + (s || 0)
-  const sep = url.includes('?') ? '&' : '?'
-  return `${url}${sep}t=${secs}`
-}
 
 interface Props { allQA: QAWithEp[] }
 
@@ -247,18 +239,13 @@ export default function QASearch({ allQA }: Props) {
                   ))}
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
-                  {qa.youtube_url && qa.timestamp && (
-                    <a
-                      href={toYoutubeLink(qa.youtube_url, qa.timestamp)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs font-mono px-2 py-0.5 rounded transition-colors duration-100"
+                  {qa.timestamp && (
+                    <span
+                      className="text-xs font-mono px-2 py-0.5 rounded"
                       style={{ color: 'var(--fg-dim)', background: 'var(--border-dim)' }}
-                      onMouseEnter={e => (e.currentTarget.style.color = 'var(--fg)')}
-                      onMouseLeave={e => (e.currentTarget.style.color = 'var(--fg-dim)')}
                     >
-                      ▶ {qa.timestamp}
-                    </a>
+                      {qa.timestamp}
+                    </span>
                   )}
                   <span
                     className="text-xs font-mono px-2 py-0.5 rounded"

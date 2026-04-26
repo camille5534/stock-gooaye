@@ -12,7 +12,7 @@ async function getAllQA() {
   for (const file of files) {
     const ep: Episode = JSON.parse(await fs.readFile(path.join(dir, file), 'utf-8'))
     for (const qa of ep.qa) {
-      allQA.push({ ...qa, episode: ep.episode, date: ep.date, youtube_url: ep.youtube_url ?? '' })
+      allQA.push({ ...qa, episode: ep.episode, date: ep.date })
     }
   }
   return allQA
