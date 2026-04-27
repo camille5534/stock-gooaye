@@ -39,6 +39,48 @@ interface Props {
   data: { generated_at: string; stats: Stats; picks: Pick[] }
 }
 
+function WinRateDonut({ hits, misses, pending, winRate, winRateColor }: {
+  hits: number; misses: number; pending: number; winRate: number; winRateColor: string
+}) {
+  const total = hits + misses + pending
+  if (total === 0) return null
+  const r = 40, sw = 10, size = 110, cx = size / 2, cy = size / 2
+  const C = 2 * Math.PI * r
+  const segs = [
+    { v: hits,    color: 'var(--stance-pos)' },
+    { v: misses,  color: 'var(--stance-neg)' },
+    { v: pending, color: 'var(--yellow)' },
+  ]
+  let cum = 0
+  return (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ display: 'block', flexShrink: 0 }}>
+      <circle cx={cx} cy={cy} r={r} fill="none" stroke="var(--border-dim)" strokeWidth={sw} />
+      {segs.map((seg, i) => {
+        if (!seg.v) return null
+        const frac = seg.v / total
+        const dashOffset = -cum * C
+        cum += frac
+        return (
+          <circle key={i} cx={cx} cy={cy} r={r} fill="none"
+            stroke={seg.color} strokeWidth={sw}
+            strokeDasharray={`${frac * C} ${C}`}
+            strokeDashoffset={dashOffset}
+            transform={`rotate(-90 ${cx} ${cy})`}
+          />
+        )
+      })}
+      <text x={cx} y={cy - 5} textAnchor="middle" dominantBaseline="middle"
+        style={{ fill: winRateColor, fontFamily: 'monospace', fontWeight: 700, fontSize: '20px' }}>
+        {winRate}%
+      </text>
+      <text x={cx} y={cy + 14} textAnchor="middle"
+        style={{ fill: 'var(--fg-dim)', fontFamily: 'monospace', fontSize: '9px' }}>
+        D+1 勝率
+      </text>
+    </svg>
+  )
+}
+
 const stanceColor = (score: number) =>
   score > 0 ? 'var(--stance-pos)' : score < 0 ? 'var(--stance-neg)' : 'var(--fg-dim)'
 
@@ -108,39 +150,37 @@ export default function PicksBoard({ data }: Props) {
         </p>
       </div>
 
-      {/* 統計卡 */}
-      <div className="grid grid-cols-3 gap-3">
-        <div className="rounded-lg border p-4 text-center" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
-          <div className="font-mono font-bold text-3xl" style={{ color: winRateColor }}>
-            {stats.win_rate}%
+      {/* 統計：甜甜圈 + 數字 */}
+      <div
+        className="rounded-xl border p-4 flex items-center gap-5"
+        style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
+      >
+        <WinRateDonut
+          hits={stats.hits} misses={stats.misses} pending={stats.pending}
+          winRate={stats.win_rate} winRateColor={winRateColor}
+        />
+        <div className="flex flex-col gap-2.5 flex-1 font-mono">
+          <div className="flex items-center gap-2">
+            <span className="text-sm" style={{ color: 'var(--stance-pos)' }}>●</span>
+            <span className="text-xs" style={{ color: 'var(--fg-muted)' }}>命中</span>
+            <span className="font-bold text-base ml-auto" style={{ color: 'var(--stance-pos)' }}>{stats.hits}</span>
           </div>
-          <div className="font-mono text-xs mt-1" style={{ color: 'var(--fg-muted)' }}>整體勝率（D+1）</div>
-        </div>
-        <div className="rounded-lg border p-4 text-center" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
-          <div className="font-mono font-bold text-3xl" style={{ color: 'var(--stance-pos)' }}>
-            {stats.hits}
+          <div className="flex items-center gap-2">
+            <span className="text-sm" style={{ color: 'var(--stance-neg)' }}>●</span>
+            <span className="text-xs" style={{ color: 'var(--fg-muted)' }}>失準</span>
+            <span className="font-bold text-base ml-auto" style={{ color: 'var(--stance-neg)' }}>{stats.misses}</span>
           </div>
-          <div className="font-mono text-xs mt-1" style={{ color: 'var(--fg-muted)' }}>命中次數</div>
-        </div>
-        <div className="rounded-lg border p-4 text-center" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
-          <div className="font-mono font-bold text-3xl" style={{ color: 'var(--fg-muted)' }}>
-            {stats.valid}
+          {stats.pending > 0 && (
+            <div className="flex items-center gap-2">
+              <span className="text-sm" style={{ color: 'var(--yellow)' }}>●</span>
+              <span className="text-xs" style={{ color: 'var(--fg-muted)' }}>等待中</span>
+              <span className="font-bold text-base ml-auto" style={{ color: 'var(--yellow)' }}>{stats.pending}</span>
+            </div>
+          )}
+          <div className="pt-2 flex justify-between text-xs" style={{ borderTop: '1px solid var(--border-dim)', color: 'var(--fg-dim)' }}>
+            <span>{stats.valid} 筆有效</span>
+            <span>共 {stats.total} 筆</span>
           </div>
-          <div className="font-mono text-xs mt-1" style={{ color: 'var(--fg-muted)' }}>有效預測</div>
-        </div>
-      </div>
-
-      {/* 勝率條 */}
-      <div className="rounded-lg border px-4 py-3" style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}>
-        <div className="flex justify-between text-xs font-mono mb-2" style={{ color: 'var(--fg-muted)' }}>
-          <span>命中 {stats.hits} 次</span>
-          <span>失準 {stats.misses} 次</span>
-        </div>
-        <div className="w-full rounded-full overflow-hidden" style={{ height: '8px', background: 'var(--border-dim)' }}>
-          <div
-            className="h-full rounded-full transition-all duration-500"
-            style={{ width: `${stats.win_rate}%`, background: winRateColor }}
-          />
         </div>
       </div>
 
