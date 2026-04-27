@@ -51,7 +51,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「台股就是台積電的形狀...只要他訂單沒有掉，基本上就會到那個位置。」",
-          "ep_price": 2025.0
+          "ep_price": 2030.0
         },
         {
           "episode": 655,
@@ -67,7 +67,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「最近狂尻台積電狂買...這等於是解開了台積電的一個封印」",
-          "ep_price": 2265.0
+          "ep_price": 2185.0
         }
       ],
       "prices": [
@@ -161,9 +161,9 @@
         }
       ],
       "last_mention_date": "2026-04-25",
-      "last_ep_price": 2265.0,
+      "last_ep_price": 2185.0,
       "current_price": 2265.0,
-      "current_pct": 0.0
+      "current_pct": 3.66
     },
     {
       "code": "MRVL",
@@ -176,7 +176,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「它現在算是可能在美股的技術現型還長得還蠻不錯的東西。」",
-          "ep_price": 87.81
+          "ep_price": 94.88
         },
         {
           "episode": 649,
@@ -200,7 +200,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「把錢丟到像是有 CPU 或是 MVEL...光通又再次創新高。」資金回補，股價表現強勁，被列為當前強勢標的。",
-          "ep_price": 131.3
+          "ep_price": 128.49
         },
         {
           "episode": 653,
@@ -224,10 +224,14 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「MVEL 可能上去打了第三次才成功打贏...邏輯都跟這次的那個邏輯都是蠻類似的」",
-          "ep_price": null
+          "ep_price": 164.31
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 94.88
+        },
         {
           "date": "2026-03-30",
           "close": 87.81
@@ -303,12 +307,16 @@
         {
           "date": "2026-04-24",
           "close": 164.31
+        },
+        {
+          "date": "2026-04-27",
+          "close": 155.07
         }
       ],
       "last_mention_date": "2026-04-25",
-      "last_ep_price": null,
-      "current_price": 164.31,
-      "current_pct": null
+      "last_ep_price": 164.31,
+      "current_price": 155.07,
+      "current_pct": -5.62
     },
     {
       "code": "AVGO",
@@ -321,7 +329,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「在 Intel 跟 Broadcom 這邊，會去做這樣子的一個嘗試（玻璃基板）。」",
-          "ep_price": 293.41
+          "ep_price": 300.68
         },
         {
           "episode": 649,
@@ -345,10 +353,14 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「training 是 mediatek...那到底 training 跟 inference 它的佔比是多少」",
-          "ep_price": null
+          "ep_price": 422.76
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 300.68
+        },
         {
           "date": "2026-03-30",
           "close": 293.41
@@ -424,12 +436,16 @@
         {
           "date": "2026-04-24",
           "close": 422.76
+        },
+        {
+          "date": "2026-04-27",
+          "close": 415.78
         }
       ],
       "last_mention_date": "2026-04-25",
-      "last_ep_price": null,
-      "current_price": 422.76,
-      "current_pct": null
+      "last_ep_price": 422.76,
+      "current_price": 415.78,
+      "current_pct": -1.65
     },
     {
       "code": "INTC",
@@ -442,7 +458,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「在玻璃方面走的比較前面的應該就是 Intel 了。」",
-          "ep_price": 41.19
+          "ep_price": 43.13
         },
         {
           "episode": 650,
@@ -450,7 +466,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「CFO 講說 misjudge the pace of demand... 產能是 absolutely constraint（屌缺）。」",
-          "ep_price": 50.78
+          "ep_price": 50.38
         },
         {
           "episode": 651,
@@ -466,7 +482,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「CPU 的缺貨其實是可能會比記憶體更恐怖的...目前在市場上就大家沒有去估算到的東西。」",
-          "ep_price": 65.7
+          "ep_price": 68.5
         },
         {
           "episode": 656,
@@ -474,10 +490,14 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「長期我們還是相信說這個 CPU 的趨勢目前看得出來說它有機會只是一個剛啟動」",
-          "ep_price": null
+          "ep_price": 82.54
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 43.13
+        },
         {
           "date": "2026-03-30",
           "close": 41.19
@@ -553,12 +573,16 @@
         {
           "date": "2026-04-24",
           "close": 82.54
+        },
+        {
+          "date": "2026-04-27",
+          "close": 83.31
         }
       ],
       "last_mention_date": "2026-04-25",
-      "last_ep_price": null,
-      "current_price": 82.54,
-      "current_pct": null
+      "last_ep_price": 82.54,
+      "current_price": 83.31,
+      "current_pct": 0.93
     },
     {
       "code": "2454",
@@ -741,7 +765,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「X86 方面，AMD 蠻快地吃掉 Intel 市佔... 但 CPU AI 趨勢下兩邊都可能持續增長。」",
-          "ep_price": 220.18
+          "ep_price": null
         },
         {
           "episode": 651,
@@ -757,7 +781,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「CPU 的缺貨其實是可能會比記憶體更恐怖的...目前在市場上就大家沒有去估算到的東西。」",
-          "ep_price": 274.95
+          "ep_price": 278.39
         }
       ],
       "prices": [
@@ -820,12 +844,16 @@
         {
           "date": "2026-04-24",
           "close": 347.81
+        },
+        {
+          "date": "2026-04-27",
+          "close": 333.67
         }
       ],
       "last_mention_date": "2026-04-18",
       "last_ep_price": 231.82,
-      "current_price": 347.81,
-      "current_pct": 50.03
+      "current_price": 333.67,
+      "current_pct": 43.93
     },
     {
       "code": "2327",
@@ -838,7 +866,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「下週三法說會內容應該是全面性正面...下個 Q 也是要持續漲價。」TCAP（鉭電容）與 SPCAP（聚合物鋁電容）嚴重缺貨，MLCC 高階應用緊繃，旗下 Kemet 已持續針對特定品項調漲。處於類似記憶體發作前夕的階段。",
-          "ep_price": 303.5
+          "ep_price": null
         },
         {
           "episode": 653,
@@ -854,7 +882,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「他還原全息（息）其實在新高位置，只是爬得比國際上的 Player 慢一點。」",
-          "ep_price": 319.5
+          "ep_price": 316.5
         }
       ],
       "prices": [
@@ -904,9 +932,9 @@
         }
       ],
       "last_mention_date": "2026-04-18",
-      "last_ep_price": 319.5,
+      "last_ep_price": 316.5,
       "current_price": 305.0,
-      "current_pct": -4.54
+      "current_pct": -3.63
     },
     {
       "code": "6187",
@@ -919,7 +947,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「CPU（應指 CPO）相關的這些測試設備...我手上我蠻喜歡就華自貿跟萬論（萬潤）。」",
-          "ep_price": 1225.0
+          "ep_price": null
         }
       ],
       "prices": [
@@ -949,9 +977,9 @@
         }
       ],
       "last_mention_date": "2026-04-18",
-      "last_ep_price": 1225.0,
+      "last_ep_price": null,
       "current_price": 1080.0,
-      "current_pct": -11.84
+      "current_pct": null
     },
     {
       "code": "PLTR",
@@ -972,10 +1000,14 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「這波他們釋出新產品，然後再一次把這些東西（軟體股）就再倒回去。」軟體股受 AI 雜音影響修正，需觀察後續催化劑。",
-          "ep_price": 132.37
+          "ep_price": 128.06
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 154.78
+        },
         {
           "date": "2026-03-25",
           "close": 154.96
@@ -1063,12 +1095,16 @@
         {
           "date": "2026-04-24",
           "close": 143.09
+        },
+        {
+          "date": "2026-04-27",
+          "close": 144.01
         }
       ],
       "last_mention_date": "2026-04-11",
       "last_ep_price": 154.96,
-      "current_price": 143.09,
-      "current_pct": -7.66
+      "current_price": 144.01,
+      "current_pct": -7.07
     },
     {
       "code": "TSLA",
@@ -1097,10 +1133,14 @@
           "stance": "負面",
           "stance_score": -1,
           "quote": "「現行不好就是左上右下...要搞 xAI/Compute 有機會變成前坑。」線型呈現左上右下，短期不具攻擊性。xAI 的算力佈局是否能成功仍有疑慮。",
-          "ep_price": 352.42
+          "ep_price": 348.95
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 383.03
+        },
         {
           "date": "2026-03-25",
           "close": 385.95
@@ -1188,12 +1228,16 @@
         {
           "date": "2026-04-24",
           "close": 376.3
+        },
+        {
+          "date": "2026-04-27",
+          "close": 365.3
         }
       ],
       "last_mention_date": "2026-04-11",
-      "last_ep_price": 352.42,
-      "current_price": 376.3,
-      "current_pct": 6.78
+      "last_ep_price": 348.95,
+      "current_price": 365.3,
+      "current_pct": 4.69
     },
     {
       "code": "NVDA",
@@ -1206,7 +1250,7 @@
           "stance": "中立",
           "stance_score": 0,
           "quote": "「Nvidia 都已經是也在破底啊，都在持續往下。」",
-          "ep_price": 165.17
+          "ep_price": 167.52
         },
         {
           "episode": 649,
@@ -1222,7 +1266,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「本身有 Grace CPU，看來也有獲得客戶採用... 可視為 CPU 相關類股。」",
-          "ep_price": 177.64
+          "ep_price": 177.39
         },
         {
           "episode": 651,
@@ -1238,10 +1282,14 @@
           "stance": "中立",
           "stance_score": 0,
           "quote": "「它沒有過新高，可能我暫時都沒有那（進攻感）。」RISC-V 入股 SiFive 動作代表 NVIDIA 在佈局更廣泛的算力生態，但股價未突破新高前觀望。",
-          "ep_price": 189.31
+          "ep_price": 188.63
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 167.52
+        },
         {
           "date": "2026-03-30",
           "close": 165.17
@@ -1317,12 +1365,16 @@
         {
           "date": "2026-04-24",
           "close": 208.27
+        },
+        {
+          "date": "2026-04-27",
+          "close": 209.66
         }
       ],
       "last_mention_date": "2026-04-11",
       "last_ep_price": 182.08,
-      "current_price": 208.27,
-      "current_pct": 14.38
+      "current_price": 209.66,
+      "current_pct": 15.15
     },
     {
       "code": "光通訊",
@@ -1405,7 +1457,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「我認為 Apple 去切這一些中低價的筆電跟手機，又認為是很棒的一個策略。」",
-          "ep_price": 246.63
+          "ep_price": 248.8
         },
         {
           "episode": 651,
@@ -1417,6 +1469,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 248.8
+        },
         {
           "date": "2026-03-30",
           "close": 246.63
@@ -1492,12 +1548,16 @@
         {
           "date": "2026-04-24",
           "close": 271.06
+        },
+        {
+          "date": "2026-04-27",
+          "close": 267.07
         }
       ],
       "last_mention_date": "2026-04-08",
       "last_ep_price": 258.9,
-      "current_price": 271.06,
-      "current_pct": 4.7
+      "current_price": 267.07,
+      "current_pct": 3.16
     },
     {
       "code": "006208",
@@ -1587,7 +1647,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「伺服器市佔率從 2018 年低於 5% 到現在跑到了 20~25%，在 Hyperscaler 佔比更高。」",
-          "ep_price": 148.77
+          "ep_price": null
         }
       ],
       "prices": [
@@ -1650,12 +1710,16 @@
         {
           "date": "2026-04-24",
           "close": 234.81
+        },
+        {
+          "date": "2026-04-27",
+          "close": 214.07
         }
       ],
       "last_mention_date": "2026-04-04",
-      "last_ep_price": 148.77,
-      "current_price": 234.81,
-      "current_pct": 57.83
+      "last_ep_price": null,
+      "current_price": 214.07,
+      "current_pct": null
     },
     {
       "code": "3533",
@@ -1668,7 +1732,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「跟 CPU socket 是高度相關的標的... 都算是相對強勢。」",
-          "ep_price": 2030.0
+          "ep_price": null
         }
       ],
       "prices": [
@@ -1734,9 +1798,9 @@
         }
       ],
       "last_mention_date": "2026-04-04",
-      "last_ep_price": 2030.0,
+      "last_ep_price": null,
       "current_price": 2710.0,
-      "current_pct": 33.5
+      "current_pct": null
     },
     {
       "code": "NET",
@@ -1753,6 +1817,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 213.15
+        },
         {
           "date": "2026-03-25",
           "close": 218.0
@@ -1840,12 +1908,16 @@
         {
           "date": "2026-04-24",
           "close": 207.07
+        },
+        {
+          "date": "2026-04-27",
+          "close": 207.94
         }
       ],
       "last_mention_date": "2026-03-25",
       "last_ep_price": 218.0,
-      "current_price": 207.07,
-      "current_pct": -5.01
+      "current_price": 207.94,
+      "current_pct": -4.61
     }
   ]
 }

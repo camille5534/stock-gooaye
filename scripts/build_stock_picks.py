@@ -66,11 +66,12 @@ def fetch_daily_series(ticker: str, start_date: str) -> tuple[str, list[dict]]:
 
 
 def find_closest_price(prices: list[dict], target_date: str) -> float | None:
-    """找目標日期當天或之後最近一個交易日的收盤"""
+    """找目標日期當天或之前最近一個交易日的收盤（若當天休市則取前一個交易日）"""
+    best = None
     for p in prices:
-        if p["date"] >= target_date:
-            return p["close"]
-    return None
+        if p["date"] <= target_date:
+            best = p["close"]
+    return best
 
 
 STOCK_HISTORY_FILE = ROOT / "public" / "data" / "stock_history.json"
