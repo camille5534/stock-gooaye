@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 interface Pick {
   episode: number
@@ -39,6 +39,55 @@ interface Props {
   data: { generated_at: string; stats: Stats; picks: Pick[] }
 }
 
+// CSS keyframes injected once
+const STYLES = `
+@keyframes pb-arc-in {
+  from { stroke-dashoffset: var(--arc-full); }
+  to   { stroke-dashoffset: var(--arc-to); }
+}
+@keyframes pb-fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pb-badge-pop {
+  0%   { transform: scale(0.6); opacity: 0; }
+  60%  { transform: scale(1.25); }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes pb-filter-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+`
+
+function useStyleOnce() {
+  useEffect(() => {
+    if (document.getElementById('pb-styles')) return
+    const s = document.createElement('style')
+    s.id = 'pb-styles'
+    s.textContent = STYLES
+    document.head.appendChild(s)
+  }, [])
+}
+
+function useCountUp(target: number, duration = 900) {
+  const [value, setValue] = useState(0)
+  useEffect(() => {
+    let start: number | null = null
+    const step = (ts: number) => {
+      if (!start) start = ts
+      const progress = Math.min((ts - start) / duration, 1)
+      // ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3)
+      setValue(Math.round(eased * target))
+      if (progress < 1) requestAnimationFrame(step)
+    }
+    const id = requestAnimationFrame(step)
+    return () => cancelAnimationFrame(id)
+  }, [target, duration])
+  return value
+}
+
 function WinRateDonut({ hits, misses, pending, winRate, winRateColor }: {
   hits: number; misses: number; pending: number; winRate: number; winRateColor: string
 }) {
@@ -51,6 +100,9 @@ function WinRateDonut({ hits, misses, pending, winRate, winRateColor }: {
     { v: misses,  color: 'var(--stance-neg)' },
     { v: pending, color: 'var(--yellow)' },
   ]
+
+  const displayRate = useCountUp(winRate, 900)
+
   let cum = 0
   return (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ display: 'block', flexShrink: 0 }}>
@@ -58,20 +110,27 @@ function WinRateDonut({ hits, misses, pending, winRate, winRateColor }: {
       {segs.map((seg, i) => {
         if (!seg.v) return null
         const frac = seg.v / total
-        const dashOffset = -cum * C
+        const dashTo = -cum * C
         cum += frac
         return (
-          <circle key={i} cx={cx} cy={cy} r={r} fill="none"
+          <circle
+            key={i} cx={cx} cy={cy} r={r} fill="none"
             stroke={seg.color} strokeWidth={sw}
             strokeDasharray={`${frac * C} ${C}`}
-            strokeDashoffset={dashOffset}
+            style={{
+              '--arc-full': `${C}px`,
+              '--arc-to': `${dashTo}px`,
+              strokeDashoffset: dashTo,
+              animation: `pb-arc-in 700ms cubic-bezier(0.22,1,0.36,1) ${i * 120}ms both`,
+              transformOrigin: `${cx}px ${cy}px`,
+            } as React.CSSProperties}
             transform={`rotate(-90 ${cx} ${cy})`}
           />
         )
       })}
       <text x={cx} y={cy - 5} textAnchor="middle" dominantBaseline="middle"
         style={{ fill: winRateColor, fontFamily: 'monospace', fontWeight: 700, fontSize: '20px' }}>
-        {winRate}%
+        {displayRate}%
       </text>
       <text x={cx} y={cy + 14} textAnchor="middle"
         style={{ fill: 'var(--fg-dim)', fontFamily: 'monospace', fontSize: '9px' }}>
@@ -116,15 +175,16 @@ function PctCell({ label, pct, date }: { label: string; pct: number | null; date
 }
 
 export default function PicksBoard({ data }: Props) {
+  useStyleOnce()
   const { stats, picks } = data
   const [filter, setFilter] = useState<'all' | 'hit' | 'miss' | 'pending'>('all')
+  const [filterKey, setFilterKey] = useState(0)
 
   const filtered = picks.filter(p => {
     if (filter === 'all') return p.status !== 'no_data'
     return p.status === filter
   })
 
-  // 依集數分組，最新在前
   const byEpisode = filtered.reduce((acc, p) => {
     if (!acc[p.episode]) acc[p.episode] = []
     acc[p.episode].push(p)
@@ -137,11 +197,16 @@ export default function PicksBoard({ data }: Props) {
     stats.win_rate >= 50 ? 'var(--yellow)' :
     'var(--stance-neg)'
 
+  function handleFilter(f: typeof filter) {
+    setFilter(f)
+    setFilterKey(k => k + 1)
+  }
+
   return (
     <div className="flex flex-col gap-5">
 
       {/* 標題 */}
-      <div>
+      <div style={{ animation: 'pb-fade-up 400ms ease-out both' }}>
         <h1 className="font-mono font-bold text-lg" style={{ color: 'var(--fg)' }}>
           主委選股成績單
         </h1>
@@ -153,31 +218,33 @@ export default function PicksBoard({ data }: Props) {
       {/* 統計：甜甜圈 + 數字 */}
       <div
         className="rounded-xl border p-4 flex items-center gap-5"
-        style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
+        style={{
+          background: 'var(--bg-card)', borderColor: 'var(--border)',
+          animation: 'pb-fade-up 450ms ease-out 60ms both',
+        }}
       >
         <WinRateDonut
           hits={stats.hits} misses={stats.misses} pending={stats.pending}
           winRate={stats.win_rate} winRateColor={winRateColor}
         />
         <div className="flex flex-col gap-2.5 flex-1 font-mono">
-          <div className="flex items-center gap-2">
-            <span className="text-sm" style={{ color: 'var(--stance-pos)' }}>●</span>
-            <span className="text-xs" style={{ color: 'var(--fg-muted)' }}>命中</span>
-            <span className="font-bold text-base ml-auto" style={{ color: 'var(--stance-pos)' }}>{stats.hits}</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-sm" style={{ color: 'var(--stance-neg)' }}>●</span>
-            <span className="text-xs" style={{ color: 'var(--fg-muted)' }}>失準</span>
-            <span className="font-bold text-base ml-auto" style={{ color: 'var(--stance-neg)' }}>{stats.misses}</span>
-          </div>
-          {stats.pending > 0 && (
-            <div className="flex items-center gap-2">
-              <span className="text-sm" style={{ color: 'var(--yellow)' }}>●</span>
-              <span className="text-xs" style={{ color: 'var(--fg-muted)' }}>等待中</span>
-              <span className="font-bold text-base ml-auto" style={{ color: 'var(--yellow)' }}>{stats.pending}</span>
+          {[
+            { v: stats.hits,    color: 'var(--stance-pos)', label: '命中' },
+            { v: stats.misses,  color: 'var(--stance-neg)', label: '失準' },
+            ...(stats.pending > 0 ? [{ v: stats.pending, color: 'var(--yellow)', label: '等待中' }] : []),
+          ].map((row, i) => (
+            <div key={row.label} className="flex items-center gap-2"
+              style={{ animation: `pb-fade-up 350ms ease-out ${120 + i * 80}ms both` }}>
+              <span className="text-sm" style={{ color: row.color }}>●</span>
+              <span className="text-xs" style={{ color: 'var(--fg-muted)' }}>{row.label}</span>
+              <span className="font-bold text-base ml-auto" style={{ color: row.color }}>{row.v}</span>
             </div>
-          )}
-          <div className="pt-2 flex justify-between text-xs" style={{ borderTop: '1px solid var(--border-dim)', color: 'var(--fg-dim)' }}>
+          ))}
+          <div className="pt-2 flex justify-between text-xs"
+            style={{
+              borderTop: '1px solid var(--border-dim)', color: 'var(--fg-dim)',
+              animation: 'pb-fade-up 350ms ease-out 400ms both',
+            }}>
             <span>{stats.valid} 筆有效</span>
             <span>共 {stats.total} 筆</span>
           </div>
@@ -186,7 +253,7 @@ export default function PicksBoard({ data }: Props) {
 
       {/* 篩選 */}
       <div className="flex gap-2 flex-wrap">
-        {(['all', 'hit', 'miss', 'pending'] as const).map(f => {
+        {(['all', 'hit', 'miss', 'pending'] as const).map((f, i) => {
           const labels = { all: '全部', hit: '✓ 命中', miss: '✗ 失準', pending: '等待中' }
           const colors = {
             all:     { bg: 'rgba(67,85,176,0.10)',  border: '#4355B0', fg: '#4355B0' },
@@ -199,12 +266,14 @@ export default function PicksBoard({ data }: Props) {
           return (
             <button
               key={f}
-              onClick={() => setFilter(f)}
-              className="text-xs px-3 py-1 rounded-full border font-mono transition-colors duration-100 cursor-pointer"
+              onClick={() => handleFilter(f)}
+              className="text-xs px-3 py-1 rounded-full border font-mono cursor-pointer"
               style={{
                 background: active ? c.bg : 'transparent',
                 borderColor: active ? c.border : 'var(--border-dim)',
                 color: active ? c.fg : 'var(--fg-dim)',
+                transition: 'background 150ms, border-color 150ms, color 150ms',
+                animation: `pb-fade-up 300ms ease-out ${500 + i * 50}ms both`,
               }}
             >
               {labels[f]}
@@ -218,7 +287,7 @@ export default function PicksBoard({ data }: Props) {
 
       {/* 集數分組卡片 */}
       <div className="flex flex-col gap-4">
-        {episodes.map(ep => {
+        {episodes.map((ep, epIdx) => {
           const epPicks = byEpisode[ep]
           const epDate = epPicks[0].ep_date_actual ?? epPicks[0].date
           const epHits = epPicks.filter(p => p.status === 'hit').length
@@ -227,9 +296,23 @@ export default function PicksBoard({ data }: Props) {
 
           return (
             <div
-              key={ep}
+              key={`${filterKey}-${ep}`}
               className="rounded-xl border overflow-hidden"
-              style={{ background: 'var(--bg-card)', borderColor: 'var(--border)' }}
+              style={{
+                background: 'var(--bg-card)', borderColor: 'var(--border)',
+                animation: `pb-fade-up 400ms cubic-bezier(0.22,1,0.36,1) ${epIdx * 55}ms both`,
+                transition: 'box-shadow 200ms, transform 200ms',
+              }}
+              onMouseEnter={e => {
+                const el = e.currentTarget
+                el.style.transform = 'translateY(-2px)'
+                el.style.boxShadow = '0 6px 20px rgba(0,0,0,0.12)'
+              }}
+              onMouseLeave={e => {
+                const el = e.currentTarget
+                el.style.transform = ''
+                el.style.boxShadow = ''
+              }}
             >
               {/* 集數 Header */}
               <div
@@ -285,7 +368,12 @@ export default function PicksBoard({ data }: Props) {
                     <div
                       key={`${p.episode}-${p.code}-${i}`}
                       className="px-4 py-3"
-                      style={{ borderLeft: `3px solid ${resultColor}` }}
+                      style={{
+                        borderLeft: `3px solid ${resultColor}`,
+                        transition: 'background 150ms',
+                      }}
+                      onMouseEnter={e => { e.currentTarget.style.background = 'var(--bg-elevated)' }}
+                      onMouseLeave={e => { e.currentTarget.style.background = '' }}
                     >
                       {/* 股票名稱行 */}
                       <div className="flex items-center justify-between gap-2 mb-2">
@@ -305,7 +393,12 @@ export default function PicksBoard({ data }: Props) {
                         </div>
                         <span
                           className="font-mono font-bold text-sm w-6 h-6 flex items-center justify-center rounded-full shrink-0"
-                          style={{ color: resultColor, background: resultBg }}
+                          style={{
+                            color: resultColor, background: resultBg,
+                            animation: p.status !== 'no_data'
+                              ? `pb-badge-pop 400ms cubic-bezier(0.34,1.56,0.64,1) ${epIdx * 55 + i * 30 + 200}ms both`
+                              : undefined,
+                          }}
                         >
                           {resultIcon}
                         </span>
