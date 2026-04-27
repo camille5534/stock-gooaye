@@ -183,15 +183,16 @@ def build():
         # 最新價
         current_price = prices[-1]["close"] if prices else None
 
-        # 基準：最後一次有立場（正/負）提及的收盤，觀察不算基準
-        last_stance_mention = next(
-            (m for m in reversed(mentions) if m["stance_score"] != 0), None
+        # 基準：第一次有立場（正/負）提及的收盤，觀察/中立不算
+        first_stance_mention = next(
+            (m for m in mentions if m["stance_score"] != 0), None
         )
-        last_ep_price = last_stance_mention.get("ep_price") if last_stance_mention else None
+        base_ep_price = first_stance_mention.get("ep_price") if first_stance_mention else None
+        base_ep = first_stance_mention["episode"] if first_stance_mention else None
 
         current_pct = (
-            round((current_price - last_ep_price) / last_ep_price * 100, 2)
-            if current_price and last_ep_price else None
+            round((current_price - base_ep_price) / base_ep_price * 100, 2)
+            if current_price and base_ep_price else None
         )
 
         entry = {
@@ -199,7 +200,8 @@ def build():
             "mentions": mentions,
             "prices": prices,
             "last_mention_date": last_date,
-            "last_ep_price": last_ep_price,
+            "base_ep_price": base_ep_price,
+            "base_ep": base_ep,
             "current_price": current_price,
             "current_pct": current_pct,
         }

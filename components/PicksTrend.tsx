@@ -22,7 +22,8 @@ interface StockEntry {
   mentions: Mention[]
   prices: { date: string; close: number }[]
   last_mention_date: string
-  last_ep_price: number | null
+  base_ep_price: number | null
+  base_ep: number | null
   current_price: number | null
   current_pct: number | null
 }
@@ -151,7 +152,7 @@ function CustomDot(props: any) {
 }
 
 function SparklineChart({ stock }: { stock: StockEntry }) {
-  const { prices, mentions, last_ep_price } = stock
+  const { prices, mentions, base_ep_price } = stock
   if (prices.length < 2) {
     return (
       <div className="flex items-center justify-center h-16 font-mono text-xs" style={{ color: 'var(--fg-dim)' }}>
@@ -186,9 +187,9 @@ function SparklineChart({ stock }: { stock: StockEntry }) {
           content={<ChartTooltip mentions={mentions} />}
           cursor={{ stroke: 'var(--border)', strokeWidth: 1 }}
         />
-        {last_ep_price && (
+        {base_ep_price && (
           <ReferenceLine
-            y={last_ep_price}
+            y={base_ep_price}
             stroke="var(--border)"
             strokeDasharray="3 3"
             strokeWidth={1}
@@ -251,9 +252,9 @@ function StockCard({ stock }: { stock: StockEntry }) {
       </div>
 
       {/* 播出基準 */}
-      {stock.last_ep_price && (
+      {stock.base_ep_price && (
         <div className="px-4 pb-3 font-mono text-xs" style={{ color: 'var(--fg-dim)' }}>
-          最後提及播出收盤 {stock.last_ep_price} · 虛線為基準
+          EP{stock.base_ep} 首次提及收盤 {stock.base_ep_price} · 虛線為基準
         </div>
       )}
     </div>
