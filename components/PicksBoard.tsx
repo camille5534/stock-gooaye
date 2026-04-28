@@ -219,6 +219,156 @@ function BulletRow({ label, pct, date, delay = 0 }: {
   )
 }
 
+// ── EpCard：獨立元件避免每次 render 重建 ──────────────────────────────────
+interface EpCardProps {
+  ep: number
+  epPicks: Pick[]
+  epIdx: number
+}
+
+function EpCard({ ep, epPicks, epIdx }: EpCardProps) {
+  const epDate  = epPicks[0].ep_date_actual ?? epPicks[0].date
+  const epHits  = epPicks.filter(p => p.status === 'hit').length
+  const epValid = epPicks.filter(p => p.status === 'hit' || p.status === 'miss').length
+  const epRate  = epValid > 0 ? Math.round(epHits / epValid * 100) : null
+
+  return (
+    <div
+      className="rounded-xl border overflow-hidden"
+      style={{
+        background: 'var(--bg-card)', borderColor: 'var(--border)',
+        animation: `pb-fade-up 400ms cubic-bezier(0.22,1,0.36,1) ${epIdx * 55}ms both`,
+        transition: 'box-shadow 200ms, transform 200ms',
+      }}
+      onMouseEnter={e => {
+        e.currentTarget.style.transform = 'translateY(-2px)'
+        e.currentTarget.style.boxShadow = '0 6px 20px rgba(0,0,0,0.12)'
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.transform = ''
+        e.currentTarget.style.boxShadow = ''
+      }}
+    >
+      {/* 集數 Header */}
+      <div
+        className="flex items-center justify-between px-4 py-2.5"
+        style={{ background: 'var(--bg-elevated)', borderBottom: '1px solid var(--border-dim)' }}
+      >
+        <div className="flex items-center gap-3">
+          <span className="font-mono font-bold text-sm" style={{ color: 'var(--accent)' }}>
+            EP{ep}
+          </span>
+          <span className="font-mono text-xs" style={{ color: 'var(--fg-dim)' }}>
+            {epDate.slice(5).replace('-', '/')}
+          </span>
+        </div>
+        {epValid > 0 && (
+          <div className="flex items-center gap-2">
+            <span className="font-mono text-xs" style={{ color: 'var(--fg-muted)' }}>
+              命中 {epHits}/{epValid}
+            </span>
+            <span
+              className="font-mono text-xs font-bold px-2 py-0.5 rounded-full"
+              style={{
+                color: (epRate ?? 0) >= 50 ? 'var(--stance-pos)' : 'var(--stance-neg)',
+                background: (epRate ?? 0) >= 50 ? 'var(--stance-pos-bg)' : 'var(--stance-neg-bg)',
+              }}
+            >
+              {epRate}%
+            </span>
+          </div>
+        )}
+      </div>
+
+      {/* 個股列表 */}
+      <div className="divide-y" style={{ borderColor: 'var(--border-dim)' }}>
+        {epPicks.map((p, i) => {
+          const resultColor =
+            p.status === 'hit'     ? 'var(--stance-pos)' :
+            p.status === 'miss'    ? 'var(--stance-neg)' :
+            p.status === 'pending' ? 'var(--yellow)'     : 'var(--border-dim)'
+
+          const resultIcon =
+            p.status === 'hit'     ? '✓' :
+            p.status === 'miss'    ? '✗' :
+            p.status === 'pending' ? '…' : '─'
+
+          const resultBg =
+            p.status === 'hit'     ? 'var(--stance-pos-bg)' :
+            p.status === 'miss'    ? 'var(--stance-neg-bg)' :
+            p.status === 'pending' ? 'rgba(138,96,0,0.10)' : 'transparent'
+
+          return (
+            <div
+              key={`${p.episode}-${p.code}-${i}`}
+              className="px-4 py-3"
+              style={{ borderLeft: `3px solid ${resultColor}`, transition: 'background 150ms' }}
+              onMouseEnter={e => { e.currentTarget.style.background = 'var(--bg-elevated)' }}
+              onMouseLeave={e => { e.currentTarget.style.background = '' }}
+            >
+              {/* 股票名稱行 */}
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-mono font-bold text-sm" style={{ color: 'var(--fg)' }}>
+                    {p.code}
+                  </span>
+                  <span className="font-mono text-xs" style={{ color: 'var(--fg-muted)' }}>
+                    {p.name}
+                  </span>
+                  <span
+                    className="font-mono text-xs px-1.5 py-0.5 rounded"
+                    style={{ color: stanceColor(p.stance_score), background: stanceBg(p.stance_score) }}
+                  >
+                    {stanceIcon(p.stance_score)} {p.stance}
+                  </span>
+                </div>
+                <span
+                  className="font-mono font-bold text-sm w-6 h-6 flex items-center justify-center rounded-full shrink-0"
+                  style={{
+                    color: resultColor, background: resultBg,
+                    animation: p.status !== 'no_data'
+                      ? `pb-badge-pop 400ms cubic-bezier(0.34,1.56,0.64,1) ${epIdx * 55 + i * 30 + 200}ms both`
+                      : undefined,
+                  }}
+                >
+                  {resultIcon}
+                </span>
+              </div>
+
+              {/* 原文 Quote */}
+              {p.quote && (
+                <p
+                  className="font-mono text-xs leading-relaxed mb-3"
+                  style={{ color: 'var(--fg-muted)', borderLeft: '2px solid var(--border-dim)', paddingLeft: '8px' }}
+                >
+                  {p.quote}
+                </p>
+              )}
+
+              {/* 播出基準 + Bullet bars */}
+              <div className="flex flex-col gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="font-mono shrink-0" style={{ width: 30, fontSize: 10, textAlign: 'right', color: 'var(--fg-dim)' }}>播出</span>
+                  <span className="font-mono text-xs font-bold" style={{ color: 'var(--fg-muted)' }}>
+                    {p.ep_price ?? '─'}
+                  </span>
+                  <span className="font-mono" style={{ fontSize: 9, color: 'var(--fg-dim)' }}>
+                    {fmtDate(p.ep_date_actual)}
+                  </span>
+                </div>
+                <BulletRow label="D+1"  pct={p.d1_pct}  date={p.d1_date}  delay={epIdx * 55 + i * 25 + 50} />
+                <BulletRow label="D+7"  pct={p.d7_pct}  date={p.d7_date}  delay={epIdx * 55 + i * 25 + 150} />
+                <BulletRow label="D+14" pct={p.d14_pct} date={p.d14_date} delay={epIdx * 55 + i * 25 + 250} />
+              </div>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
+// ── PicksBoard ────────────────────────────────────────────────────────────────
 export default function PicksBoard({ data }: Props) {
   useStyleOnce()
   const { stats, picks } = data
@@ -330,158 +480,25 @@ export default function PicksBoard({ data }: Props) {
         </span>
       </div>
 
-      {/* 集數分組卡片：桌機兩欄，手機單欄 */}
-      <div className="grid gap-4 lg:grid-cols-2">
-        {episodes.map((ep, epIdx) => {
-          const epPicks = byEpisode[ep]
-          const epDate = epPicks[0].ep_date_actual ?? epPicks[0].date
-          const epHits = epPicks.filter(p => p.status === 'hit').length
-          const epValid = epPicks.filter(p => p.status === 'hit' || p.status === 'miss').length
-          const epRate = epValid > 0 ? Math.round(epHits / epValid * 100) : null
+      {/* 集數分組卡片：手機單欄 */}
+      <div className="flex flex-col gap-4 lg:hidden">
+        {episodes.map((ep, epIdx) => (
+          <EpCard key={`${filterKey}-${ep}`} ep={ep} epPicks={byEpisode[ep]} epIdx={epIdx} />
+        ))}
+      </div>
 
-          return (
-            <div
-              key={`${filterKey}-${ep}`}
-              className="rounded-xl border overflow-hidden"
-              style={{
-                background: 'var(--bg-card)', borderColor: 'var(--border)',
-                animation: `pb-fade-up 400ms cubic-bezier(0.22,1,0.36,1) ${epIdx * 55}ms both`,
-                transition: 'box-shadow 200ms, transform 200ms',
-              }}
-              onMouseEnter={e => {
-                const el = e.currentTarget
-                el.style.transform = 'translateY(-2px)'
-                el.style.boxShadow = '0 6px 20px rgba(0,0,0,0.12)'
-              }}
-              onMouseLeave={e => {
-                const el = e.currentTarget
-                el.style.transform = ''
-                el.style.boxShadow = ''
-              }}
-            >
-              {/* 集數 Header */}
-              <div
-                className="flex items-center justify-between px-4 py-2.5"
-                style={{ background: 'var(--bg-elevated)', borderBottom: '1px solid var(--border-dim)' }}
-              >
-                <div className="flex items-center gap-3">
-                  <span className="font-mono font-bold text-sm" style={{ color: 'var(--accent)' }}>
-                    EP{ep}
-                  </span>
-                  <span className="font-mono text-xs" style={{ color: 'var(--fg-dim)' }}>
-                    {epDate.slice(5).replace('-', '/')}
-                  </span>
-                </div>
-                {epValid > 0 && (
-                  <div className="flex items-center gap-2">
-                    <span className="font-mono text-xs" style={{ color: 'var(--fg-muted)' }}>
-                      命中 {epHits}/{epValid}
-                    </span>
-                    <span
-                      className="font-mono text-xs font-bold px-2 py-0.5 rounded-full"
-                      style={{
-                        color: (epRate ?? 0) >= 50 ? 'var(--stance-pos)' : 'var(--stance-neg)',
-                        background: (epRate ?? 0) >= 50 ? 'var(--stance-pos-bg)' : 'var(--stance-neg-bg)',
-                      }}
-                    >
-                      {epRate}%
-                    </span>
-                  </div>
-                )}
-              </div>
-
-              {/* 個股列表 */}
-              <div className="divide-y" style={{ borderColor: 'var(--border-dim)' }}>
-                {epPicks.map((p, i) => {
-                  const resultColor =
-                    p.status === 'hit'     ? 'var(--stance-pos)' :
-                    p.status === 'miss'    ? 'var(--stance-neg)' :
-                    p.status === 'pending' ? 'var(--yellow)'     :
-                    'var(--border-dim)'
-
-                  const resultIcon =
-                    p.status === 'hit'     ? '✓' :
-                    p.status === 'miss'    ? '✗' :
-                    p.status === 'pending' ? '…' : '─'
-
-                  const resultBg =
-                    p.status === 'hit'     ? 'var(--stance-pos-bg)' :
-                    p.status === 'miss'    ? 'var(--stance-neg-bg)' :
-                    p.status === 'pending' ? 'rgba(138,96,0,0.10)' : 'transparent'
-
-                  return (
-                    <div
-                      key={`${p.episode}-${p.code}-${i}`}
-                      className="px-4 py-3"
-                      style={{
-                        borderLeft: `3px solid ${resultColor}`,
-                        transition: 'background 150ms',
-                      }}
-                      onMouseEnter={e => { e.currentTarget.style.background = 'var(--bg-elevated)' }}
-                      onMouseLeave={e => { e.currentTarget.style.background = '' }}
-                    >
-                      {/* 股票名稱行 */}
-                      <div className="flex items-center justify-between gap-2 mb-2">
-                        <div className="flex items-center gap-2 flex-wrap">
-                          <span className="font-mono font-bold text-sm" style={{ color: 'var(--fg)' }}>
-                            {p.code}
-                          </span>
-                          <span className="font-mono text-xs" style={{ color: 'var(--fg-muted)' }}>
-                            {p.name}
-                          </span>
-                          <span
-                            className="font-mono text-xs px-1.5 py-0.5 rounded"
-                            style={{ color: stanceColor(p.stance_score), background: stanceBg(p.stance_score) }}
-                          >
-                            {stanceIcon(p.stance_score)} {p.stance}
-                          </span>
-                        </div>
-                        <span
-                          className="font-mono font-bold text-sm w-6 h-6 flex items-center justify-center rounded-full shrink-0"
-                          style={{
-                            color: resultColor, background: resultBg,
-                            animation: p.status !== 'no_data'
-                              ? `pb-badge-pop 400ms cubic-bezier(0.34,1.56,0.64,1) ${epIdx * 55 + i * 30 + 200}ms both`
-                              : undefined,
-                          }}
-                        >
-                          {resultIcon}
-                        </span>
-                      </div>
-
-                      {/* 原文 Quote */}
-                      {p.quote && (
-                        <p
-                          className="font-mono text-xs leading-relaxed mb-3"
-                          style={{ color: 'var(--fg-muted)', borderLeft: '2px solid var(--border-dim)', paddingLeft: '8px' }}
-                        >
-                          {p.quote}
-                        </p>
-                      )}
-
-                      {/* 播出基準 + Bullet bars */}
-                      <div className="flex flex-col gap-2">
-                        {/* 播出日 */}
-                        <div className="flex items-center gap-2">
-                          <span className="font-mono shrink-0" style={{ width: 30, fontSize: 10, textAlign: 'right', color: 'var(--fg-dim)' }}>播出</span>
-                          <span className="font-mono text-xs font-bold" style={{ color: 'var(--fg-muted)' }}>
-                            {p.ep_price ?? '─'}
-                          </span>
-                          <span className="font-mono" style={{ fontSize: 9, color: 'var(--fg-dim)' }}>
-                            {fmtDate(p.ep_date_actual)}
-                          </span>
-                        </div>
-                        <BulletRow label="D+1"  pct={p.d1_pct}  date={p.d1_date}  delay={epIdx * 55 + i * 25 + 50} />
-                        <BulletRow label="D+7"  pct={p.d7_pct}  date={p.d7_date}  delay={epIdx * 55 + i * 25 + 150} />
-                        <BulletRow label="D+14" pct={p.d14_pct} date={p.d14_date} delay={epIdx * 55 + i * 25 + 250} />
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
-          )
-        })}
+      {/* 集數分組卡片：桌機手動奇偶兩欄（避免 grid 高度對齊產生空白）*/}
+      <div className="hidden lg:flex gap-4 items-start">
+        <div className="flex flex-col gap-4 flex-1">
+          {episodes.filter((_, i) => i % 2 === 0).map((ep, colIdx) => (
+            <EpCard key={`${filterKey}-${ep}`} ep={ep} epPicks={byEpisode[ep]} epIdx={colIdx * 2} />
+          ))}
+        </div>
+        <div className="flex flex-col gap-4 flex-1">
+          {episodes.filter((_, i) => i % 2 === 1).map((ep, colIdx) => (
+            <EpCard key={`${filterKey}-${ep}`} ep={ep} epPicks={byEpisode[ep]} epIdx={colIdx * 2 + 1} />
+          ))}
+        </div>
       </div>
 
       {/* 底部說明 */}
