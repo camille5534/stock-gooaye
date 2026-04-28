@@ -330,8 +330,8 @@ export default function PicksBoard({ data }: Props) {
         </span>
       </div>
 
-      {/* 集數分組卡片 */}
-      <div className="flex flex-col gap-4">
+      {/* 集數分組卡片：桌機兩欄，手機單欄 */}
+      <div className="grid gap-4 lg:grid-cols-2">
         {episodes.map((ep, epIdx) => {
           const epPicks = byEpisode[ep]
           const epDate = epPicks[0].ep_date_actual ?? epPicks[0].date
