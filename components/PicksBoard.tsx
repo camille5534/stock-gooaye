@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 
 interface Pick {
   episode: number
@@ -57,6 +57,10 @@ const STYLES = `
 @keyframes pb-filter-in {
   from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pb-bullet-grow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
 }
 `
 
@@ -148,26 +152,67 @@ const stanceBg = (score: number) =>
 
 const stanceIcon = (score: number) => (score > 0 ? '▲' : score < 0 ? '▼' : '─')
 
-const pctColor = (v: number | null) =>
-  v === null ? 'var(--fg-dim)' : v > 0 ? 'var(--stance-pos)' : v < 0 ? 'var(--stance-neg)' : 'var(--fg-muted)'
-
 const fmtPct = (v: number | null) =>
   v === null ? '─' : `${v > 0 ? '+' : ''}${v}%`
 
 const fmtDate = (d: string | null) =>
   d ? d.slice(5).replace('-', '/') : '─'
 
-function PctCell({ label, pct, date }: { label: string; pct: number | null; date: string | null }) {
+const pctTextColor = (v: number | null) =>
+  v === null ? 'var(--fg-dim)' : v > 0 ? 'var(--stance-pos)' : v < 0 ? 'var(--stance-neg)' : 'var(--fg-muted)'
+
+// ±15% = 50% bar width (full half); values beyond 15% fill the entire half
+const BULLET_MAX = 15
+
+function BulletRow({ label, pct, date, delay = 0 }: {
+  label: string; pct: number | null; date: string | null; delay?: number
+}) {
+  const fillPct = pct === null ? 0 : Math.min(Math.abs(pct) / BULLET_MAX * 50, 50)
+  const isPos = pct !== null && pct > 0
+  const isNeg = pct !== null && pct < 0
+  const barColor = isPos ? 'var(--stance-pos)' : isNeg ? 'var(--stance-neg)' : 'transparent'
+
   return (
-    <div className="flex flex-col items-center gap-0.5 min-w-[52px]">
-      <span className="font-mono" style={{ fontSize: '10px', color: 'var(--fg-dim)' }}>{label}</span>
-      <span
-        className="font-mono font-bold"
-        style={{ fontSize: '13px', color: pctColor(pct) }}
-      >
+    <div className="flex items-center gap-2">
+      {/* Label */}
+      <span className="font-mono shrink-0" style={{ width: 30, fontSize: 10, textAlign: 'right', color: 'var(--fg-dim)' }}>
+        {label}
+      </span>
+
+      {/* Bar track */}
+      <div className="relative flex-1" style={{ height: 6, borderRadius: 3, minWidth: 0 }}>
+        {/* Background */}
+        <div className="absolute inset-0" style={{ background: 'var(--border-dim)', borderRadius: 3 }} />
+        {/* Center tick */}
+        <div className="absolute" style={{
+          left: '50%', top: -3, bottom: -3, width: 1.5,
+          background: 'var(--border)', transform: 'translateX(-50%)',
+        }} />
+        {/* Animated fill */}
+        {pct !== null && pct !== 0 && (
+          <div style={{
+            position: 'absolute',
+            top: 0, bottom: 0,
+            borderRadius: 3,
+            width: `${fillPct}%`,
+            background: barColor,
+            left: isPos ? '50%' : `${50 - fillPct}%`,
+            transformOrigin: isPos ? 'left center' : 'right center',
+            animation: `pb-bullet-grow 500ms cubic-bezier(0.22,1,0.36,1) ${delay}ms both`,
+          }} />
+        )}
+      </div>
+
+      {/* Percentage */}
+      <span className="font-mono font-bold shrink-0" style={{
+        width: 52, fontSize: 13, textAlign: 'right',
+        color: pctTextColor(pct),
+      }}>
         {fmtPct(pct)}
       </span>
-      <span className="font-mono" style={{ fontSize: '9px', color: 'var(--fg-dim)' }}>
+
+      {/* Date */}
+      <span className="font-mono shrink-0" style={{ width: 32, fontSize: 9, color: 'var(--fg-dim)' }}>
         {fmtDate(date)}
       </span>
     </div>
@@ -414,30 +459,21 @@ export default function PicksBoard({ data }: Props) {
                         </p>
                       )}
 
-                      {/* D+1 / D+7 / D+14 */}
-                      <div className="flex items-center gap-1">
+                      {/* 播出基準 + Bullet bars */}
+                      <div className="flex flex-col gap-2">
                         {/* 播出日 */}
-                        <div className="flex flex-col items-center gap-0.5 min-w-[44px]">
-                          <span className="font-mono" style={{ fontSize: '10px', color: 'var(--fg-dim)' }}>播出</span>
-                          <span className="font-mono text-xs" style={{ color: 'var(--fg-muted)' }}>
+                        <div className="flex items-center gap-2">
+                          <span className="font-mono shrink-0" style={{ width: 30, fontSize: 10, textAlign: 'right', color: 'var(--fg-dim)' }}>播出</span>
+                          <span className="font-mono text-xs font-bold" style={{ color: 'var(--fg-muted)' }}>
                             {p.ep_price ?? '─'}
                           </span>
-                          <span className="font-mono" style={{ fontSize: '9px', color: 'var(--fg-dim)' }}>
+                          <span className="font-mono" style={{ fontSize: 9, color: 'var(--fg-dim)' }}>
                             {fmtDate(p.ep_date_actual)}
                           </span>
                         </div>
-
-                        <span style={{ color: 'var(--border)', fontSize: '16px', margin: '0 4px' }}>→</span>
-
-                        <PctCell label="D+1" pct={p.d1_pct} date={p.d1_date} />
-
-                        <div style={{ width: '1px', height: '32px', background: 'var(--border-dim)', margin: '0 4px' }} />
-
-                        <PctCell label="D+7" pct={p.d7_pct} date={p.d7_date} />
-
-                        <div style={{ width: '1px', height: '32px', background: 'var(--border-dim)', margin: '0 4px' }} />
-
-                        <PctCell label="D+14" pct={p.d14_pct} date={p.d14_date} />
+                        <BulletRow label="D+1"  pct={p.d1_pct}  date={p.d1_date}  delay={epIdx * 55 + i * 25 + 50} />
+                        <BulletRow label="D+7"  pct={p.d7_pct}  date={p.d7_date}  delay={epIdx * 55 + i * 25 + 150} />
+                        <BulletRow label="D+14" pct={p.d14_pct} date={p.d14_date} delay={epIdx * 55 + i * 25 + 250} />
                       </div>
                     </div>
                   )
