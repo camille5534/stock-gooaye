@@ -17,10 +17,18 @@ EPISODES_DIR = ROOT / "public" / "data" / "episodes"
 OUT_FILE = ROOT / "public" / "data" / "stock_picks.json"
 
 SKIP_STANCES = {"觀察", "中立", "neutral", "observe"}
+# 非上市實體或族群概念代號，跳過價格追蹤
+SKIP_TICKERS = {"光通訊", "AWS"}
+# 非台股的代號 → 正確市場後綴
+TICKER_MAP = {
+    "005930": "005930.KS",  # 三星電子 KOSPI
+}
 TODAY = datetime.date.today()
 
 
 def to_ticker(code: str) -> str:
+    if code in TICKER_MAP:
+        return TICKER_MAP[code]
     return code + ".TW" if code.isdigit() else code
 
 
@@ -66,12 +74,18 @@ def fetch_daily_series(ticker: str, start_date: str) -> tuple[str, list[dict]]:
 
 
 def find_closest_price(prices: list[dict], target_date: str) -> float | None:
-    """找目標日期當天或之前最近一個交易日的收盤（若當天休市則取前一個交易日）"""
+    """找最接近目標日期的收盤：優先當天或之前（市場休市則取前一個），找不到再往後找第一個交易日"""
     best = None
     for p in prices:
         if p["date"] <= target_date:
             best = p["close"]
-    return best
+    if best is not None:
+        return best
+    # 週六/假日播出且 prices 從之後才開始，改取之後第一個交易日
+    for p in prices:
+        if p["date"] > target_date:
+            return p["close"]
+    return None
 
 
 STOCK_HISTORY_FILE = ROOT / "public" / "data" / "stock_history.json"
@@ -136,6 +150,8 @@ def build():
 
         for stock in ep.get("stocks", []):
             code = stock["code"]
+            if code in SKIP_TICKERS:
+                continue
             stance = stock.get("stance", "")
             stance_score = stock.get("stance_score", 0)
 

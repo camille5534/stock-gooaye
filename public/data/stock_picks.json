@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27",
+  "generated_at": "2026-04-28",
   "recent_episodes": [
     652,
     653,
@@ -158,13 +158,17 @@
         {
           "date": "2026-04-27",
           "close": 2265.0
+        },
+        {
+          "date": "2026-04-28",
+          "close": 2215.0
         }
       ],
       "last_mention_date": "2026-04-25",
       "base_ep_price": 1950.0,
       "base_ep": 651,
-      "current_price": 2265.0,
-      "current_pct": 16.15
+      "current_price": 2215.0,
+      "current_pct": 13.59
     },
     {
       "code": "MRVL",
@@ -311,14 +315,14 @@
         },
         {
           "date": "2026-04-27",
-          "close": 155.45
+          "close": 158.21
         }
       ],
       "last_mention_date": "2026-04-25",
       "base_ep_price": 94.88,
       "base_ep": 648,
-      "current_price": 155.45,
-      "current_pct": 63.84
+      "current_price": 158.21,
+      "current_pct": 66.75
     },
     {
       "code": "AVGO",
@@ -441,14 +445,14 @@
         },
         {
           "date": "2026-04-27",
-          "close": 417.01
+          "close": 418.2
         }
       ],
       "last_mention_date": "2026-04-25",
       "base_ep_price": 422.65,
       "base_ep": 655,
-      "current_price": 417.01,
-      "current_pct": -1.33
+      "current_price": 418.2,
+      "current_pct": -1.05
     },
     {
       "code": "INTC",
@@ -579,14 +583,14 @@
         },
         {
           "date": "2026-04-27",
-          "close": 83.64
+          "close": 84.99
         }
       ],
       "last_mention_date": "2026-04-25",
       "base_ep_price": 50.38,
       "base_ep": 650,
-      "current_price": 83.64,
-      "current_pct": 66.02
+      "current_price": 84.99,
+      "current_pct": 68.7
     },
     {
       "code": "2454",
@@ -694,13 +698,17 @@
         {
           "date": "2026-04-27",
           "close": 2435.0
+        },
+        {
+          "date": "2026-04-28",
+          "close": 2615.0
         }
       ],
       "last_mention_date": "2026-04-25",
       "base_ep_price": 1790.0,
       "base_ep": 653,
-      "current_price": 2435.0,
-      "current_pct": 36.03
+      "current_price": 2615.0,
+      "current_pct": 46.09
     },
     {
       "code": "2303",
@@ -732,18 +740,22 @@
         {
           "date": "2026-04-27",
           "close": 72.7
+        },
+        {
+          "date": "2026-04-28",
+          "close": 75.1
         }
       ],
       "last_mention_date": "2026-04-22",
       "base_ep_price": 78.6,
       "base_ep": 655,
-      "current_price": 72.7,
-      "current_pct": -7.51
+      "current_price": 75.1,
+      "current_pct": -4.45
     },
     {
-      "code": "VSE",
+      "code": "VSH",
       "name": "Vishay",
-      "ticker": "VSE",
+      "ticker": "VSH",
       "mentions": [
         {
           "episode": 655,
@@ -751,15 +763,36 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「美國的 VSE 或者相關的被動元件其實全部也都是走得非常好」",
-          "ep_price": null
+          "ep_price": 26.94
         }
       ],
-      "prices": [],
+      "prices": [
+        {
+          "date": "2026-04-21",
+          "close": 26.91
+        },
+        {
+          "date": "2026-04-22",
+          "close": 26.94
+        },
+        {
+          "date": "2026-04-23",
+          "close": 27.33
+        },
+        {
+          "date": "2026-04-24",
+          "close": 28.19
+        },
+        {
+          "date": "2026-04-27",
+          "close": 27.77
+        }
+      ],
       "last_mention_date": "2026-04-22",
-      "base_ep_price": null,
+      "base_ep_price": 26.94,
       "base_ep": 655,
-      "current_price": null,
-      "current_pct": null
+      "current_price": 27.77,
+      "current_pct": 3.08
     },
     {
       "code": "AMD",
@@ -772,7 +805,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「X86 方面，AMD 蠻快地吃掉 Intel 市佔... 但 CPU AI 趨勢下兩邊都可能持續增長。」",
-          "ep_price": null
+          "ep_price": 220.18
         },
         {
           "episode": 651,
@@ -854,14 +887,14 @@
         },
         {
           "date": "2026-04-27",
-          "close": 333.11
+          "close": 334.63
         }
       ],
       "last_mention_date": "2026-04-18",
-      "base_ep_price": null,
+      "base_ep_price": 220.18,
       "base_ep": 650,
-      "current_price": 333.11,
-      "current_pct": null
+      "current_price": 334.63,
+      "current_pct": 51.98
     },
     {
       "code": "2327",
@@ -874,7 +907,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「下週三法說會內容應該是全面性正面...下個 Q 也是要持續漲價。」TCAP（鉭電容）與 SPCAP（聚合物鋁電容）嚴重缺貨，MLCC 高階應用緊繃，旗下 Kemet 已持續針對特定品項調漲。處於類似記憶體發作前夕的階段。",
-          "ep_price": null
+          "ep_price": 303.5
         },
         {
           "episode": 653,
@@ -937,13 +970,17 @@
         {
           "date": "2026-04-27",
           "close": 305.0
+        },
+        {
+          "date": "2026-04-28",
+          "close": 326.5
         }
       ],
       "last_mention_date": "2026-04-18",
-      "base_ep_price": null,
+      "base_ep_price": 303.5,
       "base_ep": 652,
-      "current_price": 305.0,
-      "current_pct": null
+      "current_price": 326.5,
+      "current_pct": 7.58
     },
     {
       "code": "6187",
@@ -956,7 +993,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「CPU（應指 CPO）相關的這些測試設備...我手上我蠻喜歡就華自貿跟萬論（萬潤）。」",
-          "ep_price": null
+          "ep_price": 1225.0
         }
       ],
       "prices": [
@@ -983,13 +1020,17 @@
         {
           "date": "2026-04-27",
           "close": 1080.0
+        },
+        {
+          "date": "2026-04-28",
+          "close": 1115.0
         }
       ],
       "last_mention_date": "2026-04-18",
-      "base_ep_price": null,
+      "base_ep_price": 1225.0,
       "base_ep": 654,
-      "current_price": 1080.0,
-      "current_pct": null
+      "current_price": 1115.0,
+      "current_pct": -8.98
     },
     {
       "code": "PLTR",
@@ -1108,14 +1149,14 @@
         },
         {
           "date": "2026-04-27",
-          "close": 143.75
+          "close": 143.1
         }
       ],
       "last_mention_date": "2026-04-11",
       "base_ep_price": 154.96,
       "base_ep": 647,
-      "current_price": 143.75,
-      "current_pct": -7.23
+      "current_price": 143.1,
+      "current_pct": -7.65
     },
     {
       "code": "TSLA",
@@ -1242,14 +1283,14 @@
         },
         {
           "date": "2026-04-27",
-          "close": 367.04
+          "close": 378.67
         }
       ],
       "last_mention_date": "2026-04-11",
       "base_ep_price": 348.95,
       "base_ep": 652,
-      "current_price": 367.04,
-      "current_pct": 5.18
+      "current_price": 378.67,
+      "current_pct": 8.52
     },
     {
       "code": "NVDA",
@@ -1380,63 +1421,21 @@
         },
         {
           "date": "2026-04-27",
-          "close": 210.5
+          "close": 216.61
         }
       ],
       "last_mention_date": "2026-04-11",
       "base_ep_price": 175.75,
       "base_ep": 649,
-      "current_price": 210.5,
-      "current_pct": 19.77
-    },
-    {
-      "code": "光通訊",
-      "name": "光通訊類股",
-      "ticker": "光通訊",
-      "mentions": [
-        {
-          "episode": 652,
-          "date": "2026-04-11",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「光通又再次創新高...已是非常有在資金調動下持續攻新高。」由於需求過大，美系巨頭直接自帶設備，租借現有 SMT 或 LED 打件廠產線進行生產。屬於「生水區」，短期爆發力強但需注意驗證階段風險。",
-          "ep_price": null
-        }
-      ],
-      "prices": [],
-      "last_mention_date": "2026-04-11",
-      "base_ep_price": null,
-      "base_ep": 652,
-      "current_price": null,
-      "current_pct": null
-    },
-    {
-      "code": "AWS",
-      "name": "AWS Graviton（CPU供應鏈）",
-      "ticker": "AWS",
-      "mentions": [
-        {
-          "episode": 652,
-          "date": "2026-04-11",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「AWS 是 CSP 裡的 Powerplay...CPU 這邊也是非常缺乏的。」AWS 客製化 CPU Graviton 算力已被客戶要求全包，迫使其他客戶轉向通用型 CPU（Intel、AMD）。（白話：CSP = 雲端服務供應商，如 AWS、Google Cloud、Azure）",
-          "ep_price": null
-        }
-      ],
-      "prices": [],
-      "last_mention_date": "2026-04-11",
-      "base_ep_price": null,
-      "base_ep": 652,
-      "current_price": null,
-      "current_pct": null
+      "current_price": 216.61,
+      "current_pct": 23.25
     }
   ],
   "history": [
     {
       "code": "005930",
       "name": "三星",
-      "ticker": "005930.TW",
+      "ticker": "005930.KS",
       "mentions": [
         {
           "episode": 647,
@@ -1444,7 +1443,7 @@
           "stance": "中立",
           "stance_score": 0,
           "quote": "「三星為了要跟台積電競爭，所以他們去給出這樣子個領域，然後外那所以呢才導致說他家大量的往三星方面去靠」",
-          "ep_price": null
+          "ep_price": 189000.0
         },
         {
           "episode": 651,
@@ -1452,15 +1451,116 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「在韓系的 Samsung 然後跟在美系的 Intel 應該都會去協助 Elon Musk 的 Terafab 的這個計劃...算是一個利多啦。」",
-          "ep_price": null
+          "ep_price": 210500.0
         }
       ],
-      "prices": [],
+      "prices": [
+        {
+          "date": "2026-03-25",
+          "close": 189000.0
+        },
+        {
+          "date": "2026-03-26",
+          "close": 180100.0
+        },
+        {
+          "date": "2026-03-27",
+          "close": 180100.0
+        },
+        {
+          "date": "2026-03-30",
+          "close": 176300.0
+        },
+        {
+          "date": "2026-03-31",
+          "close": 167200.0
+        },
+        {
+          "date": "2026-04-01",
+          "close": 189650.0
+        },
+        {
+          "date": "2026-04-02",
+          "close": 178400.0
+        },
+        {
+          "date": "2026-04-03",
+          "close": 186200.0
+        },
+        {
+          "date": "2026-04-06",
+          "close": 193100.0
+        },
+        {
+          "date": "2026-04-07",
+          "close": 196500.0
+        },
+        {
+          "date": "2026-04-08",
+          "close": 210500.0
+        },
+        {
+          "date": "2026-04-09",
+          "close": 204000.0
+        },
+        {
+          "date": "2026-04-10",
+          "close": 206000.0
+        },
+        {
+          "date": "2026-04-13",
+          "close": 201000.0
+        },
+        {
+          "date": "2026-04-14",
+          "close": 206500.0
+        },
+        {
+          "date": "2026-04-15",
+          "close": 211000.0
+        },
+        {
+          "date": "2026-04-16",
+          "close": 217500.0
+        },
+        {
+          "date": "2026-04-17",
+          "close": 216000.0
+        },
+        {
+          "date": "2026-04-20",
+          "close": 214500.0
+        },
+        {
+          "date": "2026-04-21",
+          "close": 219000.0
+        },
+        {
+          "date": "2026-04-22",
+          "close": 217500.0
+        },
+        {
+          "date": "2026-04-23",
+          "close": 224500.0
+        },
+        {
+          "date": "2026-04-24",
+          "close": 219500.0
+        },
+        {
+          "date": "2026-04-27",
+          "close": 224500.0
+        },
+        {
+          "date": "2026-04-28",
+          "close": 222000.0
+        }
+      ],
       "last_mention_date": "2026-04-08",
-      "base_ep_price": null,
+      "base_ep_price": 210500.0,
       "base_ep": 651,
-      "current_price": null,
-      "current_pct": null
+      "current_price": 222000.0,
+      "current_pct": 5.46
     },
     {
       "code": "AAPL",
@@ -1567,14 +1667,14 @@
         },
         {
           "date": "2026-04-27",
-          "close": 267.32
+          "close": 267.61
         }
       ],
       "last_mention_date": "2026-04-08",
       "base_ep_price": 248.8,
       "base_ep": 648,
-      "current_price": 267.32,
-      "current_pct": 7.44
+      "current_price": 267.61,
+      "current_pct": 7.56
     },
     {
       "code": "006208",
@@ -1646,13 +1746,17 @@
         {
           "date": "2026-04-27",
           "close": 215.45
+        },
+        {
+          "date": "2026-04-28",
+          "close": 213.15
         }
       ],
       "last_mention_date": "2026-04-08",
       "base_ep_price": 183.6,
       "base_ep": 651,
-      "current_price": 215.45,
-      "current_pct": 17.35
+      "current_price": 213.15,
+      "current_pct": 16.09
     },
     {
       "code": "ARM",
@@ -1665,7 +1769,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「伺服器市佔率從 2018 年低於 5% 到現在跑到了 20~25%，在 Hyperscaler 佔比更高。」",
-          "ep_price": null
+          "ep_price": 148.77
         }
       ],
       "prices": [
@@ -1731,14 +1835,14 @@
         },
         {
           "date": "2026-04-27",
-          "close": 214.66
+          "close": 215.88
         }
       ],
       "last_mention_date": "2026-04-04",
-      "base_ep_price": null,
+      "base_ep_price": 148.77,
       "base_ep": 650,
-      "current_price": 214.66,
-      "current_pct": null
+      "current_price": 215.88,
+      "current_pct": 45.11
     },
     {
       "code": "3533",
@@ -1751,7 +1855,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「跟 CPU socket 是高度相關的標的... 都算是相對強勢。」",
-          "ep_price": null
+          "ep_price": 2030.0
         }
       ],
       "prices": [
@@ -1814,13 +1918,17 @@
         {
           "date": "2026-04-27",
           "close": 2710.0
+        },
+        {
+          "date": "2026-04-28",
+          "close": 2670.0
         }
       ],
       "last_mention_date": "2026-04-04",
-      "base_ep_price": null,
+      "base_ep_price": 2030.0,
       "base_ep": 650,
-      "current_price": 2710.0,
-      "current_pct": null
+      "current_price": 2670.0,
+      "current_pct": 31.53
     },
     {
       "code": "NET",
@@ -1931,14 +2039,14 @@
         },
         {
           "date": "2026-04-27",
-          "close": 208.4
+          "close": 212.36
         }
       ],
       "last_mention_date": "2026-03-25",
       "base_ep_price": 218.0,
       "base_ep": 647,
-      "current_price": 208.4,
-      "current_pct": -4.4
+      "current_price": 212.36,
+      "current_pct": -2.59
     }
   ]
 }
