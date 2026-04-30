@@ -60,20 +60,25 @@ export default function EpisodeCard({ episode, isLatest }: Props) {
       </div>
 
       {/* Summary */}
-      <div className="px-4 py-3 flex-1 min-h-0 overflow-hidden">
-        <p
-          className="text-sm leading-relaxed"
-          style={{
-            color: 'var(--fg-muted)',
-            display: '-webkit-box',
-            WebkitLineClamp: expanded ? 'unset' : 3,
-            WebkitBoxOrient: 'vertical',
-            overflow: 'hidden',
-            maxHeight: expanded ? 'none' : '4.9em',
-          }}
-        >
-          {episode.summary}
-        </p>
+      <div className="px-4 py-3 flex-1 min-h-0">
+        {/* wrapper div 負責可靠截斷：普通 block 元素的 overflow:hidden 不受 flex 影響 */}
+        <div style={{
+          overflow: 'hidden',
+          maxHeight: expanded ? 'none' : '68px',
+        }}>
+          <p
+            className="text-sm leading-relaxed"
+            style={{
+              color: 'var(--fg-muted)',
+              display: '-webkit-box',
+              WebkitLineClamp: expanded ? 'unset' : 3,
+              WebkitBoxOrient: 'vertical',
+              overflow: 'hidden',
+            }}
+          >
+            {episode.summary}
+          </p>
+        </div>
         {canExpand && (
           <button
             onClick={() => setExpanded(v => !v)}
