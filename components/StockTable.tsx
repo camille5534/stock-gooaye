@@ -117,9 +117,6 @@ export default function StockTable({ stocks }: Props) {
                       </span>
                     ))}
                   </div>
-                  <span className="text-xs font-mono" style={{ color: 'var(--fg-dim)' }}>
-                    {stock.timestamp}
-                  </span>
                 </div>
               </div>
             )}
