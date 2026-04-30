@@ -60,7 +60,7 @@ export default function EpisodeCard({ episode, isLatest }: Props) {
       </div>
 
       {/* Summary */}
-      <div className="px-4 py-3 flex-1">
+      <div className="px-4 py-3 flex-1" style={{ overflow: expanded ? 'visible' : 'hidden' }}>
         <p
           className="text-sm leading-relaxed"
           style={{
@@ -68,7 +68,7 @@ export default function EpisodeCard({ episode, isLatest }: Props) {
             display: '-webkit-box',
             WebkitLineClamp: expanded ? 'unset' : 3,
             WebkitBoxOrient: 'vertical',
-            overflow: expanded ? 'visible' : 'hidden',
+            overflow: 'hidden',
           }}
         >
           {episode.summary}
