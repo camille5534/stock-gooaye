@@ -239,14 +239,6 @@ export default function QASearch({ allQA }: Props) {
                   ))}
                 </div>
                 <div className="flex items-center gap-2 shrink-0">
-                  {qa.timestamp && (
-                    <span
-                      className="text-xs font-mono px-2 py-0.5 rounded"
-                      style={{ color: 'var(--fg-dim)', background: 'var(--border-dim)' }}
-                    >
-                      {qa.timestamp}
-                    </span>
-                  )}
                   <span
                     className="text-xs font-mono px-2 py-0.5 rounded"
                     style={{
