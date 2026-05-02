@@ -1,0 +1,242 @@
+{
+  "episode": 658,
+  "date": "2026-05-02",
+  "title": "EP658 | 🪿",
+  "youtube_url": "https://www.youtube.com/watch?v=X3DKXq4RXwo",
+  "summary": "4月市場強勁漲勢後，本集預警5月可能出現像樣回檔，提醒投資人對「股票不會跌」的盲目信仰保持警覺。深入解析黃仁勳談AI與就業觀點、SaaS公司（Atlassian、Palantir、Salesforce）在AI浪潮下的韌性與轉型，並分析聯發科與台積電先進封裝合作及Google TPU訂單傳聞。",
+  "sentiment": {
+    "score": 6,
+    "label": "偏多",
+    "bull_pct": 60,
+    "bear_pct": 40,
+    "vix": 16.99
+  },
+  "keywords": [
+    "台積電",
+    "聯發科",
+    "AI",
+    "軟體股",
+    "記憶體",
+    "股票質押",
+    "先進封裝",
+    "Nvidia",
+    "Jensen Huang",
+    "SaaS"
+  ],
+  "stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「就算你沒有在做交易的，你只是把部位放在可能 50 啊、台積電什麼的，那大家的成績都是非常好的。」",
+      "timestamp": "00:01:21",
+      "tags": ["半導體", "權值股", "先進製程"],
+      "price": 2135.0,
+      "change_pct": null
+    },
+    {
+      "code": "PLTR",
+      "name": "Palantir",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「在 AI 時代反而這樣子的一個商業模式變成是一個利多，為什麼？因為它需要大量的 FDE 去你的公司去把你那些垃圾資料弄一弄。」",
+      "timestamp": "00:18:25",
+      "tags": ["數據分析", "AI", "FDE"],
+      "price": 144.07,
+      "change_pct": null
+    },
+    {
+      "code": "CRM",
+      "name": "Salesforce",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「應該是有機會在後面會走出自己的一條路...它比較可以去做到大破大立。」",
+      "timestamp": "00:20:47",
+      "tags": ["SaaS", "AI代理", "企業軟體"],
+      "price": 183.82,
+      "change_pct": null
+    },
+    {
+      "code": "MU",
+      "name": "美光",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「合約價 Q2 Q3 仍有上漲的空間...目前用產業的角度來講是確實沒有看到太多的問題出現。」",
+      "timestamp": "00:32:05",
+      "tags": ["記憶體", "報價上漲", "庫存"],
+      "price": 542.21,
+      "change_pct": null
+    },
+    {
+      "code": "GOOG",
+      "name": "Google",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「Google 轉強，我相信就不會有人這樣子講了...AI 它確實在幫大家賺錢。」",
+      "timestamp": "00:24:20",
+      "tags": ["巨頭", "AI模型", "搜尋引擎"],
+      "price": 383.22,
+      "change_pct": null
+    },
+    {
+      "code": "NET",
+      "name": "Cloudflare",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「我會覺得說他們比較屬於說就是在 AI 應該是比較難以被搞到的東西。」",
+      "timestamp": "00:18:55",
+      "tags": ["網路安全", "邊緣運算", "SaaS"],
+      "price": 217.5,
+      "change_pct": null
+    },
+    {
+      "code": "ADBE",
+      "name": "Adobe",
+      "stance": "負面",
+      "stance_score": -1,
+      "quote": "「我自己心中也覺得說他有機會會 BBQ，因為現在已經有這麼多方便的生圖的東西。」",
+      "timestamp": "00:19:42",
+      "tags": ["AI生圖", "軟體競爭", "估值修正"],
+      "price": 250.71,
+      "change_pct": null
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「發哥講完之後，我看了幾家券商的報告...搞不好可以更豐富之類的。」",
+      "timestamp": "00:41:20",
+      "tags": ["ASIC", "AI", "手機晶片"],
+      "price": 2610.0,
+      "change_pct": null
+    },
+    {
+      "code": "TEAM",
+      "name": "Atlassian",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「意外的繳出很多讓大家嚇到的數據...它並不是像大家想像，大家都說 SaaS apocalypse。」",
+      "timestamp": "00:15:31",
+      "tags": ["SaaS", "軟體", "企業工具"],
+      "price": 88.88,
+      "change_pct": null
+    },
+    {
+      "code": "INTC",
+      "name": "Intel",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「目前的一個共識是它（5922）的前段會在台積電那邊做，那可是它的後段呢就會跑到 Intel 的那邊去做。」",
+      "timestamp": "00:27:10",
+      "tags": ["先進封裝", "IDM", "代工競爭"],
+      "price": 99.62,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "658-life-1",
+      "title": "免費股份心態",
+      "content": "主委分享自己的操作心法：在一支股票上賺過錢後，會留下50到100萬的部位永遠不賣，視之為「公司免費送的股份」。這種心理帳戶策略能大幅降低市場波動帶來的焦慮。",
+      "timestamp": "00:05:00",
+      "tags": ["投資心態", "心理帳戶", "長期持有"]
+    },
+    {
+      "id": "658-life-2",
+      "title": "紅酒收藏的眼界觀",
+      "content": "主委以紅酒收藏為喻：真正有底氣評論一瓶酒，必須自己親身走過那個價格區間。「價錢並不是一個絕對的指標，你自己就是最好的裁判。」強調親身體驗與建立判斷力比盲從權威更重要。",
+      "timestamp": "00:08:00",
+      "tags": ["生活", "眼界", "判斷力"]
+    },
+    {
+      "id": "658-life-3",
+      "title": "處理焦慮的方式",
+      "content": "主委分享：刻意訓練自己不去想不確定的事，「兵來將擋水來土掩」。但有未處理完的事情會失眠，這時候會跳起來瘋狂研究直到搞清楚。也超喜歡看天文相關的影片放鬆。",
+      "timestamp": "00:38:15",
+      "tags": ["生活", "心理建設", "個人成長"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "658-1",
+      "question": "Google、Amazon 自研晶片會威脅 Nvidia 嗎？",
+      "answer": "晶片整體是供不應求的，短期內不會有誰把誰踩掉的劇本。他們自己本身都還是 Nvidia 的大客戶，會並行使用 GPGPU 與自研 ASIC，兩個都需要。",
+      "timestamp": "00:30:45",
+      "tags": ["產業分析", "Nvidia", "ASIC"]
+    },
+    {
+      "id": "658-2",
+      "question": "記憶體模組缺貨訊號很強，但台灣相關股股價反應偏弱？",
+      "answer": "基本面確實沒看到太多問題，大家都知道好、知道缺。但台灣題材太多，股價不一定馬上動，就像美光前陣子也會下挫。如果你覺得不錯可以繼續等，基本面撐著沒問題。",
+      "timestamp": "00:32:15",
+      "tags": ["投資操作", "記憶體", "基本面"]
+    },
+    {
+      "id": "658-3",
+      "question": "資產 90% 在台積電，一年後要出國讀書，現在難以說服自己賣出怎麼辦？",
+      "answer": "錢就是要拿來花的，但如果你不想賣，可以考慮『股票質押』。利率一般在 2% 多，彈性大，不用現在賣掉，等真的火燒屁股再處分擔保品。有些銀行直接在網路上就可以申辦。",
+      "timestamp": "00:39:50",
+      "tags": ["資產配置", "股票質押", "出國留學"]
+    },
+    {
+      "id": "658-4",
+      "question": "聯發科法說預估 ASIC 市佔 10-15%，低於市場期待的 20%，算不合預期嗎？",
+      "answer": "市場確實會提早喊出恐怖數字，但我看到有些券商報告在法說後反而上調。發哥從手機轉 AI 的論述市場非常買單，雖然我個人覺得預期偏樂觀，後面還是得看實際交出的數字。",
+      "timestamp": "00:44:40",
+      "tags": ["公司分析", "聯發科", "ASIC"]
+    },
+    {
+      "id": "658-5",
+      "question": "對邊緣運算（Edge Computing）的前景看法？",
+      "answer": "邊緣運算就是非中心化機房的運算。AIPC 目前看來是個笑話，但長遠確實會往那走以減少流量費。目前近期沒看到特別的爆發契機，再等等。",
+      "timestamp": "00:51:30",
+      "tags": ["產業分析", "邊緣運算", "AI"]
+    },
+    {
+      "id": "658-6",
+      "question": "如何處理焦慮與不確定感？",
+      "answer": "刻意訓練不去想不確定的事，兵來將擋。但有事沒處理完會失眠，我會跳起來瘋狂研究直到搞清楚。這樣至少不會在床上乾躺著，做點事情反而讓自己有掌控感。",
+      "timestamp": "00:38:15",
+      "tags": ["生活", "個人成長", "心理建設"]
+    },
+    {
+      "id": "658-7",
+      "question": "「破億」是指總資產還是淨資產？",
+      "answer": "一般講 AUM 或淨值（Net Asset Value），是扣除貸款後的數字。有時候人家說破億是總資產，但正確的說法應該是淨資產，就是你如果把所有借的錢還完之後還剩多少。",
+      "timestamp": "00:50:10",
+      "tags": ["財富管理", "資產計算"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "軟體/SaaS",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["PLTR", "CRM", "NET", "TEAM", "ADBE"],
+      "quote": "SaaS 末日論被 Atlassian 財報打臉；Palantir FDE 模式在 AI 時代反成優勢；Salesforce 大破大立轉型 Agentic；Adobe 初階應用面臨 AI 侵蝕風險"
+    },
+    {
+      "name": "半導體/先進封裝",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["2330", "2454", "INTC"],
+      "quote": "前台積電先進封裝大將加入聯發科，強化 CoWoS 合作；Google TPU V9 後段傳轉往 Intel，聯發科備案計畫持續"
+    },
+    {
+      "name": "記憶體",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["MU"],
+      "quote": "缺貨預期延伸至 2026-2027，合約價 Q2 Q3 仍有上漲空間，大廠砸真金白銀囤貨"
+    },
+    {
+      "name": "AI/雲端基礎設施",
+      "stance": "正面",
+      "intensity": 1,
+      "stocks": ["GOOG", "NET"],
+      "quote": "Google AI 確實在幫大家賺錢，雲端需求持續旺盛；Cloudflare 在 AI 浪潮下難以被取代"
+    }
+  ]
+}

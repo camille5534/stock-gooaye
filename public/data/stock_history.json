@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 8,
-      "positive": 5,
+      "count": 9,
+      "positive": 6,
       "negative": 0,
       "neutral": 3,
       "episodes": [
@@ -15,7 +15,8 @@
         654,
         655,
         656,
-        657
+        657,
+        658
       ]
     },
     {
@@ -36,6 +37,38 @@
       ]
     },
     {
+      "code": "INTC",
+      "name": "英特爾",
+      "count": 6,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 3,
+      "episodes": [
+        648,
+        650,
+        651,
+        654,
+        656,
+        658
+      ]
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "count": 6,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 3,
+      "episodes": [
+        649,
+        653,
+        655,
+        656,
+        657,
+        658
+      ]
+    },
+    {
       "code": "NVDA",
       "name": "輝達",
       "count": 5,
@@ -51,36 +84,6 @@
       ]
     },
     {
-      "code": "INTC",
-      "name": "英特爾",
-      "count": 5,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 2,
-      "episodes": [
-        648,
-        650,
-        651,
-        654,
-        656
-      ]
-    },
-    {
-      "code": "2454",
-      "name": "聯發科",
-      "count": 5,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 2,
-      "episodes": [
-        649,
-        653,
-        655,
-        656,
-        657
-      ]
-    },
-    {
       "code": "AVGO",
       "name": "博通",
       "count": 4,
@@ -92,6 +95,19 @@
         649,
         655,
         656
+      ]
+    },
+    {
+      "code": "PLTR",
+      "name": "Palantir",
+      "count": 3,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        647,
+        652,
+        658
       ]
     },
     {
@@ -134,6 +150,18 @@
       ]
     },
     {
+      "code": "MU",
+      "name": "美光（Micron）",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        646,
+        658
+      ]
+    },
+    {
       "code": "005930",
       "name": "三星",
       "count": 2,
@@ -146,15 +174,15 @@
       ]
     },
     {
-      "code": "PLTR",
-      "name": "Palantir",
+      "code": "NET",
+      "name": "Cloudflare",
       "count": 2,
-      "positive": 1,
+      "positive": 2,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 0,
       "episodes": [
         647,
-        652
+        658
       ]
     },
     {
@@ -194,17 +222,6 @@
       ]
     },
     {
-      "code": "MU",
-      "name": "美光（Micron）",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        646
-      ]
-    },
-    {
       "code": "BE",
       "name": "Bloom Energy",
       "count": 1,
@@ -235,17 +252,6 @@
       "neutral": 1,
       "episodes": [
         646
-      ]
-    },
-    {
-      "code": "NET",
-      "name": "Cloudflare",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        647
       ]
     },
     {
@@ -445,6 +451,50 @@
       "episodes": [
         657
       ]
+    },
+    {
+      "code": "CRM",
+      "name": "Salesforce",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        658
+      ]
+    },
+    {
+      "code": "GOOG",
+      "name": "Google",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        658
+      ]
+    },
+    {
+      "code": "ADBE",
+      "name": "Adobe",
+      "count": 1,
+      "positive": 0,
+      "negative": 1,
+      "neutral": 0,
+      "episodes": [
+        658
+      ]
+    },
+    {
+      "code": "TEAM",
+      "name": "Atlassian",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        658
+      ]
     }
   ],
   "sentiment_history": [
@@ -555,6 +605,15 @@
       "bull_pct": 60,
       "bear_pct": 40,
       "vix": 18.44
+    },
+    {
+      "episode": 658,
+      "date": "2026-05-02",
+      "score": 6,
+      "label": "偏多",
+      "bull_pct": 60,
+      "bear_pct": 40,
+      "vix": 16.99
     }
   ],
   "sector_mentions": {
