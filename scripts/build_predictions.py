@@ -93,6 +93,11 @@ def build():
             ep_price, ep_date_actual = fetch_close(ticker, ep_date)
             time.sleep(0.3)
 
+            # fallback：Yahoo Finance 查不到當日收盤（假日/休市），改用 ep JSON 存的 price
+            if ep_price is None and stock.get("price") is not None:
+                ep_price = stock["price"]
+                ep_date_actual = ep_date
+
             if ep_date_actual:
                 d1_target = str(datetime.date.fromisoformat(ep_date_actual) + datetime.timedelta(days=1))
                 d7_target = str(datetime.date.fromisoformat(ep_date_actual) + datetime.timedelta(days=7))
