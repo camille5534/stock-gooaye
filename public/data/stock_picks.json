@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-02",
+  "generated_at": "2026-05-04",
   "recent_episodes": [
     654,
     655,
@@ -19,7 +19,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「美光的數字本來在投資圈真的喊到毛利要 80 以上，最後開一個 70 幾... 為什麼開出來股價竟然是跌的？因為真的有一堆人預期一個更高的數字。」",
-          "ep_price": 422.9
+          "ep_price": 404.35
         },
         {
           "episode": 658,
@@ -31,10 +31,6 @@
         }
       ],
       "prices": [
-        {
-          "date": "2026-03-20",
-          "close": 422.9
-        },
         {
           "date": "2026-03-23",
           "close": 404.35
@@ -336,13 +332,17 @@
         {
           "date": "2026-04-30",
           "close": 2135.0
+        },
+        {
+          "date": "2026-05-04",
+          "close": 2275.0
         }
       ],
       "last_mention_date": "2026-05-02",
       "base_ep_price": 1950.0,
       "base_ep": 651,
-      "current_price": 2135.0,
-      "current_pct": 9.49
+      "current_price": 2275.0,
+      "current_pct": 16.67
     },
     {
       "code": "NET",
@@ -367,10 +367,6 @@
         }
       ],
       "prices": [
-        {
-          "date": "2026-03-24",
-          "close": 213.15
-        },
         {
           "date": "2026-03-25",
           "close": 218.0
@@ -518,10 +514,6 @@
       ],
       "prices": [
         {
-          "date": "2026-03-24",
-          "close": 154.78
-        },
-        {
           "date": "2026-03-25",
           "close": 154.96
         },
@@ -647,7 +639,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「在玻璃方面走的比較前面的應該就是 Intel 了。」",
-          "ep_price": 43.13
+          "ep_price": 41.19
         },
         {
           "episode": 650,
@@ -691,10 +683,6 @@
         }
       ],
       "prices": [
-        {
-          "date": "2026-03-27",
-          "close": 43.13
-        },
         {
           "date": "2026-03-30",
           "close": 41.19
@@ -932,13 +920,17 @@
         {
           "date": "2026-04-30",
           "close": 2610.0
+        },
+        {
+          "date": "2026-05-04",
+          "close": 2870.0
         }
       ],
       "last_mention_date": "2026-05-02",
       "base_ep_price": 1790.0,
       "base_ep": 653,
-      "current_price": 2610.0,
-      "current_pct": 45.81
+      "current_price": 2870.0,
+      "current_pct": 60.34
     },
     {
       "code": "CRM",
@@ -1140,13 +1132,17 @@
         {
           "date": "2026-04-30",
           "close": 154.0
+        },
+        {
+          "date": "2026-05-04",
+          "close": 154.5
         }
       ],
       "last_mention_date": "2026-04-29",
       "base_ep_price": 167.0,
       "base_ep": 657,
-      "current_price": 154.0,
-      "current_pct": -7.78
+      "current_price": 154.5,
+      "current_pct": -7.49
     },
     {
       "code": "MRVL",
@@ -1159,7 +1155,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「它現在算是可能在美股的技術現型還長得還蠻不錯的東西。」",
-          "ep_price": 94.88
+          "ep_price": 87.81
         },
         {
           "episode": 649,
@@ -1211,10 +1207,6 @@
         }
       ],
       "prices": [
-        {
-          "date": "2026-03-27",
-          "close": 94.88
-        },
         {
           "date": "2026-03-30",
           "close": 87.81
@@ -1313,10 +1305,10 @@
         }
       ],
       "last_mention_date": "2026-04-25",
-      "base_ep_price": 94.88,
+      "base_ep_price": 87.81,
       "base_ep": 648,
       "current_price": 164.95,
-      "current_pct": 73.85
+      "current_pct": 87.85
     },
     {
       "code": "AVGO",
@@ -1329,7 +1321,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「在 Intel 跟 Broadcom 這邊，會去做這樣子的一個嘗試（玻璃基板）。」",
-          "ep_price": 300.68
+          "ep_price": 293.41
         },
         {
           "episode": 649,
@@ -1357,10 +1349,6 @@
         }
       ],
       "prices": [
-        {
-          "date": "2026-03-27",
-          "close": 300.68
-        },
         {
           "date": "2026-03-30",
           "close": 293.41
@@ -1506,13 +1494,17 @@
         {
           "date": "2026-04-30",
           "close": 77.3
+        },
+        {
+          "date": "2026-05-04",
+          "close": 81.2
         }
       ],
       "last_mention_date": "2026-04-22",
       "base_ep_price": 78.6,
       "base_ep": 655,
-      "current_price": 77.3,
-      "current_pct": -1.65
+      "current_price": 81.2,
+      "current_pct": 3.31
     },
     {
       "code": "VSH",
@@ -1529,10 +1521,6 @@
         }
       ],
       "prices": [
-        {
-          "date": "2026-04-21",
-          "close": 26.91
-        },
         {
           "date": "2026-04-22",
           "close": 26.94
@@ -1776,13 +1764,17 @@
         {
           "date": "2026-04-30",
           "close": 317.0
+        },
+        {
+          "date": "2026-05-04",
+          "close": 342.5
         }
       ],
       "last_mention_date": "2026-04-18",
       "base_ep_price": 303.5,
       "base_ep": 652,
-      "current_price": 317.0,
-      "current_pct": 4.45
+      "current_price": 342.5,
+      "current_pct": 12.85
     },
     {
       "code": "6187",
@@ -1834,13 +1826,17 @@
         {
           "date": "2026-04-30",
           "close": 1210.0
+        },
+        {
+          "date": "2026-05-04",
+          "close": 1330.0
         }
       ],
       "last_mention_date": "2026-04-18",
       "base_ep_price": 1225.0,
       "base_ep": 654,
-      "current_price": 1210.0,
-      "current_pct": -1.22
+      "current_price": 1330.0,
+      "current_pct": 8.57
     }
   ],
   "history": [
@@ -1875,10 +1871,6 @@
         }
       ],
       "prices": [
-        {
-          "date": "2026-03-24",
-          "close": 383.03
-        },
         {
           "date": "2026-03-25",
           "close": 385.95
@@ -2005,7 +1997,7 @@
           "stance": "中立",
           "stance_score": 0,
           "quote": "「Nvidia 都已經是也在破底啊，都在持續往下。」",
-          "ep_price": 167.52
+          "ep_price": 165.17
         },
         {
           "episode": 649,
@@ -2041,10 +2033,6 @@
         }
       ],
       "prices": [
-        {
-          "date": "2026-03-27",
-          "close": 167.52
-        },
         {
           "date": "2026-03-30",
           "close": 165.17
@@ -2278,13 +2266,17 @@
         {
           "date": "2026-04-30",
           "close": 220500.0
+        },
+        {
+          "date": "2026-05-04",
+          "close": 232500.0
         }
       ],
       "last_mention_date": "2026-04-08",
       "base_ep_price": 210500.0,
       "base_ep": 651,
-      "current_price": 220500.0,
-      "current_pct": 4.75
+      "current_price": 232500.0,
+      "current_pct": 10.45
     },
     {
       "code": "AAPL",
@@ -2297,7 +2289,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「我認為 Apple 去切這一些中低價的筆電跟手機，又認為是很棒的一個策略。」",
-          "ep_price": 248.8
+          "ep_price": 246.63
         },
         {
           "episode": 651,
@@ -2309,10 +2301,6 @@
         }
       ],
       "prices": [
-        {
-          "date": "2026-03-27",
-          "close": 248.8
-        },
         {
           "date": "2026-03-30",
           "close": 246.63
@@ -2411,10 +2399,10 @@
         }
       ],
       "last_mention_date": "2026-04-08",
-      "base_ep_price": 248.8,
+      "base_ep_price": 246.63,
       "base_ep": 648,
       "current_price": 280.14,
-      "current_pct": 12.6
+      "current_pct": 13.59
     },
     {
       "code": "006208",
@@ -2498,13 +2486,17 @@
         {
           "date": "2026-04-30",
           "close": 209.75
+        },
+        {
+          "date": "2026-05-04",
+          "close": 219.2
         }
       ],
       "last_mention_date": "2026-04-08",
       "base_ep_price": 183.6,
       "base_ep": 651,
-      "current_price": 209.75,
-      "current_pct": 14.24
+      "current_price": 219.2,
+      "current_pct": 19.39
     },
     {
       "code": "ARM",
@@ -2694,13 +2686,17 @@
         {
           "date": "2026-04-30",
           "close": 2615.0
+        },
+        {
+          "date": "2026-05-04",
+          "close": 2610.0
         }
       ],
       "last_mention_date": "2026-04-04",
       "base_ep_price": 2030.0,
       "base_ep": 650,
-      "current_price": 2615.0,
-      "current_pct": 28.82
+      "current_price": 2610.0,
+      "current_pct": 28.57
     }
   ]
 }
