@@ -386,7 +386,7 @@ export default function PicksBoard({ data }: Props) {
     return acc
   }, {} as Record<number, Pick[]>)
   const allEpisodes = Object.keys(byEpisode).map(Number).sort((a, b) => b - a)
-  const episodes = allEpisodes.slice(0, 5)
+  const episodes = allEpisodes.slice(0, 4)
 
   const winRateColor =
     stats.win_rate >= 70 ? 'var(--stance-pos)' :
@@ -477,7 +477,7 @@ export default function PicksBoard({ data }: Props) {
           )
         })}
         <span className="text-xs font-mono self-center" style={{ color: 'var(--fg-dim)' }}>
-          近 5 集 · {episodes.reduce((n, ep) => n + (byEpisode[ep]?.length ?? 0), 0)} 筆
+          近 4 集 · {episodes.reduce((n, ep) => n + (byEpisode[ep]?.length ?? 0), 0)} 筆
         </span>
       </div>
 
