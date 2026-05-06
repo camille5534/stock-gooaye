@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 9,
-      "positive": 6,
+      "count": 10,
+      "positive": 7,
       "negative": 0,
       "neutral": 3,
       "episodes": [
@@ -16,7 +16,8 @@
         655,
         656,
         657,
-        658
+        658,
+        659
       ]
     },
     {
@@ -37,6 +38,39 @@
       ]
     },
     {
+      "code": "2454",
+      "name": "聯發科",
+      "count": 7,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 4,
+      "episodes": [
+        649,
+        653,
+        655,
+        656,
+        657,
+        658,
+        659
+      ]
+    },
+    {
+      "code": "NVDA",
+      "name": "輝達",
+      "count": 6,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 3,
+      "episodes": [
+        648,
+        649,
+        650,
+        651,
+        652,
+        659
+      ]
+    },
+    {
       "code": "INTC",
       "name": "英特爾",
       "count": 6,
@@ -53,34 +87,17 @@
       ]
     },
     {
-      "code": "2454",
-      "name": "聯發科",
-      "count": 6,
+      "code": "PLTR",
+      "name": "Palantir",
+      "count": 4,
       "positive": 3,
       "negative": 0,
-      "neutral": 3,
+      "neutral": 1,
       "episodes": [
-        649,
-        653,
-        655,
-        656,
-        657,
-        658
-      ]
-    },
-    {
-      "code": "NVDA",
-      "name": "輝達",
-      "count": 5,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 3,
-      "episodes": [
-        648,
-        649,
-        650,
-        651,
-        652
+        647,
+        652,
+        658,
+        659
       ]
     },
     {
@@ -98,16 +115,31 @@
       ]
     },
     {
-      "code": "PLTR",
-      "name": "Palantir",
-      "count": 3,
-      "positive": 2,
+      "code": "AMD",
+      "name": "AMD",
+      "count": 4,
+      "positive": 3,
       "negative": 0,
       "neutral": 1,
       "episodes": [
-        647,
+        650,
+        651,
+        654,
+        659
+      ]
+    },
+    {
+      "code": "2327",
+      "name": "國巨（被動元件族群）",
+      "count": 4,
+      "positive": 4,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
         652,
-        658
+        653,
+        654,
+        659
       ]
     },
     {
@@ -121,32 +153,6 @@
         647,
         651,
         652
-      ]
-    },
-    {
-      "code": "AMD",
-      "name": "AMD",
-      "count": 3,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        650,
-        651,
-        654
-      ]
-    },
-    {
-      "code": "2327",
-      "name": "國巨（被動元件族群）",
-      "count": 3,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        652,
-        653,
-        654
       ]
     },
     {
@@ -495,6 +501,61 @@
       "episodes": [
         658
       ]
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        659
+      ]
+    },
+    {
+      "code": "3443",
+      "name": "創意",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        659
+      ]
+    },
+    {
+      "code": "3661",
+      "name": "世芯-KY",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        659
+      ]
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        659
+      ]
+    },
+    {
+      "code": "5347",
+      "name": "世界先進",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        659
+      ]
     }
   ],
   "sentiment_history": [
@@ -614,6 +675,15 @@
       "bull_pct": 60,
       "bear_pct": 40,
       "vix": 16.99
+    },
+    {
+      "episode": 659,
+      "date": "2026-05-06",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 17.29
     }
   ],
   "sector_mentions": {
@@ -658,6 +728,17 @@
           "漢唐"
         ],
         "quote": "CapEx 給到上限未上修，廠務股便宜但動能弱"
+      },
+      {
+        "episode": 659,
+        "date": "2026-05-06",
+        "stance": "正面",
+        "intensity": 1,
+        "stocks": [
+          "2330",
+          "5347"
+        ],
+        "quote": "台積電2027 EPS推算大盤有望見4萬點；世界先進成熟製程產能利用率超高"
       }
     ],
     "AI算力/Token": [
@@ -779,6 +860,17 @@
           "AMD"
         ],
         "quote": "AWS Graviton 算力被客戶要求全包，RISC-V 架構 NVIDIA 入股 SiFive，Agentic AI 時代 CPU 需求大增"
+      },
+      {
+        "episode": 659,
+        "date": "2026-05-06",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "AMD",
+          "NVDA"
+        ],
+        "quote": "Agentic AI推理負載推升CPU結構性需求，AMD目標拿下伺服器CPU超過50%市佔；NVDA橫盤讓資金輪動至二軍"
       }
     ],
     "被動元件": [
@@ -847,6 +939,17 @@
         "intensity": 1,
         "stocks": [],
         "quote": "日本、韓國三星電機、美國 VSE 走勢強勁，台股被動元件在歷史新高但節奏相對慢"
+      },
+      {
+        "episode": 659,
+        "date": "2026-05-06",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "2327",
+          "2492"
+        ],
+        "quote": "AI伺服器高階需求排擠傳統產能，國巨帶動族群轉強；華新科交期拉長通知觸發漲停，預示後續漲價空間"
       }
     ],
     "光通訊/CPO": [
@@ -932,6 +1035,16 @@
         "intensity": 1,
         "stocks": [],
         "quote": "受 Anthropic Mythos 延遲發布等 AI Doomstay 情緒影響，資金暫離，待算力瓶頸解除後再觀察"
+      },
+      {
+        "episode": 659,
+        "date": "2026-05-06",
+        "stance": "正面",
+        "intensity": 1,
+        "stocks": [
+          "PLTR"
+        ],
+        "quote": "Palantir精準數據處理是對抗AI Slop的護城河，企業級精準決策需求強勁"
       }
     ],
     "低軌衛星/啟碁": [
@@ -1008,6 +1121,29 @@
           "AVGO"
         ],
         "quote": "Google HF 供應鏈三強格局確立，AVGO/MRVL/MTK 三家都吃不完，MTK 兩根漲停印證題材"
+      },
+      {
+        "episode": 659,
+        "date": "2026-05-06",
+        "stance": "正面",
+        "intensity": 2,
+        "stocks": [
+          "3443",
+          "3661"
+        ],
+        "quote": "創意高度綁定Google、世芯-KY高度綁定Amazon Trainium，雲端巨頭自研晶片潮帶動台灣設計服務商強勢表態"
+      }
+    ],
+    "矽晶圓": [
+      {
+        "episode": 659,
+        "date": "2026-05-06",
+        "stance": "正面",
+        "intensity": 1,
+        "stocks": [
+          "6488"
+        ],
+        "quote": "環球晶指出矽晶圓週期準備上行，成為一軍轉弱後的輪動候選"
       }
     ]
   }
