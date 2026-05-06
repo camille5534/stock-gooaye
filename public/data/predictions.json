@@ -1133,8 +1133,8 @@
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     },
     {
       "episode": 659,
