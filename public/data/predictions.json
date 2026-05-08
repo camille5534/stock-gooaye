@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-07",
+  "generated_at": "2026-05-08",
   "stats": {
     "total": 58,
-    "valid": 49,
-    "hits": 35,
-    "misses": 14,
-    "pending": 3,
+    "valid": 52,
+    "hits": 37,
+    "misses": 15,
+    "pending": 0,
     "win_rate": 71
   },
   "picks": [
@@ -1170,17 +1170,17 @@
       "ticker": "AMD",
       "ep_date_actual": "2026-05-06",
       "ep_price": 421.39,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-05-07",
+      "d1_price": 408.46,
+      "d1_pct": -3.07,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": false,
+      "status": "miss"
     },
     {
       "episode": 659,
@@ -1239,17 +1239,17 @@
       "ticker": "NVDA",
       "ep_date_actual": "2026-05-06",
       "ep_price": 207.83,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-05-07",
+      "d1_price": 211.5,
+      "d1_pct": 1.77,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     },
     {
       "episode": 659,
@@ -1262,17 +1262,17 @@
       "ticker": "PLTR",
       "ep_date_actual": "2026-05-06",
       "ep_price": 133.79,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-05-07",
+      "d1_price": 137.05,
+      "d1_pct": 2.44,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     },
     {
       "episode": 659,
