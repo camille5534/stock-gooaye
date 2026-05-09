@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 10,
-      "positive": 7,
+      "count": 11,
+      "positive": 8,
       "negative": 0,
       "neutral": 3,
       "episodes": [
@@ -17,7 +17,26 @@
         656,
         657,
         658,
-        659
+        659,
+        660
+      ]
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "count": 8,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 5,
+      "episodes": [
+        649,
+        653,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660
       ]
     },
     {
@@ -38,36 +57,20 @@
       ]
     },
     {
-      "code": "2454",
-      "name": "聯發科",
+      "code": "NVDA",
+      "name": "輝達",
       "count": 7,
       "positive": 3,
       "negative": 0,
       "neutral": 4,
-      "episodes": [
-        649,
-        653,
-        655,
-        656,
-        657,
-        658,
-        659
-      ]
-    },
-    {
-      "code": "NVDA",
-      "name": "輝達",
-      "count": 6,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 3,
       "episodes": [
         648,
         649,
         650,
         651,
         652,
-        659
+        659,
+        660
       ]
     },
     {
@@ -143,6 +146,19 @@
       ]
     },
     {
+      "code": "NET",
+      "name": "Cloudflare",
+      "count": 3,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        647,
+        658,
+        660
+      ]
+    },
+    {
       "code": "TSLA",
       "name": "特斯拉",
       "count": 3,
@@ -180,18 +196,6 @@
       ]
     },
     {
-      "code": "NET",
-      "name": "Cloudflare",
-      "count": 2,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        647,
-        658
-      ]
-    },
-    {
       "code": "2337",
       "name": "旺宏",
       "count": 2,
@@ -225,6 +229,54 @@
       "episodes": [
         650,
         653
+      ]
+    },
+    {
+      "code": "2303",
+      "name": "聯電",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        655,
+        660
+      ]
+    },
+    {
+      "code": "VSH",
+      "name": "Vishay",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        655,
+        660
+      ]
+    },
+    {
+      "code": "6488",
+      "name": "環球晶",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        659,
+        660
+      ]
+    },
+    {
+      "code": "5347",
+      "name": "世界先進",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        659,
+        660
       ]
     },
     {
@@ -415,34 +467,12 @@
       ]
     },
     {
-      "code": "2303",
-      "name": "聯電",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        655
-      ]
-    },
-    {
       "code": "4919",
       "name": "新唐",
       "count": 1,
       "positive": 0,
       "negative": 0,
       "neutral": 1,
-      "episodes": [
-        655
-      ]
-    },
-    {
-      "code": "VSH",
-      "name": "Vishay",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
       "episodes": [
         655
       ]
@@ -536,25 +566,47 @@
       ]
     },
     {
-      "code": "6488",
-      "name": "環球晶",
+      "code": "2379",
+      "name": "瑞昱",
       "count": 1,
-      "positive": 1,
+      "positive": 0,
       "negative": 0,
-      "neutral": 0,
+      "neutral": 1,
       "episodes": [
-        659
+        660
       ]
     },
     {
-      "code": "5347",
-      "name": "世界先進",
+      "code": "3034",
+      "name": "聯詠",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        660
+      ]
+    },
+    {
+      "code": "GFS",
+      "name": "GlobalFoundries",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        660
+      ]
+    },
+    {
+      "code": "SNDK",
+      "name": "SanDisk",
       "count": 1,
       "positive": 1,
       "negative": 0,
       "neutral": 0,
       "episodes": [
-        659
+        660
       ]
     }
   ],
@@ -684,6 +736,15 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 17.29
+    },
+    {
+      "episode": 660,
+      "date": "2026-05-09",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 17.19
     }
   ],
   "sector_mentions": {
