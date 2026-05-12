@@ -182,7 +182,7 @@
       "quote": "美股 Vishay、VPG 表現強勁，台股族群同步噴發但需警惕補庫存是否具持續性"
     }
   ],
-  "AI SaaS/軟體應用": [
+  "AI軟體/SaaS": [
     {
       "ep": 647,
       "date": "2026-03-25",
@@ -196,6 +196,20 @@
       "stance": "中立",
       "intensity": 1,
       "quote": "受 Anthropic Mythos 延遲發布等 AI Doomstay 情緒影響，資金暫離，待算力瓶頸解除後再觀察"
+    },
+    {
+      "ep": 658,
+      "date": "2026-05-02",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "SaaS 末日論被 Atlassian 財報打臉；Palantir FDE 模式在 AI 時代反成優勢；Salesforce 大破大立轉型 Agentic；Adobe 初階應用面臨 AI 侵蝕風險"
+    },
+    {
+      "ep": 659,
+      "date": "2026-05-06",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "Palantir精準數據處理是對抗AI Slop的護城河，企業級精準決策需求強勁"
     }
   ],
   "台積電供應鏈": [
@@ -228,7 +242,7 @@
       "quote": "CapEx 給到上限未上修，廠務股便宜但動能弱"
     }
   ],
-  "AI算力/Token": [
+  "AI算力": [
     {
       "ep": 648,
       "date": "2026-03-28",
@@ -263,24 +277,59 @@
       "stance": "觀察",
       "intensity": 2,
       "quote": "論述轉向 result-based，燒 token 沒產品的公司遲早被 call out"
+    },
+    {
+      "ep": 658,
+      "date": "2026-05-02",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "Google AI 確實在幫大家賺錢，雲端需求持續旺盛；Cloudflare 在 AI 浪潮下難以被取代"
+    },
+    {
+      "ep": 660,
+      "date": "2026-05-09",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "NVIDIA本體穩，但GB200散熱材料調整傳聞引發供應鏈劇震；聯發科多漲停後進處置，流動性被機制抽走"
     }
   ],
-  "先進封裝/玻璃基板": [
+  "半導體/先進封裝": [
     {
       "ep": 648,
       "date": "2026-03-28",
       "stance": "觀察",
       "intensity": 1,
       "quote": "玻璃基板 2027-2028 放量，Intel 目前走在最前面"
+    },
+    {
+      "ep": 658,
+      "date": "2026-05-02",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "前台積電先進封裝大將加入聯發科，強化 CoWoS 合作；Google TPU V9 後段傳轉往 Intel，聯發科備案計畫持續"
     }
   ],
-  "CPU缺貨族群": [
+  "CPU/處理器": [
     {
       "ep": 650,
       "date": "2026-04-04",
       "stance": "正面",
       "intensity": 2,
       "quote": "Agentic AI 帶動 CPU 佔比從 10% 升至 40-50%，Intel CFO 承認錯估需求且產能受限"
+    },
+    {
+      "ep": 651,
+      "date": "2026-04-08",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "Agentic AI 帶動 CPU 明確缺口，Intel 代工合作算是利多"
+    },
+    {
+      "ep": 652,
+      "date": "2026-04-11",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "AWS Graviton 算力被客戶要求全包，RISC-V 架構 NVIDIA 入股 SiFive，Agentic AI 時代 CPU 需求大增"
     },
     {
       "ep": 654,
@@ -295,24 +344,13 @@
       "stance": "正面",
       "intensity": 2,
       "quote": "AI PC 與 Edge AI 需求帶動 CPU 長期趨勢剛啟動，但須防 1:1 CPU/GPU 比例說法過熱"
-    }
-  ],
-  "CPU缺貨": [
+    },
     {
-      "ep": 651,
-      "date": "2026-04-08",
+      "ep": 659,
+      "date": "2026-05-06",
       "stance": "正面",
       "intensity": 2,
-      "quote": "Agentic AI 帶動 CPU 明確缺口，Intel 代工合作算是利多"
-    }
-  ],
-  "CPU/處理器": [
-    {
-      "ep": 652,
-      "date": "2026-04-11",
-      "stance": "正面",
-      "intensity": 2,
-      "quote": "AWS Graviton 算力被客戶要求全包，RISC-V 架構 NVIDIA 入股 SiFive，Agentic AI 時代 CPU 需求大增"
+      "quote": "Agentic AI推理負載推升CPU結構性需求，AMD目標拿下伺服器CPU超過50%市佔；NVDA橫盤讓資金輪動至二軍"
     }
   ],
   "低軌衛星/啟碁": [
@@ -324,7 +362,7 @@
       "quote": "營收看起來恐怖，換算 EPS 就收斂回來了"
     }
   ],
-  "ASIC/客製化晶片": [
+  "ASIC/設計服務": [
     {
       "ep": 655,
       "date": "2026-04-22",
@@ -338,6 +376,13 @@
       "stance": "正面",
       "intensity": 2,
       "quote": "Google TPU 8T/8i 分工確立：聯發科 Training、Broadcom Inference，兩者佔比趨近 1:1"
+    },
+    {
+      "ep": 659,
+      "date": "2026-05-06",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "創意高度綁定Google、世芯-KY高度綁定Amazon Trainium，雲端巨頭自研晶片潮帶動台灣設計服務商強勢表態"
     }
   ],
   "台積電/權值股": [
@@ -356,6 +401,13 @@
       "stance": "觀察",
       "intensity": 1,
       "quote": "台積電外資單日賣超 1.8-2 萬張，短期突破受壓；台積電橫盤時資金才回流中小型股"
+    },
+    {
+      "ep": 659,
+      "date": "2026-05-06",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "台積電2027 EPS推算大盤有望見4萬點；聯發科估值充分反映預期進入橫盤；世界先進成熟製程產能利用率超高"
     }
   ],
   "Intel封裝供應鏈": [
@@ -374,69 +426,6 @@
       "stance": "中立",
       "intensity": 1,
       "quote": "OpenAI 原生 AI 硬體傳聞，但打破 iPhone App 生態系使用習慣難度極高，謹慎評估銷量預期"
-    }
-  ],
-  "軟體/SaaS": [
-    {
-      "ep": 658,
-      "date": "2026-05-02",
-      "stance": "正面",
-      "intensity": 2,
-      "quote": "SaaS 末日論被 Atlassian 財報打臉；Palantir FDE 模式在 AI 時代反成優勢；Salesforce 大破大立轉型 Agentic；Adobe 初階應用面臨 AI 侵蝕風險"
-    }
-  ],
-  "半導體/先進封裝": [
-    {
-      "ep": 658,
-      "date": "2026-05-02",
-      "stance": "正面",
-      "intensity": 2,
-      "quote": "前台積電先進封裝大將加入聯發科，強化 CoWoS 合作；Google TPU V9 後段傳轉往 Intel，聯發科備案計畫持續"
-    }
-  ],
-  "AI/雲端基礎設施": [
-    {
-      "ep": 658,
-      "date": "2026-05-02",
-      "stance": "正面",
-      "intensity": 1,
-      "quote": "Google AI 確實在幫大家賺錢，雲端需求持續旺盛；Cloudflare 在 AI 浪潮下難以被取代"
-    }
-  ],
-  "ASIC/設計服務": [
-    {
-      "ep": 659,
-      "date": "2026-05-06",
-      "stance": "正面",
-      "intensity": 2,
-      "quote": "創意高度綁定Google、世芯-KY高度綁定Amazon Trainium，雲端巨頭自研晶片潮帶動台灣設計服務商強勢表態"
-    }
-  ],
-  "CPU/AI運算": [
-    {
-      "ep": 659,
-      "date": "2026-05-06",
-      "stance": "正面",
-      "intensity": 2,
-      "quote": "Agentic AI推理負載推升CPU結構性需求，AMD目標拿下伺服器CPU超過50%市佔；NVDA橫盤讓資金輪動至二軍"
-    }
-  ],
-  "半導體/代工": [
-    {
-      "ep": 659,
-      "date": "2026-05-06",
-      "stance": "正面",
-      "intensity": 1,
-      "quote": "台積電2027 EPS推算大盤有望見4萬點；聯發科估值充分反映預期進入橫盤；世界先進成熟製程產能利用率超高"
-    }
-  ],
-  "AI軟體": [
-    {
-      "ep": 659,
-      "date": "2026-05-06",
-      "stance": "正面",
-      "intensity": 1,
-      "quote": "Palantir精準數據處理是對抗AI Slop的護城河，企業級精準決策需求強勁"
     }
   ],
   "矽晶圓": [
@@ -471,15 +460,6 @@
       "stance": "觀察",
       "intensity": 1,
       "quote": "瑞昱、聯詠禮拜五雙雙開燈，補貨潮訊號出現，但是否真實需求復甦還需觀察"
-    }
-  ],
-  "AI/GPU": [
-    {
-      "ep": 660,
-      "date": "2026-05-09",
-      "stance": "觀察",
-      "intensity": 1,
-      "quote": "NVIDIA本體穩，但GB200散熱材料調整傳聞引發供應鏈劇震；聯發科多漲停後進處置，流動性被機制抽走"
     }
   ]
 }
