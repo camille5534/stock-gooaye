@@ -1,18 +1,217 @@
 {
-  "台積電供應鏈": [
+  "光通訊/CPO": [
+    {
+      "ep": 646,
+      "date": "2026-03-21",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "AI 2.0 核心族群，Networking 組網需求持續上修，進入國民制服股位階"
+    },
     {
       "ep": 647,
+      "date": "2026-03-25",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "台美股同步走強，部分標的進處置後仍漲至近千元，為近期主要配置方向"
+    },
+    {
+      "ep": 651,
       "date": "2026-04-08",
-      "stance": "中立",
+      "stance": "觀察",
       "intensity": 1,
-      "quote": "財報季保守等待，觀察訂單方向"
+      "quote": "關注上游、CPU 相關設備、以及七系列 AI 測試設備"
+    },
+    {
+      "ep": 652,
+      "date": "2026-04-11",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "持續創新高，美系大客戶自帶設備租借 SMT/LED 打件廠產線，供應鏈新模式形成"
+    },
+    {
+      "ep": 653,
+      "date": "2026-04-15",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "光通訊持續強勢，等回檔再來聊細節"
+    },
+    {
+      "ep": 654,
+      "date": "2026-04-18",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "漲太多不願意聊，等回檔再來討論細節"
+    }
+  ],
+  "電力/SMR": [
+    {
+      "ep": 646,
+      "date": "2026-03-21",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "Data Center 缺電問題討論 On-site 現地發電，SMR 實際規模遠大於想像"
+    }
+  ],
+  "記憶體": [
+    {
+      "ep": 646,
+      "date": "2026-03-21",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "NAND 優於 DRAM，AI 廢圖廢片推升存儲需求，但美光財報低於市場預期"
     },
     {
       "ep": 648,
+      "date": "2026-03-28",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "KV Cache 恐慌是集體降智，傑文斯悖論支撐長期需求"
+    },
+    {
+      "ep": 651,
+      "date": "2026-04-08",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "Apple 吸收記憶體漲價不轉嫁，中國手機廠受創，缺料持續"
+    },
+    {
+      "ep": 654,
+      "date": "2026-04-18",
+      "stance": "中立",
+      "intensity": 1,
+      "quote": "資金已充分反應，可能橫盤，等更大 catalyst"
+    },
+    {
+      "ep": 655,
+      "date": "2026-04-22",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "台股記憶體族群相對較弱，美、韓、日股表現較強"
+    },
+    {
+      "ep": 657,
+      "date": "2026-04-29",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "旺宏老闆由保守轉為超級利多，MLC/NOR Flash 出現漂亮漲價，族群集體表態"
+    },
+    {
+      "ep": 658,
+      "date": "2026-05-02",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "缺貨預期延伸至 2026-2027，合約價 Q2 Q3 仍有上漲空間，大廠砸真金白銀囤貨"
+    },
+    {
+      "ep": 660,
+      "date": "2026-05-09",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "美國記憶體大廠展望與現況均良好，台股相關部位已在震盪中被清出"
+    }
+  ],
+  "被動元件": [
+    {
+      "ep": 646,
+      "date": "2026-03-21",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "需區分需求驅動與成本轉嫁，高階 MLCC 與 TLVR 電感較具確定性"
+    },
+    {
+      "ep": 650,
+      "date": "2026-04-04",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "中東局勢引發鋁電容漲價預期，鋁箔供應鏈受影響"
+    },
+    {
+      "ep": 651,
+      "date": "2026-04-08",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "記憶體、鉭電容、鋁電容仍維持缺貨緊俏狀態"
+    },
+    {
+      "ep": 652,
+      "date": "2026-04-11",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "TCAP/SPCAP 嚴重缺貨，MLCC 高階緊繃，重演記憶體發作前邏輯，國巨法說會是關鍵催化劑"
+    },
+    {
+      "ep": 653,
       "date": "2026-04-15",
       "stance": "正面",
       "intensity": 2,
-      "quote": "AI 資本支出持續，台積電是核心受惠"
+      "quote": "太陽誘電漲價觸發族群，國巨法說是下一個催化劑"
+    },
+    {
+      "ep": 654,
+      "date": "2026-04-18",
+      "stance": "正面",
+      "intensity": 3,
+      "quote": "電阻也發漲價信，全球族群齊噴，稼動率跳滿就是缺貨劇本"
+    },
+    {
+      "ep": 655,
+      "date": "2026-04-22",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "三星電機直接射到爛掉，美國 VSE 走得非常好，全球被動元件族群齊噴"
+    },
+    {
+      "ep": 657,
+      "date": "2026-04-29",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "台股被動元件追趕海外日韓同業表現，基本面漲價趨勢明確，資金開始補漲"
+    },
+    {
+      "ep": 659,
+      "date": "2026-05-06",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "AI伺服器高階需求排擠傳統產能，國巨帶動族群轉強；華新科交期拉長通知直接觸發漲停，預示後續漲價空間"
+    },
+    {
+      "ep": 660,
+      "date": "2026-05-09",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "美股 Vishay、VPG 表現強勁，台股族群同步噴發但需警惕補庫存是否具持續性"
+    }
+  ],
+  "AI SaaS/軟體應用": [
+    {
+      "ep": 647,
+      "date": "2026-03-25",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "Cloudflare 是 AI Agent 收費站，Palantir 政府標案護城河穩固"
+    },
+    {
+      "ep": 652,
+      "date": "2026-04-11",
+      "stance": "中立",
+      "intensity": 1,
+      "quote": "受 Anthropic Mythos 延遲發布等 AI Doomstay 情緒影響，資金暫離，待算力瓶頸解除後再觀察"
+    }
+  ],
+  "台積電供應鏈": [
+    {
+      "ep": 647,
+      "date": "2026-03-25",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "馬斯克 Terafab 夢想帶動廠務設備需求，但台積電定價權仍強"
+    },
+    {
+      "ep": 649,
+      "date": "2026-04-01",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "台股極強，回測均線後再彈；美股暫視為死貓跳，季線壓力是關鍵"
     },
     {
       "ep": 653,
@@ -32,10 +231,24 @@
   "AI算力/Token": [
     {
       "ep": 648,
-      "date": "2026-04-15",
+      "date": "2026-03-28",
       "stance": "正面",
       "intensity": 1,
-      "quote": "半導體 AI 需求持續，分批布局"
+      "quote": "Apple 廉價 CFI 模式受益 AI，Marvell 技術線型強勢"
+    },
+    {
+      "ep": 649,
+      "date": "2026-04-01",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "NVIDIA 投資 Marvell 20億美元，NVLink Fusion 生態抗衡 Broadcom，AI 是藍海各路標的可共存"
+    },
+    {
+      "ep": 651,
+      "date": "2026-04-08",
+      "stance": "中立",
+      "intensity": 1,
+      "quote": "CSP 自研 CPU（Google Axion、AWS Graviton、MS Cobalt），Agentic AI 推升需求"
     },
     {
       "ep": 653,
@@ -52,87 +265,54 @@
       "quote": "論述轉向 result-based，燒 token 沒產品的公司遲早被 call out"
     }
   ],
-  "記憶體": [
-    {
-      "ep": 646,
-      "date": "2026-03-21",
-      "stance": "觀察",
-      "intensity": 1,
-      "quote": "NAND 優於 DRAM，AI 廢圖廢片推升存儲需求，但美光財報低於市場預期"
-    },
+  "先進封裝/玻璃基板": [
     {
       "ep": 648,
-      "date": "2026-04-15",
-      "stance": "中立",
-      "intensity": 1,
-      "quote": "殖利率影響估值，保持觀察"
-    },
-    {
-      "ep": 654,
-      "date": "2026-04-18",
-      "stance": "中立",
-      "intensity": 1,
-      "quote": "資金已充分反應，可能橫盤，等更大 catalyst"
-    },
-    {
-      "ep": 655,
-      "date": "2026-04-22",
+      "date": "2026-03-28",
       "stance": "觀察",
       "intensity": 1,
-      "quote": "台股記憶體族群相對較弱，美、韓、日股表現較強"
+      "quote": "玻璃基板 2027-2028 放量，Intel 目前走在最前面"
     }
   ],
-  "被動元件": [
+  "CPU缺貨族群": [
     {
-      "ep": 646,
-      "date": "2026-03-21",
-      "stance": "觀察",
-      "intensity": 1,
-      "quote": "需區分需求驅動與成本轉嫁，高階 MLCC 與 TLVR 電感較具確定性"
-    },
-    {
-      "ep": 653,
-      "date": "2026-04-15",
+      "ep": 650,
+      "date": "2026-04-04",
       "stance": "正面",
       "intensity": 2,
-      "quote": "太陽誘電漲價觸發族群，國巨法說是下一個催化劑"
+      "quote": "Agentic AI 帶動 CPU 佔比從 10% 升至 40-50%，Intel CFO 承認錯估需求且產能受限"
     },
     {
       "ep": 654,
       "date": "2026-04-18",
       "stance": "正面",
       "intensity": 3,
-      "quote": "電阻也發漲價信，全球族群齊噴，稼動率跳滿就是缺貨劇本"
+      "quote": "CPU 可能比記憶體更缺，買不到不是貴，Agentic AI 推升需求"
     },
     {
-      "ep": 655,
-      "date": "2026-04-22",
-      "stance": "觀察",
-      "intensity": 1,
-      "quote": "日本、韓國三星電機、美國 VSE 走勢強勁，台股被動元件在歷史新高但節奏相對慢"
-    }
-  ],
-  "光通訊/CPO": [
-    {
-      "ep": 646,
-      "date": "2026-03-21",
+      "ep": 656,
+      "date": "2026-04-25",
       "stance": "正面",
       "intensity": 2,
-      "quote": "AI 2.0 核心族群，Networking 組網需求持續上修，進入國民制服股位階"
-    },
+      "quote": "AI PC 與 Edge AI 需求帶動 CPU 長期趨勢剛啟動，但須防 1:1 CPU/GPU 比例說法過熱"
+    }
+  ],
+  "CPU缺貨": [
     {
-      "ep": 653,
-      "date": "2026-04-15",
-      "stance": "觀察",
-      "intensity": 1,
-      "quote": "光通訊持續強勢，等回檔再來聊細節"
-    },
+      "ep": 651,
+      "date": "2026-04-08",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "Agentic AI 帶動 CPU 明確缺口，Intel 代工合作算是利多"
+    }
+  ],
+  "CPU/處理器": [
     {
-      "ep": 654,
-      "date": "2026-04-18",
-      "stance": "觀察",
-      "intensity": 1,
-      "quote": "漲太多不願意聊，等回檔再來討論細節"
+      "ep": 652,
+      "date": "2026-04-11",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "AWS Graviton 算力被客戶要求全包，RISC-V 架構 NVIDIA 入股 SiFive，Agentic AI 時代 CPU 需求大增"
     }
   ],
   "低軌衛星/啟碁": [
@@ -144,24 +324,6 @@
       "quote": "營收看起來恐怖，換算 EPS 就收斂回來了"
     }
   ],
-  "CPU缺貨族群": [
-    {
-      "ep": 654,
-      "date": "2026-04-18",
-      "stance": "正面",
-      "intensity": 3,
-      "quote": "CPU 可能比記憶體更缺，買不到不是貴，Agentic AI 推升需求"
-    }
-  ],
-  "電力/SMR": [
-    {
-      "ep": 646,
-      "date": "2026-03-21",
-      "stance": "觀察",
-      "intensity": 1,
-      "quote": "Data Center 缺電問題討論 On-site 現地發電，SMR 實際規模遠大於想像"
-    }
-  ],
   "ASIC/客製化晶片": [
     {
       "ep": 655,
@@ -169,6 +331,155 @@
       "stance": "正面",
       "intensity": 2,
       "quote": "Google HF 供應鏈三強格局確立，AVGO/MRVL/MTK 三家都吃不完，MTK 兩根漲停印證題材"
+    },
+    {
+      "ep": 656,
+      "date": "2026-04-25",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "Google TPU 8T/8i 分工確立：聯發科 Training、Broadcom Inference，兩者佔比趨近 1:1"
+    }
+  ],
+  "台積電/權值股": [
+    {
+      "ep": 656,
+      "date": "2026-04-25",
+      "stance": "正面",
+      "intensity": 3,
+      "quote": "投信持股上限從10%調升至25%，解開台積電封印，預估10萬張以上被動買盤進場"
+    }
+  ],
+  "半導體代工": [
+    {
+      "ep": 657,
+      "date": "2026-04-29",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "台積電外資單日賣超 1.8-2 萬張，短期突破受壓；台積電橫盤時資金才回流中小型股"
+    }
+  ],
+  "Intel封裝供應鏈": [
+    {
+      "ep": 657,
+      "date": "2026-04-29",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "Intel EMIB 後段封裝良率已拉升至 90%，達可量產水平，IPD 需求潛在受益"
+    }
+  ],
+  "AI消費性裝置": [
+    {
+      "ep": 657,
+      "date": "2026-04-29",
+      "stance": "中立",
+      "intensity": 1,
+      "quote": "OpenAI 原生 AI 硬體傳聞，但打破 iPhone App 生態系使用習慣難度極高，謹慎評估銷量預期"
+    }
+  ],
+  "軟體/SaaS": [
+    {
+      "ep": 658,
+      "date": "2026-05-02",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "SaaS 末日論被 Atlassian 財報打臉；Palantir FDE 模式在 AI 時代反成優勢；Salesforce 大破大立轉型 Agentic；Adobe 初階應用面臨 AI 侵蝕風險"
+    }
+  ],
+  "半導體/先進封裝": [
+    {
+      "ep": 658,
+      "date": "2026-05-02",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "前台積電先進封裝大將加入聯發科，強化 CoWoS 合作；Google TPU V9 後段傳轉往 Intel，聯發科備案計畫持續"
+    }
+  ],
+  "AI/雲端基礎設施": [
+    {
+      "ep": 658,
+      "date": "2026-05-02",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "Google AI 確實在幫大家賺錢，雲端需求持續旺盛；Cloudflare 在 AI 浪潮下難以被取代"
+    }
+  ],
+  "ASIC/設計服務": [
+    {
+      "ep": 659,
+      "date": "2026-05-06",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "創意高度綁定Google、世芯-KY高度綁定Amazon Trainium，雲端巨頭自研晶片潮帶動台灣設計服務商強勢表態"
+    }
+  ],
+  "CPU/AI運算": [
+    {
+      "ep": 659,
+      "date": "2026-05-06",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "Agentic AI推理負載推升CPU結構性需求，AMD目標拿下伺服器CPU超過50%市佔；NVDA橫盤讓資金輪動至二軍"
+    }
+  ],
+  "半導體/代工": [
+    {
+      "ep": 659,
+      "date": "2026-05-06",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "台積電2027 EPS推算大盤有望見4萬點；聯發科估值充分反映預期進入橫盤；世界先進成熟製程產能利用率超高"
+    }
+  ],
+  "AI軟體": [
+    {
+      "ep": 659,
+      "date": "2026-05-06",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "Palantir精準數據處理是對抗AI Slop的護城河，企業級精準決策需求強勁"
+    }
+  ],
+  "矽晶圓": [
+    {
+      "ep": 659,
+      "date": "2026-05-06",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "環球晶指出矽晶圓週期準備上行，成為一軍轉弱後的輪動候選"
+    },
+    {
+      "ep": 660,
+      "date": "2026-05-09",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "環球晶法說內容一般，但股價強勢走高，技術面帶動為主"
+    }
+  ],
+  "成熟製程/代工": [
+    {
+      "ep": 660,
+      "date": "2026-05-09",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "下游因漲價預期與關稅風險恐慌性拉貨，世界先進產能賣光、稼動率高；聯電意外噴上；GlobalFoundries 海外同步走強"
+    }
+  ],
+  "消費性IC": [
+    {
+      "ep": 660,
+      "date": "2026-05-09",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "瑞昱、聯詠禮拜五雙雙開燈，補貨潮訊號出現，但是否真實需求復甦還需觀察"
+    }
+  ],
+  "AI/GPU": [
+    {
+      "ep": 660,
+      "date": "2026-05-09",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "NVIDIA本體穩，但GB200散熱材料調整傳聞引發供應鏈劇震；聯發科多漲停後進處置，流動性被機制抽走"
     }
   ]
 }
