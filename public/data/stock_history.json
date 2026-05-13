@@ -3,10 +3,10 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 11,
+      "count": 12,
       "positive": 8,
       "negative": 0,
-      "neutral": 3,
+      "neutral": 4,
       "episodes": [
         647,
         649,
@@ -18,14 +18,15 @@
         657,
         658,
         659,
-        660
+        660,
+        661
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 8,
-      "positive": 3,
+      "count": 9,
+      "positive": 4,
       "negative": 0,
       "neutral": 5,
       "episodes": [
@@ -36,7 +37,8 @@
         657,
         658,
         659,
-        660
+        660,
+        661
       ]
     },
     {
@@ -90,6 +92,21 @@
       ]
     },
     {
+      "code": "2327",
+      "name": "國巨（被動元件族群）",
+      "count": 5,
+      "positive": 5,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        652,
+        653,
+        654,
+        659,
+        661
+      ]
+    },
+    {
       "code": "PLTR",
       "name": "Palantir",
       "count": 4,
@@ -127,20 +144,6 @@
       "episodes": [
         650,
         651,
-        654,
-        659
-      ]
-    },
-    {
-      "code": "2327",
-      "name": "國巨（被動元件族群）",
-      "count": 4,
-      "positive": 4,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        652,
-        653,
         654,
         659
       ]
@@ -232,6 +235,18 @@
       ]
     },
     {
+      "code": "2404",
+      "name": "漢唐",
+      "count": 2,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        654,
+        661
+      ]
+    },
+    {
       "code": "2303",
       "name": "聯電",
       "count": 2,
@@ -244,6 +259,18 @@
       ]
     },
     {
+      "code": "4919",
+      "name": "新唐",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        655,
+        661
+      ]
+    },
+    {
       "code": "VSH",
       "name": "Vishay",
       "count": 2,
@@ -253,6 +280,18 @@
       "episodes": [
         655,
         660
+      ]
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        659,
+        661
       ]
     },
     {
@@ -434,17 +473,6 @@
       ]
     },
     {
-      "code": "2404",
-      "name": "漢唐",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        654
-      ]
-    },
-    {
       "code": "UBER",
       "name": "Uber",
       "count": 1,
@@ -464,17 +492,6 @@
       "neutral": 0,
       "episodes": [
         654
-      ]
-    },
-    {
-      "code": "4919",
-      "name": "新唐",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        655
       ]
     },
     {
@@ -530,17 +547,6 @@
       "neutral": 1,
       "episodes": [
         658
-      ]
-    },
-    {
-      "code": "2492",
-      "name": "華新科",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        659
       ]
     },
     {
@@ -607,6 +613,105 @@
       "neutral": 0,
       "episodes": [
         660
+      ]
+    },
+    {
+      "code": "6173",
+      "name": "信昌電",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        661
+      ]
+    },
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        661
+      ]
+    },
+    {
+      "code": "8201",
+      "name": "金山電",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        661
+      ]
+    },
+    {
+      "code": "6449",
+      "name": "鈺邦",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        661
+      ]
+    },
+    {
+      "code": "5536",
+      "name": "聖暉",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        661
+      ]
+    },
+    {
+      "code": "3548",
+      "name": "加哲",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        661
+      ]
+    },
+    {
+      "code": "QCOM",
+      "name": "高通",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        661
+      ]
+    },
+    {
+      "code": "6706",
+      "name": "惠特",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        661
+      ]
+    },
+    {
+      "code": "8027",
+      "name": "均豪",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        661
       ]
     }
   ],
@@ -745,6 +850,15 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 17.19
+    },
+    {
+      "episode": 661,
+      "date": "2026-05-13",
+      "score": 7,
+      "label": "偏多",
+      "bull_pct": 70,
+      "bear_pct": 30,
+      "vix": 18.03
     }
   ],
   "sector_mentions": {

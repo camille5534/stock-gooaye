@@ -1,11 +1,11 @@
 {
   "generated_at": "2026-05-13",
   "recent_episodes": [
-    656,
     657,
     658,
     659,
-    660
+    660,
+    661
   ],
   "active": [
     {
@@ -100,6 +100,14 @@
           "stance_score": 1,
           "quote": "「你沒有辦法進去台積電，可是你可以買台積電，你當股東嘛」",
           "ep_price": 2290.0
+        },
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「它的財務數字或者說場性都很好，但是其實市場沒有意願要把它交易去一個更高的估值」",
+          "ep_price": 2220.0
         }
       ],
       "prices": [
@@ -236,11 +244,680 @@
           "close": 2220.0
         }
       ],
-      "last_mention_date": "2026-05-09",
+      "last_mention_date": "2026-05-13",
       "base_ep_price": 1950.0,
       "base_ep": 651,
       "current_price": 2220.0,
       "current_pct": 13.85
+<<<<<<< Updated upstream
+=======
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "ticker": "2454.TW",
+      "mentions": [
+        {
+          "episode": 649,
+          "date": "2026-04-01",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「MVEL 的話像拉進去 NV Fusion 其實前面也有拉一些夥伴的啦，像是 Alchip 然後像是 MTK 也在裡面。」",
+          "ep_price": 1465.0
+        },
+        {
+          "episode": 653,
+          "date": "2026-04-15",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "取得 Google TPU V8（Zebra Fish）與 V9（Hammerhead Fish）合作案，潛在投片量數百萬顆，若這代沒出包「有機會在三到四年內貢獻超過發哥一半以上的 EPS 都會是來自於 AI，這超屌的！」純度比高通高，或許觸動 rerate 大行情。",
+          "ep_price": 1790.0
+        },
+        {
+          "episode": 655,
+          "date": "2026-04-22",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「表現可能會高度綁定跳它（Google）的量綠的狀態...如果 Intel 出報（包）的話，那可能就會影響到 MTK 的一個成（效）」",
+          "ep_price": 2295.0
+        },
+        {
+          "episode": 656,
+          "date": "2026-04-25",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「非常感謝 MTK 的存在，非常感恩...它在禮拜五又一個漲停了」",
+          "ep_price": 2435.0
+        },
+        {
+          "episode": 657,
+          "date": "2026-04-29",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「MTK 最近非常地強勢，AWS 與 ARM 簽署巨額協議，相關供應鏈包含聯發科持續受益」",
+          "ep_price": 2575.0
+        },
+        {
+          "episode": 658,
+          "date": "2026-05-02",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「發哥講完之後，我看了幾家券商的報告...搞不好可以更豐富之類的。」",
+          "ep_price": 2610.0
+        },
+        {
+          "episode": 659,
+          "date": "2026-05-06",
+          "stance": "中立",
+          "stance_score": 0,
+          "quote": "「它算是非常充分的已經先去預期後面的一些狀態了...拉到某個地方之後可能就會要橫一陣子」",
+          "ep_price": 3430.0
+        },
+        {
+          "episode": 660,
+          "date": "2026-05-09",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「聯發科這麼多漲停變成處置股，你想都不敢想嘛」",
+          "ep_price": 3630.0
+        },
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「那 MediaTek 也是嘛，就是大家應該都想都不敢想過去會這樣的漲停」",
+          "ep_price": 3495.0
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-04-01",
+          "close": 1465.0
+        },
+        {
+          "date": "2026-04-02",
+          "close": 1465.0
+        },
+        {
+          "date": "2026-04-07",
+          "close": 1470.0
+        },
+        {
+          "date": "2026-04-08",
+          "close": 1580.0
+        },
+        {
+          "date": "2026-04-09",
+          "close": 1575.0
+        },
+        {
+          "date": "2026-04-10",
+          "close": 1575.0
+        },
+        {
+          "date": "2026-04-13",
+          "close": 1620.0
+        },
+        {
+          "date": "2026-04-14",
+          "close": 1720.0
+        },
+        {
+          "date": "2026-04-15",
+          "close": 1790.0
+        },
+        {
+          "date": "2026-04-16",
+          "close": 1895.0
+        },
+        {
+          "date": "2026-04-17",
+          "close": 1925.0
+        },
+        {
+          "date": "2026-04-20",
+          "close": 1900.0
+        },
+        {
+          "date": "2026-04-21",
+          "close": 2090.0
+        },
+        {
+          "date": "2026-04-22",
+          "close": 2295.0
+        },
+        {
+          "date": "2026-04-23",
+          "close": 2215.0
+        },
+        {
+          "date": "2026-04-24",
+          "close": 2435.0
+        },
+        {
+          "date": "2026-04-27",
+          "close": 2435.0
+        },
+        {
+          "date": "2026-04-28",
+          "close": 2615.0
+        },
+        {
+          "date": "2026-04-29",
+          "close": 2575.0
+        },
+        {
+          "date": "2026-04-30",
+          "close": 2610.0
+        },
+        {
+          "date": "2026-05-04",
+          "close": 2870.0
+        },
+        {
+          "date": "2026-05-05",
+          "close": 3155.0
+        },
+        {
+          "date": "2026-05-06",
+          "close": 3430.0
+        },
+        {
+          "date": "2026-05-07",
+          "close": 3420.0
+        },
+        {
+          "date": "2026-05-08",
+          "close": 3630.0
+        },
+        {
+          "date": "2026-05-11",
+          "close": 3880.0
+        },
+        {
+          "date": "2026-05-12",
+          "close": 3700.0
+        },
+        {
+          "date": "2026-05-13",
+          "close": 3495.0
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 1790.0,
+      "base_ep": 653,
+      "current_price": 3495.0,
+      "current_pct": 95.25
+    },
+    {
+      "code": "2327",
+      "name": "國巨（被動元件族群）",
+      "ticker": "2327.TW",
+      "mentions": [
+        {
+          "episode": 652,
+          "date": "2026-04-11",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「下週三法說會內容應該是全面性正面...下個 Q 也是要持續漲價。」TCAP（鉭電容）與 SPCAP（聚合物鋁電容）嚴重缺貨，MLCC 高階應用緊繃，旗下 Kemet 已持續針對特定品項調漲。處於類似記憶體發作前夕的階段。",
+          "ep_price": 303.5
+        },
+        {
+          "episode": 653,
+          "date": "2026-04-15",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "太陽誘電全系列漲價觸發被動元件潮；Agentic AI 推升 CPU 需求，導致 MLCC、電感、電阻、鋁電容全線缺貨漲價。「有些那種中小魚可能也可以讓很多人吃到很飽」，國巨法說會釋出展望將是下一個關鍵催化劑。",
+          "ep_price": 322.0
+        },
+        {
+          "episode": 654,
+          "date": "2026-04-18",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「他還原全息（息）其實在新高位置，只是爬得比國際上的 Player 慢一點。」",
+          "ep_price": 316.5
+        },
+        {
+          "episode": 659,
+          "date": "2026-05-06",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「整個國巨走起來嘛，那相關的一些被動元件都全體的轉強」",
+          "ep_price": 338.0
+        },
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「MLCC 的狀態就是我們知道說在接下來應該都還是會持續的看到一些漲價的情形發生」",
+          "ep_price": 420.0
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-04-13",
+          "close": 303.5
+        },
+        {
+          "date": "2026-04-14",
+          "close": 312.0
+        },
+        {
+          "date": "2026-04-15",
+          "close": 322.0
+        },
+        {
+          "date": "2026-04-16",
+          "close": 325.0
+        },
+        {
+          "date": "2026-04-17",
+          "close": 316.5
+        },
+        {
+          "date": "2026-04-20",
+          "close": 319.5
+        },
+        {
+          "date": "2026-04-21",
+          "close": 323.0
+        },
+        {
+          "date": "2026-04-22",
+          "close": 315.5
+        },
+        {
+          "date": "2026-04-23",
+          "close": 295.0
+        },
+        {
+          "date": "2026-04-24",
+          "close": 297.0
+        },
+        {
+          "date": "2026-04-27",
+          "close": 305.0
+        },
+        {
+          "date": "2026-04-28",
+          "close": 326.5
+        },
+        {
+          "date": "2026-04-29",
+          "close": 322.0
+        },
+        {
+          "date": "2026-04-30",
+          "close": 317.0
+        },
+        {
+          "date": "2026-05-04",
+          "close": 342.5
+        },
+        {
+          "date": "2026-05-05",
+          "close": 348.5
+        },
+        {
+          "date": "2026-05-06",
+          "close": 338.0
+        },
+        {
+          "date": "2026-05-07",
+          "close": 371.5
+        },
+        {
+          "date": "2026-05-08",
+          "close": 389.0
+        },
+        {
+          "date": "2026-05-11",
+          "close": 391.5
+        },
+        {
+          "date": "2026-05-12",
+          "close": 419.5
+        },
+        {
+          "date": "2026-05-13",
+          "close": 420.0
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 303.5,
+      "base_ep": 652,
+      "current_price": 420.0,
+      "current_pct": 38.39
+    },
+    {
+      "code": "4919",
+      "name": "新唐",
+      "ticker": "4919.TW",
+      "mentions": [
+        {
+          "episode": 655,
+          "date": "2026-04-22",
+          "stance": "中立",
+          "stance_score": 0,
+          "quote": "「NVON 4919 最近碰到爛掉...不是說你對就一定會贏哦，有時候你是對的...可是你如果是兩年前買，你一樣賠錢」",
+          "ep_price": 154.0
+        },
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「新堂的話最好笑，新堂的話就是可能兩年前的節目就有跟大家說...這次就上去了」",
+          "ep_price": 166.0
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-04-22",
+          "close": 154.0
+        },
+        {
+          "date": "2026-04-23",
+          "close": 147.0
+        },
+        {
+          "date": "2026-04-24",
+          "close": 145.0
+        },
+        {
+          "date": "2026-04-27",
+          "close": 136.0
+        },
+        {
+          "date": "2026-04-28",
+          "close": 149.0
+        },
+        {
+          "date": "2026-04-29",
+          "close": 144.5
+        },
+        {
+          "date": "2026-04-30",
+          "close": 147.5
+        },
+        {
+          "date": "2026-05-04",
+          "close": 162.0
+        },
+        {
+          "date": "2026-05-05",
+          "close": 165.0
+        },
+        {
+          "date": "2026-05-06",
+          "close": 161.0
+        },
+        {
+          "date": "2026-05-07",
+          "close": 177.0
+        },
+        {
+          "date": "2026-05-08",
+          "close": 167.5
+        },
+        {
+          "date": "2026-05-11",
+          "close": 184.0
+        },
+        {
+          "date": "2026-05-12",
+          "close": 181.0
+        },
+        {
+          "date": "2026-05-13",
+          "close": 166.0
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 166.0,
+      "base_ep": 661,
+      "current_price": 166.0,
+      "current_pct": 0.0
+    },
+    {
+      "code": "2492",
+      "name": "華新科",
+      "ticker": "2492.TW",
+      "mentions": [
+        {
+          "episode": 659,
+          "date": "2026-05-06",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「今天也看到華新科有一個出貨交期拉長的通知...市場就很買單，就直接給他一個漲停」",
+          "ep_price": 147.0
+        },
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「台灣的不管是領頭羊，像是國巨、華新科...其實他們本身現在都是有跟到這個國際的情勢」",
+          "ep_price": 200.0
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-05-06",
+          "close": 147.0
+        },
+        {
+          "date": "2026-05-07",
+          "close": 160.0
+        },
+        {
+          "date": "2026-05-08",
+          "close": 156.0
+        },
+        {
+          "date": "2026-05-11",
+          "close": 171.5
+        },
+        {
+          "date": "2026-05-12",
+          "close": 188.5
+        },
+        {
+          "date": "2026-05-13",
+          "close": 200.0
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 147.0,
+      "base_ep": 659,
+      "current_price": 200.0,
+      "current_pct": 36.05
+    },
+    {
+      "code": "6173",
+      "name": "信昌電",
+      "ticker": "6173.TWO",
+      "mentions": [
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「或者說後面的一些比較小隻的比較小隻 MLC 像什麼信倉啊...其實他們本身現在都有跟到這國際的情勢」",
+          "ep_price": 159.0
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-05-13",
+          "close": 159.0
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 159.0,
+      "base_ep": 661,
+      "current_price": 159.0,
+      "current_pct": 0.0
+    },
+    {
+      "code": "2472",
+      "name": "立隆電",
+      "ticker": "2472.TW",
+      "mentions": [
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「回頭看台灣的電容廠，就來說像是利隆電...其實都是有相當程度的表現」",
+          "ep_price": 233.5
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-05-13",
+          "close": 233.5
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 233.5,
+      "base_ep": 661,
+      "current_price": 233.5,
+      "current_pct": 0.0
+    },
+    {
+      "code": "8201",
+      "name": "金山電",
+      "ticker": "8201.TW",
+      "mentions": [
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「回頭看台灣的電容廠，就來說像是利隆電、金山...其實都是有相當程度的表現」",
+          "ep_price": 12.8
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-05-13",
+          "close": 12.8
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 12.8,
+      "base_ep": 661,
+      "current_price": 12.8,
+      "current_pct": 0.0
+    },
+    {
+      "code": "6449",
+      "name": "鈺邦",
+      "ticker": "6449.TW",
+      "mentions": [
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「回頭看台灣的電容廠，就來說像是利隆電、金山，然後或者說鈺邦，其實都是有相當程度的表現」",
+          "ep_price": 218.0
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-05-13",
+          "close": 218.0
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 218.0,
+      "base_ep": 661,
+      "current_price": 218.0,
+      "current_pct": 0.0
+    },
+    {
+      "code": "5536",
+      "name": "聖暉",
+      "ticker": "5536.TWO",
+      "mentions": [
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「只有一些可能像聖暉這種表現特好，因為聖暉它可能做的是比較偏 ODN 的廠房之類的」",
+          "ep_price": 950.0
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-05-13",
+          "close": 950.0
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 950.0,
+      "base_ep": 661,
+      "current_price": 950.0,
+      "current_pct": 0.0
+    },
+    {
+      "code": "3548",
+      "name": "加哲",
+      "ticker": "3548.TWO",
+      "mentions": [
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「CPU socket 的加折...這個一定是專業在搞股票，這些東西全部都是身邊一些很會搞的人手上會有」",
+          "ep_price": 98.7
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-05-13",
+          "close": 98.7
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 98.7,
+      "base_ep": 661,
+      "current_price": 98.7,
+      "current_pct": 0.0
+    },
+    {
+      "code": "QCOM",
+      "name": "高通",
+      "ticker": "QCOM",
+      "mentions": [
+        {
+          "episode": 661,
+          "date": "2026-05-13",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「高通是最近市場上一個很屌的東西，屌噴欸，屌詐噴」，這不是 AIPC 或 Cloud 的故事，而是 AI Infrastructure 或 ASIC 的故事」",
+          "ep_price": 210.31
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-05-12",
+          "close": 210.31
+        }
+      ],
+      "last_mention_date": "2026-05-13",
+      "base_ep_price": 210.31,
+      "base_ep": 661,
+      "current_price": 210.31,
+      "current_pct": 0.0
+>>>>>>> Stashed changes
     },
     {
       "code": "NET",
@@ -273,6 +950,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 213.15
+        },
         {
           "date": "2026-03-25",
           "close": 218.0
@@ -427,7 +1108,7 @@
           "stance": "中立",
           "stance_score": 0,
           "quote": "「Nvidia 都已經是也在破底啊，都在持續往下。」",
-          "ep_price": 165.17
+          "ep_price": 167.52
         },
         {
           "episode": 649,
@@ -479,6 +1160,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 167.52
+        },
         {
           "date": "2026-03-30",
           "close": 165.17
@@ -609,6 +1294,7 @@
       "base_ep": 649,
       "current_price": 220.78,
       "current_pct": 25.62
+<<<<<<< Updated upstream
     },
     {
       "code": "2454",
@@ -799,6 +1485,8 @@
       "base_ep": 653,
       "current_price": 3495.0,
       "current_pct": 95.25
+=======
+>>>>>>> Stashed changes
     },
     {
       "code": "2303",
@@ -913,6 +1601,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-04-21",
+          "close": 26.91
+        },
         {
           "date": "2026-04-22",
           "close": 26.94
@@ -1104,6 +1796,13 @@
       ],
       "prices": [
         {
+<<<<<<< Updated upstream
+=======
+          "date": "2026-05-08",
+          "close": 1562.34
+        },
+        {
+>>>>>>> Stashed changes
           "date": "2026-05-11",
           "close": 1547.56
         },
@@ -1116,7 +1815,11 @@
       "base_ep_price": 1547.56,
       "base_ep": 660,
       "current_price": 1452.02,
+<<<<<<< Updated upstream
       "current_pct": -6.17
+=======
+      "current_pct": -7.06
+>>>>>>> Stashed changes
     },
     {
       "code": "PLTR",
@@ -1157,6 +1860,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 154.78
+        },
         {
           "date": "2026-03-25",
           "close": 154.96
@@ -1453,6 +2160,7 @@
       "base_ep": 650,
       "current_price": 448.29,
       "current_pct": 103.6
+<<<<<<< Updated upstream
     },
     {
       "code": "2327",
@@ -1633,6 +2341,8 @@
       "base_ep": 659,
       "current_price": 200.0,
       "current_pct": 36.05
+=======
+>>>>>>> Stashed changes
     },
     {
       "code": "3443",
@@ -1737,7 +2447,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「美光的數字本來在投資圈真的喊到毛利要 80 以上，最後開一個 70 幾... 為什麼開出來股價竟然是跌的？因為真的有一堆人預期一個更高的數字。」",
-          "ep_price": 404.35
+          "ep_price": 422.9
         },
         {
           "episode": 658,
@@ -1749,6 +2459,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-20",
+          "close": 422.9
+        },
         {
           "date": "2026-03-23",
           "close": 404.35
@@ -1911,7 +2625,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「在玻璃方面走的比較前面的應該就是 Intel 了。」",
-          "ep_price": 41.19
+          "ep_price": 43.13
         },
         {
           "episode": 650,
@@ -1955,6 +2669,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 43.13
+        },
         {
           "date": "2026-03-30",
           "close": 41.19
@@ -2097,10 +2815,14 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「應該是有機會在後面會走出自己的一條路...它比較可以去做到大破大立。」",
-          "ep_price": 185.48
+          "ep_price": 183.82
         }
       ],
       "prices": [
+        {
+          "date": "2026-05-01",
+          "close": 183.82
+        },
         {
           "date": "2026-05-04",
           "close": 185.48
@@ -2131,10 +2853,14 @@
         }
       ],
       "last_mention_date": "2026-05-02",
-      "base_ep_price": 185.48,
+      "base_ep_price": 183.82,
       "base_ep": 658,
       "current_price": 171.31,
+<<<<<<< Updated upstream
       "current_pct": -7.64
+=======
+      "current_pct": -6.81
+>>>>>>> Stashed changes
     },
     {
       "code": "GOOG",
@@ -2147,10 +2873,14 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「Google 轉強，我相信就不會有人這樣子講了...AI 它確實在幫大家賺錢。」",
-          "ep_price": 379.64
+          "ep_price": 383.22
         }
       ],
       "prices": [
+        {
+          "date": "2026-05-01",
+          "close": 383.22
+        },
         {
           "date": "2026-05-04",
           "close": 379.64
@@ -2181,10 +2911,14 @@
         }
       ],
       "last_mention_date": "2026-05-02",
-      "base_ep_price": 379.64,
+      "base_ep_price": 383.22,
       "base_ep": 658,
       "current_price": 383.82,
+<<<<<<< Updated upstream
       "current_pct": 1.1
+=======
+      "current_pct": 0.16
+>>>>>>> Stashed changes
     },
     {
       "code": "ADBE",
@@ -2197,10 +2931,14 @@
           "stance": "負面",
           "stance_score": -1,
           "quote": "「我自己心中也覺得說他有機會會 BBQ，因為現在已經有這麼多方便的生圖的東西。」",
-          "ep_price": 253.96
+          "ep_price": 250.71
         }
       ],
       "prices": [
+        {
+          "date": "2026-05-01",
+          "close": 250.71
+        },
         {
           "date": "2026-05-04",
           "close": 253.96
@@ -2231,10 +2969,14 @@
         }
       ],
       "last_mention_date": "2026-05-02",
-      "base_ep_price": 253.96,
+      "base_ep_price": 250.71,
       "base_ep": 658,
       "current_price": 240.83,
+<<<<<<< Updated upstream
       "current_pct": -5.17
+=======
+      "current_pct": -3.94
+>>>>>>> Stashed changes
     },
     {
       "code": "2337",
@@ -2397,7 +3139,13 @@
       "base_ep": 657,
       "current_price": 168.0,
       "current_pct": 0.6
+<<<<<<< Updated upstream
     },
+=======
+    }
+  ],
+  "history": [
+>>>>>>> Stashed changes
     {
       "code": "MRVL",
       "name": "邁威爾",
@@ -2409,7 +3157,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「它現在算是可能在美股的技術現型還長得還蠻不錯的東西。」",
-          "ep_price": 87.81
+          "ep_price": 94.88
         },
         {
           "episode": 649,
@@ -2461,6 +3209,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 94.88
+        },
         {
           "date": "2026-03-30",
           "close": 87.81
@@ -2587,10 +3339,14 @@
         }
       ],
       "last_mention_date": "2026-04-25",
-      "base_ep_price": 87.81,
+      "base_ep_price": 94.88,
       "base_ep": 648,
       "current_price": 164.5,
+<<<<<<< Updated upstream
       "current_pct": 87.34
+=======
+      "current_pct": 73.38
+>>>>>>> Stashed changes
     },
     {
       "code": "AVGO",
@@ -2603,7 +3359,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「在 Intel 跟 Broadcom 這邊，會去做這樣子的一個嘗試（玻璃基板）。」",
-          "ep_price": 293.41
+          "ep_price": 300.68
         },
         {
           "episode": 649,
@@ -2631,6 +3387,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 300.68
+        },
         {
           "date": "2026-03-30",
           "close": 293.41
@@ -2761,9 +3521,13 @@
       "base_ep": 655,
       "current_price": 419.3,
       "current_pct": -0.79
+<<<<<<< Updated upstream
     }
   ],
   "history": [
+=======
+    },
+>>>>>>> Stashed changes
     {
       "code": "6187",
       "name": "萬潤",
@@ -2885,6 +3649,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 383.03
+        },
         {
           "date": "2026-03-25",
           "close": 385.95
@@ -3205,7 +3973,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「我認為 Apple 去切這一些中低價的筆電跟手機，又認為是很棒的一個策略。」",
-          "ep_price": 246.63
+          "ep_price": 248.8
         },
         {
           "episode": 651,
@@ -3217,6 +3985,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 248.8
+        },
         {
           "date": "2026-03-30",
           "close": 246.63
@@ -3343,10 +4115,14 @@
         }
       ],
       "last_mention_date": "2026-04-08",
-      "base_ep_price": 246.63,
+      "base_ep_price": 248.8,
       "base_ep": 648,
       "current_price": 294.8,
+<<<<<<< Updated upstream
       "current_pct": 19.53
+=======
+      "current_pct": 18.49
+>>>>>>> Stashed changes
     },
     {
       "code": "006208",
