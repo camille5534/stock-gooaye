@@ -1,19 +1,11 @@
 {
   "generated_at": "2026-05-13",
   "stats": {
-<<<<<<< Updated upstream
-    "total": 61,
-    "valid": 54,
-    "hits": 38,
-    "misses": 16,
-    "pending": 0,
-=======
     "total": 72,
     "valid": 54,
     "hits": 38,
     "misses": 16,
     "pending": 11,
->>>>>>> Stashed changes
     "win_rate": 70
   },
   "picks": [
@@ -1411,8 +1403,6 @@
       "d1_date": "2026-05-12",
       "d1_price": 1452.02,
       "d1_pct": -6.17,
-<<<<<<< Updated upstream
-=======
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
@@ -1666,7 +1656,6 @@
       "d1_date": null,
       "d1_price": null,
       "d1_pct": null,
->>>>>>> Stashed changes
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
