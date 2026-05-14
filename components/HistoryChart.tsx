@@ -8,13 +8,12 @@ import { StockHistory } from '@/lib/types'
 
 interface Props { history: StockHistory }
 
-// Custom X-axis tick (EP號 + 日期兩行)
+// Custom X-axis tick (只顯示日期)
 const CustomTick = ({ x, y, payload }: { x?: number; y?: number; payload?: { value: string } }) => {
-  const [ep, date] = (payload?.value ?? '').split('|')
+  const date = (payload?.value ?? '').split('|')[1] ?? ''
   return (
     <g transform={`translate(${x},${y})`}>
-      <text x={0} y={0} dy={12} textAnchor="middle" fill="#4B5563" fontSize={11} fontFamily="var(--font-geist-mono)">{ep}</text>
-      <text x={0} y={0} dy={24} textAnchor="middle" fill="#6B7280" fontSize={10} fontFamily="var(--font-geist-mono)">{date}</text>
+      <text x={0} y={0} dy={12} textAnchor="middle" fill="#6B7280" fontSize={10} fontFamily="var(--font-geist-mono)">{date}</text>
     </g>
   )
 }
@@ -87,7 +86,7 @@ export default function HistoryChart({ history }: Props) {
             tick={<CustomTick />}
             axisLine={false}
             tickLine={false}
-            height={36}
+            height={24}
             interval={0}
             padding={{ left: 15, right: 15 }}
           />
