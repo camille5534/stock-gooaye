@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 12,
-      "positive": 8,
+      "count": 13,
+      "positive": 9,
       "negative": 0,
       "neutral": 4,
       "episodes": [
@@ -19,7 +19,8 @@
         658,
         659,
         660,
-        661
+        661,
+        662
       ]
     },
     {
@@ -223,6 +224,18 @@
       ]
     },
     {
+      "code": "8069",
+      "name": "元太",
+      "count": 2,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        650,
+        662
+      ]
+    },
+    {
       "code": "6285",
       "name": "啟碁",
       "count": 2,
@@ -380,17 +393,6 @@
       "positive": 1,
       "negative": 0,
       "neutral": 0,
-      "episodes": [
-        650
-      ]
-    },
-    {
-      "code": "8069",
-      "name": "元太",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
       "episodes": [
         650
       ]
@@ -713,6 +715,61 @@
       "episodes": [
         661
       ]
+    },
+    {
+      "code": "CRWD",
+      "name": "CrowdStrike",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        662
+      ]
+    },
+    {
+      "code": "ROHM",
+      "name": "羅姆",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        662
+      ]
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        662
+      ]
+    },
+    {
+      "code": "2395",
+      "name": "研華",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        662
+      ]
+    },
+    {
+      "code": "PCRFY",
+      "name": "松下",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        662
+      ]
     }
   ],
   "sentiment_history": [
@@ -859,6 +916,15 @@
       "bull_pct": 70,
       "bear_pct": 30,
       "vix": 18.03
+    },
+    {
+      "episode": 662,
+      "date": "2026-05-16",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 18.43
     }
   ],
   "sector_mentions": {
