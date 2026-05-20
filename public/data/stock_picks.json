@@ -1,11 +1,11 @@
 {
   "generated_at": "2026-05-20",
   "recent_episodes": [
-    658,
     659,
     660,
     661,
-    662
+    662,
+    663
   ],
   "active": [
     {
@@ -116,6 +116,14 @@
           "stance_score": 1,
           "quote": "「等到差不多以現在來算的話，就是一個月左右的時間點，你可能會注意到有更多的投信他選擇去增持台積電。」",
           "ep_price": 2265.0
+        },
+        {
+          "episode": 663,
+          "date": "2026-05-20",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「我不認為說台積電的論壇沒有去引發市場的興趣... 它的那個成長性是極好的」",
+          "ep_price": 2185.0
         }
       ],
       "prices": [
@@ -272,83 +280,439 @@
           "close": 2185.0
         }
       ],
-      "last_mention_date": "2026-05-16",
+      "last_mention_date": "2026-05-20",
       "base_ep_price": 1950.0,
       "base_ep": 651,
       "current_price": 2185.0,
       "current_pct": 12.05
     },
     {
-      "code": "CRWD",
-      "name": "CrowdStrike",
-      "ticker": "CRWD",
+      "code": "NVDA",
+      "name": "輝達",
+      "ticker": "NVDA",
       "mentions": [
         {
-          "episode": 662,
-          "date": "2026-05-16",
+          "episode": 648,
+          "date": "2026-03-28",
+          "stance": "中立",
+          "stance_score": 0,
+          "quote": "「Nvidia 都已經是也在破底啊，都在持續往下。」",
+          "ep_price": 167.52
+        },
+        {
+          "episode": 649,
+          "date": "2026-04-01",
           "stance": "正面",
           "stance_score": 1,
-          "quote": "「CrowdStrike 要創新高了，大家還記得嗎？在前陣子什麼 Microsoft 出事的時候...Surprise motherfucker 資安股一大堆都在創新高。」",
-          "ep_price": 618.83
+          "quote": "「老黃手上真的是滿手現金... 錢多，他到處找地方放... 儘量的去買一些東西是跟自己的本業是相關的。」",
+          "ep_price": 175.75
+        },
+        {
+          "episode": 650,
+          "date": "2026-04-04",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「本身有 Grace CPU，看來也有獲得客戶採用... 可視為 CPU 相關類股。」",
+          "ep_price": 177.39
+        },
+        {
+          "episode": 651,
+          "date": "2026-04-08",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「我最早在買 NVIDIA 18 年的時候，我根本看不到 AI 的東西。可是你後來就是很名正言順的，因為 AI 所以你繼續持有甚至去加碼。」",
+          "ep_price": 182.08
+        },
+        {
+          "episode": 652,
+          "date": "2026-04-11",
+          "stance": "中立",
+          "stance_score": 0,
+          "quote": "「它沒有過新高，可能我暫時都沒有那（進攻感）。」RISC-V 入股 SiFive 動作代表 NVIDIA 在佈局更廣泛的算力生態，但股價未突破新高前觀望。",
+          "ep_price": 188.63
+        },
+        {
+          "episode": 659,
+          "date": "2026-05-06",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「老大 NV 是停下來在那邊，然後讓其他小地門或是各種領先艦可以去做發揮」",
+          "ep_price": 207.83
+        },
+        {
+          "episode": 660,
+          "date": "2026-05-09",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「我覺得 NVIDIA 本體看起來是還好...我也非常期待在接下來的 GTC 大會」",
+          "ep_price": 215.2
+        },
+        {
+          "episode": 663,
+          "date": "2026-05-20",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「Nvidia 它其實根本就還是按照自己的 Roadmap 在推進... 後面又再一次的會被拿到市場的中央裡面」",
+          "ep_price": 220.61
         }
       ],
       "prices": [
         {
+          "date": "2026-03-27",
+          "close": 167.52
+        },
+        {
+          "date": "2026-03-30",
+          "close": 165.17
+        },
+        {
+          "date": "2026-03-31",
+          "close": 174.4
+        },
+        {
+          "date": "2026-04-01",
+          "close": 175.75
+        },
+        {
+          "date": "2026-04-02",
+          "close": 177.39
+        },
+        {
+          "date": "2026-04-06",
+          "close": 177.64
+        },
+        {
+          "date": "2026-04-07",
+          "close": 178.1
+        },
+        {
+          "date": "2026-04-08",
+          "close": 182.08
+        },
+        {
+          "date": "2026-04-09",
+          "close": 183.91
+        },
+        {
+          "date": "2026-04-10",
+          "close": 188.63
+        },
+        {
+          "date": "2026-04-13",
+          "close": 189.31
+        },
+        {
+          "date": "2026-04-14",
+          "close": 196.51
+        },
+        {
+          "date": "2026-04-15",
+          "close": 198.87
+        },
+        {
+          "date": "2026-04-16",
+          "close": 198.35
+        },
+        {
+          "date": "2026-04-17",
+          "close": 201.68
+        },
+        {
+          "date": "2026-04-20",
+          "close": 202.06
+        },
+        {
+          "date": "2026-04-21",
+          "close": 199.88
+        },
+        {
+          "date": "2026-04-22",
+          "close": 202.5
+        },
+        {
+          "date": "2026-04-23",
+          "close": 199.64
+        },
+        {
+          "date": "2026-04-24",
+          "close": 208.27
+        },
+        {
+          "date": "2026-04-27",
+          "close": 216.61
+        },
+        {
+          "date": "2026-04-28",
+          "close": 213.17
+        },
+        {
+          "date": "2026-04-29",
+          "close": 209.25
+        },
+        {
+          "date": "2026-04-30",
+          "close": 199.57
+        },
+        {
+          "date": "2026-05-01",
+          "close": 198.45
+        },
+        {
+          "date": "2026-05-04",
+          "close": 198.48
+        },
+        {
+          "date": "2026-05-05",
+          "close": 196.5
+        },
+        {
+          "date": "2026-05-06",
+          "close": 207.83
+        },
+        {
+          "date": "2026-05-07",
+          "close": 211.5
+        },
+        {
+          "date": "2026-05-08",
+          "close": 215.2
+        },
+        {
+          "date": "2026-05-11",
+          "close": 219.44
+        },
+        {
+          "date": "2026-05-12",
+          "close": 220.78
+        },
+        {
+          "date": "2026-05-13",
+          "close": 225.83
+        },
+        {
+          "date": "2026-05-14",
+          "close": 235.74
+        },
+        {
+          "date": "2026-05-15",
+          "close": 225.32
+        },
+        {
           "date": "2026-05-18",
-          "close": 618.83
+          "close": 222.32
         },
         {
           "date": "2026-05-19",
-          "close": 616.88
+          "close": 220.61
         }
       ],
-      "last_mention_date": "2026-05-16",
-      "base_ep_price": 618.83,
-      "base_ep": 662,
-      "current_price": 616.88,
-      "current_pct": -0.32
+      "last_mention_date": "2026-05-20",
+      "base_ep_price": 175.75,
+      "base_ep": 649,
+      "current_price": 220.61,
+      "current_pct": 25.52
     },
     {
-      "code": "ROHM",
-      "name": "羅姆",
-      "ticker": "ROHM",
+      "code": "AVGO",
+      "name": "博通",
+      "ticker": "AVGO",
       "mentions": [
         {
-          "episode": 662,
-          "date": "2026-05-16",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「如果羅姆也去做漲價的話，那就可以確立這個趨勢。因為日本人一般動作最慢，後來就聽眾講說羅姆很快就要看到漲價出來了。」",
-          "ep_price": null
-        }
-      ],
-      "prices": [],
-      "last_mention_date": "2026-05-16",
-      "base_ep_price": null,
-      "base_ep": 662,
-      "current_price": null,
-      "current_pct": null
-    },
-    {
-      "code": "PCRFY",
-      "name": "松下",
-      "ticker": "PCRFY",
-      "mentions": [
+          "episode": 648,
+          "date": "2026-03-28",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「在 Intel 跟 Broadcom 這邊，會去做這樣子的一個嘗試（玻璃基板）。」",
+          "ep_price": 300.68
+        },
         {
-          "episode": 662,
-          "date": "2026-05-16",
+          "episode": 649,
+          "date": "2026-04-01",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「他主要的目標呢是要去打大隻的，就是要去針對 Broadcom 這樣。」",
+          "ep_price": 313.49
+        },
+        {
+          "episode": 655,
+          "date": "2026-04-22",
           "stance": "正面",
           "stance_score": 1,
-          "quote": "「Panasonic 預計在 6 月初左右就會開始...那如果說他沒有去把一個漲價信丟出來，可是在業界大家開始看到漲價的話，那就會變成說它有點類似是現貨漲價的一個模式，那這個就很可怕。」",
-          "ep_price": null
+          "quote": "「不會影響到我們對於可能像是阿狗（AVGO）...的一個評價，我覺得這應該是沒有關係的，因為市場裡面的餅太大」",
+          "ep_price": 422.65
+        },
+        {
+          "episode": 656,
+          "date": "2026-04-25",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「training 是 mediatek...那到底 training 跟 inference 它的佔比是多少」",
+          "ep_price": 422.76
+        },
+        {
+          "episode": 663,
+          "date": "2026-05-20",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「雖然可能在 Sfish 之後，你沒有看到 BC 的下一代晶片的推出，但是呢應該會有一個比較大顆的 Sfish」",
+          "ep_price": 411.07
         }
       ],
-      "prices": [],
-      "last_mention_date": "2026-05-16",
-      "base_ep_price": null,
-      "base_ep": 662,
-      "current_price": null,
-      "current_pct": null
+      "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 300.68
+        },
+        {
+          "date": "2026-03-30",
+          "close": 293.41
+        },
+        {
+          "date": "2026-03-31",
+          "close": 309.51
+        },
+        {
+          "date": "2026-04-01",
+          "close": 313.49
+        },
+        {
+          "date": "2026-04-02",
+          "close": 314.55
+        },
+        {
+          "date": "2026-04-06",
+          "close": 314.43
+        },
+        {
+          "date": "2026-04-07",
+          "close": 333.97
+        },
+        {
+          "date": "2026-04-08",
+          "close": 350.63
+        },
+        {
+          "date": "2026-04-09",
+          "close": 354.91
+        },
+        {
+          "date": "2026-04-10",
+          "close": 371.55
+        },
+        {
+          "date": "2026-04-13",
+          "close": 379.75
+        },
+        {
+          "date": "2026-04-14",
+          "close": 380.78
+        },
+        {
+          "date": "2026-04-15",
+          "close": 396.72
+        },
+        {
+          "date": "2026-04-16",
+          "close": 398.47
+        },
+        {
+          "date": "2026-04-17",
+          "close": 406.54
+        },
+        {
+          "date": "2026-04-20",
+          "close": 399.63
+        },
+        {
+          "date": "2026-04-21",
+          "close": 402.17
+        },
+        {
+          "date": "2026-04-22",
+          "close": 422.65
+        },
+        {
+          "date": "2026-04-23",
+          "close": 419.94
+        },
+        {
+          "date": "2026-04-24",
+          "close": 422.76
+        },
+        {
+          "date": "2026-04-27",
+          "close": 418.2
+        },
+        {
+          "date": "2026-04-28",
+          "close": 399.83
+        },
+        {
+          "date": "2026-04-29",
+          "close": 405.45
+        },
+        {
+          "date": "2026-04-30",
+          "close": 417.43
+        },
+        {
+          "date": "2026-05-01",
+          "close": 421.28
+        },
+        {
+          "date": "2026-05-04",
+          "close": 416.5
+        },
+        {
+          "date": "2026-05-05",
+          "close": 427.36
+        },
+        {
+          "date": "2026-05-06",
+          "close": 425.44
+        },
+        {
+          "date": "2026-05-07",
+          "close": 412.56
+        },
+        {
+          "date": "2026-05-08",
+          "close": 430.0
+        },
+        {
+          "date": "2026-05-11",
+          "close": 428.43
+        },
+        {
+          "date": "2026-05-12",
+          "close": 419.3
+        },
+        {
+          "date": "2026-05-13",
+          "close": 416.79
+        },
+        {
+          "date": "2026-05-14",
+          "close": 439.79
+        },
+        {
+          "date": "2026-05-15",
+          "close": 425.19
+        },
+        {
+          "date": "2026-05-18",
+          "close": 420.71
+        },
+        {
+          "date": "2026-05-19",
+          "close": 411.07
+        }
+      ],
+      "last_mention_date": "2026-05-20",
+      "base_ep_price": 422.65,
+      "base_ep": 655,
+      "current_price": 411.07,
+      "current_pct": -2.74
     },
     {
       "code": "2454",
@@ -426,6 +790,14 @@
           "stance_score": 1,
           "quote": "「那 MediaTek 也是嘛，就是大家應該都想都不敢想過去會這樣的漲停」",
           "ep_price": 3495.0
+        },
+        {
+          "episode": 663,
+          "date": "2026-05-20",
+          "stance": "觀察",
+          "stance_score": 0,
+          "quote": "「V7 或者說 V8, V9 應該都是有 MediaTek 然後跟 Broadcom 是一人去做一邊嘛」",
+          "ep_price": 3230.0
         }
       ],
       "prices": [
@@ -562,11 +934,95 @@
           "close": 3230.0
         }
       ],
-      "last_mention_date": "2026-05-13",
+      "last_mention_date": "2026-05-20",
       "base_ep_price": 1790.0,
       "base_ep": 653,
       "current_price": 3230.0,
       "current_pct": 80.45
+    },
+    {
+      "code": "PCRFY",
+      "name": "松下",
+      "ticker": "PCRFY",
+      "mentions": [
+        {
+          "episode": 662,
+          "date": "2026-05-16",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「Panasonic 預計在 6 月初左右就會開始...那如果說他沒有去把一個漲價信丟出來，可是在業界大家開始看到漲價的話，那就會變成說它有點類似是現貨漲價的一個模式，那這個就很可怕。」",
+          "ep_price": null
+        },
+        {
+          "episode": 663,
+          "date": "2026-05-20",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「Panasonic 這邊我們已經有看到他要漲價了... 這個漲價應該會持續的延續了」",
+          "ep_price": null
+        }
+      ],
+      "prices": [],
+      "last_mention_date": "2026-05-20",
+      "base_ep_price": null,
+      "base_ep": 662,
+      "current_price": null,
+      "current_pct": null
+    },
+    {
+      "code": "CRWD",
+      "name": "CrowdStrike",
+      "ticker": "CRWD",
+      "mentions": [
+        {
+          "episode": 662,
+          "date": "2026-05-16",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「CrowdStrike 要創新高了，大家還記得嗎？在前陣子什麼 Microsoft 出事的時候...Surprise motherfucker 資安股一大堆都在創新高。」",
+          "ep_price": 594.08
+        }
+      ],
+      "prices": [
+        {
+          "date": "2026-05-15",
+          "close": 594.08
+        },
+        {
+          "date": "2026-05-18",
+          "close": 618.83
+        },
+        {
+          "date": "2026-05-19",
+          "close": 616.88
+        }
+      ],
+      "last_mention_date": "2026-05-16",
+      "base_ep_price": 594.08,
+      "base_ep": 662,
+      "current_price": 616.88,
+      "current_pct": 3.84
+    },
+    {
+      "code": "ROHM",
+      "name": "羅姆",
+      "ticker": "ROHM",
+      "mentions": [
+        {
+          "episode": 662,
+          "date": "2026-05-16",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「如果羅姆也去做漲價的話，那就可以確立這個趨勢。因為日本人一般動作最慢，後來就聽眾講說羅姆很快就要看到漲價出來了。」",
+          "ep_price": null
+        }
+      ],
+      "prices": [],
+      "last_mention_date": "2026-05-16",
+      "base_ep_price": null,
+      "base_ep": 662,
+      "current_price": null,
+      "current_pct": null
     },
     {
       "code": "2327",
@@ -1206,6 +1662,10 @@
       ],
       "prices": [
         {
+          "date": "2026-05-12",
+          "close": 210.31
+        },
+        {
           "date": "2026-05-13",
           "close": 213.17
         },
@@ -1263,6 +1723,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 213.15
+        },
         {
           "date": "2026-03-25",
           "close": 218.0
@@ -1427,220 +1891,6 @@
       "current_pct": -5.17
     },
     {
-      "code": "NVDA",
-      "name": "輝達",
-      "ticker": "NVDA",
-      "mentions": [
-        {
-          "episode": 648,
-          "date": "2026-03-28",
-          "stance": "中立",
-          "stance_score": 0,
-          "quote": "「Nvidia 都已經是也在破底啊，都在持續往下。」",
-          "ep_price": 165.17
-        },
-        {
-          "episode": 649,
-          "date": "2026-04-01",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「老黃手上真的是滿手現金... 錢多，他到處找地方放... 儘量的去買一些東西是跟自己的本業是相關的。」",
-          "ep_price": 175.75
-        },
-        {
-          "episode": 650,
-          "date": "2026-04-04",
-          "stance": "觀察",
-          "stance_score": 0,
-          "quote": "「本身有 Grace CPU，看來也有獲得客戶採用... 可視為 CPU 相關類股。」",
-          "ep_price": 177.39
-        },
-        {
-          "episode": 651,
-          "date": "2026-04-08",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「我最早在買 NVIDIA 18 年的時候，我根本看不到 AI 的東西。可是你後來就是很名正言順的，因為 AI 所以你繼續持有甚至去加碼。」",
-          "ep_price": 182.08
-        },
-        {
-          "episode": 652,
-          "date": "2026-04-11",
-          "stance": "中立",
-          "stance_score": 0,
-          "quote": "「它沒有過新高，可能我暫時都沒有那（進攻感）。」RISC-V 入股 SiFive 動作代表 NVIDIA 在佈局更廣泛的算力生態，但股價未突破新高前觀望。",
-          "ep_price": 188.63
-        },
-        {
-          "episode": 659,
-          "date": "2026-05-06",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「老大 NV 是停下來在那邊，然後讓其他小地門或是各種領先艦可以去做發揮」",
-          "ep_price": 207.83
-        },
-        {
-          "episode": 660,
-          "date": "2026-05-09",
-          "stance": "觀察",
-          "stance_score": 0,
-          "quote": "「我覺得 NVIDIA 本體看起來是還好...我也非常期待在接下來的 GTC 大會」",
-          "ep_price": 215.2
-        }
-      ],
-      "prices": [
-        {
-          "date": "2026-03-30",
-          "close": 165.17
-        },
-        {
-          "date": "2026-03-31",
-          "close": 174.4
-        },
-        {
-          "date": "2026-04-01",
-          "close": 175.75
-        },
-        {
-          "date": "2026-04-02",
-          "close": 177.39
-        },
-        {
-          "date": "2026-04-06",
-          "close": 177.64
-        },
-        {
-          "date": "2026-04-07",
-          "close": 178.1
-        },
-        {
-          "date": "2026-04-08",
-          "close": 182.08
-        },
-        {
-          "date": "2026-04-09",
-          "close": 183.91
-        },
-        {
-          "date": "2026-04-10",
-          "close": 188.63
-        },
-        {
-          "date": "2026-04-13",
-          "close": 189.31
-        },
-        {
-          "date": "2026-04-14",
-          "close": 196.51
-        },
-        {
-          "date": "2026-04-15",
-          "close": 198.87
-        },
-        {
-          "date": "2026-04-16",
-          "close": 198.35
-        },
-        {
-          "date": "2026-04-17",
-          "close": 201.68
-        },
-        {
-          "date": "2026-04-20",
-          "close": 202.06
-        },
-        {
-          "date": "2026-04-21",
-          "close": 199.88
-        },
-        {
-          "date": "2026-04-22",
-          "close": 202.5
-        },
-        {
-          "date": "2026-04-23",
-          "close": 199.64
-        },
-        {
-          "date": "2026-04-24",
-          "close": 208.27
-        },
-        {
-          "date": "2026-04-27",
-          "close": 216.61
-        },
-        {
-          "date": "2026-04-28",
-          "close": 213.17
-        },
-        {
-          "date": "2026-04-29",
-          "close": 209.25
-        },
-        {
-          "date": "2026-04-30",
-          "close": 199.57
-        },
-        {
-          "date": "2026-05-01",
-          "close": 198.45
-        },
-        {
-          "date": "2026-05-04",
-          "close": 198.48
-        },
-        {
-          "date": "2026-05-05",
-          "close": 196.5
-        },
-        {
-          "date": "2026-05-06",
-          "close": 207.83
-        },
-        {
-          "date": "2026-05-07",
-          "close": 211.5
-        },
-        {
-          "date": "2026-05-08",
-          "close": 215.2
-        },
-        {
-          "date": "2026-05-11",
-          "close": 219.44
-        },
-        {
-          "date": "2026-05-12",
-          "close": 220.78
-        },
-        {
-          "date": "2026-05-13",
-          "close": 225.83
-        },
-        {
-          "date": "2026-05-14",
-          "close": 235.74
-        },
-        {
-          "date": "2026-05-15",
-          "close": 225.32
-        },
-        {
-          "date": "2026-05-18",
-          "close": 222.32
-        },
-        {
-          "date": "2026-05-19",
-          "close": 220.61
-        }
-      ],
-      "last_mention_date": "2026-05-09",
-      "base_ep_price": 175.75,
-      "base_ep": 649,
-      "current_price": 220.61,
-      "current_pct": 25.52
-    },
-    {
       "code": "2303",
       "name": "聯電",
       "ticker": "2303.TW",
@@ -1773,6 +2023,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-04-21",
+          "close": 26.91
+        },
         {
           "date": "2026-04-22",
           "close": 26.94
@@ -2019,10 +2273,14 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「展望跟目前的情況都還是好的...台股（相關）早我就被洗掉了，那希望你可以繼續搭車快樂」",
-          "ep_price": 1547.56
+          "ep_price": 1562.34
         }
       ],
       "prices": [
+        {
+          "date": "2026-05-08",
+          "close": 1562.34
+        },
         {
           "date": "2026-05-11",
           "close": 1547.56
@@ -2053,10 +2311,10 @@
         }
       ],
       "last_mention_date": "2026-05-09",
-      "base_ep_price": 1547.56,
+      "base_ep_price": 1562.34,
       "base_ep": 660,
       "current_price": 1383.29,
-      "current_pct": -10.61
+      "current_pct": -11.46
     },
     {
       "code": "PLTR",
@@ -2097,6 +2355,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 154.78
+        },
         {
           "date": "2026-03-25",
           "close": 154.96
@@ -2565,7 +2827,9 @@
       "base_ep": 659,
       "current_price": 4600.0,
       "current_pct": 0.77
-    },
+    }
+  ],
+  "history": [
     {
       "code": "MU",
       "name": "美光（Micron）",
@@ -2577,7 +2841,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「美光的數字本來在投資圈真的喊到毛利要 80 以上，最後開一個 70 幾... 為什麼開出來股價竟然是跌的？因為真的有一堆人預期一個更高的數字。」",
-          "ep_price": 404.35
+          "ep_price": 422.9
         },
         {
           "episode": 658,
@@ -2589,6 +2853,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-20",
+          "close": 422.9
+        },
         {
           "date": "2026-03-23",
           "close": 404.35
@@ -2771,7 +3039,7 @@
           "stance": "觀察",
           "stance_score": 0,
           "quote": "「在玻璃方面走的比較前面的應該就是 Intel 了。」",
-          "ep_price": 41.19
+          "ep_price": 43.13
         },
         {
           "episode": 650,
@@ -2815,6 +3083,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 43.13
+        },
         {
           "date": "2026-03-30",
           "close": 41.19
@@ -2977,10 +3249,14 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「應該是有機會在後面會走出自己的一條路...它比較可以去做到大破大立。」",
-          "ep_price": 185.48
+          "ep_price": 183.82
         }
       ],
       "prices": [
+        {
+          "date": "2026-05-01",
+          "close": 183.82
+        },
         {
           "date": "2026-05-04",
           "close": 185.48
@@ -3031,10 +3307,10 @@
         }
       ],
       "last_mention_date": "2026-05-02",
-      "base_ep_price": 185.48,
+      "base_ep_price": 183.82,
       "base_ep": 658,
       "current_price": 179.42,
-      "current_pct": -3.27
+      "current_pct": -2.39
     },
     {
       "code": "GOOG",
@@ -3047,10 +3323,14 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「Google 轉強，我相信就不會有人這樣子講了...AI 它確實在幫大家賺錢。」",
-          "ep_price": 379.64
+          "ep_price": 383.22
         }
       ],
       "prices": [
+        {
+          "date": "2026-05-01",
+          "close": 383.22
+        },
         {
           "date": "2026-05-04",
           "close": 379.64
@@ -3101,10 +3381,10 @@
         }
       ],
       "last_mention_date": "2026-05-02",
-      "base_ep_price": 379.64,
+      "base_ep_price": 383.22,
       "base_ep": 658,
       "current_price": 384.9,
-      "current_pct": 1.39
+      "current_pct": 0.44
     },
     {
       "code": "ADBE",
@@ -3117,10 +3397,14 @@
           "stance": "負面",
           "stance_score": -1,
           "quote": "「我自己心中也覺得說他有機會會 BBQ，因為現在已經有這麼多方便的生圖的東西。」",
-          "ep_price": 253.96
+          "ep_price": 250.71
         }
       ],
       "prices": [
+        {
+          "date": "2026-05-01",
+          "close": 250.71
+        },
         {
           "date": "2026-05-04",
           "close": 253.96
@@ -3171,13 +3455,11 @@
         }
       ],
       "last_mention_date": "2026-05-02",
-      "base_ep_price": 253.96,
+      "base_ep_price": 250.71,
       "base_ep": 658,
       "current_price": 254.99,
-      "current_pct": 0.41
-    }
-  ],
-  "history": [
+      "current_pct": 1.71
+    },
     {
       "code": "2337",
       "name": "旺宏",
@@ -3371,7 +3653,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「它現在算是可能在美股的技術現型還長得還蠻不錯的東西。」",
-          "ep_price": 87.81
+          "ep_price": 94.88
         },
         {
           "episode": 649,
@@ -3423,6 +3705,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 94.88
+        },
         {
           "date": "2026-03-30",
           "close": 87.81
@@ -3569,200 +3855,10 @@
         }
       ],
       "last_mention_date": "2026-04-25",
-      "base_ep_price": 87.81,
+      "base_ep_price": 94.88,
       "base_ep": 648,
       "current_price": 176.27,
-      "current_pct": 100.74
-    },
-    {
-      "code": "AVGO",
-      "name": "博通",
-      "ticker": "AVGO",
-      "mentions": [
-        {
-          "episode": 648,
-          "date": "2026-03-28",
-          "stance": "觀察",
-          "stance_score": 0,
-          "quote": "「在 Intel 跟 Broadcom 這邊，會去做這樣子的一個嘗試（玻璃基板）。」",
-          "ep_price": 293.41
-        },
-        {
-          "episode": 649,
-          "date": "2026-04-01",
-          "stance": "觀察",
-          "stance_score": 0,
-          "quote": "「他主要的目標呢是要去打大隻的，就是要去針對 Broadcom 這樣。」",
-          "ep_price": 313.49
-        },
-        {
-          "episode": 655,
-          "date": "2026-04-22",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「不會影響到我們對於可能像是阿狗（AVGO）...的一個評價，我覺得這應該是沒有關係的，因為市場裡面的餅太大」",
-          "ep_price": 422.65
-        },
-        {
-          "episode": 656,
-          "date": "2026-04-25",
-          "stance": "正面",
-          "stance_score": 1,
-          "quote": "「training 是 mediatek...那到底 training 跟 inference 它的佔比是多少」",
-          "ep_price": 422.76
-        }
-      ],
-      "prices": [
-        {
-          "date": "2026-03-30",
-          "close": 293.41
-        },
-        {
-          "date": "2026-03-31",
-          "close": 309.51
-        },
-        {
-          "date": "2026-04-01",
-          "close": 313.49
-        },
-        {
-          "date": "2026-04-02",
-          "close": 314.55
-        },
-        {
-          "date": "2026-04-06",
-          "close": 314.43
-        },
-        {
-          "date": "2026-04-07",
-          "close": 333.97
-        },
-        {
-          "date": "2026-04-08",
-          "close": 350.63
-        },
-        {
-          "date": "2026-04-09",
-          "close": 354.91
-        },
-        {
-          "date": "2026-04-10",
-          "close": 371.55
-        },
-        {
-          "date": "2026-04-13",
-          "close": 379.75
-        },
-        {
-          "date": "2026-04-14",
-          "close": 380.78
-        },
-        {
-          "date": "2026-04-15",
-          "close": 396.72
-        },
-        {
-          "date": "2026-04-16",
-          "close": 398.47
-        },
-        {
-          "date": "2026-04-17",
-          "close": 406.54
-        },
-        {
-          "date": "2026-04-20",
-          "close": 399.63
-        },
-        {
-          "date": "2026-04-21",
-          "close": 402.17
-        },
-        {
-          "date": "2026-04-22",
-          "close": 422.65
-        },
-        {
-          "date": "2026-04-23",
-          "close": 419.94
-        },
-        {
-          "date": "2026-04-24",
-          "close": 422.76
-        },
-        {
-          "date": "2026-04-27",
-          "close": 418.2
-        },
-        {
-          "date": "2026-04-28",
-          "close": 399.83
-        },
-        {
-          "date": "2026-04-29",
-          "close": 405.45
-        },
-        {
-          "date": "2026-04-30",
-          "close": 417.43
-        },
-        {
-          "date": "2026-05-01",
-          "close": 421.28
-        },
-        {
-          "date": "2026-05-04",
-          "close": 416.5
-        },
-        {
-          "date": "2026-05-05",
-          "close": 427.36
-        },
-        {
-          "date": "2026-05-06",
-          "close": 425.44
-        },
-        {
-          "date": "2026-05-07",
-          "close": 412.56
-        },
-        {
-          "date": "2026-05-08",
-          "close": 430.0
-        },
-        {
-          "date": "2026-05-11",
-          "close": 428.43
-        },
-        {
-          "date": "2026-05-12",
-          "close": 419.3
-        },
-        {
-          "date": "2026-05-13",
-          "close": 416.79
-        },
-        {
-          "date": "2026-05-14",
-          "close": 439.79
-        },
-        {
-          "date": "2026-05-15",
-          "close": 425.19
-        },
-        {
-          "date": "2026-05-18",
-          "close": 420.71
-        },
-        {
-          "date": "2026-05-19",
-          "close": 411.07
-        }
-      ],
-      "last_mention_date": "2026-04-25",
-      "base_ep_price": 422.65,
-      "base_ep": 655,
-      "current_price": 411.07,
-      "current_pct": -2.74
+      "current_pct": 85.78
     },
     {
       "code": "6187",
@@ -3905,6 +4001,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-24",
+          "close": 383.03
+        },
         {
           "date": "2026-03-25",
           "close": 385.95
@@ -4265,7 +4365,7 @@
           "stance": "正面",
           "stance_score": 1,
           "quote": "「我認為 Apple 去切這一些中低價的筆電跟手機，又認為是很棒的一個策略。」",
-          "ep_price": 246.63
+          "ep_price": 248.8
         },
         {
           "episode": 651,
@@ -4277,6 +4377,10 @@
         }
       ],
       "prices": [
+        {
+          "date": "2026-03-27",
+          "close": 248.8
+        },
         {
           "date": "2026-03-30",
           "close": 246.63
@@ -4423,10 +4527,10 @@
         }
       ],
       "last_mention_date": "2026-04-08",
-      "base_ep_price": 246.63,
+      "base_ep_price": 248.8,
       "base_ep": 648,
       "current_price": 298.97,
-      "current_pct": 21.22
+      "current_pct": 20.16
     },
     {
       "code": "006208",

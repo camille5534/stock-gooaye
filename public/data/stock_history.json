@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 13,
-      "positive": 9,
+      "count": 14,
+      "positive": 10,
       "negative": 0,
       "neutral": 4,
       "episodes": [
@@ -20,16 +20,17 @@
         659,
         660,
         661,
-        662
+        662,
+        663
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 9,
+      "count": 10,
       "positive": 4,
       "negative": 0,
-      "neutral": 5,
+      "neutral": 6,
       "episodes": [
         649,
         653,
@@ -39,7 +40,26 @@
         658,
         659,
         660,
-        661
+        661,
+        663
+      ]
+    },
+    {
+      "code": "NVDA",
+      "name": "輝達",
+      "count": 8,
+      "positive": 4,
+      "negative": 0,
+      "neutral": 4,
+      "episodes": [
+        648,
+        649,
+        650,
+        651,
+        652,
+        659,
+        660,
+        663
       ]
     },
     {
@@ -60,23 +80,6 @@
       ]
     },
     {
-      "code": "NVDA",
-      "name": "輝達",
-      "count": 7,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 4,
-      "episodes": [
-        648,
-        649,
-        650,
-        651,
-        652,
-        659,
-        660
-      ]
-    },
-    {
       "code": "INTC",
       "name": "英特爾",
       "count": 6,
@@ -90,6 +93,21 @@
         654,
         656,
         658
+      ]
+    },
+    {
+      "code": "AVGO",
+      "name": "博通",
+      "count": 5,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 3,
+      "episodes": [
+        648,
+        649,
+        655,
+        656,
+        663
       ]
     },
     {
@@ -119,20 +137,6 @@
         652,
         658,
         659
-      ]
-    },
-    {
-      "code": "AVGO",
-      "name": "博通",
-      "count": 4,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 2,
-      "episodes": [
-        648,
-        649,
-        655,
-        656
       ]
     },
     {
@@ -296,6 +300,18 @@
       ]
     },
     {
+      "code": "6531",
+      "name": "愛普",
+      "count": 2,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        657,
+        663
+      ]
+    },
+    {
       "code": "2492",
       "name": "華新科",
       "count": 2,
@@ -329,6 +345,18 @@
       "episodes": [
         659,
         660
+      ]
+    },
+    {
+      "code": "PCRFY",
+      "name": "松下",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        662,
+        663
       ]
     },
     {
@@ -494,17 +522,6 @@
       "neutral": 0,
       "episodes": [
         654
-      ]
-    },
-    {
-      "code": "6531",
-      "name": "愛普",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        657
       ]
     },
     {
@@ -759,17 +776,6 @@
       "episodes": [
         662
       ]
-    },
-    {
-      "code": "PCRFY",
-      "name": "松下",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        662
-      ]
     }
   ],
   "sentiment_history": [
@@ -925,6 +931,15 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 18.43
+    },
+    {
+      "episode": 663,
+      "date": "2026-05-20",
+      "score": 7,
+      "label": "偏多",
+      "bull_pct": 70,
+      "bear_pct": 30,
+      "vix": 17.92
     }
   ],
   "sector_mentions": {

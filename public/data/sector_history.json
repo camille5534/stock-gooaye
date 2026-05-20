@@ -194,6 +194,13 @@
       "stance": "正面",
       "intensity": 2,
       "quote": "電阻因銀價上漲已漲價約30%；關注Panasonic 6月是否停止接單，一旦確認將重演2018年瘋狗浪；MLCC、鋁電容交期持續拉長"
+    },
+    {
+      "ep": 663,
+      "date": "2026-05-20",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "Panasonic確認對部分客戶調漲鋁電容；現貨市場出現大廠掃貨行為；電阻已漲30%；若大廠維持擴產紀律，高毛利週期將延續"
     }
   ],
   "AI軟體/SaaS": [
@@ -268,6 +275,13 @@
       "stance": "正面",
       "intensity": 1,
       "quote": "金管會放寬投信持有台積電上限，預期2-3個月內大量資金從中小型股流入台積電，為結構性買盤"
+    },
+    {
+      "ep": 663,
+      "date": "2026-05-20",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "台積電技術論壇後光通訊雖回檔，但長期成長性極佳；短期股價震盪不代表故事結束"
     }
   ],
   "AI算力": [
@@ -326,6 +340,13 @@
       "stance": "正面",
       "intensity": 1,
       "quote": "高通強勢噴發，驅動力是AI Infrastructure與ASIC，而非之前的AIPC題材"
+    },
+    {
+      "ep": 663,
+      "date": "2026-05-20",
+      "stance": "正面",
+      "intensity": 1,
+      "quote": "NVIDIA按Roadmap推進；博通可能採雙拼Sfish架構（類Apple Ultra），聯發科與博通各做一邊ASIC；老AI族群資金暫退但產業趨勢未變"
     }
   ],
   "半導體/先進封裝": [
@@ -342,6 +363,13 @@
       "stance": "正面",
       "intensity": 2,
       "quote": "前台積電先進封裝大將加入聯發科，強化 CoWoS 合作；Google TPU V9 後段傳轉往 Intel，聯發科備案計畫持續"
+    },
+    {
+      "ep": 663,
+      "date": "2026-05-20",
+      "stance": "觀察",
+      "intensity": 1,
+      "quote": "愛普IPD電容技術隨Google TPU曝光而受關注，資金輪動後具復甦潛力；玻璃基板為下一個題材方向"
     }
   ],
   "CPU/處理器": [
