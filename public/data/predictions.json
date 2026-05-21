@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-20",
+  "generated_at": "2026-05-21",
   "stats": {
     "total": 79,
-    "valid": 64,
-    "hits": 41,
+    "valid": 65,
+    "hits": 42,
     "misses": 23,
-    "pending": 7,
-    "win_rate": 64
+    "pending": 6,
+    "win_rate": 65
   },
   "picks": [
     {
@@ -1176,9 +1176,9 @@
       "d7_date": "2026-05-13",
       "d7_price": 445.5,
       "d7_pct": 5.72,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-05-20",
+      "d14_price": 447.58,
+      "d14_pct": 6.22,
       "correct": false,
       "status": "miss"
     },
@@ -1245,9 +1245,9 @@
       "d7_date": "2026-05-13",
       "d7_price": 225.83,
       "d7_pct": 8.66,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-05-20",
+      "d14_price": 223.47,
+      "d14_pct": 7.53,
       "correct": true,
       "status": "hit"
     },
@@ -1268,9 +1268,9 @@
       "d7_date": "2026-05-13",
       "d7_price": 130.05,
       "d7_pct": -2.8,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-05-20",
+      "d14_price": 137.15,
+      "d14_pct": 2.51,
       "correct": true,
       "status": "hit"
     },
@@ -1656,9 +1656,9 @@
       "d1_date": "2026-05-14",
       "d1_price": 200.08,
       "d1_pct": -6.14,
-      "d7_date": null,
-      "d7_price": null,
-      "d7_pct": null,
+      "d7_date": "2026-05-20",
+      "d7_price": 202.51,
+      "d7_pct": -5.0,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
@@ -1790,7 +1790,7 @@
       "quote": "「Nvidia 它其實根本就還是按照自己的 Roadmap 在推進... 後面又再一次的會被拿到市場的中央裡面」",
       "ticker": "NVDA",
       "ep_date_actual": "2026-05-20",
-      "ep_price": 220.61,
+      "ep_price": 223.47,
       "d1_date": null,
       "d1_price": null,
       "d1_pct": null,
@@ -1814,17 +1814,17 @@
       "ticker": "2330.TW",
       "ep_date_actual": "2026-05-20",
       "ep_price": 2185.0,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-05-21",
+      "d1_price": 2230.0,
+      "d1_pct": 2.06,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     }
   ]
 }
