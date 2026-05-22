@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-21",
+  "generated_at": "2026-05-22",
   "stats": {
     "total": 79,
-    "valid": 65,
+    "valid": 66,
     "hits": 42,
-    "misses": 23,
-    "pending": 6,
-    "win_rate": 65
+    "misses": 24,
+    "pending": 5,
+    "win_rate": 64
   },
   "picks": [
     {
@@ -1791,17 +1791,17 @@
       "ticker": "NVDA",
       "ep_date_actual": "2026-05-20",
       "ep_price": 223.47,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-05-21",
+      "d1_price": 219.51,
+      "d1_pct": -1.77,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": false,
+      "status": "miss"
     },
     {
       "episode": 663,
