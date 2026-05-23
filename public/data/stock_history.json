@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 14,
-      "positive": 10,
+      "count": 15,
+      "positive": 11,
       "negative": 0,
       "neutral": 4,
       "episodes": [
@@ -21,16 +21,17 @@
         660,
         661,
         662,
-        663
+        663,
+        664
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 10,
+      "count": 11,
       "positive": 4,
       "negative": 0,
-      "neutral": 6,
+      "neutral": 7,
       "episodes": [
         649,
         653,
@@ -41,14 +42,15 @@
         659,
         660,
         661,
-        663
+        663,
+        664
       ]
     },
     {
       "code": "NVDA",
       "name": "輝達",
-      "count": 8,
-      "positive": 4,
+      "count": 9,
+      "positive": 5,
       "negative": 0,
       "neutral": 4,
       "episodes": [
@@ -59,7 +61,8 @@
         652,
         659,
         660,
-        663
+        663,
+        664
       ]
     },
     {
@@ -140,6 +143,20 @@
       ]
     },
     {
+      "code": "TSLA",
+      "name": "特斯拉",
+      "count": 4,
+      "positive": 1,
+      "negative": 1,
+      "neutral": 2,
+      "episodes": [
+        647,
+        651,
+        652,
+        664
+      ]
+    },
+    {
       "code": "AMD",
       "name": "AMD",
       "count": 4,
@@ -167,16 +184,16 @@
       ]
     },
     {
-      "code": "TSLA",
-      "name": "特斯拉",
+      "code": "2404",
+      "name": "漢唐",
       "count": 3,
-      "positive": 0,
-      "negative": 1,
+      "positive": 1,
+      "negative": 0,
       "neutral": 2,
       "episodes": [
-        647,
-        651,
-        652
+        654,
+        661,
+        664
       ]
     },
     {
@@ -249,18 +266,6 @@
       "episodes": [
         650,
         653
-      ]
-    },
-    {
-      "code": "2404",
-      "name": "漢唐",
-      "count": 2,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 2,
-      "episodes": [
-        654,
-        661
       ]
     },
     {
@@ -776,6 +781,50 @@
       "episodes": [
         662
       ]
+    },
+    {
+      "code": "GOOGL",
+      "name": "Google",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        664
+      ]
+    },
+    {
+      "code": "8291",
+      "name": "尚立",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        664
+      ]
+    },
+    {
+      "code": "3653",
+      "name": "健策",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        664
+      ]
+    },
+    {
+      "code": "NCC",
+      "name": "日本電容 (Chemi-Con)",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        664
+      ]
     }
   ],
   "sentiment_history": [
@@ -940,6 +989,15 @@
       "bull_pct": 70,
       "bear_pct": 30,
       "vix": 17.92
+    },
+    {
+      "episode": 664,
+      "date": "2026-05-23",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 16.7
     }
   ],
   "sector_mentions": {
