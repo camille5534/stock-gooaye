@@ -3,10 +3,10 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 15,
+      "count": 16,
       "positive": 11,
       "negative": 0,
-      "neutral": 4,
+      "neutral": 5,
       "episodes": [
         647,
         649,
@@ -22,7 +22,8 @@
         661,
         662,
         663,
-        664
+        664,
+        665
       ]
     },
     {
@@ -49,8 +50,8 @@
     {
       "code": "NVDA",
       "name": "輝達",
-      "count": 9,
-      "positive": 5,
+      "count": 10,
+      "positive": 6,
       "negative": 0,
       "neutral": 4,
       "episodes": [
@@ -62,7 +63,8 @@
         659,
         660,
         663,
-        664
+        664,
+        665
       ]
     },
     {
@@ -99,6 +101,37 @@
       ]
     },
     {
+      "code": "2327",
+      "name": "國巨（被動元件族群）",
+      "count": 6,
+      "positive": 6,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        652,
+        653,
+        654,
+        659,
+        661,
+        665
+      ]
+    },
+    {
+      "code": "TSLA",
+      "name": "特斯拉",
+      "count": 5,
+      "positive": 1,
+      "negative": 1,
+      "neutral": 3,
+      "episodes": [
+        647,
+        651,
+        652,
+        664,
+        665
+      ]
+    },
+    {
       "code": "AVGO",
       "name": "博通",
       "count": 5,
@@ -114,21 +147,6 @@
       ]
     },
     {
-      "code": "2327",
-      "name": "國巨（被動元件族群）",
-      "count": 5,
-      "positive": 5,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        652,
-        653,
-        654,
-        659,
-        661
-      ]
-    },
-    {
       "code": "PLTR",
       "name": "Palantir",
       "count": 4,
@@ -140,20 +158,6 @@
         652,
         658,
         659
-      ]
-    },
-    {
-      "code": "TSLA",
-      "name": "特斯拉",
-      "count": 4,
-      "positive": 1,
-      "negative": 1,
-      "neutral": 2,
-      "episodes": [
-        647,
-        651,
-        652,
-        664
       ]
     },
     {
@@ -194,6 +198,19 @@
         654,
         661,
         664
+      ]
+    },
+    {
+      "code": "VSH",
+      "name": "Vishay",
+      "count": 3,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        655,
+        660,
+        665
       ]
     },
     {
@@ -290,18 +307,6 @@
       "episodes": [
         655,
         661
-      ]
-    },
-    {
-      "code": "VSH",
-      "name": "Vishay",
-      "count": 2,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        655,
-        660
       ]
     },
     {
@@ -825,6 +830,28 @@
       "episodes": [
         664
       ]
+    },
+    {
+      "code": "SpaceX",
+      "name": "SpaceX",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        665
+      ]
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        665
+      ]
     }
   ],
   "sentiment_history": [
@@ -998,6 +1025,15 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 16.7
+    },
+    {
+      "episode": 665,
+      "date": "2026-05-27",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 16.29
     }
   ],
   "sector_mentions": {
