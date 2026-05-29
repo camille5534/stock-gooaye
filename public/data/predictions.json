@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-28",
+  "generated_at": "2026-05-29",
   "stats": {
     "total": 90,
-    "valid": 73,
-    "hits": 45,
+    "valid": 75,
+    "hits": 47,
     "misses": 28,
-    "pending": 7,
-    "win_rate": 62
+    "pending": 5,
+    "win_rate": 63
   },
   "picks": [
     {
@@ -1544,9 +1544,9 @@
       "d7_date": "2026-05-20",
       "d7_price": 268.5,
       "d7_pct": 23.17,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-05-27",
+      "d14_price": 370.0,
+      "d14_pct": 69.72,
       "correct": true,
       "status": "hit"
     },
@@ -2021,17 +2021,17 @@
       "ticker": "NVDA",
       "ep_date_actual": "2026-05-27",
       "ep_price": 212.6,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-05-28",
+      "d1_price": 214.25,
+      "d1_pct": 0.78,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     },
     {
       "episode": 665,
@@ -2044,17 +2044,17 @@
       "ticker": "VSH",
       "ep_date_actual": "2026-05-27",
       "ep_price": 48.9,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-05-28",
+      "d1_price": 52.24,
+      "d1_pct": 6.83,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     },
     {
       "episode": 665,
