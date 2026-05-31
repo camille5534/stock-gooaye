@@ -1,6 +1,6 @@
 {
-  "current": 16.29,
-  "updated_at": "2026-05-28",
+  "current": 15.32,
+  "updated_at": "2026-05-30",
   "zone": "neutral",
   "history": [
     {
@@ -74,6 +74,10 @@
     {
       "date": "2026-05-28",
       "value": 16.29
+    },
+    {
+      "date": "2026-05-30",
+      "value": 15.32
     }
   ]
 }

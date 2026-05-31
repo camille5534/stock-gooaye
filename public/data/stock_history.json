@@ -29,8 +29,8 @@
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 11,
-      "positive": 4,
+      "count": 12,
+      "positive": 5,
       "negative": 0,
       "neutral": 7,
       "episodes": [
@@ -44,7 +44,8 @@
         660,
         661,
         663,
-        664
+        664,
+        666
       ]
     },
     {
@@ -214,6 +215,19 @@
       ]
     },
     {
+      "code": "2492",
+      "name": "華新科",
+      "count": 3,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        659,
+        661,
+        666
+      ]
+    },
+    {
       "code": "MU",
       "name": "美光（Micron）",
       "count": 2,
@@ -322,18 +336,6 @@
       ]
     },
     {
-      "code": "2492",
-      "name": "華新科",
-      "count": 2,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        659,
-        661
-      ]
-    },
-    {
       "code": "6488",
       "name": "環球晶",
       "count": 2,
@@ -355,6 +357,18 @@
       "episodes": [
         659,
         660
+      ]
+    },
+    {
+      "code": "8299",
+      "name": "群聯",
+      "count": 2,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        662,
+        666
       ]
     },
     {
@@ -766,17 +780,6 @@
       ]
     },
     {
-      "code": "8299",
-      "name": "群聯",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        662
-      ]
-    },
-    {
       "code": "2395",
       "name": "研華",
       "count": 1,
@@ -851,6 +854,50 @@
       "neutral": 0,
       "episodes": [
         665
+      ]
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        666
+      ]
+    },
+    {
+      "code": "2382",
+      "name": "廣達",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        666
+      ]
+    },
+    {
+      "code": "6669",
+      "name": "緯穎",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        666
+      ]
+    },
+    {
+      "code": "6127",
+      "name": "九豪",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        666
       ]
     }
   ],
@@ -1034,6 +1081,15 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 16.29
+    },
+    {
+      "episode": 666,
+      "date": "2026-05-30",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 15.32
     }
   ],
   "sector_mentions": {
