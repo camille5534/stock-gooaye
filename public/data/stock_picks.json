@@ -1,11 +1,11 @@
 {
   "generated_at": "2026-06-03",
   "recent_episodes": [
-    662,
     663,
     664,
     665,
-    666
+    666,
+    667
   ],
   "active": [
     {
@@ -646,6 +646,14 @@
           "stance_score": 0,
           "quote": "「台積電拿到的配（分紅）已經超級好了...往長期看是會越來越多，那所以呢希望大家都可以稍微的成著按住自己心中的一股氣」",
           "ep_price": 2300.0
+        },
+        {
+          "episode": 667,
+          "date": "2026-06-03",
+          "stance": "正面",
+          "stance_score": 1,
+          "quote": "「TSMC 很明顯的在轉牆...投性的資金進來之後就有機會會把它推上去」",
+          "ep_price": 2425.0
         }
       ],
       "prices": [
@@ -842,7 +850,7 @@
           "close": 2425.0
         }
       ],
-      "last_mention_date": "2026-05-27",
+      "last_mention_date": "2026-06-03",
       "base_ep_price": 1950.0,
       "base_ep": 651,
       "current_price": 2425.0,
@@ -6189,13 +6197,17 @@
         {
           "date": "2026-06-02",
           "close": 360500.0
+        },
+        {
+          "date": "2026-06-04",
+          "close": 354000.0
         }
       ],
       "last_mention_date": "2026-04-08",
       "base_ep_price": 210500.0,
       "base_ep": 651,
-      "current_price": 360500.0,
-      "current_pct": 71.26
+      "current_price": 354000.0,
+      "current_pct": 68.17
     },
     {
       "code": "AAPL",

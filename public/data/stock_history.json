@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 16,
-      "positive": 11,
+      "count": 17,
+      "positive": 12,
       "negative": 0,
       "neutral": 5,
       "episodes": [
@@ -23,14 +23,15 @@
         662,
         663,
         664,
-        665
+        665,
+        667
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 12,
-      "positive": 5,
+      "count": 13,
+      "positive": 6,
       "negative": 0,
       "neutral": 7,
       "episodes": [
@@ -45,14 +46,15 @@
         661,
         663,
         664,
-        666
+        666,
+        667
       ]
     },
     {
       "code": "NVDA",
       "name": "輝達",
-      "count": 10,
-      "positive": 6,
+      "count": 11,
+      "positive": 7,
       "negative": 0,
       "neutral": 4,
       "episodes": [
@@ -65,14 +67,15 @@
         660,
         663,
         664,
-        665
+        665,
+        667
       ]
     },
     {
       "code": "MRVL",
       "name": "邁威爾",
-      "count": 7,
-      "positive": 6,
+      "count": 8,
+      "positive": 7,
       "negative": 0,
       "neutral": 1,
       "episodes": [
@@ -82,7 +85,24 @@
         652,
         653,
         655,
-        656
+        656,
+        667
+      ]
+    },
+    {
+      "code": "AVGO",
+      "name": "博通",
+      "count": 6,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 4,
+      "episodes": [
+        648,
+        649,
+        655,
+        656,
+        663,
+        667
       ]
     },
     {
@@ -130,21 +150,6 @@
         652,
         664,
         665
-      ]
-    },
-    {
-      "code": "AVGO",
-      "name": "博通",
-      "count": 5,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 3,
-      "episodes": [
-        648,
-        649,
-        655,
-        656,
-        663
       ]
     },
     {
@@ -899,6 +904,50 @@
       "episodes": [
         666
       ]
+    },
+    {
+      "code": "ON",
+      "name": "Onsemi",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        667
+      ]
+    },
+    {
+      "code": "ADI",
+      "name": "Analog Devices",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        667
+      ]
+    },
+    {
+      "code": "SNOW",
+      "name": "Snowflake",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        667
+      ]
+    },
+    {
+      "code": "5701",
+      "name": "劍湖山",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        667
+      ]
     }
   ],
   "sentiment_history": [
@@ -1090,6 +1139,15 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 15.32
+    },
+    {
+      "episode": 667,
+      "date": "2026-06-03",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 16.06
     }
   ],
   "sector_mentions": {

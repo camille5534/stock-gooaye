@@ -41,6 +41,13 @@
       "stance": "觀察",
       "intensity": 1,
       "quote": "漲太多不願意聊，等回檔再來討論細節"
+    },
+    {
+      "ep": 667,
+      "date": "2026-06-03",
+      "stance": "正面",
+      "intensity": 3,
+      "quote": "Computex 後 CPO 成市場新共識；Marvell 網路晶片被點名為下一個兆元市值標的；NVIDIA 定義光通訊為數據中心標配"
     }
   ],
   "電力/SMR": [
@@ -396,6 +403,13 @@
       "stance": "正面",
       "intensity": 2,
       "quote": "老 AI 回歸：ODM/EMS 廠（鴻海、廣達、緯穎）再次展現強勢，資金從光通訊等過熱題材輪動回來；百花齊放多頭格局"
+    },
+    {
+      "ep": 667,
+      "date": "2026-06-03",
+      "stance": "正面",
+      "intensity": 3,
+      "quote": "NVIDIA 轉型為 Total Solution infra supplier；MediaTek 與 NVIDIA 合作 AIPC 晶片設計；地端開源模型崛起降低雲端依賴"
     }
   ],
   "半導體/先進封裝": [
@@ -541,6 +555,13 @@
       "stance": "觀察",
       "intensity": 1,
       "quote": "台積電分紅技術性修正，長期基本面不變，持有邏輯穩固"
+    },
+    {
+      "ep": 667,
+      "date": "2026-06-03",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "台積電技術面轉強、資金面回流，有望補漲；Computex 後外資認識到其基礎建設地位"
     }
   ],
   "Intel封裝供應鏈": [
@@ -638,6 +659,15 @@
       "stance": "正面",
       "intensity": 2,
       "quote": "SpaceX IPO 帶動太空題材；Direct to Cell 手機直連衛星已商業化；Neo Cloud 軌道 AI 運算為下一個想像空間，台廠散熱與特殊材質供應鏈有機會"
+    }
+  ],
+  "功率半導體": [
+    {
+      "ep": 667,
+      "date": "2026-06-03",
+      "stance": "觀察",
+      "intensity": 2,
+      "quote": "Onsemi/ADI 基本面改善，漲價題材有可能從被動元件延伸至功率半導體；尚未看到全面缺貨信號"
     }
   ]
 }

@@ -1,0 +1,217 @@
+{
+  "episode": 667,
+  "date": "2026-06-03",
+  "title": "EP667 | 🌍",
+  "youtube_url": "https://www.youtube.com/watch?v=KbP_w4zFBGo",
+  "summary": "Computex 2024 後，NVIDIA 已從 GPU 廠商轉型為整個數據中心基礎建設的 Total Solution 供應商，光通訊（CPO）成為市場新共識，Marvell 被點名為下一個可能衝上兆元市值的網路晶片公司。AIPC 搭配開源地端模型崛起，Snowflake 等雲端數據公司面臨挑戰。功率半導體（Onsemi、ADI）基本面改善，被視為漲價題材的下一個匯聚點。台積電資金面轉強，技術面突破後有望補漲。謝孟恭同時分享品酒會體驗與「慢活運動」的生活實踐。",
+  "sentiment": {
+    "score": 8,
+    "label": "偏多",
+    "bull_pct": 80,
+    "bear_pct": 20,
+    "vix": 16.06
+  },
+  "keywords": [
+    "Computex",
+    "NVIDIA",
+    "MRVL",
+    "AIPC",
+    "光通訊",
+    "CPO",
+    "地端運算",
+    "被動元件",
+    "台積電",
+    "功率半導體"
+  ],
+  "stocks": [
+    {
+      "code": "MRVL",
+      "name": "Marvell",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「M 可能是下一個兆元市值企業，Mel 有點像是大牛車的東西，突然間變的飛天神牛直接射出去」",
+      "timestamp": "00:18:42",
+      "tags": ["AI", "光通訊", "CPO", "兆元市值"],
+      "price": 301.65,
+      "change_pct": null
+    },
+    {
+      "code": "NVDA",
+      "name": "輝達",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「現在變成是所有 infra 的一個 supplier...它跟 TSM 有點像，就是市場中的大龍頭...但他們其實都交易在一個相對便宜的位置」",
+      "timestamp": "00:25:15",
+      "tags": ["AI", "GPU", "龍頭", "基礎建設"],
+      "price": 214.75,
+      "change_pct": null
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「TSMC 很明顯的在轉牆...投性的資金進來之後就有機會會把它推上去」",
+      "timestamp": "00:36:08",
+      "tags": ["AI", "代工", "龍頭", "資金面回流"],
+      "price": 2400.0,
+      "change_pct": null
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「NVIDIA 或者是說像是 MediaTek 絕對是嘛，因為就幫他去做這個晶片的設計」",
+      "timestamp": "00:24:05",
+      "tags": ["AI PC", "IC設計", "合作", "客製化晶片"],
+      "price": 4515.0,
+      "change_pct": null
+    },
+    {
+      "code": "ON",
+      "name": "Onsemi",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「其實我們都注意到它的基本面有蠻顯著的在改善中...它確實有可能是下一波題材的一個匯聚點」",
+      "timestamp": "00:35:35",
+      "tags": ["功率半導體", "IDM", "基本面", "碳化矽"],
+      "price": 133.93,
+      "change_pct": null
+    },
+    {
+      "code": "ADI",
+      "name": "Analog Devices",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「漲價題材是否有可能會延伸到功率半導體...如 ADI...抓這兩個題材還蠻的」",
+      "timestamp": "00:35:42",
+      "tags": ["功率半導體", "PMIC", "漲價題材", "類比IC"],
+      "price": 437.67,
+      "change_pct": null
+    },
+    {
+      "code": "SNOW",
+      "name": "Snowflake",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「Snowflake 員工的反應呢，就是或許後面大家就不用這麼高度的去仰賴這個 data center...我自己去使用我的地端模型，我就可以產出非常好的一個效果」",
+      "timestamp": "00:22:15",
+      "tags": ["軟體", "地端AI", "模型", "成本優化"],
+      "price": 241.28,
+      "change_pct": null
+    },
+    {
+      "code": "AVGO",
+      "name": "博通",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「在 IC 這邊我是覺得說它還在一個發展的道路上，它沒有辦法像可能 MediaTek 或是像 Broadcom 是這麼樣的一個明確」",
+      "timestamp": "00:18:55",
+      "tags": ["IC設計", "通訊", "DSP"],
+      "price": 479.23,
+      "change_pct": null
+    },
+    {
+      "code": "5701",
+      "name": "劍湖山",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「劍湖山連三根，G5 真的要改成火箭發射的戰嗎」",
+      "timestamp": "00:43:20",
+      "tags": ["熱門股", "觀光", "題材", "噴發"],
+      "price": 5.85,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "667-life-1",
+      "title": "Computex 品酒會：頂級紅酒的資訊差與人脈價值",
+      "content": "謝孟恭分享參加 Computex 期間某品酒活動的體驗，喝到市售極難取得的頂級酒款。他推薦平價但高品質的 Catena（卡蒂娜）酒莊 Rebirth（重生）Malbec，以及清酒「富久長」（約 900 元），認為不一定要高價才能享受好酒，重點在於了解產區與釀酒師的用心。",
+      "timestamp": "00:26:40",
+      "tags": ["紅酒", "清酒", "品酒", "Computex", "生活品味"]
+    },
+    {
+      "id": "667-life-2",
+      "title": "慢活運動：透過感知訓練提升生命密度",
+      "content": "謝孟恭延續上集「正念」體悟，分享慢跑時刻意感受身體每個細節的實踐。他認為「天賦不是命定，而是個性決定輸出方式」，建議年輕人在還沒有資源時先忍耐，將壓力轉化為向上的能量。面試或挑戰時，「Fake it till you make it」不是欺騙，而是從模仿開始的學習過程。",
+      "timestamp": "00:39:20",
+      "tags": ["慢活", "正念", "天賦", "職場成長", "心理建設"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "667-1",
+      "question": "功率半導體和台積電現在值得關注嗎？",
+      "answer": "「功率半導體相關公司基本面有顯著改善，確實有可能是下一波題材的匯聚點，但目前沒看到全面性缺貨的情形。TSMC 形態確實有變強，NVIDIA 也有突破往上走，確實是有機會補漲。」",
+      "timestamp": "00:23:45",
+      "tags": ["功率半導體", "台積電", "NVDA", "補漲", "產業分析"]
+    },
+    {
+      "id": "667-2",
+      "question": "懂股票但空手看著漲，很難受怎麼辦？",
+      "answer": "「如果你是懂股票的，那你又一直在那邊空手，看著它上去，那個感受是完全不一樣的，是很難受的體驗。」",
+      "timestamp": "00:29:15",
+      "tags": ["投資心理", "空手", "心態"]
+    },
+    {
+      "id": "667-3",
+      "question": "面試沒自信、害怕被看穿怎麼辦？",
+      "answer": "「Fake it till you make it 並不是去假裝，而是從模仿開始。你光是有資格去投、有辦法坐在那邊面試，就已經是擊敗很多人、跟別人拉出一段差距了，不要想太多。」",
+      "timestamp": "00:39:20",
+      "tags": ["職場建議", "面試心態", "個人成長"]
+    },
+    {
+      "id": "667-4",
+      "question": "年輕時被職場霸凌，有什麼建議？",
+      "answer": "「年輕沒有資源時只能忍耐，它最終會變成能量督促你往前。但如果你已經有資源，以後遇到這種修理你小孩的人，你就去修理那個人就對了。我的最高指導原則是能不接觸人就儘量不要接觸人。」",
+      "timestamp": "00:32:40",
+      "tags": ["職場霸凌", "心理建設", "資源分配"]
+    },
+    {
+      "id": "667-5",
+      "question": "正二、0050 還是主動選股，哪個好？",
+      "answer": "「多頭時大家只會看到正二的好，空頭後就完全忘記。如果你覺得商品適合你，都可以嘗試，主動選股並不算是放棄（指數投資）。」",
+      "timestamp": "00:42:25",
+      "tags": ["正二", "0050", "槓桿", "主動選股", "ETF"]
+    },
+    {
+      "id": "667-6",
+      "question": "有推薦平價好喝的酒嗎？",
+      "answer": "「絕對不是高價的酒就一定比較厲害。我會推 Catena 酒莊的 Rebirth，Malbec 葡萄，平價且大多數人會喜歡。清酒的話推富久長，大概 900 塊超級好喝。」",
+      "timestamp": "00:34:10",
+      "tags": ["紅酒", "清酒", "生活", "平價推薦"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "光通訊/CPO",
+      "stance": "正面",
+      "intensity": 3,
+      "stocks": ["MRVL"],
+      "quote": "Computex 後 CPO 成市場新共識；Marvell 網路晶片被點名為下一個兆元市值標的；NVIDIA 定義光通訊為數據中心標配"
+    },
+    {
+      "name": "AI算力",
+      "stance": "正面",
+      "intensity": 3,
+      "stocks": ["NVDA", "2454"],
+      "quote": "NVIDIA 轉型為 Total Solution infra supplier；MediaTek 與 NVIDIA 合作 AIPC 晶片設計；地端開源模型崛起降低雲端依賴"
+    },
+    {
+      "name": "半導體代工",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["2330"],
+      "quote": "台積電技術面轉強、資金面回流，有望補漲；Computex 後外資認識到其基礎建設地位"
+    },
+    {
+      "name": "功率半導體",
+      "stance": "觀察",
+      "intensity": 2,
+      "stocks": ["ON", "ADI"],
+      "quote": "Onsemi/ADI 基本面改善，漲價題材有可能從被動元件延伸至功率半導體；尚未看到全面缺貨信號"
+    }
+  ]
+}
