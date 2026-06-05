@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-04",
+  "generated_at": "2026-06-05",
   "stats": {
     "total": 98,
-    "valid": 81,
-    "hits": 49,
+    "valid": 83,
+    "hits": 51,
     "misses": 32,
-    "pending": 7,
-    "win_rate": 60
+    "pending": 5,
+    "win_rate": 61
   },
   "picks": [
     {
@@ -2182,17 +2182,17 @@
       "ticker": "MRVL",
       "ep_date_actual": "2026-06-03",
       "ep_price": 301.65,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-06-04",
+      "d1_price": 316.43,
+      "d1_pct": 4.9,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     },
     {
       "episode": 667,
@@ -2205,17 +2205,17 @@
       "ticker": "NVDA",
       "ep_date_actual": "2026-06-03",
       "ep_price": 214.75,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-06-04",
+      "d1_price": 218.66,
+      "d1_pct": 1.82,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     },
     {
       "episode": 667,
