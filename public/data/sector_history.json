@@ -273,6 +273,13 @@
       "stance": "正面",
       "intensity": 2,
       "quote": "軟體股全面爆發扭轉末日論；關鍵在於收費模式從 Seat-based 轉 Token-based；數據主權與商務整合能力是下階段核心競爭力"
+    },
+    {
+      "ep": 668,
+      "date": "2026-06-06",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "Adobe 與 NVIDIA 深度協作，AI 實務應用（剪輯加速、圖片修復）已落地；代理型 AI 開啟新一輪軟體換代需求"
     }
   ],
   "台積電供應鏈": [
@@ -410,6 +417,13 @@
       "stance": "正面",
       "intensity": 3,
       "quote": "NVIDIA 轉型為 Total Solution infra supplier；MediaTek 與 NVIDIA 合作 AIPC 晶片設計；地端開源模型崛起降低雲端依賴"
+    },
+    {
+      "ep": 668,
+      "date": "2026-06-06",
+      "stance": "正面",
+      "intensity": 3,
+      "quote": "Computex 人勳展：NVIDIA 定義整個數據中心 Total Solution；Marvell 網通晶片表現強勁；Blackwell Enterprise 超級電容推升 ASP 近百倍"
     }
   ],
   "半導體/先進封裝": [
@@ -484,6 +498,13 @@
       "stance": "正面",
       "intensity": 1,
       "quote": "CPU Socket（加哲）是AI基礎建設升級的受惠者，屬於專業投資人關注的細分領域"
+    },
+    {
+      "ep": 668,
+      "date": "2026-06-06",
+      "stance": "正面",
+      "intensity": 2,
+      "quote": "RTX Spark + 聯發科 AIPC 合作成功機率高；統一記憶體架構（Unify Memory）是關鍵技術突破；高通時間點未到但方向正確"
     }
   ],
   "低軌衛星/啟碁": [

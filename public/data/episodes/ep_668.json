@@ -1,0 +1,181 @@
+{
+  "episode": 668,
+  "date": "2026-06-06",
+  "title": "EP668 | 🦎",
+  "youtube_url": "https://www.youtube.com/watch?v=xgOQsb-MIGY",
+  "summary": "Computex 2024 實地觀察：NVIDIA 已成為「人勳展」，AI 應用從虛幻轉向實務（剪輯、修圖、3A 遊戲優化），RTX Spark 與聯發科 AIPC 合作成功機率高，華碩 ROG 旗艦眼鏡直接向大廠宣戰。本集同時針對週五美股夜盤大跌（台指期最深 -10%）給出完整分析：定性為「漲多還債」與「籌碼清洗」，清的是槓桿仔，產業基本面未變，投資人應 brace for impact 並靜待籌碼乾淨後重新布局。",
+  "sentiment": {
+    "score": 8,
+    "label": "偏多",
+    "bull_pct": 80,
+    "bear_pct": 20,
+    "vix": 21.51
+  },
+  "keywords": [
+    "Computex",
+    "NVIDIA",
+    "AIPC",
+    "RTX Spark",
+    "夜盤大跌",
+    "籌碼清洗",
+    "黃仁勳",
+    "聯發科",
+    "統一記憶體",
+    "代理型AI"
+  ],
+  "stocks": [
+    {
+      "code": "NVDA",
+      "name": "輝達",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「你真的一走進去就發現說其實 Computex 這個是人勳展啊，就你走到哪裡都是人勳的東西。」",
+      "timestamp": "00:05:41",
+      "tags": ["Jensen Huang", "Computex", "Blackwell", "Enterprise"],
+      "price": 205.1,
+      "change_pct": null
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「我覺得這次 RTX Spark 目前從這個 demo 的內容來看，我覺得它成功的機率會是高的。」",
+      "timestamp": "00:19:15",
+      "tags": ["RTX AI PC", "IC設計", "聯發哥", "統一記憶體"],
+      "price": 4300.0,
+      "change_pct": null
+    },
+    {
+      "code": "ADBE",
+      "name": "Adobe",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「甚至會感覺說 Nvidia 跟 Adobe 是不是有什麼...我相信檯面下應該要更多深度的合作跟開發案在進行中。」",
+      "timestamp": "00:14:02",
+      "tags": ["AI應用", "軟硬體協作", "創作工具", "換代需求"],
+      "price": 251.44,
+      "change_pct": null
+    },
+    {
+      "code": "2357",
+      "name": "華碩",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「我覺得這次 ROG 也是精銳盡出啦，他們已經是洪荒之力了，很明顯講他們跟市面上的這些大廠們宣戰，真的是直接宣戰。」",
+      "timestamp": "00:23:44",
+      "tags": ["ROG", "電競品牌", "旗艦產品", "AI眼鏡"],
+      "price": 900.0,
+      "change_pct": null
+    },
+    {
+      "code": "MRVL",
+      "name": "Marvell",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「反正我在美國也是突然間 Marvell 表現的還蠻好的。」",
+      "timestamp": "00:30:57",
+      "tags": ["美股", "網通晶片", "CPO"],
+      "price": 263.47,
+      "change_pct": null
+    },
+    {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「你說可以到 1000 我不太相信可以到 1000，可是最後面他可能就真的到 1000, 2000, 3000 去了。」",
+      "timestamp": "00:10:35",
+      "tags": ["價格錨定", "長期持有", "成長潛力"],
+      "price": 2365.0,
+      "change_pct": null
+    },
+    {
+      "code": "QCOM",
+      "name": "高通",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「那高通的那一次呢，嚴格上來說是有一點失敗，那不能夠怪他，而是說就時間還沒有到。」",
+      "timestamp": "00:21:42",
+      "tags": ["Local AI", "市場時機", "早期嘗試"],
+      "price": 215.94,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "668-life-1",
+      "title": "Computex 現場觀察：AI 已從虛幻轉向實務",
+      "content": "謝孟恭親赴 Computex 2024，觀察到展會性質從「打高空」轉為展示真實改善工作流的 AI 應用（剪輯加速、圖片修復、3A 遊戲優化、Agentic AI 代理）。黃仁勳已成全球超級巨星，展場中隨處可見其簽名。他認為展會從純專業走向大眾化雖有批評聲音，但這代表 AI 產業已獲跨領域極高關注，有助於創造更多生意機會。",
+      "timestamp": "00:05:00",
+      "tags": ["Computex", "AI應用", "黃仁勳", "產業觀察"]
+    },
+    {
+      "id": "668-life-2",
+      "title": "夜盤大跌的應對哲學：籌碼清洗是好事",
+      "content": "週五美股夜盤出現劇烈波動，台指期最深摸到 -10%，謝孟恭定性為「漲多還債」加上「籌碼清洗」。清的是高槓桿期貨投資者（槓桿仔），股期 8:45 開盤殺後快速拉升是斷頭平倉訊號。他認為此波清洗對長期市場健康是正面的，產業基本面（Computex 觀察到的實務 AI 應用）並未改變，投資人應做好 brace for impact 心理準備，等待槓桿清理乾淨後再找新方向。",
+      "timestamp": "00:44:11",
+      "tags": ["夜盤大跌", "籌碼清洗", "槓桿", "風控", "心理建設"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "668-1",
+      "question": "週五夜盤大跌，台股週一怎麼看？",
+      "answer": "「昨天夜盤已經出現了大場面...最深的時候，我看台子有摸到負 10% 拉到負 67% 左右。所以下禮拜呢，大家就是 brace for impact。我覺得這樣子去洗一下籌碼絕對是好事...禮拜一這樣殺一殺，如果有些是鎖死的話，可能就需要在兩三天的時候把裡面這些槓桿仔給清掉。」",
+      "timestamp": "00:44:11",
+      "tags": ["夜盤大跌", "台股", "籌碼清洗", "風控"]
+    },
+    {
+      "id": "668-2",
+      "question": "這次回檔是基本面出問題嗎？",
+      "answer": "「你舒服了，你就是會...你知道要還啦，一定會有天法、一定會有天前...在舒服的當下，你跟大家講，當然老聽眾一定都知道，大家都已經做好心理準備。」產業基本面沒有問題，Computex 看到的 AI 應用都是實務落地，下跌是漲多回檔與槓桿清理。",
+      "timestamp": "00:44:26",
+      "tags": ["回檔", "基本面", "心態", "市場觀點"]
+    },
+    {
+      "id": "668-3",
+      "question": "腰痠背痛怎麼改善？",
+      "answer": "「透過物理治療師指導的引導式呼吸，把氣引導到下背部，讓肌肉放鬆。很多下背痛是因為坐姿時核心過度用力造成的，透過呼吸方式調整可以大幅改善。」",
+      "timestamp": "00:38:25",
+      "tags": ["生活", "健康", "物理治療", "呼吸方式"]
+    },
+    {
+      "id": "668-4",
+      "question": "技術面停損停利怎麼操作？",
+      "answer": "「技術面交易要先定義好自己的規則，大型權值股跟小型題材股的停損邏輯不一樣，不要死板執行同一套。設好了就要執行，不然定規則沒有意義。」",
+      "timestamp": "00:45:15",
+      "tags": ["技術分析", "停損", "風控", "選股"]
+    },
+    {
+      "id": "668-5",
+      "question": "不要盲目跟單，那要怎麼做決策？",
+      "answer": "「就不要去講說啊我都是聽誰講的，然後我去買，我覺得這種人就是拿香跟拜的啊...大家自己他媽動腦好不好。即便跟隨同樣的標的，每個人的腦力、抗壓性與認知能力不同，結果也會大相徑庭。」",
+      "timestamp": "00:50:18",
+      "tags": ["心態", "選股", "獨立思考", "風控"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "AI算力",
+      "stance": "正面",
+      "intensity": 3,
+      "stocks": ["NVDA", "MRVL"],
+      "quote": "Computex 人勳展：NVIDIA 定義整個數據中心 Total Solution；Marvell 網通晶片表現強勁；Blackwell Enterprise 超級電容推升 ASP 近百倍"
+    },
+    {
+      "name": "CPU/處理器",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["2454", "QCOM"],
+      "quote": "RTX Spark + 聯發科 AIPC 合作成功機率高；統一記憶體架構（Unify Memory）是關鍵技術突破；高通時間點未到但方向正確"
+    },
+    {
+      "name": "AI軟體/SaaS",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["ADBE"],
+      "quote": "Adobe 與 NVIDIA 深度協作，AI 實務應用（剪輯加速、圖片修復）已落地；代理型 AI 開啟新一輪軟體換代需求"
+    }
+  ]
+}

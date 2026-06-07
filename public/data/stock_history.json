@@ -3,10 +3,10 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 17,
+      "count": 18,
       "positive": 12,
       "negative": 0,
-      "neutral": 5,
+      "neutral": 6,
       "episodes": [
         647,
         649,
@@ -24,14 +24,15 @@
         663,
         664,
         665,
-        667
+        667,
+        668
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 13,
-      "positive": 6,
+      "count": 14,
+      "positive": 7,
       "negative": 0,
       "neutral": 7,
       "episodes": [
@@ -47,14 +48,15 @@
         663,
         664,
         666,
-        667
+        667,
+        668
       ]
     },
     {
       "code": "NVDA",
       "name": "輝達",
-      "count": 11,
-      "positive": 7,
+      "count": 12,
+      "positive": 8,
       "negative": 0,
       "neutral": 4,
       "episodes": [
@@ -68,14 +70,15 @@
         663,
         664,
         665,
-        667
+        667,
+        668
       ]
     },
     {
       "code": "MRVL",
       "name": "邁威爾",
-      "count": 8,
-      "positive": 7,
+      "count": 9,
+      "positive": 8,
       "negative": 0,
       "neutral": 1,
       "episodes": [
@@ -86,7 +89,8 @@
         653,
         655,
         656,
-        667
+        667,
+        668
       ]
     },
     {
@@ -341,6 +345,18 @@
       ]
     },
     {
+      "code": "ADBE",
+      "name": "Adobe",
+      "count": 2,
+      "positive": 1,
+      "negative": 1,
+      "neutral": 0,
+      "episodes": [
+        658,
+        668
+      ]
+    },
+    {
       "code": "6488",
       "name": "環球晶",
       "count": 2,
@@ -362,6 +378,18 @@
       "episodes": [
         659,
         660
+      ]
+    },
+    {
+      "code": "QCOM",
+      "name": "高通",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        661,
+        668
       ]
     },
     {
@@ -576,17 +604,6 @@
       ]
     },
     {
-      "code": "ADBE",
-      "name": "Adobe",
-      "count": 1,
-      "positive": 0,
-      "negative": 1,
-      "neutral": 0,
-      "episodes": [
-        658
-      ]
-    },
-    {
       "code": "TEAM",
       "name": "Atlassian",
       "count": 1,
@@ -721,17 +738,6 @@
     {
       "code": "3548",
       "name": "加哲",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        661
-      ]
-    },
-    {
-      "code": "QCOM",
-      "name": "高通",
       "count": 1,
       "positive": 1,
       "negative": 0,
@@ -948,6 +954,17 @@
       "episodes": [
         667
       ]
+    },
+    {
+      "code": "2357",
+      "name": "華碩",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        668
+      ]
     }
   ],
   "sentiment_history": [
@@ -1148,6 +1165,15 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 16.06
+    },
+    {
+      "episode": 668,
+      "date": "2026-06-06",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 21.51
     }
   ],
   "sector_mentions": {
