@@ -18,13 +18,14 @@ OUT_FILE = ROOT / "public" / "data" / "stock_picks.json"
 
 SKIP_STANCES = {"觀察", "中立", "neutral", "observe"}
 # 非上市實體或族群概念代號，跳過價格追蹤
-SKIP_TICKERS = {"光通訊", "AWS", "NCC", "Anthropic", "SiFive"}
+SKIP_TICKERS = {"光通訊", "AWS", "NCC", "Anthropic", "SiFive", "SpaceX"}
 # 非台股的代號 → 正確市場後綴
 TICKER_MAP = {
     "005930": "005930.KS",  # 三星電子 KOSPI
     "PCRFY": "6752.T",      # 松下 Panasonic Holdings（東證）
     "ROHM": "6963.T",       # ROHM 半導體（東證）
     "CAMic": "6996.T",      # Nippon Chemi-Con（東證）
+    "MEL": "6981.T",        # 村田製作所 Murata（東證）
 }
 TODAY = datetime.date.today()
 

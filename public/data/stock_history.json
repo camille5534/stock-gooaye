@@ -3,10 +3,10 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 18,
-      "positive": 12,
+      "count": 20,
+      "positive": 13,
       "negative": 0,
-      "neutral": 6,
+      "neutral": 7,
       "episodes": [
         647,
         649,
@@ -25,16 +25,18 @@
         664,
         665,
         667,
-        668
+        668,
+        669,
+        670
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 14,
+      "count": 16,
       "positive": 7,
       "negative": 0,
-      "neutral": 7,
+      "neutral": 9,
       "episodes": [
         649,
         653,
@@ -49,7 +51,9 @@
         664,
         666,
         667,
-        668
+        668,
+        669,
+        670
       ]
     },
     {
@@ -94,6 +98,40 @@
       ]
     },
     {
+      "code": "2327",
+      "name": "國巨（被動元件族群）",
+      "count": 8,
+      "positive": 8,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        652,
+        653,
+        654,
+        659,
+        661,
+        665,
+        669,
+        670
+      ]
+    },
+    {
+      "code": "TSLA",
+      "name": "特斯拉",
+      "count": 6,
+      "positive": 2,
+      "negative": 1,
+      "neutral": 3,
+      "episodes": [
+        647,
+        651,
+        652,
+        664,
+        665,
+        670
+      ]
+    },
+    {
       "code": "AVGO",
       "name": "博通",
       "count": 6,
@@ -123,37 +161,6 @@
         654,
         656,
         658
-      ]
-    },
-    {
-      "code": "2327",
-      "name": "國巨（被動元件族群）",
-      "count": 6,
-      "positive": 6,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        652,
-        653,
-        654,
-        659,
-        661,
-        665
-      ]
-    },
-    {
-      "code": "TSLA",
-      "name": "特斯拉",
-      "count": 5,
-      "positive": 1,
-      "negative": 1,
-      "neutral": 3,
-      "episodes": [
-        647,
-        651,
-        652,
-        664,
-        665
       ]
     },
     {
@@ -195,6 +202,19 @@
         647,
         658,
         660
+      ]
+    },
+    {
+      "code": "AAPL",
+      "name": "蘋果",
+      "count": 3,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        648,
+        651,
+        669
       ]
     },
     {
@@ -273,18 +293,6 @@
       ]
     },
     {
-      "code": "AAPL",
-      "name": "蘋果",
-      "count": 2,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        648,
-        651
-      ]
-    },
-    {
       "code": "8069",
       "name": "元太",
       "count": 2,
@@ -357,6 +365,18 @@
       ]
     },
     {
+      "code": "3661",
+      "name": "世芯-KY",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        659,
+        670
+      ]
+    },
+    {
       "code": "6488",
       "name": "環球晶",
       "count": 2,
@@ -414,6 +434,18 @@
       "episodes": [
         662,
         663
+      ]
+    },
+    {
+      "code": "SpaceX",
+      "name": "SpaceX",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        665,
+        670
       ]
     },
     {
@@ -617,17 +649,6 @@
     {
       "code": "3443",
       "name": "創意",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        659
-      ]
-    },
-    {
-      "code": "3661",
-      "name": "世芯-KY",
       "count": 1,
       "positive": 1,
       "negative": 0,
@@ -846,17 +867,6 @@
       ]
     },
     {
-      "code": "SpaceX",
-      "name": "SpaceX",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        665
-      ]
-    },
-    {
       "code": "0050",
       "name": "元大台灣50",
       "count": 1,
@@ -964,6 +974,61 @@
       "neutral": 0,
       "episodes": [
         668
+      ]
+    },
+    {
+      "code": "3008",
+      "name": "大立光",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        669
+      ]
+    },
+    {
+      "code": "MEL",
+      "name": "村田製作所",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        670
+      ]
+    },
+    {
+      "code": "RKLB",
+      "name": "Rocket Lab",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        670
+      ]
+    },
+    {
+      "code": "ASTS",
+      "name": "AST SpaceMobile",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        670
+      ]
+    },
+    {
+      "code": "PL",
+      "name": "Planet Labs",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        670
       ]
     }
   ],
@@ -1174,6 +1239,24 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 21.51
+    },
+    {
+      "episode": 669,
+      "date": "2026-06-10",
+      "score": 7,
+      "label": "偏多",
+      "bull_pct": 70,
+      "bear_pct": 30,
+      "vix": 17.68
+    },
+    {
+      "episode": 670,
+      "date": "2026-06-13",
+      "score": 6,
+      "label": "偏多",
+      "bull_pct": 60,
+      "bear_pct": 40,
+      "vix": 17.68
     }
   ],
   "sector_mentions": {
