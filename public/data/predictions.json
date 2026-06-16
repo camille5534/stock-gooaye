@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-15",
+  "generated_at": "2026-06-16",
   "stats": {
     "total": 110,
-    "valid": 91,
-    "hits": 55,
+    "valid": 93,
+    "hits": 57,
     "misses": 36,
-    "pending": 8,
-    "win_rate": 60
+    "pending": 6,
+    "win_rate": 61
   },
   "picks": [
     {
@@ -2278,8 +2278,8 @@
       "d1_price": 208.19,
       "d1_pct": -0.22,
       "d7_date": "2026-06-15",
-      "d7_price": 209.88,
-      "d7_pct": 0.59,
+      "d7_price": 212.45,
+      "d7_pct": 1.83,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
@@ -2324,8 +2324,8 @@
       "d1_price": 237.88,
       "d1_pct": -2.9,
       "d7_date": "2026-06-15",
-      "d7_price": 209.42,
-      "d7_pct": -14.52,
+      "d7_price": 206.36,
+      "d7_pct": -15.77,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
@@ -2370,8 +2370,8 @@
       "d1_price": 266.88,
       "d1_pct": -7.61,
       "d7_date": "2026-06-15",
-      "d7_price": 299.29,
-      "d7_pct": 3.61,
+      "d7_price": 308.88,
+      "d7_pct": 6.93,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
@@ -2458,17 +2458,17 @@
       "ticker": "2327.TW",
       "ep_date_actual": "2026-06-15",
       "ep_price": 940.0,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-06-16",
+      "d1_price": 950.0,
+      "d1_pct": 1.06,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     },
     {
       "episode": 670,
@@ -2503,7 +2503,7 @@
       "quote": "「這會有一點類似像我自己去持有特斯拉一樣，它會有一點那種就是我是去相挺他，那我覺得到這個題材很酷的一個背景去做持有」",
       "ticker": "TSLA",
       "ep_date_actual": "2026-06-15",
-      "ep_price": 412.93,
+      "ep_price": 411.15,
       "d1_date": null,
       "d1_price": null,
       "d1_pct": null,
@@ -2527,17 +2527,17 @@
       "ticker": "3661.TW",
       "ep_date_actual": "2026-06-15",
       "ep_price": 4250.0,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-06-16",
+      "d1_price": 4315.0,
+      "d1_pct": 1.53,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     }
   ]
 }
