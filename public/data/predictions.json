@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24",
+  "generated_at": "2026-06-25",
   "stats": {
     "total": 110,
     "valid": 94,
@@ -2441,9 +2441,9 @@
       "d7_date": "2026-06-17",
       "d7_price": 295.95,
       "d7_pct": 1.5,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-06-24",
+      "d14_price": 293.08,
+      "d14_pct": 0.51,
       "correct": true,
       "status": "hit"
     },
