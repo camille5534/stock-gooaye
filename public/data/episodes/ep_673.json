@@ -1,0 +1,260 @@
+{
+  "episode": 673,
+  "date": "2026-06-24",
+  "title": "EP673 | 🥬",
+  "youtube_url": "https://www.youtube.com/watch?v=YS_nOUjrqAc",
+  "summary": "台股短時間拉升 6000 點後技術性回檔，長多格局未變；韓國散戶槓桿 ETF 爆倉為近期波動觸媒。聯發科全面漲價並與 Google 合作 Triggerfish 晶片；被動元件電阻 7 月初將有新一波漲價；光通訊美股（COHR、MRVL）為首選。本集並分享全聯平價葡萄酒系統性評選與風險管理心法。",
+  "sentiment": {
+    "score": 8,
+    "label": "偏多",
+    "bull_pct": 80,
+    "bear_pct": 20,
+    "vix": 18.63
+  },
+  "keywords": [
+    "聯發科",
+    "被動元件",
+    "台積電",
+    "電阻漲價",
+    "葡萄酒推薦",
+    "韓國股市",
+    "槓桿風險",
+    "Triggerfish",
+    "功能性訓練",
+    "風險管理"
+  ],
+  "stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「垃圾盤感覺不會出現，所以就再一次的跑回去中小裡面」",
+      "timestamp": "00:15:35",
+      "tags": ["權值股", "資金流向", "拉回修正"],
+      "price": 2340.0,
+      "change_pct": null
+    },
+    {
+      "code": "2327",
+      "name": "國巨",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「基本上這波修正跟沒有跌到一樣」",
+      "timestamp": "00:14:38",
+      "tags": ["被動元件", "相對強勢", "修正抗跌"],
+      "price": 1015.0,
+      "change_pct": null
+    },
+    {
+      "code": "2454",
+      "name": "聯發科",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「這對於整個公司的財務數字來說，我覺得就是一個加分項，是一個蠻不錯的訊號。重點是說你長得動客戶啦，客戶給你漲，這個就是一個好事情。」",
+      "timestamp": "00:16:32",
+      "tags": ["漲價題材", "財務增益", "定價權", "Triggerfish"],
+      "price": 3880.0,
+      "change_pct": null
+    },
+    {
+      "code": "AVGO",
+      "name": "博通",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「他沒有被跳過，他就是有新的產品的產生...叫作 Whitefish，它其實就用前一個 fish 然後去把它變成是雙拼的晶片」",
+      "timestamp": "00:18:21",
+      "tags": ["Whitefish", "雙拼晶片", "第九代產品", "載板"],
+      "price": 378.91,
+      "change_pct": null
+    },
+    {
+      "code": "NVDA",
+      "name": "NVIDIA",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「前面前面真的漲非常多，所以後面的一些力多不一定推上去」",
+      "timestamp": "00:16:22",
+      "tags": ["漲多拉回", "大型股"],
+      "price": 195.74,
+      "change_pct": null
+    },
+    {
+      "code": "MU",
+      "name": "美光",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「我自己是已經很久沒有再去買進記憶體股票」",
+      "timestamp": "00:27:01",
+      "tags": ["記憶體", "投資配置", "觀察期"],
+      "price": 1213.56,
+      "change_pct": null
+    },
+    {
+      "code": "GOOGL",
+      "name": "Google",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「聯發科這裡有一個新的晶片有拿到，就 Google 給他 SoC 叫作 Trigger Fish」",
+      "timestamp": "00:17:15",
+      "tags": ["Triggerfish", "自研晶片", "委託設計"],
+      "price": 343.71,
+      "change_pct": null
+    },
+    {
+      "code": "COHR",
+      "name": "Coherent",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「我最喜歡的就是成跟 COHR」",
+      "timestamp": "00:32:04",
+      "tags": ["光通訊", "美股首選"],
+      "price": 407.25,
+      "change_pct": null
+    },
+    {
+      "code": "MRVL",
+      "name": "Marvell",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「我最喜歡的就是成跟 Marvel」",
+      "timestamp": "00:32:04",
+      "tags": ["光通訊", "美股首選"],
+      "price": 281.26,
+      "change_pct": null
+    },
+    {
+      "code": "NOK",
+      "name": "Nokia",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「它不是像大家想像的手機，也不是大家想像的基地台，開始有去切一些比較酷的業務啦」",
+      "timestamp": "00:32:15",
+      "tags": ["業務轉型", "轉機題材", "光纖"],
+      "price": 13.98,
+      "change_pct": null
+    },
+    {
+      "code": "000660",
+      "name": "SK海力士",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「SK 海力士 8 月要在美國上 ADR」",
+      "timestamp": "00:26:45",
+      "tags": ["ADR上市", "記憶體", "韓股"],
+      "price": null,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "673-life-1",
+      "title": "全聯葡萄酒系統性評選：平價甜蜜點指南",
+      "content": "應聽眾要求，謝孟恭分享以 Vivino 掃描為輔的全聯平價葡萄酒選法。甜蜜點落在台幣 1000-3000 元之間。推薦紅酒：DV Catena Malbec（阿根廷，濃郁黑李子果香，物超所值）、Luca Laborde Syrah（野味單寧，配重口味）、Bardos Reserva（西班牙現代風，黑醋栗與雪松）。推薦白酒：Faiveley Bourgogne Chardonnay 2022（老藤，青蘋果礦石）、Matua Sauvignon Blanc（紐西蘭，高酸清爽，夏天首選，需極低溫飲用）。",
+      "timestamp": "00:09:00",
+      "tags": ["葡萄酒", "全聯", "生活品味", "Vivino"]
+    },
+    {
+      "id": "673-life-2",
+      "title": "功能性訓練的益處",
+      "content": "謝孟恭分享接觸功能性訓練（Functional Training）後的心得：對關節活動度與發力模式有極大改善，打網球時全身肌肉能協調運用，連日常動作（如刷牙站姿）都更穩定。對長期在高壓環境工作的人來說，功能性訓練是值得投資的健康資產。",
+      "timestamp": "00:43:55",
+      "tags": ["功能性訓練", "健身", "關節活動度", "健康"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "673-1",
+      "question": "最愛喝什麼飲料？",
+      "answer": "「以前學生時期喜歡清心的多綠糖少冰，長大後轉向無糖茶，只要是無糖茶少冰我都覺得讚。」",
+      "timestamp": "00:23:45",
+      "tags": ["生活", "手搖飲"]
+    },
+    {
+      "id": "673-2",
+      "question": "資產從百萬到千萬的心態轉變與研究策略？",
+      "answer": "「資產增加到後來變工作一環，其實沒什麼興奮感。到千萬的時候甚至沒有百萬高興，因為你會認識一些怪物的存在。我從未被追繳過，寧願慢一點也不要讓自己有風險。我的打法不會開太大槓桿，這是不容許的基礎風控。」",
+      "timestamp": "00:25:30",
+      "tags": ["心態調整", "風險管理", "資產等級", "財富觀"]
+    },
+    {
+      "id": "673-3",
+      "question": "韓國人素質與記憶體股（SK海力士、美光）怎麼配置？",
+      "answer": "「韓國確實競爭壓力大，路人跟司機都很兇。我很久沒買記憶體股票了，現在都在弄別的題材，喜歡的話可以買，但我沒建議。」",
+      "timestamp": "00:34:20",
+      "tags": ["韓國", "記憶體", "SK海力士", "美光"]
+    },
+    {
+      "id": "673-4",
+      "question": "職場壓力大，如何像謝孟恭一樣無視惡劣環境？",
+      "answer": "「我是很有意識地讓自己不依賴任何組織，隨時抱持失去一切的準備，這樣才敢對不合理的事幹回去。建議大家為自己工作，為自己負責。」",
+      "timestamp": "00:39:10",
+      "tags": ["職場", "自我價值", "獨立性", "心態"]
+    },
+    {
+      "id": "673-5",
+      "question": "功能性訓練對體態與運動有什麼實際幫助？",
+      "answer": "「功能性訓練對關節活動度與發力解構非常有效，打網球時全身肌肉都能運用到，甚至刷牙站姿都能調整，我覺得超級值得學。」",
+      "timestamp": "00:43:55",
+      "tags": ["健身", "功能性訓練", "健康"]
+    },
+    {
+      "id": "673-6",
+      "question": "孩子教育哲學：如何看待《葬送的芙莉蓮》中父子羈絆？",
+      "answer": "「我盡量當孩子需要時立刻在場的父親，但不讓他依賴。希望孩子能獨立，哪怕只是開間小漫畫店能養活自己就好。」",
+      "timestamp": "00:46:50",
+      "tags": ["親子關係", "教育", "獨立自主"]
+    },
+    {
+      "id": "673-7",
+      "question": "美股光通訊佔比與對 Nokia 的看法？",
+      "answer": "「目前光通訊比例低，已轉向 CPU。Nokia 轉切一些酷的業務（如光纖），有轉機產生，可持續關注。」",
+      "timestamp": "00:51:20",
+      "tags": ["美股", "光通訊", "Nokia", "轉機股"]
+    },
+    {
+      "id": "673-8",
+      "question": "入伍前部位如何調整？對 GTA6 合作有期待嗎？",
+      "answer": "「入伍前若會心神不寧，建議將短線換成大盤 ETF。GTA6 廣告因排程已滿可能無法合作，且我現在只想完全隱形。」",
+      "timestamp": "00:53:15",
+      "tags": ["兵役", "投資建議", "GTA6", "ETF"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "被動元件",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["2327"],
+      "quote": "國巨這波修正抗跌，相對強勢；電阻（R-Chip）7 月初預計新一波漲價，採購端已接受調價"
+    },
+    {
+      "name": "光通訊",
+      "stance": "正面",
+      "intensity": 3,
+      "stocks": ["COHR", "MRVL", "NOK"],
+      "quote": "謝孟恭美股最愛首選 COHR 與 MRVL；Nokia 轉切新業務（光纖）具轉機；光通訊為 AI 算力基礎建設核心受惠"
+    },
+    {
+      "name": "IC設計",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["2454", "AVGO", "GOOGL"],
+      "quote": "聯發科全面漲價展現定價權，並拿下 Google Triggerfish SoC 訂單；博通推出 Whitefish 雙拼晶片，澄清並未跳過第九代產品"
+    },
+    {
+      "name": "AI算力/大型科技",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": ["NVDA", "2330"],
+      "quote": "台積電與 NVIDIA 漲多後力道趨緩，市場修正後觀察是否重回中小型股還是權值股主導"
+    },
+    {
+      "name": "記憶體",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": ["MU", "000660"],
+      "quote": "謝孟恭很久沒買記憶體股，SK 海力士 8 月將在美國上 ADR；記憶體題材暫時不在主要配置內"
+    }
+  ]
+}

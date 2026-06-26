@@ -22,10 +22,12 @@ SKIP_TICKERS = {"光通訊", "AWS", "NCC", "Anthropic", "SiFive", "SpaceX"}
 # 非台股的代號 → 正確市場後綴
 TICKER_MAP = {
     "005930": "005930.KS",  # 三星電子 KOSPI
+    "000660": "000660.KS",  # SK海力士 KOSPI
     "PCRFY": "6752.T",      # 松下 Panasonic Holdings（東證）
     "ROHM": "6963.T",       # ROHM 半導體（東證）
     "CAMic": "6996.T",      # Nippon Chemi-Con（東證）
     "MEL": "6981.T",        # 村田製作所 Murata（東證）
+    "INF": "IFNNY",         # 英飛凌 Infineon ADR
 }
 TODAY = datetime.date.today()
 

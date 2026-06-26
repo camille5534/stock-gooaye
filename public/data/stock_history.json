@@ -3,10 +3,10 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 21,
+      "count": 23,
       "positive": 14,
       "negative": 0,
-      "neutral": 7,
+      "neutral": 9,
       "episodes": [
         647,
         649,
@@ -28,14 +28,16 @@
         668,
         669,
         670,
-        672
+        671,
+        672,
+        673
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 16,
-      "positive": 7,
+      "count": 17,
+      "positive": 8,
       "negative": 0,
       "neutral": 9,
       "episodes": [
@@ -54,16 +56,17 @@
         667,
         668,
         669,
-        670
+        670,
+        673
       ]
     },
     {
       "code": "NVDA",
       "name": "輝達",
-      "count": 13,
+      "count": 14,
       "positive": 9,
       "negative": 0,
-      "neutral": 4,
+      "neutral": 5,
       "episodes": [
         648,
         649,
@@ -77,14 +80,15 @@
         665,
         667,
         668,
-        672
+        672,
+        673
       ]
     },
     {
       "code": "MRVL",
       "name": "邁威爾",
-      "count": 10,
-      "positive": 9,
+      "count": 11,
+      "positive": 10,
       "negative": 0,
       "neutral": 1,
       "episodes": [
@@ -97,16 +101,17 @@
         656,
         667,
         668,
-        672
+        672,
+        673
       ]
     },
     {
       "code": "2327",
       "name": "國巨（被動元件族群）",
-      "count": 9,
-      "positive": 8,
+      "count": 11,
+      "positive": 9,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 2,
       "episodes": [
         652,
         653,
@@ -116,7 +121,26 @@
         665,
         669,
         670,
-        672
+        671,
+        672,
+        673
+      ]
+    },
+    {
+      "code": "AVGO",
+      "name": "博通",
+      "count": 7,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 5,
+      "episodes": [
+        648,
+        649,
+        655,
+        656,
+        663,
+        667,
+        673
       ]
     },
     {
@@ -136,22 +160,6 @@
       ]
     },
     {
-      "code": "AVGO",
-      "name": "博通",
-      "count": 6,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 4,
-      "episodes": [
-        648,
-        649,
-        655,
-        656,
-        663,
-        667
-      ]
-    },
-    {
       "code": "INTC",
       "name": "英特爾",
       "count": 6,
@@ -165,6 +173,20 @@
         654,
         656,
         658
+      ]
+    },
+    {
+      "code": "MU",
+      "name": "美光（Micron）",
+      "count": 4,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        646,
+        658,
+        671,
+        673
       ]
     },
     {
@@ -261,15 +283,16 @@
       ]
     },
     {
-      "code": "MU",
-      "name": "美光（Micron）",
-      "count": 2,
-      "positive": 1,
+      "code": "SpaceX",
+      "name": "SpaceX",
+      "count": 3,
+      "positive": 3,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 0,
       "episodes": [
-        646,
-        658
+        665,
+        670,
+        671
       ]
     },
     {
@@ -441,15 +464,27 @@
       ]
     },
     {
-      "code": "SpaceX",
-      "name": "SpaceX",
+      "code": "GOOGL",
+      "name": "Google",
       "count": 2,
-      "positive": 2,
+      "positive": 1,
       "negative": 0,
-      "neutral": 0,
+      "neutral": 1,
       "episodes": [
-        665,
-        670
+        664,
+        673
+      ]
+    },
+    {
+      "code": "2317",
+      "name": "鴻海",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        666,
+        671
       ]
     },
     {
@@ -461,6 +496,18 @@
       "neutral": 1,
       "episodes": [
         667,
+        672
+      ]
+    },
+    {
+      "code": "TXN",
+      "name": "德州儀器",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        671,
         672
       ]
     },
@@ -839,17 +886,6 @@
       ]
     },
     {
-      "code": "GOOGL",
-      "name": "Google",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        664
-      ]
-    },
-    {
       "code": "8291",
       "name": "尚立",
       "count": 1,
@@ -891,17 +927,6 @@
       "neutral": 0,
       "episodes": [
         665
-      ]
-    },
-    {
-      "code": "2317",
-      "name": "鴻海",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        666
       ]
     },
     {
@@ -1037,14 +1062,47 @@
       ]
     },
     {
-      "code": "TXN",
-      "name": "德州儀器",
+      "code": "2881",
+      "name": "富邦金",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        671
+      ]
+    },
+    {
+      "code": "INF",
+      "name": "英飛凌",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        671
+      ]
+    },
+    {
+      "code": "6208",
+      "name": "富邦台50",
       "count": 1,
       "positive": 1,
       "negative": 0,
       "neutral": 0,
       "episodes": [
-        672
+        671
+      ]
+    },
+    {
+      "code": "6284",
+      "name": "西華",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        671
       ]
     },
     {
@@ -1056,6 +1114,39 @@
       "neutral": 0,
       "episodes": [
         672
+      ]
+    },
+    {
+      "code": "COHR",
+      "name": "Coherent",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        673
+      ]
+    },
+    {
+      "code": "NOK",
+      "name": "Nokia",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        673
+      ]
+    },
+    {
+      "code": "000660",
+      "name": "SK海力士",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        673
       ]
     }
   ],
@@ -1286,6 +1377,15 @@
       "vix": 17.68
     },
     {
+      "episode": 671,
+      "date": "2026-06-17",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 18.44
+    },
+    {
       "episode": 672,
       "date": "2026-06-20",
       "score": 8,
@@ -1293,6 +1393,15 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 18.89
+    },
+    {
+      "episode": 673,
+      "date": "2026-06-24",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 18.63
     }
   ],
   "sector_mentions": {
