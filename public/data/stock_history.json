@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 20,
-      "positive": 13,
+      "count": 21,
+      "positive": 14,
       "negative": 0,
       "neutral": 7,
       "episodes": [
@@ -27,7 +27,8 @@
         667,
         668,
         669,
-        670
+        670,
+        672
       ]
     },
     {
@@ -59,8 +60,8 @@
     {
       "code": "NVDA",
       "name": "輝達",
-      "count": 12,
-      "positive": 8,
+      "count": 13,
+      "positive": 9,
       "negative": 0,
       "neutral": 4,
       "episodes": [
@@ -75,14 +76,15 @@
         664,
         665,
         667,
-        668
+        668,
+        672
       ]
     },
     {
       "code": "MRVL",
       "name": "邁威爾",
-      "count": 9,
-      "positive": 8,
+      "count": 10,
+      "positive": 9,
       "negative": 0,
       "neutral": 1,
       "episodes": [
@@ -94,16 +96,17 @@
         655,
         656,
         667,
-        668
+        668,
+        672
       ]
     },
     {
       "code": "2327",
       "name": "國巨（被動元件族群）",
-      "count": 8,
+      "count": 9,
       "positive": 8,
       "negative": 0,
-      "neutral": 0,
+      "neutral": 1,
       "episodes": [
         652,
         653,
@@ -112,7 +115,8 @@
         661,
         665,
         669,
-        670
+        670,
+        672
       ]
     },
     {
@@ -446,6 +450,18 @@
       "episodes": [
         665,
         670
+      ]
+    },
+    {
+      "code": "ON",
+      "name": "Onsemi",
+      "count": 2,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        667,
+        672
       ]
     },
     {
@@ -922,17 +938,6 @@
       ]
     },
     {
-      "code": "ON",
-      "name": "Onsemi",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        667
-      ]
-    },
-    {
       "code": "ADI",
       "name": "Analog Devices",
       "count": 1,
@@ -1029,6 +1034,28 @@
       "neutral": 1,
       "episodes": [
         670
+      ]
+    },
+    {
+      "code": "TXN",
+      "name": "德州儀器",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        672
+      ]
+    },
+    {
+      "code": "STM",
+      "name": "意法半導體",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        672
       ]
     }
   ],
@@ -1257,6 +1284,15 @@
       "bull_pct": 60,
       "bear_pct": 40,
       "vix": 17.68
+    },
+    {
+      "episode": 672,
+      "date": "2026-06-20",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 18.89
     }
   ],
   "sector_mentions": {
