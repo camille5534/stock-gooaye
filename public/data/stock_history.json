@@ -87,10 +87,10 @@
     {
       "code": "MRVL",
       "name": "邁威爾",
-      "count": 11,
+      "count": 12,
       "positive": 10,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 2,
       "episodes": [
         648,
         649,
@@ -102,7 +102,8 @@
         667,
         668,
         672,
-        673
+        673,
+        674
       ]
     },
     {
@@ -127,6 +128,23 @@
       ]
     },
     {
+      "code": "TSLA",
+      "name": "特斯拉",
+      "count": 7,
+      "positive": 2,
+      "negative": 2,
+      "neutral": 3,
+      "episodes": [
+        647,
+        651,
+        652,
+        664,
+        665,
+        670,
+        674
+      ]
+    },
+    {
       "code": "AVGO",
       "name": "博通",
       "count": 7,
@@ -141,22 +159,6 @@
         663,
         667,
         673
-      ]
-    },
-    {
-      "code": "TSLA",
-      "name": "特斯拉",
-      "count": 6,
-      "positive": 2,
-      "negative": 1,
-      "neutral": 3,
-      "episodes": [
-        647,
-        651,
-        652,
-        664,
-        665,
-        670
       ]
     },
     {
@@ -178,29 +180,45 @@
     {
       "code": "MU",
       "name": "美光（Micron）",
-      "count": 4,
-      "positive": 2,
+      "count": 5,
+      "positive": 3,
       "negative": 0,
       "neutral": 2,
       "episodes": [
         646,
         658,
         671,
-        673
+        673,
+        674
       ]
     },
     {
       "code": "PLTR",
       "name": "Palantir",
+      "count": 5,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        647,
+        652,
+        658,
+        659,
+        674
+      ]
+    },
+    {
+      "code": "AAPL",
+      "name": "蘋果",
       "count": 4,
       "positive": 3,
       "negative": 0,
       "neutral": 1,
       "episodes": [
-        647,
-        652,
-        658,
-        659
+        648,
+        651,
+        669,
+        674
       ]
     },
     {
@@ -218,6 +236,20 @@
       ]
     },
     {
+      "code": "SpaceX",
+      "name": "SpaceX",
+      "count": 4,
+      "positive": 4,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        665,
+        670,
+        671,
+        674
+      ]
+    },
+    {
       "code": "NET",
       "name": "Cloudflare",
       "count": 3,
@@ -228,19 +260,6 @@
         647,
         658,
         660
-      ]
-    },
-    {
-      "code": "AAPL",
-      "name": "蘋果",
-      "count": 3,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        648,
-        651,
-        669
       ]
     },
     {
@@ -283,16 +302,16 @@
       ]
     },
     {
-      "code": "SpaceX",
-      "name": "SpaceX",
+      "code": "GOOGL",
+      "name": "Google",
       "count": 3,
-      "positive": 3,
+      "positive": 2,
       "negative": 0,
-      "neutral": 0,
+      "neutral": 1,
       "episodes": [
-        665,
-        670,
-        671
+        664,
+        673,
+        674
       ]
     },
     {
@@ -440,6 +459,18 @@
       ]
     },
     {
+      "code": "CRWD",
+      "name": "CrowdStrike",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        662,
+        674
+      ]
+    },
+    {
       "code": "8299",
       "name": "群聯",
       "count": 2,
@@ -464,15 +495,15 @@
       ]
     },
     {
-      "code": "GOOGL",
-      "name": "Google",
+      "code": "0050",
+      "name": "元大台灣50",
       "count": 2,
-      "positive": 1,
+      "positive": 2,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 0,
       "episodes": [
-        664,
-        673
+        665,
+        674
       ]
     },
     {
@@ -853,17 +884,6 @@
       ]
     },
     {
-      "code": "CRWD",
-      "name": "CrowdStrike",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        662
-      ]
-    },
-    {
       "code": "ROHM",
       "name": "羅姆",
       "count": 1,
@@ -916,17 +936,6 @@
       "neutral": 0,
       "episodes": [
         664
-      ]
-    },
-    {
-      "code": "0050",
-      "name": "元大台灣50",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        665
       ]
     },
     {
@@ -1147,6 +1156,28 @@
       "neutral": 1,
       "episodes": [
         673
+      ]
+    },
+    {
+      "code": "MSFT",
+      "name": "微軟",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        674
+      ]
+    },
+    {
+      "code": "7922",
+      "name": "EVOSIS",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        674
       ]
     }
   ],
@@ -1402,6 +1433,15 @@
       "bull_pct": 80,
       "bear_pct": 20,
       "vix": 18.63
+    },
+    {
+      "episode": 674,
+      "date": "2026-06-27",
+      "score": 6,
+      "label": "中立",
+      "bull_pct": 60,
+      "bear_pct": 40,
+      "vix": 18.41
     }
   ],
   "sector_mentions": {

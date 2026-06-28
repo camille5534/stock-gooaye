@@ -1,0 +1,239 @@
+{
+  "episode": 674,
+  "date": "2026-06-27",
+  "title": "EP674 | 🦋",
+  "youtube_url": "https://www.youtube.com/watch?v=AxPGXInx1EA",
+  "summary": "2026 上半年投資總結：處置股意外鎖死部位帶來暴力報酬，0050 年初至今漲近 50%。近期修正主因為季度末大型基金機械式再平衡（Rebalance），非地緣政治或升息恐懼。資金流向調整：賣 Tesla 轉進 SpaceX 私募；看好跌深的科技巨頭（Google、Microsoft、Apple）；對記憶體與被動元件漲價題材維持觀察。",
+  "sentiment": {
+    "score": 6,
+    "label": "中立",
+    "bull_pct": 60,
+    "bear_pct": 40,
+    "vix": 18.41
+  },
+  "keywords": [
+    "上半年總結",
+    "處置股",
+    "再平衡",
+    "AI伺服器",
+    "Apple漲價",
+    "季線",
+    "Google",
+    "SpaceX",
+    "記憶體",
+    "財富效應"
+  ],
+  "stocks": [
+    {
+      "code": "GOOGL",
+      "name": "Google",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「它把公司調整到一個蠻好的狀態...我還是會覺得可能可以往這邊去做一個壓注」",
+      "timestamp": "00:12:40",
+      "tags": ["科技巨頭", "AI", "降本增效", "跌深接刀"],
+      "price": 337.39,
+      "change_pct": null
+    },
+    {
+      "code": "CRWD",
+      "name": "CrowdStrike",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「在整個 portfolio 裡面走得比較好的像是 CrowdStrike」",
+      "timestamp": "00:11:20",
+      "tags": ["資訊安全", "軟體", "強勢股"],
+      "price": 701.09,
+      "change_pct": null
+    },
+    {
+      "code": "MU",
+      "name": "美光",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「因為 AI 導致像大家看到那個美光的財報超級好嘛」",
+      "timestamp": "00:20:10",
+      "tags": ["記憶體", "半導體", "財報", "AI"],
+      "price": 1213.56,
+      "change_pct": null
+    },
+    {
+      "code": "SpaceX",
+      "name": "SpaceX",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「現在有一個 SpaceX 可以壓住，那所以呢就去調節出一部分的資金已經去買了 SpaceX」",
+      "timestamp": "00:10:00",
+      "tags": ["航太", "馬斯克", "私募", "長期"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "0050",
+      "name": "元大台灣50",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「今年的 year to date 都還是有個 50%，這個是非常嚇人的數字」",
+      "timestamp": "00:06:50",
+      "tags": ["指數", "台股", "ETF", "長期"],
+      "price": 103.1,
+      "change_pct": null
+    },
+    {
+      "code": "TSLA",
+      "name": "Tesla",
+      "stance": "負面",
+      "stance_score": -1,
+      "quote": "「Tesla 也賣一賣，因為覺得反正我最主要去買 Tesla 為了壓住馬斯克嘛」",
+      "timestamp": "00:09:50",
+      "tags": ["電動車", "調節", "換股"],
+      "price": 379.71,
+      "change_pct": null
+    },
+    {
+      "code": "MRVL",
+      "name": "Marvell",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「最近這幾檔都稍微都有去做一點調節」",
+      "timestamp": "00:10:30",
+      "tags": ["IC設計", "美股", "雲端運算"],
+      "price": 266.77,
+      "change_pct": null
+    },
+    {
+      "code": "PLTR",
+      "name": "Palantir",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「在過去一陣子它的表現是相對的比較疲弱一點」",
+      "timestamp": "00:11:15",
+      "tags": ["軟體", "AI", "大數據"],
+      "price": 112.93,
+      "change_pct": null
+    },
+    {
+      "code": "AAPL",
+      "name": "Apple",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「這家公司是有機會會為我們帶來一些驚喜啊...只是一直沒有找到比較合適的切入點」",
+      "timestamp": "00:13:00",
+      "tags": ["消費電子", "AI", "漲價題材"],
+      "price": 283.78,
+      "change_pct": null
+    },
+    {
+      "code": "MSFT",
+      "name": "微軟",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「禮拜五有注意到已經跌深的，像微軟或是說蘋果，他們反而是在大家很不好的時候，他們就跳起來」",
+      "timestamp": "00:13:40",
+      "tags": ["科技巨頭", "美股", "跌深反彈"],
+      "price": 372.97,
+      "change_pct": null
+    },
+    {
+      "code": "7922",
+      "name": "EVOSIS",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「站點夠多，操作直覺，隨時補電很方便」",
+      "timestamp": "00:00:40",
+      "tags": ["充電樁", "電動車", "綠能", "贊助商"],
+      "price": 107.0,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "674-life-1",
+      "title": "上半年個人健康與生活：減重與體能提升",
+      "content": "謝孟恭分享上半年除了投資豐收外，個人健康也有大幅進步：成功減重並提升體能，在生活品質上有明顯改善。他強調在財富增長的同時不要忘記善待自己與家人，找到財富積累與享受生活之間的平衡。",
+      "timestamp": "00:05:00",
+      "tags": ["健康管理", "減重", "生活平衡"]
+    },
+    {
+      "id": "674-life-2",
+      "title": "商業投資原則：股東越簡單越好",
+      "content": "針對林口生意版圖發展，謝孟恭強調合夥結構越簡單越好：「股東不要太複雜，事情就會變麻煩。我比較喜歡全資或是絕對大股東，我不喜歡合夥生意，人多就是會嘴雜。」創辦人必須有實質出資（Skin in the game），否則決策時缺乏真實成本意識。",
+      "timestamp": "00:36:15",
+      "tags": ["創業", "商業原則", "合夥關係", "股權"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "674-1",
+      "question": "在 MTK 工作五年不開心，該追求錢還是自由？",
+      "answer": "「以一個年輕人的角度來講，我會認為說賺錢是比較重要的。錢很多的話稍微有點不快樂，我覺得也是 OK 的。」",
+      "timestamp": "00:22:00",
+      "tags": ["生涯規劃", "個人成長", "職場"]
+    },
+    {
+      "id": "674-2",
+      "question": "投資後資產翻倍，反而變省，總覺得每一塊錢未來會變兩塊，怎麼辦？",
+      "answer": "「當今天股票一直在上漲的時候，其實真的沒人想把錢拿出來花，但一定要去找到一個平衡，要善待自己的家人。」",
+      "timestamp": "00:24:25",
+      "tags": ["心態", "財富管理", "生活平衡"]
+    },
+    {
+      "id": "674-3",
+      "question": "台股市場失去勇氣，下禮拜一若開低往左走你怎麼辦？",
+      "answer": "「現在代表說很多人失去了勇氣。如果下禮拜一開低往左走，我那加碼的應該會丟出來，反正你們不玩老子也不要玩，我協助把這個盤砸掉。」",
+      "timestamp": "00:28:30",
+      "tags": ["心態", "台股", "市場情緒", "操盤決策"]
+    },
+    {
+      "id": "674-4",
+      "question": "代理教師不滿正式教師很混，心靈不平衡？",
+      "answer": "「你滿腔熱血的想法是基於你還沒進入那個地方。等你到那個地方之後，你會長得像比較圓的樣子，那是為了生存長出來的樣子。」",
+      "timestamp": "00:33:30",
+      "tags": ["個人成長", "職場現實", "心態"]
+    },
+    {
+      "id": "674-5",
+      "question": "林口生意版圖變大後，關係是否會變複雜？",
+      "answer": "「股東不要太複雜，事情就會變麻煩。我比較喜歡全資或是絕對大股東，我不喜歡合夥生意，人多就是會嘴雜。」",
+      "timestamp": "00:36:15",
+      "tags": ["創業", "商業原則", "合夥關係"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "科技巨頭/AI應用",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["GOOGL", "AAPL", "MSFT"],
+      "quote": "季末再平衡後跌深的科技巨頭成買點；Google 降本增效表現最佳，是目前較看好的標的；Apple 漲價測試市場接受度"
+    },
+    {
+      "name": "記憶體",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["MU"],
+      "quote": "AI 伺服器帶動美光財報超預期，記憶體佔 AI 伺服器 BOM Cost 約 30%；企業端無條件接受漲價，供應鏈獲利極佳"
+    },
+    {
+      "name": "資安/軟體",
+      "stance": "正面",
+      "intensity": 1,
+      "stocks": ["CRWD", "PLTR"],
+      "quote": "CrowdStrike 是 portfolio 中走勢最好的標的；Palantir 近期表現相對疲弱"
+    },
+    {
+      "name": "太空/電動車",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": ["SpaceX", "TSLA"],
+      "quote": "賣 Tesla 換 SpaceX 私募股份；SpaceX 是長期壓注馬斯克的替代選項"
+    },
+    {
+      "name": "指數化投資",
+      "stance": "正面",
+      "intensity": 1,
+      "stocks": ["0050"],
+      "quote": "0050 年初至今漲幅接近 50%，上半年大盤 Beta 加分極為顯著"
+    }
+  ]
+}
