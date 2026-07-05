@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 23,
-      "positive": 14,
+      "count": 24,
+      "positive": 15,
       "negative": 0,
       "neutral": 9,
       "episodes": [
@@ -30,14 +30,15 @@
         670,
         671,
         672,
-        673
+        673,
+        676
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 17,
-      "positive": 8,
+      "count": 18,
+      "positive": 9,
       "negative": 0,
       "neutral": 9,
       "episodes": [
@@ -57,7 +58,8 @@
         668,
         669,
         670,
-        673
+        673,
+        676
       ]
     },
     {
@@ -109,10 +111,10 @@
     {
       "code": "2327",
       "name": "國巨（被動元件族群）",
-      "count": 11,
+      "count": 12,
       "positive": 9,
       "negative": 0,
-      "neutral": 2,
+      "neutral": 3,
       "episodes": [
         652,
         653,
@@ -124,7 +126,8 @@
         670,
         671,
         672,
-        673
+        673,
+        676
       ]
     },
     {
@@ -1179,6 +1182,61 @@
       "episodes": [
         674
       ]
+    },
+    {
+      "code": "3711",
+      "name": "日月光投控",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        676
+      ]
+    },
+    {
+      "code": "2449",
+      "name": "京元電子",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        676
+      ]
+    },
+    {
+      "code": "6271",
+      "name": "同欣電",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        676
+      ]
+    },
+    {
+      "code": "3264",
+      "name": "欣銓",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        676
+      ]
+    },
+    {
+      "code": "META",
+      "name": "Meta Platforms",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        676
+      ]
     }
   ],
   "sentiment_history": [
@@ -1442,6 +1500,15 @@
       "bull_pct": 60,
       "bear_pct": 40,
       "vix": 18.41
+    },
+    {
+      "episode": 676,
+      "date": "2026-07-04",
+      "score": 7,
+      "label": "偏多",
+      "bull_pct": 70,
+      "bear_pct": 30,
+      "vix": 16.15
     }
   ],
   "sector_mentions": {
