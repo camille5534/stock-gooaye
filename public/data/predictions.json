@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-07",
+  "generated_at": "2026-07-08",
   "stats": {
     "total": 138,
-    "valid": 116,
-    "hits": 67,
+    "valid": 117,
+    "hits": 68,
     "misses": 49,
-    "pending": 8,
+    "pending": 7,
     "win_rate": 58
   },
   "picks": [
@@ -2786,9 +2786,9 @@
       "d7_date": "2026-07-01",
       "d7_price": 1140.0,
       "d7_pct": 8.57,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-07-08",
+      "d14_price": 891.0,
+      "d14_pct": -15.14,
       "correct": true,
       "status": "hit"
     },
@@ -2809,9 +2809,9 @@
       "d7_date": "2026-07-01",
       "d7_price": 4335.0,
       "d7_pct": 1.17,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-07-08",
+      "d14_price": 3995.0,
+      "d14_pct": -6.77,
       "correct": true,
       "status": "hit"
     },
@@ -3148,17 +3148,17 @@
       "ticker": "META",
       "ep_date_actual": "2026-07-06",
       "ep_price": 600.29,
-      "d1_date": null,
-      "d1_price": null,
-      "d1_pct": null,
+      "d1_date": "2026-07-07",
+      "d1_price": 615.58,
+      "d1_pct": 2.55,
       "d7_date": null,
       "d7_price": null,
       "d7_pct": null,
       "d14_date": null,
       "d14_price": null,
       "d14_pct": null,
-      "correct": null,
-      "status": "pending"
+      "correct": true,
+      "status": "hit"
     },
     {
       "episode": 676,
