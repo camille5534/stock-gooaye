@@ -3,10 +3,10 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 24,
-      "positive": 15,
+      "count": 26,
+      "positive": 16,
       "negative": 0,
-      "neutral": 9,
+      "neutral": 10,
       "episodes": [
         647,
         649,
@@ -31,16 +31,18 @@
         671,
         672,
         673,
-        676
+        675,
+        676,
+        677
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 18,
+      "count": 19,
       "positive": 9,
       "negative": 0,
-      "neutral": 9,
+      "neutral": 10,
       "episodes": [
         649,
         653,
@@ -59,14 +61,15 @@
         669,
         670,
         673,
+        675,
         676
       ]
     },
     {
       "code": "NVDA",
       "name": "輝達",
-      "count": 14,
-      "positive": 9,
+      "count": 16,
+      "positive": 11,
       "negative": 0,
       "neutral": 5,
       "episodes": [
@@ -83,7 +86,32 @@
         667,
         668,
         672,
-        673
+        673,
+        677,
+        678
+      ]
+    },
+    {
+      "code": "2327",
+      "name": "國巨（被動元件族群）",
+      "count": 13,
+      "positive": 9,
+      "negative": 0,
+      "neutral": 4,
+      "episodes": [
+        652,
+        653,
+        654,
+        659,
+        661,
+        665,
+        669,
+        670,
+        671,
+        672,
+        673,
+        676,
+        677
       ]
     },
     {
@@ -109,32 +137,10 @@
       ]
     },
     {
-      "code": "2327",
-      "name": "國巨（被動元件族群）",
-      "count": 12,
-      "positive": 9,
-      "negative": 0,
-      "neutral": 3,
-      "episodes": [
-        652,
-        653,
-        654,
-        659,
-        661,
-        665,
-        669,
-        670,
-        671,
-        672,
-        673,
-        676
-      ]
-    },
-    {
       "code": "TSLA",
       "name": "特斯拉",
-      "count": 7,
-      "positive": 2,
+      "count": 8,
+      "positive": 3,
       "negative": 2,
       "neutral": 3,
       "episodes": [
@@ -144,7 +150,8 @@
         664,
         665,
         670,
-        674
+        674,
+        677
       ]
     },
     {
@@ -165,6 +172,22 @@
       ]
     },
     {
+      "code": "MU",
+      "name": "美光（Micron）",
+      "count": 6,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 3,
+      "episodes": [
+        646,
+        658,
+        671,
+        673,
+        674,
+        677
+      ]
+    },
+    {
       "code": "INTC",
       "name": "英特爾",
       "count": 6,
@@ -178,21 +201,6 @@
         654,
         656,
         658
-      ]
-    },
-    {
-      "code": "MU",
-      "name": "美光（Micron）",
-      "count": 5,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 2,
-      "episodes": [
-        646,
-        658,
-        671,
-        673,
-        674
       ]
     },
     {
@@ -213,15 +221,45 @@
     {
       "code": "AAPL",
       "name": "蘋果",
+      "count": 5,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        648,
+        651,
+        669,
+        674,
+        677
+      ]
+    },
+    {
+      "code": "SpaceX",
+      "name": "SpaceX",
+      "count": 5,
+      "positive": 5,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        665,
+        670,
+        671,
+        674,
+        677
+      ]
+    },
+    {
+      "code": "NET",
+      "name": "Cloudflare",
       "count": 4,
       "positive": 3,
       "negative": 0,
       "neutral": 1,
       "episodes": [
-        648,
-        651,
-        669,
-        674
+        647,
+        658,
+        660,
+        677
       ]
     },
     {
@@ -239,30 +277,17 @@
       ]
     },
     {
-      "code": "SpaceX",
-      "name": "SpaceX",
+      "code": "GOOGL",
+      "name": "Google",
       "count": 4,
-      "positive": 4,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        665,
-        670,
-        671,
-        674
-      ]
-    },
-    {
-      "code": "NET",
-      "name": "Cloudflare",
-      "count": 3,
       "positive": 2,
       "negative": 0,
-      "neutral": 1,
+      "neutral": 2,
       "episodes": [
-        647,
-        658,
-        660
+        664,
+        673,
+        674,
+        677
       ]
     },
     {
@@ -305,16 +330,42 @@
       ]
     },
     {
-      "code": "GOOGL",
-      "name": "Google",
+      "code": "3661",
+      "name": "世芯-KY",
       "count": 3,
       "positive": 2,
       "negative": 0,
       "neutral": 1,
       "episodes": [
-        664,
-        673,
-        674
+        659,
+        670,
+        675
+      ]
+    },
+    {
+      "code": "CRWD",
+      "name": "CrowdStrike",
+      "count": 3,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        662,
+        674,
+        677
+      ]
+    },
+    {
+      "code": "ON",
+      "name": "Onsemi",
+      "count": 3,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        667,
+        672,
+        675
       ]
     },
     {
@@ -414,15 +465,15 @@
       ]
     },
     {
-      "code": "3661",
-      "name": "世芯-KY",
+      "code": "3443",
+      "name": "創意",
       "count": 2,
-      "positive": 2,
+      "positive": 1,
       "negative": 0,
-      "neutral": 0,
+      "neutral": 1,
       "episodes": [
         659,
-        670
+        675
       ]
     },
     {
@@ -459,18 +510,6 @@
       "episodes": [
         661,
         668
-      ]
-    },
-    {
-      "code": "CRWD",
-      "name": "CrowdStrike",
-      "count": 2,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        662,
-        674
       ]
     },
     {
@@ -522,15 +561,15 @@
       ]
     },
     {
-      "code": "ON",
-      "name": "Onsemi",
+      "code": "ADI",
+      "name": "Analog Devices",
       "count": 2,
       "positive": 1,
       "negative": 0,
       "neutral": 1,
       "episodes": [
         667,
-        672
+        678
       ]
     },
     {
@@ -543,6 +582,18 @@
       "episodes": [
         671,
         672
+      ]
+    },
+    {
+      "code": "META",
+      "name": "Meta Platforms",
+      "count": 2,
+      "positive": 2,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        676,
+        678
       ]
     },
     {
@@ -741,17 +792,6 @@
       "neutral": 1,
       "episodes": [
         658
-      ]
-    },
-    {
-      "code": "3443",
-      "name": "創意",
-      "count": 1,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        659
       ]
     },
     {
@@ -975,17 +1015,6 @@
       ]
     },
     {
-      "code": "ADI",
-      "name": "Analog Devices",
-      "count": 1,
-      "positive": 0,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        667
-      ]
-    },
-    {
       "code": "SNOW",
       "name": "Snowflake",
       "count": 1,
@@ -1184,6 +1213,17 @@
       ]
     },
     {
+      "code": "8046",
+      "name": "南電",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        675
+      ]
+    },
+    {
       "code": "3711",
       "name": "日月光投控",
       "count": 1,
@@ -1228,14 +1268,36 @@
       ]
     },
     {
-      "code": "META",
-      "name": "Meta Platforms",
+      "code": "CDNS",
+      "name": "Cadence",
       "count": 1,
       "positive": 1,
       "negative": 0,
       "neutral": 0,
       "episodes": [
-        676
+        678
+      ]
+    },
+    {
+      "code": "SLAB",
+      "name": "Silicon Labs",
+      "count": 1,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        678
+      ]
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "count": 1,
+      "positive": 0,
+      "negative": 0,
+      "neutral": 1,
+      "episodes": [
+        678
       ]
     }
   ],
@@ -1253,7 +1315,7 @@
       "episode": 647,
       "date": "2026-03-25",
       "score": 4,
-      "label": "中立",
+      "label": "偏空",
       "bull_pct": 45,
       "bear_pct": 55,
       "vix": 25.33
@@ -1496,10 +1558,19 @@
       "episode": 674,
       "date": "2026-06-27",
       "score": 6,
-      "label": "中立",
+      "label": "偏多",
       "bull_pct": 60,
       "bear_pct": 40,
       "vix": 18.41
+    },
+    {
+      "episode": 675,
+      "date": "2026-07-01",
+      "score": 8,
+      "label": "偏多",
+      "bull_pct": 80,
+      "bear_pct": 20,
+      "vix": 16.59
     },
     {
       "episode": 676,
@@ -1509,6 +1580,24 @@
       "bull_pct": 70,
       "bear_pct": 30,
       "vix": 16.15
+    },
+    {
+      "episode": 677,
+      "date": "2026-07-08",
+      "score": 7,
+      "label": "偏多",
+      "bull_pct": 70,
+      "bear_pct": 30,
+      "vix": 16.9
+    },
+    {
+      "episode": 678,
+      "date": "2026-07-11",
+      "score": 7,
+      "label": "偏多",
+      "bull_pct": 70,
+      "bear_pct": 30,
+      "vix": 15.03
     }
   ],
   "sector_mentions": {

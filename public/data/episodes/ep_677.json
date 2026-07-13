@@ -1,0 +1,221 @@
+{
+  "episode": 677,
+  "date": "2026-07-08",
+  "title": "EP677 | 🐎",
+  "youtube_url": "https://www.youtube.com/watch?v=OJ7HLygPhWE",
+  "summary": "從「少年股神」到「慢慢來比較快」：謝孟恭剖析槓桿文化的世代演進，並針對 SemiAnalysis 引發的 AI 恐慌進行反駁——技術研發的路徑調整（NVL144 延遲）≠ 長線趨勢崩解。核心建議：台積電與 NVIDIA 估值偏低是事實，軟體股（CRWD、NET）形態強勁，可作為 CPU 軟化後的切換目標。",
+  "sentiment": {
+    "score": 7,
+    "label": "偏多",
+    "bull_pct": 70,
+    "bear_pct": 30,
+    "vix": 16.9
+  },
+  "keywords": [
+    "槓桿",
+    "AI",
+    "SemiAnalysis",
+    "慢慢來比較快",
+    "族群輪動",
+    "NVIDIA",
+    "台積電",
+    "軟體股",
+    "風險管理",
+    "技術與產品"
+  ],
+  "stocks": [
+    {
+      "code": "2330",
+      "name": "台積電",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「AI 最核心的東西，以台股來講絕對就是 TSMC 嘛...卻是交易在最便宜的估值。」",
+      "timestamp": "00:15:38",
+      "tags": ["AI核心", "估值偏低", "避風港"],
+      "price": 2465.0,
+      "change_pct": null
+    },
+    {
+      "code": "NVDA",
+      "name": "NVIDIA",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「以美股來講絕對就是 NVIDIA...它是一個超級便宜的標地，這個連講都不用講。」",
+      "timestamp": "00:15:40",
+      "tags": ["AI龍頭", "估值偏低", "美股"],
+      "price": 204.12,
+      "change_pct": null
+    },
+    {
+      "code": "CRWD",
+      "name": "CrowdStrike",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「我自覺比較喜歡的軟體股，像是...CrowdStrike...形態都還蠻好的。」",
+      "timestamp": "00:32:45",
+      "tags": ["資安", "軟體股", "形態強勢"],
+      "price": 191.12,
+      "change_pct": null
+    },
+    {
+      "code": "NET",
+      "name": "Cloudflare",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「這是我幾隻最愛的...如果他們在繼續上的話，那 CPU 開始軟掉，我是真的有可能會把資金往那邊去。」",
+      "timestamp": "00:32:55",
+      "tags": ["網路服務", "軟體股", "潛在加碼"],
+      "price": 273.4,
+      "change_pct": null
+    },
+    {
+      "code": "TSLA",
+      "name": "Tesla",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「Tesla 的話就比較偏信仰股...因為我本身是很喜歡馬斯克的。」",
+      "timestamp": "00:34:02",
+      "tags": ["電動車", "信仰投資", "美股"],
+      "price": 394.06,
+      "change_pct": null
+    },
+    {
+      "code": "SpaceX",
+      "name": "SpaceX",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「我就把一些 Tesla 賣掉，然後進去 SpaceX...我就覺得說他的公司呢，我就是要買一點。」",
+      "timestamp": "00:34:25",
+      "tags": ["太空產業", "馬斯克", "長期持有"],
+      "price": null,
+      "change_pct": null
+    },
+    {
+      "code": "AAPL",
+      "name": "Apple",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「我可能往 Apple 去跑...當一些軟體轉強都有機會。」",
+      "timestamp": "00:33:10",
+      "tags": ["美股", "資金切換", "觀察名單"],
+      "price": 313.39,
+      "change_pct": null
+    },
+    {
+      "code": "GOOGL",
+      "name": "Google",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「我可能往 Apple 去跑或是往 Google 去投。」",
+      "timestamp": "00:33:15",
+      "tags": ["美股", "軟體龍頭", "觀察名單"],
+      "price": 361.92,
+      "change_pct": null
+    },
+    {
+      "code": "MU",
+      "name": "Micron",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「前邊曾提到什麼 Micron 的 HBM4 可能沒有做不進去之類，最後面就發現說那其實都在講一個很短的東西。」",
+      "timestamp": "00:20:45",
+      "tags": ["記憶體", "HBM", "短線雜訊"],
+      "price": 948.8,
+      "change_pct": null
+    },
+    {
+      "code": "2327",
+      "name": "國巨",
+      "stance": "中立",
+      "stance_score": 0,
+      "quote": "「被動元件最大的一般像國巨、華新科...法人是有辦法可以拼進去的。」",
+      "timestamp": "00:12:45",
+      "tags": ["被動元件", "法人盤", "橫盤整理"],
+      "price": 891.0,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "677-life-1",
+      "title": "槓桿思維的世代演進：慢慢來比較快",
+      "content": "謝孟恭回顧早期以「死而算了」態度將融資開滿（約 2.5 倍），但現今少年股神透過信貸、股期連續翻滾，槓桿動輒 5-6 倍以上。自身已從「風險派」蛻變為「保守派」，體悟到「慢慢來比較快」的道理——過度槓桿在一兩根跌停就可能導致部位歸零，穩健成長才能確保家庭長期安全。",
+      "timestamp": "00:05:00",
+      "tags": ["槓桿風控", "投資心法", "世代差異", "慢慢來比較快"]
+    },
+    {
+      "id": "677-life-2",
+      "title": "解讀 SemiAnalysis 雜訊：技術研發 vs 量產產品",
+      "content": "針對 SemiAnalysis 關於 CPO、800G 光模組、NVL144 進度延遲的負面報告，謝孟恭提出反駁：投資者常混淆「研發階段（R&D Project）」與「量產產品」的差異。NVL144 的製造挑戰（PTFE/石英混搭、熱度問題）本就在產業預期內，屬正常路徑尋找，並非長線需求消失。市場「素食化」只看標題導致恐慌性拋售，但台積電與 NVIDIA 的長線競爭地位未變。",
+      "timestamp": "00:18:00",
+      "tags": ["SemiAnalysis", "AI雜訊", "技術研發", "市場心理"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "677-1",
+      "question": "扣除系統性風險，可能出現回檔 2 萬點的熊市嗎？如果出現會是 AI 毀滅嗎？",
+      "answer": "「熊市定義是從高檔掉下 20%，未來一定有機會。真的發生時大家會歸咎於 AI，但提早猜測沒意義，應見招拆招，不預設高點。當預言家是沒有什麼太大意義的事情。」",
+      "timestamp": "00:29:40",
+      "tags": ["熊市預測", "投資心法", "AI"]
+    },
+    {
+      "id": "677-2",
+      "question": "Token 成本下降是否利好軟體股？如何決定長期持有 Tesla 與 Nvidia？",
+      "answer": "「軟體股財報已顯示跡象，AI 不僅沒偷走工作反而創造更多。NVIDIA 一直是便宜的公司；Tesla 則偏向信仰股，因為喜歡馬斯克，甚至想把 Tesla 賣掉換成 SpaceX。」",
+      "timestamp": "00:34:40",
+      "tags": ["軟體股", "NVIDIA", "Tesla", "SpaceX"]
+    },
+    {
+      "id": "677-3",
+      "question": "幾歲會讓小孩接觸 AI？",
+      "answer": "「我小孩現在（四歲）就在用。我會讓他會用，因為那是工具箱裡的工具。重點是家長的輔導，我不會禁止小孩用 iPad 或打電動，只要適量就好。」",
+      "timestamp": "00:33:00",
+      "tags": ["親子教育", "AI工具", "育兒觀"]
+    },
+    {
+      "id": "677-4",
+      "question": "爆掉後重回 100 萬，體會到板塊輪動嗅覺做不出來，是不是社會邊角料？",
+      "answer": "「能識別問題就解決了一半，不要自責。2022 年我也很痛苦，覺得自己不會做股票。要當打不倒的人，沒信心時先透過小嘗試建立信心，或買指數放著。」",
+      "timestamp": "00:40:00",
+      "tags": ["投資信心", "心理素質", "指數投資"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "AI核心/半導體",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["2330", "NVDA"],
+      "quote": "台積電與 NVIDIA 估值偏低是市場共識；SemiAnalysis 雜訊屬短期研發調整，長線 AI 需求不變"
+    },
+    {
+      "name": "軟體/資安",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["CRWD", "NET"],
+      "quote": "Token 成本下降利好軟體股；CrowdStrike、Cloudflare 形態強勁，CPU 行情軟化後可考慮切換"
+    },
+    {
+      "name": "電動車/太空",
+      "stance": "正面",
+      "intensity": 1,
+      "stocks": ["TSLA", "SpaceX"],
+      "quote": "Tesla 偏信仰投資；SpaceX 長期持有，馬斯克生態圈持倉邏輯"
+    },
+    {
+      "name": "科技巨頭",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": ["AAPL", "GOOGL"],
+      "quote": "軟體族群若持續轉強，Apple/Google 可作為後續切換目標"
+    },
+    {
+      "name": "被動元件",
+      "stance": "中立",
+      "intensity": 1,
+      "stocks": ["2327"],
+      "quote": "國巨、華新科在季線附近橫盤整理，市值夠大可吸納法人資金，但短期動能不明確"
+    }
+  ]
+}

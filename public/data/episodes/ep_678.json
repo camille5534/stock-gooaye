@@ -1,0 +1,170 @@
+{
+  "episode": 678,
+  "date": "2026-07-11",
+  "title": "EP678 | 🎮",
+  "youtube_url": "https://www.youtube.com/watch?v=dF-Fhpmh_8c",
+  "summary": "Meta 出租閒置算力並非撤退而是「加倍投入」——GPU 從折舊資產轉型為可產生現金流的獲利資產。ADI 發出漲價信，導線架交期從 3-4 個月拉長至 7-8 個月，功率元件漲價循環持續擴散。光通訊族群出現技術路徑輪動：「窄而快」（SiPh/InP）股價轉弱，「寬而慢」（VCSEL/AOC）資金相對強韌。颱風假爭議反映台灣投資普及率提升的市場心理轉變。",
+  "sentiment": {
+    "score": 7,
+    "label": "偏多",
+    "bull_pct": 70,
+    "bear_pct": 30,
+    "vix": 15.03
+  },
+  "keywords": [
+    "AI算力",
+    "Meta",
+    "功率元件",
+    "導線架",
+    "光通訊",
+    "漲價循環",
+    "NVIDIA",
+    "算力租賃",
+    "健康管理",
+    "窄而快"
+  ],
+  "stocks": [
+    {
+      "code": "NVDA",
+      "name": "NVIDIA",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「Nvidia 的話是直接再一次攻到 210 億了... 重新爬上季線，這個長得還蠻好看。」",
+      "timestamp": "00:15:15",
+      "tags": ["AI", "季線", "估值偏低"],
+      "price": 210.96,
+      "change_pct": null
+    },
+    {
+      "code": "META",
+      "name": "Meta",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「他並沒有要退出，他甚至是要把這個蠻倉殺進去啊，他要更加用力的做多。」",
+      "timestamp": "00:16:15",
+      "tags": ["AI", "算力租賃", "Double Down"],
+      "price": 669.21,
+      "change_pct": null
+    },
+    {
+      "code": "ADI",
+      "name": "ADI",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「ADI 一個全球非常大的一個類比 IC 的廠商呢，他們也是發出了漲價信。」",
+      "timestamp": "00:24:45",
+      "tags": ["類比IC", "功率元件", "漲價"],
+      "price": 395.65,
+      "change_pct": null
+    },
+    {
+      "code": "CDNS",
+      "name": "Cadence",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「如果你現在回頭看一下 Cadence 跟 Slabs，你就注意到就是全部都是在新高的位置。」",
+      "timestamp": "00:28:45",
+      "tags": ["EDA", "新高", "資金輪動"],
+      "price": 384.17,
+      "change_pct": null
+    },
+    {
+      "code": "SLAB",
+      "name": "Silicon Labs",
+      "stance": "正面",
+      "stance_score": 1,
+      "quote": "「如果你現在回頭看一下 Cradle 跟 Slabs，你就注意到就是全部都是在新高的位置。」",
+      "timestamp": "00:28:45",
+      "tags": ["半導體", "新高", "資金輪動"],
+      "price": 218.63,
+      "change_pct": null
+    },
+    {
+      "code": "3231",
+      "name": "緯創",
+      "stance": "觀察",
+      "stance_score": 0,
+      "quote": "「就類似那時候我們在講緯創的時候...等到他們看得到營收衝進去買的時候，就剛好全部買在水安第一排。」",
+      "timestamp": "00:20:15",
+      "tags": ["ODM", "AI伺服器", "資訊落後"],
+      "price": 144.5,
+      "change_pct": null
+    }
+  ],
+  "life": [
+    {
+      "id": "678-life-1",
+      "title": "Meta GPU 資產化：算力從折舊成本到盈利資產",
+      "content": "市場誤讀 Meta 出租閒置算力為「撤退」。實際上 Meta 是加倍投入 AI：舊款 Hopper 系列 GPU 用於推論（Inferencing）或出租，新款 B 系列用於模型訓練，形成資產最大化利用。GPU 從單純折舊資產轉為可租賃生財的盈利工具，有效延長會計折舊年限，且算力定價透明化後將刺激 AI 原生軟體應用爆發。",
+      "timestamp": "00:15:00",
+      "tags": ["Meta", "GPU資產化", "算力租賃", "AI基礎建設"]
+    },
+    {
+      "id": "678-life-2",
+      "title": "健康投資：減重 8-10 公斤成功改善遺傳性高血壓",
+      "content": "謝孟恭分享透過規律運動（打網球）與減重，血壓從 140/90 mmHg 降至 110/70 mmHg，成功改善遺傳性高血壓與膽固醇問題。強調長期投資建立在健康體質之上——投資者不應因過度盯盤而犧牲健康，身體素質才是支撐長期市場參與的根基。",
+      "timestamp": "00:08:00",
+      "tags": ["健康管理", "運動", "生活品質"]
+    }
+  ],
+  "qa": [
+    {
+      "id": "678-1",
+      "question": "導線架在基本面的角度怎麼樣？",
+      "answer": "「就缺啊、就好啊，這個絕對是沒有問題的。但很明顯市場的資金...目前偏橫盤，休息中。其實不是大家不要光通訊，大家可能不要的是你手上的那個光通訊（窄而快路徑）。」",
+      "timestamp": "00:33:45",
+      "tags": ["導線架", "光通訊", "資金輪動", "產業動態"]
+    },
+    {
+      "id": "678-2",
+      "question": "如何過濾資訊雜訊？",
+      "answer": "「我目前比較沒有在聽投資 Podcast...雜訊這個東西是真的值得去注意。與其有 100 條雜訊線，不如有兩條超級純的線（如 Design House 或 Fab）。當你達到資訊上限感到困擾時，你就會主動去砍掉不必要的資訊來源。」",
+      "timestamp": "00:36:00",
+      "tags": ["資訊識別", "投資心法"]
+    },
+    {
+      "id": "678-3",
+      "question": "年輕單身，是否推薦數位游牧？",
+      "answer": "「既然你單身沒任何家累，你應該要盡可能的去做一些在外人看來甚至有點猖狂跟瘋狂的事情（如數位游牧）。如果你現在不去，以後有家庭小孩就難了。如果薪水沒有差很多，推薦年輕聽眾去體驗不一樣的生活環境。」",
+      "timestamp": "00:41:00",
+      "tags": ["生涯規劃", "數位游牧", "年輕人"]
+    }
+  ],
+  "sectors": [
+    {
+      "name": "AI龍頭",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["NVDA", "META"],
+      "quote": "NVIDIA 重新爬上季線；Meta 算力資產化策略確認 Double Down，GPU 折舊疑慮消除"
+    },
+    {
+      "name": "類比IC/功率元件",
+      "stance": "正面",
+      "intensity": 2,
+      "stocks": ["ADI"],
+      "quote": "ADI 發出全球漲價信；導線架交期從 3-4 個月拉長至 7-8 個月；台系功率元件廠稼動率拉滿帶動毛利跳升"
+    },
+    {
+      "name": "EDA/IC設計工具",
+      "stance": "正面",
+      "intensity": 1,
+      "stocks": ["CDNS", "SLAB"],
+      "quote": "Cadence 與 Silicon Labs 均在新高位置，資金持續流入設計工具鏈"
+    },
+    {
+      "name": "AI伺服器/ODM",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": ["3231"],
+      "quote": "緯創等 ODM 廠需觀察實際營收兌現，避免追高在「看得到營收時才買進」的落後資訊位置"
+    },
+    {
+      "name": "光通訊",
+      "stance": "觀察",
+      "intensity": 1,
+      "stocks": [],
+      "quote": "技術路徑輪動：窄而快（SiPh/InP）股價轉弱；寬而慢（VCSEL/AOC）資金相對強韌，需觀察應用場域分化"
+    }
+  ]
+}
