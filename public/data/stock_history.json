@@ -3,8 +3,8 @@
     {
       "code": "2330",
       "name": "台積電",
-      "count": 27,
-      "positive": 17,
+      "count": 28,
+      "positive": 18,
       "negative": 0,
       "neutral": 10,
       "episodes": [
@@ -34,14 +34,15 @@
         675,
         676,
         677,
-        679
+        679,
+        680
       ]
     },
     {
       "code": "2454",
       "name": "聯發科",
-      "count": 19,
-      "positive": 9,
+      "count": 20,
+      "positive": 10,
       "negative": 0,
       "neutral": 10,
       "episodes": [
@@ -63,7 +64,8 @@
         670,
         673,
         675,
-        676
+        676,
+        680
       ]
     },
     {
@@ -140,8 +142,8 @@
     {
       "code": "TSLA",
       "name": "特斯拉",
-      "count": 8,
-      "positive": 3,
+      "count": 9,
+      "positive": 4,
       "negative": 2,
       "neutral": 3,
       "episodes": [
@@ -152,7 +154,25 @@
         665,
         670,
         674,
-        677
+        677,
+        680
+      ]
+    },
+    {
+      "code": "MU",
+      "name": "美光（Micron）",
+      "count": 7,
+      "positive": 4,
+      "negative": 0,
+      "neutral": 3,
+      "episodes": [
+        646,
+        658,
+        671,
+        673,
+        674,
+        677,
+        680
       ]
     },
     {
@@ -173,35 +193,52 @@
       ]
     },
     {
-      "code": "MU",
-      "name": "美光（Micron）",
-      "count": 6,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 3,
-      "episodes": [
-        646,
-        658,
-        671,
-        673,
-        674,
-        677
-      ]
-    },
-    {
       "code": "INTC",
       "name": "英特爾",
-      "count": 6,
+      "count": 7,
       "positive": 3,
       "negative": 0,
-      "neutral": 3,
+      "neutral": 4,
       "episodes": [
         648,
         650,
         651,
         654,
         656,
-        658
+        658,
+        680
+      ]
+    },
+    {
+      "code": "AAPL",
+      "name": "蘋果",
+      "count": 6,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 3,
+      "episodes": [
+        648,
+        651,
+        669,
+        674,
+        677,
+        680
+      ]
+    },
+    {
+      "code": "SpaceX",
+      "name": "SpaceX",
+      "count": 6,
+      "positive": 6,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        665,
+        670,
+        671,
+        674,
+        677,
+        680
       ]
     },
     {
@@ -217,36 +254,6 @@
         658,
         659,
         674
-      ]
-    },
-    {
-      "code": "AAPL",
-      "name": "蘋果",
-      "count": 5,
-      "positive": 3,
-      "negative": 0,
-      "neutral": 2,
-      "episodes": [
-        648,
-        651,
-        669,
-        674,
-        677
-      ]
-    },
-    {
-      "code": "SpaceX",
-      "name": "SpaceX",
-      "count": 5,
-      "positive": 5,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        665,
-        670,
-        671,
-        674,
-        677
       ]
     },
     {
@@ -358,6 +365,19 @@
       ]
     },
     {
+      "code": "0050",
+      "name": "元大台灣50",
+      "count": 3,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 0,
+      "episodes": [
+        665,
+        674,
+        680
+      ]
+    },
+    {
       "code": "ON",
       "name": "Onsemi",
       "count": 3,
@@ -368,6 +388,19 @@
         667,
         672,
         675
+      ]
+    },
+    {
+      "code": "ADI",
+      "name": "Analog Devices",
+      "count": 3,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 2,
+      "episodes": [
+        667,
+        678,
+        680
       ]
     },
     {
@@ -539,18 +572,6 @@
       ]
     },
     {
-      "code": "0050",
-      "name": "元大台灣50",
-      "count": 2,
-      "positive": 2,
-      "negative": 0,
-      "neutral": 0,
-      "episodes": [
-        665,
-        674
-      ]
-    },
-    {
       "code": "2317",
       "name": "鴻海",
       "count": 2,
@@ -560,18 +581,6 @@
       "episodes": [
         666,
         671
-      ]
-    },
-    {
-      "code": "ADI",
-      "name": "Analog Devices",
-      "count": 2,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 1,
-      "episodes": [
-        667,
-        678
       ]
     },
     {
@@ -1632,6 +1641,15 @@
       "bull_pct": 60,
       "bear_pct": 40,
       "vix": 15.67
+    },
+    {
+      "episode": 680,
+      "date": "2026-07-18",
+      "score": 4,
+      "label": "偏空",
+      "bull_pct": 50,
+      "bear_pct": 50,
+      "vix": 18.77
     }
   ],
   "sector_mentions": {
