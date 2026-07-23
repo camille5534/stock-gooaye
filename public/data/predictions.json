@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22",
+  "generated_at": "2026-07-23",
   "stats": {
     "total": 160,
     "valid": 136,
@@ -3246,9 +3246,9 @@
       "d7_date": "2026-07-15",
       "d7_price": 212.5,
       "d7_pct": 4.11,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-07-22",
+      "d14_price": 212.06,
+      "d14_pct": 3.89,
       "correct": false,
       "status": "miss"
     },
@@ -3269,9 +3269,9 @@
       "d7_date": "2026-07-15",
       "d7_price": 206.77,
       "d7_pct": 8.19,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-07-22",
+      "d14_price": 188.42,
+      "d14_pct": -1.41,
       "correct": true,
       "status": "hit"
     },
@@ -3292,9 +3292,9 @@
       "d7_date": "2026-07-15",
       "d7_price": 273.04,
       "d7_pct": -0.13,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-07-22",
+      "d14_price": 268.98,
+      "d14_pct": -1.62,
       "correct": true,
       "status": "hit"
     },
@@ -3315,9 +3315,9 @@
       "d7_date": "2026-07-15",
       "d7_price": 394.46,
       "d7_pct": 0.1,
-      "d14_date": null,
-      "d14_price": null,
-      "d14_pct": null,
+      "d14_date": "2026-07-22",
+      "d14_price": 374.01,
+      "d14_pct": -5.09,
       "correct": true,
       "status": "hit"
     },
