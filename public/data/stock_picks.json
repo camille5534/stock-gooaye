@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29",
+  "generated_at": "2026-09-30",
   "recent_episodes": [
     676,
     677,
@@ -597,14 +597,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 1078.95
+          "close": 1065.08
+        },
+        {
+          "date": "2026-09-30",
+          "close": 1071.44
         }
       ],
       "last_mention_date": "2026-07-18",
       "base_ep_price": 542.21,
       "base_ep": 658,
-      "current_price": 1078.95,
-      "current_pct": 98.99
+      "current_price": 1071.44,
+      "current_pct": 97.61
     },
     {
       "code": "2330",
@@ -1352,13 +1356,17 @@
         {
           "date": "2026-09-29",
           "close": 2475.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 2480.0
         }
       ],
       "last_mention_date": "2026-07-18",
       "base_ep_price": 1950.0,
       "base_ep": 651,
-      "current_price": 2475.0,
-      "current_pct": 26.92
+      "current_price": 2480.0,
+      "current_pct": 27.18
     },
     {
       "code": "TSLA",
@@ -1957,14 +1965,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 354.23
+          "close": 352.84
+        },
+        {
+          "date": "2026-09-30",
+          "close": 349.27
         }
       ],
       "last_mention_date": "2026-07-18",
       "base_ep_price": 348.95,
       "base_ep": 652,
-      "current_price": 354.23,
-      "current_pct": 1.51
+      "current_price": 349.27,
+      "current_pct": 0.09
     },
     {
       "code": "AAPL",
@@ -2527,14 +2539,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 333.08
+          "close": 329.4
+        },
+        {
+          "date": "2026-09-30",
+          "close": 338.94
         }
       ],
       "last_mention_date": "2026-07-18",
       "base_ep_price": 246.63,
       "base_ep": 648,
-      "current_price": 333.08,
-      "current_pct": 35.05
+      "current_price": 338.94,
+      "current_pct": 37.43
     },
     {
       "code": "INTC",
@@ -3105,14 +3121,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 116.82
+          "close": 115.93
+        },
+        {
+          "date": "2026-09-30",
+          "close": 118.46
         }
       ],
       "last_mention_date": "2026-07-18",
       "base_ep_price": 50.38,
       "base_ep": 650,
-      "current_price": 116.82,
-      "current_pct": 131.88
+      "current_price": 118.46,
+      "current_pct": 135.13
     },
     {
       "code": "2454",
@@ -3776,13 +3796,17 @@
         {
           "date": "2026-09-29",
           "close": 4910.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 4920.0
         }
       ],
       "last_mention_date": "2026-07-18",
       "base_ep_price": 1790.0,
       "base_ep": 653,
-      "current_price": 4910.0,
-      "current_pct": 174.3
+      "current_price": 4920.0,
+      "current_pct": 174.86
     },
     {
       "code": "0050",
@@ -4160,15 +4184,15 @@
           "close": 112.4
         },
         {
-          "date": "2026-09-29",
-          "close": 111.3
+          "date": "2026-09-30",
+          "close": 112.05
         }
       ],
       "last_mention_date": "2026-07-18",
       "base_ep_price": 102.55,
       "base_ep": 665,
-      "current_price": 111.3,
-      "current_pct": 8.53
+      "current_price": 112.05,
+      "current_pct": 9.26
     },
     {
       "code": "ADI",
@@ -4527,14 +4551,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 402.9
+          "close": 398.22
+        },
+        {
+          "date": "2026-09-30",
+          "close": 396.8
         }
       ],
       "last_mention_date": "2026-07-18",
       "base_ep_price": 395.65,
       "base_ep": 678,
-      "current_price": 402.9,
-      "current_pct": 1.83
+      "current_price": 396.8,
+      "current_pct": 0.29
     },
     {
       "code": "2492",
@@ -4982,13 +5010,17 @@
         {
           "date": "2026-09-29",
           "close": 302.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 299.5
         }
       ],
       "last_mention_date": "2026-07-15",
       "base_ep_price": 147.0,
       "base_ep": 659,
-      "current_price": 302.0,
-      "current_pct": 105.44
+      "current_price": 299.5,
+      "current_pct": 103.74
     },
     {
       "code": "2449",
@@ -5252,6 +5284,10 @@
         {
           "date": "2026-09-29",
           "close": 294.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 294.5
         }
       ],
       "last_mention_date": "2026-07-15",
@@ -5486,13 +5522,17 @@
         {
           "date": "2026-09-29",
           "close": 455.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 454.5
         }
       ],
       "last_mention_date": "2026-07-15",
       "base_ep_price": 402.0,
       "base_ep": 679,
-      "current_price": 455.0,
-      "current_pct": 13.18
+      "current_price": 454.5,
+      "current_pct": 13.06
     },
     {
       "code": "6770",
@@ -5720,13 +5760,17 @@
         {
           "date": "2026-09-29",
           "close": 72.3
+        },
+        {
+          "date": "2026-09-30",
+          "close": 75.3
         }
       ],
       "last_mention_date": "2026-07-15",
       "base_ep_price": 76.1,
       "base_ep": 679,
-      "current_price": 72.3,
-      "current_pct": -4.99
+      "current_price": 75.3,
+      "current_pct": -1.05
     },
     {
       "code": "NVDA",
@@ -6369,14 +6413,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 229.78
+          "close": 227.21
+        },
+        {
+          "date": "2026-09-30",
+          "close": 230.72
         }
       ],
       "last_mention_date": "2026-07-11",
       "base_ep_price": 175.75,
       "base_ep": 649,
-      "current_price": 229.78,
-      "current_pct": 30.74
+      "current_price": 230.72,
+      "current_pct": 31.28
     },
     {
       "code": "META",
@@ -6643,14 +6691,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 720.82
+          "close": 738.79
+        },
+        {
+          "date": "2026-09-30",
+          "close": 729.54
         }
       ],
       "last_mention_date": "2026-07-11",
       "base_ep_price": 600.29,
       "base_ep": 676,
-      "current_price": 720.82,
-      "current_pct": 20.08
+      "current_price": 729.54,
+      "current_pct": 21.53
     },
     {
       "code": "CDNS",
@@ -6889,14 +6941,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 317.82
+          "close": 324.17
+        },
+        {
+          "date": "2026-09-30",
+          "close": 330.31
         }
       ],
       "last_mention_date": "2026-07-11",
       "base_ep_price": 377.92,
       "base_ep": 678,
-      "current_price": 317.82,
-      "current_pct": -15.9
+      "current_price": 330.31,
+      "current_pct": -12.6
     },
     {
       "code": "SLAB",
@@ -7135,14 +7191,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 221.35
+          "close": 221.17
+        },
+        {
+          "date": "2026-09-30",
+          "close": 221.61
         }
       ],
       "last_mention_date": "2026-07-11",
       "base_ep_price": 218.75,
       "base_ep": 678,
-      "current_price": 221.35,
-      "current_pct": 1.19
+      "current_price": 221.61,
+      "current_pct": 1.31
     },
     {
       "code": "NET",
@@ -7701,14 +7761,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 350.92
+          "close": 352.26
+        },
+        {
+          "date": "2026-09-30",
+          "close": 349.89
         }
       ],
       "last_mention_date": "2026-07-08",
       "base_ep_price": 218.0,
       "base_ep": 647,
-      "current_price": 350.92,
-      "current_pct": 60.97
+      "current_price": 349.89,
+      "current_pct": 60.5
     },
     {
       "code": "2327",
@@ -8292,6 +8356,10 @@
         {
           "date": "2026-09-29",
           "close": 548.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 548.0
         }
       ],
       "last_mention_date": "2026-07-08",
@@ -8701,14 +8769,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 259.36
+          "close": 262.74
+        },
+        {
+          "date": "2026-09-30",
+          "close": 264.3
         }
       ],
       "last_mention_date": "2026-07-08",
       "base_ep_price": 154.71,
       "base_ep": 662,
-      "current_price": 259.36,
-      "current_pct": 67.64
+      "current_price": 264.3,
+      "current_pct": 70.84
     },
     {
       "code": "GOOGL",
@@ -9099,14 +9171,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 338.59
+          "close": 340.92
+        },
+        {
+          "date": "2026-09-30",
+          "close": 352.04
         }
       ],
       "last_mention_date": "2026-07-08",
       "base_ep_price": 388.88,
       "base_ep": 664,
-      "current_price": 338.59,
-      "current_pct": -12.93
+      "current_price": 352.04,
+      "current_pct": -9.47
     },
     {
       "code": "3711",
@@ -9362,13 +9438,17 @@
         {
           "date": "2026-09-29",
           "close": 687.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 703.0
         }
       ],
       "last_mention_date": "2026-07-04",
       "base_ep_price": 679.0,
       "base_ep": 676,
-      "current_price": 687.0,
-      "current_pct": 1.18
+      "current_price": 703.0,
+      "current_pct": 3.53
     },
     {
       "code": "6271",
@@ -9624,13 +9704,17 @@
         {
           "date": "2026-09-29",
           "close": 227.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 226.5
         }
       ],
       "last_mention_date": "2026-07-04",
       "base_ep_price": 272.0,
       "base_ep": 676,
-      "current_price": 227.0,
-      "current_pct": -16.54
+      "current_price": 226.5,
+      "current_pct": -16.73
     },
     {
       "code": "3264",
@@ -9886,13 +9970,17 @@
         {
           "date": "2026-09-29",
           "close": 241.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 243.5
         }
       ],
       "last_mention_date": "2026-07-04",
       "base_ep_price": 257.0,
       "base_ep": 676,
-      "current_price": 241.5,
-      "current_pct": -6.03
+      "current_price": 243.5,
+      "current_pct": -5.25
     }
   ],
   "history": [
@@ -10326,13 +10414,17 @@
         {
           "date": "2026-09-29",
           "close": 7925.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 8040.0
         }
       ],
       "last_mention_date": "2026-07-01",
       "base_ep_price": 4955.0,
       "base_ep": 659,
-      "current_price": 7925.0,
-      "current_pct": 59.94
+      "current_price": 8040.0,
+      "current_pct": 62.26
     },
     {
       "code": "3661",
@@ -10772,13 +10864,17 @@
         {
           "date": "2026-09-29",
           "close": 3685.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 3740.0
         }
       ],
       "last_mention_date": "2026-07-01",
       "base_ep_price": 4565.0,
       "base_ep": 659,
-      "current_price": 3685.0,
-      "current_pct": -19.28
+      "current_price": 3740.0,
+      "current_pct": -18.07
     },
     {
       "code": "ON",
@@ -11137,14 +11233,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 76.96
+          "close": 75.95
+        },
+        {
+          "date": "2026-09-30",
+          "close": 76.23
         }
       ],
       "last_mention_date": "2026-07-01",
       "base_ep_price": 121.62,
       "base_ep": 672,
-      "current_price": 76.96,
-      "current_pct": -36.72
+      "current_price": 76.23,
+      "current_pct": -37.32
     },
     {
       "code": "8046",
@@ -11412,13 +11512,17 @@
         {
           "date": "2026-09-29",
           "close": 1270.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 1340.0
         }
       ],
       "last_mention_date": "2026-07-01",
       "base_ep_price": 1175.0,
       "base_ep": 675,
-      "current_price": 1270.0,
-      "current_pct": 8.09
+      "current_price": 1340.0,
+      "current_pct": 14.04
     },
     {
       "code": "PLTR",
@@ -11985,14 +12089,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 187.34
+          "close": 186.97
+        },
+        {
+          "date": "2026-09-30",
+          "close": 189.96
         }
       ],
       "last_mention_date": "2026-06-27",
       "base_ep_price": 154.96,
       "base_ep": 647,
-      "current_price": 187.34,
-      "current_pct": 20.9
+      "current_price": 189.96,
+      "current_pct": 22.59
     },
     {
       "code": "MRVL",
@@ -12603,14 +12711,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 260.37
+          "close": 263.27
+        },
+        {
+          "date": "2026-09-30",
+          "close": 258.02
         }
       ],
       "last_mention_date": "2026-06-27",
       "base_ep_price": 87.81,
       "base_ep": 648,
-      "current_price": 260.37,
-      "current_pct": 196.52
+      "current_price": 258.02,
+      "current_pct": 193.84
     },
     {
       "code": "7922",
@@ -12873,6 +12985,10 @@
         },
         {
           "date": "2026-09-29",
+          "close": 100.5
+        },
+        {
+          "date": "2026-09-30",
           "close": 100.5
         }
       ],
@@ -13451,14 +13567,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 358.35
+          "close": 355.1
+        },
+        {
+          "date": "2026-09-30",
+          "close": 355.56
         }
       ],
       "last_mention_date": "2026-06-24",
       "base_ep_price": 422.65,
       "base_ep": 655,
-      "current_price": 358.35,
-      "current_pct": -15.21
+      "current_price": 355.56,
+      "current_pct": -15.87
     },
     {
       "code": "COHR",
@@ -13745,14 +13865,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 297.38
+          "close": 292.21
+        },
+        {
+          "date": "2026-09-30",
+          "close": 286.85
         }
       ],
       "last_mention_date": "2026-06-24",
       "base_ep_price": 392.5,
       "base_ep": 673,
-      "current_price": 297.38,
-      "current_pct": -24.23
+      "current_price": 286.85,
+      "current_pct": -26.92
     },
     {
       "code": "TXN",
@@ -14063,14 +14187,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 282.52
+          "close": 281.69
+        },
+        {
+          "date": "2026-09-30",
+          "close": 281.64
         }
       ],
       "last_mention_date": "2026-06-20",
       "base_ep_price": 301.88,
       "base_ep": 671,
-      "current_price": 282.52,
-      "current_pct": -6.41
+      "current_price": 281.64,
+      "current_pct": -6.7
     },
     {
       "code": "STM",
@@ -14365,14 +14493,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 53.66
+          "close": 53.24
+        },
+        {
+          "date": "2026-09-30",
+          "close": 53.08
         }
       ],
       "last_mention_date": "2026-06-20",
       "base_ep_price": 79.91,
       "base_ep": 672,
-      "current_price": 53.66,
-      "current_pct": -32.85
+      "current_price": 53.08,
+      "current_pct": -33.58
     },
     {
       "code": "2317",
@@ -14732,13 +14864,17 @@
         {
           "date": "2026-09-29",
           "close": 250.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 251.5
         }
       ],
       "last_mention_date": "2026-06-17",
       "base_ep_price": 293.5,
       "base_ep": 666,
-      "current_price": 250.5,
-      "current_pct": -14.65
+      "current_price": 251.5,
+      "current_pct": -14.31
     },
     {
       "code": "6208",
@@ -15042,13 +15178,17 @@
         {
           "date": "2026-09-29",
           "close": 74.6
+        },
+        {
+          "date": "2026-09-30",
+          "close": 76.0
         }
       ],
       "last_mention_date": "2026-06-17",
       "base_ep_price": 91.8,
       "base_ep": 671,
-      "current_price": 74.6,
-      "current_pct": -18.74
+      "current_price": 76.0,
+      "current_pct": -17.21
     },
     {
       "code": "ADBE",
@@ -15483,14 +15623,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 233.03
+          "close": 233.17
+        },
+        {
+          "date": "2026-09-30",
+          "close": 237.65
         }
       ],
       "last_mention_date": "2026-06-06",
       "base_ep_price": 253.96,
       "base_ep": 658,
-      "current_price": 233.03,
-      "current_pct": -8.24
+      "current_price": 237.65,
+      "current_pct": -6.42
     },
     {
       "code": "QCOM",
@@ -15897,14 +16041,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 188.44
+          "close": 184.1
+        },
+        {
+          "date": "2026-09-30",
+          "close": 186.01
         }
       ],
       "last_mention_date": "2026-06-06",
       "base_ep_price": 213.17,
       "base_ep": 661,
-      "current_price": 188.44,
-      "current_pct": -11.6
+      "current_price": 186.01,
+      "current_pct": -12.74
     },
     {
       "code": "2357",
@@ -16236,13 +16384,17 @@
         {
           "date": "2026-09-29",
           "close": 963.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 961.0
         }
       ],
       "last_mention_date": "2026-06-06",
       "base_ep_price": 844.0,
       "base_ep": 668,
-      "current_price": 963.0,
-      "current_pct": 14.1
+      "current_price": 961.0,
+      "current_pct": 13.86
     },
     {
       "code": "2382",
@@ -16594,13 +16746,17 @@
         {
           "date": "2026-09-29",
           "close": 336.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 333.5
         }
       ],
       "last_mention_date": "2026-05-30",
       "base_ep_price": 372.5,
       "base_ep": 666,
-      "current_price": 336.5,
-      "current_pct": -9.66
+      "current_price": 333.5,
+      "current_pct": -10.47
     },
     {
       "code": "6669",
@@ -16952,13 +17108,17 @@
         {
           "date": "2026-09-29",
           "close": 2100.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 2090.0
         }
       ],
       "last_mention_date": "2026-05-30",
       "base_ep_price": 1848.94,
       "base_ep": 666,
-      "current_price": 2100.0,
-      "current_pct": 13.58
+      "current_price": 2090.0,
+      "current_pct": 13.04
     },
     {
       "code": "VSH",
@@ -17433,14 +17593,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 32.74
+          "close": 32.46
+        },
+        {
+          "date": "2026-09-30",
+          "close": 32.64
         }
       ],
       "last_mention_date": "2026-05-27",
       "base_ep_price": 26.94,
       "base_ep": 655,
-      "current_price": 32.74,
-      "current_pct": 21.53
+      "current_price": 32.64,
+      "current_pct": 21.16
     },
     {
       "code": "2404",
@@ -17924,13 +18088,17 @@
         {
           "date": "2026-09-29",
           "close": 1220.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 1290.0
         }
       ],
       "last_mention_date": "2026-05-23",
       "base_ep_price": 1155.0,
       "base_ep": 664,
-      "current_price": 1220.0,
-      "current_pct": 5.63
+      "current_price": 1290.0,
+      "current_pct": 11.69
     },
     {
       "code": "PCRFY",
@@ -18322,13 +18490,17 @@
         {
           "date": "2026-09-29",
           "close": 4389.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 4490.0
         }
       ],
       "last_mention_date": "2026-05-20",
       "base_ep_price": 3348.0,
       "base_ep": 662,
-      "current_price": 4389.0,
-      "current_pct": 31.09
+      "current_price": 4490.0,
+      "current_pct": 34.11
     },
     {
       "code": "ROHM",
@@ -18712,13 +18884,17 @@
         {
           "date": "2026-09-29",
           "close": 4872.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 4940.0
         }
       ],
       "last_mention_date": "2026-05-16",
       "base_ep_price": 4145.0,
       "base_ep": 662,
-      "current_price": 4872.0,
-      "current_pct": 17.54
+      "current_price": 4940.0,
+      "current_pct": 19.18
     },
     {
       "code": "4919",
@@ -19186,13 +19362,17 @@
         {
           "date": "2026-09-29",
           "close": 135.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 138.5
         }
       ],
       "last_mention_date": "2026-05-13",
       "base_ep_price": 166.0,
       "base_ep": 661,
-      "current_price": 135.5,
-      "current_pct": -18.37
+      "current_price": 138.5,
+      "current_pct": -16.57
     },
     {
       "code": "6173",
@@ -19596,13 +19776,17 @@
         {
           "date": "2026-09-29",
           "close": 297.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 288.5
         }
       ],
       "last_mention_date": "2026-05-13",
       "base_ep_price": 159.0,
       "base_ep": 661,
-      "current_price": 297.5,
-      "current_pct": 87.11
+      "current_price": 288.5,
+      "current_pct": 81.45
     },
     {
       "code": "2472",
@@ -20006,13 +20190,17 @@
         {
           "date": "2026-09-29",
           "close": 213.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 213.5
         }
       ],
       "last_mention_date": "2026-05-13",
       "base_ep_price": 233.5,
       "base_ep": 661,
-      "current_price": 213.0,
-      "current_pct": -8.78
+      "current_price": 213.5,
+      "current_pct": -8.57
     },
     {
       "code": "8201",
@@ -20416,13 +20604,17 @@
         {
           "date": "2026-09-29",
           "close": 14.6
+        },
+        {
+          "date": "2026-09-30",
+          "close": 16.05
         }
       ],
       "last_mention_date": "2026-05-13",
       "base_ep_price": 12.8,
       "base_ep": 661,
-      "current_price": 14.6,
-      "current_pct": 14.06
+      "current_price": 16.05,
+      "current_pct": 25.39
     },
     {
       "code": "6449",
@@ -20826,13 +21018,17 @@
         {
           "date": "2026-09-29",
           "close": 205.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 209.5
         }
       ],
       "last_mention_date": "2026-05-13",
       "base_ep_price": 218.0,
       "base_ep": 661,
-      "current_price": 205.5,
-      "current_pct": -5.73
+      "current_price": 209.5,
+      "current_pct": -3.9
     },
     {
       "code": "5536",
@@ -21236,13 +21432,17 @@
         {
           "date": "2026-09-29",
           "close": 902.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 919.0
         }
       ],
       "last_mention_date": "2026-05-13",
       "base_ep_price": 950.0,
       "base_ep": 661,
-      "current_price": 902.0,
-      "current_pct": -5.05
+      "current_price": 919.0,
+      "current_pct": -3.26
     },
     {
       "code": "3548",
@@ -21646,13 +21846,17 @@
         {
           "date": "2026-09-29",
           "close": 77.1
+        },
+        {
+          "date": "2026-09-30",
+          "close": 77.3
         }
       ],
       "last_mention_date": "2026-05-13",
       "base_ep_price": 98.7,
       "base_ep": 661,
-      "current_price": 77.1,
-      "current_pct": -21.88
+      "current_price": 77.3,
+      "current_pct": -21.68
     },
     {
       "code": "2303",
@@ -22120,13 +22324,17 @@
         {
           "date": "2026-09-29",
           "close": 153.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 154.5
         }
       ],
       "last_mention_date": "2026-05-09",
       "base_ep_price": 78.6,
       "base_ep": 655,
-      "current_price": 153.5,
-      "current_pct": 95.29
+      "current_price": 154.5,
+      "current_pct": 96.56
     },
     {
       "code": "6488",
@@ -22558,13 +22766,17 @@
         {
           "date": "2026-09-29",
           "close": 945.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 1035.0
         }
       ],
       "last_mention_date": "2026-05-09",
       "base_ep_price": 721.0,
       "base_ep": 659,
-      "current_price": 945.0,
-      "current_pct": 31.07
+      "current_price": 1035.0,
+      "current_pct": 43.55
     },
     {
       "code": "5347",
@@ -22996,13 +23208,17 @@
         {
           "date": "2026-09-29",
           "close": 178.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 181.0
         }
       ],
       "last_mention_date": "2026-05-09",
       "base_ep_price": 169.0,
       "base_ep": 659,
-      "current_price": 178.5,
-      "current_pct": 5.62
+      "current_price": 181.0,
+      "current_pct": 7.1
     },
     {
       "code": "SNDK",
@@ -23409,14 +23625,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 1734.82
+          "close": 1729.76
+        },
+        {
+          "date": "2026-09-30",
+          "close": 1734.01
         }
       ],
       "last_mention_date": "2026-05-09",
       "base_ep_price": 1547.56,
       "base_ep": 660,
-      "current_price": 1734.82,
-      "current_pct": 12.1
+      "current_price": 1734.01,
+      "current_pct": 12.05
     },
     {
       "code": "AMD",
@@ -23947,14 +24167,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 616.8
+          "close": 607.57
+        },
+        {
+          "date": "2026-09-30",
+          "close": 603.88
         }
       ],
       "last_mention_date": "2026-05-06",
       "base_ep_price": 220.18,
       "base_ep": 650,
-      "current_price": 616.8,
-      "current_pct": 180.13
+      "current_price": 603.88,
+      "current_pct": 174.27
     },
     {
       "code": "CRM",
@@ -24381,14 +24605,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 228.47
+          "close": 225.31
+        },
+        {
+          "date": "2026-09-30",
+          "close": 231.54
         }
       ],
       "last_mention_date": "2026-05-02",
       "base_ep_price": 185.48,
       "base_ep": 658,
-      "current_price": 228.47,
-      "current_pct": 23.18
+      "current_price": 231.54,
+      "current_pct": 24.83
     },
     {
       "code": "GOOG",
@@ -24815,14 +25043,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 335.77
+          "close": 337.32
+        },
+        {
+          "date": "2026-09-30",
+          "close": 347.73
         }
       ],
       "last_mention_date": "2026-05-02",
       "base_ep_price": 379.64,
       "base_ep": 658,
-      "current_price": 335.77,
-      "current_pct": -11.56
+      "current_price": 347.73,
+      "current_pct": -8.41
     },
     {
       "code": "2337",
@@ -25362,13 +25594,17 @@
         {
           "date": "2026-09-29",
           "close": 118.5
+        },
+        {
+          "date": "2026-09-30",
+          "close": 122.5
         }
       ],
       "last_mention_date": "2026-04-29",
       "base_ep_price": 167.0,
       "base_ep": 657,
-      "current_price": 118.5,
-      "current_pct": -29.04
+      "current_price": 122.5,
+      "current_pct": -26.65
     },
     {
       "code": "6187",
@@ -25835,6 +26071,10 @@
         },
         {
           "date": "2026-09-29",
+          "close": 1310.0
+        },
+        {
+          "date": "2026-09-30",
           "close": 1310.0
         }
       ],
@@ -26374,13 +26614,17 @@
         {
           "date": "2026-09-29",
           "close": 272500.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 268500.0
         }
       ],
       "last_mention_date": "2026-04-08",
       "base_ep_price": 210500.0,
       "base_ep": 651,
-      "current_price": 272500.0,
-      "current_pct": 29.45
+      "current_price": 268500.0,
+      "current_pct": 27.55
     },
     {
       "code": "006208",
@@ -26878,15 +27122,15 @@
           "close": 256.85
         },
         {
-          "date": "2026-09-29",
-          "close": 255.2
+          "date": "2026-09-30",
+          "close": 256.3
         }
       ],
       "last_mention_date": "2026-04-08",
       "base_ep_price": 183.6,
       "base_ep": 651,
-      "current_price": 255.2,
-      "current_pct": 39.0
+      "current_price": 256.3,
+      "current_pct": 39.6
     },
     {
       "code": "ARM",
@@ -27393,14 +27637,18 @@
         },
         {
           "date": "2026-09-29",
-          "close": 296.54
+          "close": 293.67
+        },
+        {
+          "date": "2026-09-30",
+          "close": 289.6
         }
       ],
       "last_mention_date": "2026-04-04",
       "base_ep_price": 148.77,
       "base_ep": 650,
-      "current_price": 296.54,
-      "current_pct": 99.33
+      "current_price": 289.6,
+      "current_pct": 94.66
     },
     {
       "code": "3533",
@@ -27904,13 +28152,17 @@
         {
           "date": "2026-09-29",
           "close": 1710.0
+        },
+        {
+          "date": "2026-09-30",
+          "close": 1770.0
         }
       ],
       "last_mention_date": "2026-04-04",
       "base_ep_price": 2030.0,
       "base_ep": 650,
-      "current_price": 1710.0,
-      "current_pct": -15.76
+      "current_price": 1770.0,
+      "current_pct": -12.81
     }
   ]
 }
